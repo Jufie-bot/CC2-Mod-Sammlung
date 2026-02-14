@@ -1,52 +1,63 @@
 import os
-import re
 
 def generate_readme():
-    workspace_path = r"f:\Workspace\Mod sammlung"
+    workspace_path = os.getcwd()
     readme_path = os.path.join(workspace_path, "README.md")
-    handbuch_path = os.path.join(workspace_path, "Technisches_Entwickler_Handbuch.md")
-    kategorien_path = os.path.join(workspace_path, "Mod_Kategorien_Liste.md")
-
+    
     content = []
-    content.append("# Carrier Command 2 - Mod-Sammlung\n")
-    content.append("Herzlich willkommen in der zentralen Mod-Sammlung für Carrier Command 2. Dieses Repository dient als technische Referenz und Übersicht über ein umfangreiches Set an XML- und Lua-Modifikationen.\n")
+    content.append("# Carrier Command 2 - Mod Sammlung 🛠️\n")
+    content.append("![Version](https://img.shields.io/badge/version-4.0.0-blue?style=for-the-badge)")
+    content.append("![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)")
+    content.append("![Status](https://img.shields.io/badge/status-active-success?style=for-the-badge)")
+    content.append("![Discord](https://img.shields.io/badge/discord-join-5865F2?style=for-the-badge&logo=discord&logoColor=white)\n")
     
-    content.append("## 📊 Projekt-Übersicht\n")
+    content.append("Eine umfangreiche Sammlung von Mods, Verbesserungen und Skripten für Carrier Command 2.")
+    content.append("Diese Sammlung zielt darauf ab, das Gameplay durch Audio-, Visuelle- und Balance-Anpassungen zu optimieren.\n")
     
-    # Analyze directory for count (recursive)
+    content.append("## 📂 Kategorien\n")
+    content.append("Die Mods sind in folgende Kategorien unterteilt:\n")
+    
     mods_path = os.path.join(workspace_path, "mods")
     mod_count = 0
+    
     if os.path.exists(mods_path):
         for root, dirs, files in os.walk(mods_path):
             if "mod.xml" in files:
                 mod_count += 1
+                rel_path = os.path.relpath(root, mods_path)
+                category = rel_path.split(os.sep)[0]
+                mod_name = os.path.basename(root)
+                
+                # Check if we already have a header for this category
+                # (Simple approach: just list them all for now, better grouping could be done)
+                # For now, let's just list the mod name and its category
+                # content.append(f"- **{mod_name}** ({category})") 
+                
+    # Better approach: Iterate categories
+    if os.path.exists(mods_path):
+        categories = [d for d in os.listdir(mods_path) if os.path.isdir(os.path.join(mods_path, d))]
+        for category in sorted(categories):
+            content.append(f"### {category}")
+            cat_path = os.path.join(mods_path, category)
+            # Find mods in this category (could be nested)
+            for root, dirs, files in os.walk(cat_path):
+                if "mod.xml" in files:
+                    mod_name = os.path.basename(root)
+                    content.append(f"- {mod_name}")
+            content.append("")
+
+    content.append(f"\n**Gesamtanzahl Mods:** {mod_count}\n")
     
-    content.append(f"- **Anzahl der Mods:** {mod_count}")
-    content.append("- **Fokus:** XML-Tuning, Lua-Scripting, Audio-Assets")
-    content.append("- **Framework:** [Revolution 1.6-2](f:/Workspace/Mod%20sammlung/Revolution%201.6-2)\n")
-
-    content.append("## 🛠️ Wichtige Dokumentation\n")
-    content.append("- [Technisches Entwickler-Handbuch](Technisches_Entwickler_Handbuch.md): Detaillierte Analyse jeder Mod.")
-    content.append("- [Entwickler-Standards](Entwickler_Standards.md): Best Practices für CC2-Modding.")
-    content.append("- [Mod-Kategorien-Liste](Mod_Kategorien_Liste.md): Thematische Einordnung.\n")
-
-    content.append("## 📂 Mod-Kategorien (Auszug)\n")
-    if os.path.exists(kategorien_path):
-        with open(kategorien_path, 'r', encoding='utf-8') as f:
-            k_lines = f.readlines()
-            for line in k_lines:
-                if line.startswith("## "):
-                    content.append(line.strip())
-                elif line.startswith("*   **"):
-                    content.append(line.strip())
+    content.append("## 🤝 Mitwirken\n")
+    content.append("Bitte lies [CONTRIBUTING.md](CONTRIBUTING.md) und [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) bevor du Änderungen einreichst.\n")
     
-    content.append("\n---\n")
-    content.append("*Automatisches Update generiert via `sync_docs.py`.*")
+    content.append("## 📜 Lizenz\n")
+    content.append("Siehe [LICENSE](LICENSE) (falls vorhanden) für Details.\n")
 
-    with open(readme_path, 'w', encoding='utf-8') as f:
+    with open(readme_path, "w", encoding="utf-8") as f:
         f.write("\n".join(content))
     
-    print(f"README.md erfolgreich erstellt in {readme_path}")
+    print(f"README.md regenerated with {mod_count} mods.")
 
 if __name__ == "__main__":
     generate_readme()
