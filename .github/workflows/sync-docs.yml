@@ -1,10 +1,10 @@
 name: Sync Documentation
 
-on:
-  push:
-    paths:
-      - 'mods/**'
-      - 'scripts/sync_docs.py'
+# on:
+#   push:
+#     paths:
+#       - 'mods/**'
+#       - 'scripts/sync_docs.py'
   workflow_dispatch:
 
 jobs:
