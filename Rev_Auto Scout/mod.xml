@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data name="Rev:Auto Scout" author="Bredroll" description="
+
+Aircraft equipped with gimbal cameras now auto-reveal ground targets within 4.5km.
+
+Requires the Revolution Mod 1.4
+
+Uses library_custom_0.lua
+
+">
+</data>

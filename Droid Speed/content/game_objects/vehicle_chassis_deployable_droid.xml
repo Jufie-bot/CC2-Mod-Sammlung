@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data display_name_loc="0" bounding_radius="3.00000000e+00" lod_scale="1.00000000e+01" ai_type="1">
+	<bodies>
+		<body mass="1.00000000e+03" name="body" is_static="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="0.00000000e+00" ty="1.50000006e-01" tz="0.00000000e+00"/>
+			<meshes/>
+			<boxes/>
+			<spheres>
+				<sphere radius="2.00000003e-01">
+					<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="0.00000000e+00" ty="5.00000007e-02" tz="2.00000003e-01"/>
+				</sphere>
+				<sphere radius="2.00000003e-01">
+					<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="0.00000000e+00" ty="5.00000007e-02" tz="-2.00000003e-01"/>
+				</sphere>
+			</spheres>
+		</body>
+	</bodies>
+	<constraints/>
+	<meshes>
+		<mesh file="meshes/vehicles/deployable_droid/deployable_droid_base.mesh" name="main body" lod="0" body="0" is_paint_dirt="true">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="0.00000000e+00" ty="0.00000000e+00" tz="0.00000000e+00"/>
+		</mesh>
+		<mesh file="meshes/vehicles/deployable_droid/deployable_droid_leg_left.mesh" name="leg_front_left_upper" lod="0" body="0" is_paint_dirt="true">
+			<transform m00="-2.58819073e-01" m01="8.36516261e-01" m02="4.82962906e-01" m10="-9.65925813e-01" m11="-2.24143893e-01" m12="-1.29409537e-01" m20="0.00000000e+00" m21="-4.99999970e-01" m22="8.66025329e-01" tx="-2.23319620e-01" ty="2.26928964e-02" tz="2.72854626e-01"/>
+		</mesh>
+		<mesh file="meshes/vehicles/deployable_droid/deployable_droid_leg_right.mesh" name="leg_front_right_upper" lod="0" body="0" is_paint_dirt="true">
+			<transform m00="-2.58819073e-01" m01="-8.36516261e-01" m02="-4.82962906e-01" m10="9.65925813e-01" m11="-2.24143893e-01" m12="-1.29409537e-01" m20="0.00000000e+00" m21="-4.99999970e-01" m22="8.66025329e-01" tx="2.31193870e-01" ty="2.41567194e-02" tz="2.72628844e-01"/>
+		</mesh>
+		<mesh file="meshes/vehicles/deployable_droid/deployable_droid_leg_right.mesh" name="leg_back_right_upper" lod="0" body="0" is_paint_dirt="true">
+			<transform m00="-2.58819073e-01" m01="-8.36516261e-01" m02="-4.82962906e-01" m10="9.65925813e-01" m11="-2.24143893e-01" m12="-1.29409537e-01" m20="0.00000000e+00" m21="-4.99999970e-01" m22="8.66025329e-01" tx="2.34238282e-01" ty="2.01126914e-02" tz="-2.27348477e-01"/>
+		</mesh>
+		<mesh file="meshes/vehicles/deployable_droid/deployable_droid_leg_left.mesh" name="leg_back_left_upper" lod="0" body="0" is_paint_dirt="true">
+			<transform m00="-2.58819073e-01" m01="8.36516261e-01" m02="4.82962906e-01" m10="-9.65925813e-01" m11="-2.24143893e-01" m12="-1.29409537e-01" m20="0.00000000e+00" m21="-4.99999970e-01" m22="8.66025329e-01" tx="-2.23319620e-01" ty="2.66392790e-02" tz="-2.18684897e-01"/>
+		</mesh>
+		<mesh file="meshes/vehicles/deployable_droid/deployable_droid_leg_bottom.mesh" name="leg_front_right_lower" lod="0" body="0" is_paint_dirt="true">
+			<transform m00="-3.34936827e-02" m01="-4.82962877e-01" m02="8.75000000e-01" m10="9.91025388e-01" m11="-1.29409522e-01" m12="-3.34936082e-02" m20="1.29409507e-01" m21="8.66025388e-01" m22="4.82962847e-01" tx="2.76079774e-01" ty="-1.56496793e-01" tz="7.44079277e-02"/>
+		</mesh>
+		<mesh file="meshes/vehicles/deployable_droid/deployable_droid_leg_bottom.mesh" name="leg_front_left_lower" lod="0" body="0" is_paint_dirt="true">
+			<transform m00="9.26475823e-02" m01="-4.75175112e-01" m02="8.75000000e-01" m10="9.90750670e-01" m11="1.31496251e-01" m12="-3.34936082e-02" m20="-9.91438776e-02" m21="8.70009899e-01" m22="4.82962847e-01" tx="-2.46524990e-01" ty="-1.57120541e-01" tz="7.06614703e-02"/>
+		</mesh>
+		<mesh file="meshes/vehicles/deployable_droid/deployable_droid_leg_bottom.mesh" name="leg_back_left_lower" lod="0" body="0" is_paint_dirt="true">
+			<transform m00="9.26475823e-02" m01="-4.75175112e-01" m02="8.75000000e-01" m10="9.90750670e-01" m11="1.31496251e-01" m12="-3.34936082e-02" m20="-9.91438776e-02" m21="8.70009899e-01" m22="4.82962847e-01" tx="-2.65830249e-01" ty="-1.55665860e-01" tz="-4.26587820e-01"/>
+		</mesh>
+		<mesh file="meshes/vehicles/deployable_droid/deployable_droid_leg_bottom.mesh" name="leg_back_right_lower" lod="0" body="0" is_paint_dirt="true">
+			<transform m00="-3.34936827e-02" m01="-4.82962877e-01" m02="8.75000000e-01" m10="9.91025388e-01" m11="-1.29409522e-01" m12="-3.34936082e-02" m20="1.29409507e-01" m21="8.66025388e-01" m22="4.82962847e-01" tx="2.81240702e-01" ty="-1.55407488e-01" tz="-4.15969521e-01"/>
+		</mesh>
+		<mesh file="meshes/vehicles/vehicle_lods/deployable_droid_lod.mesh" name="lod" lod="1" body="0" is_paint_dirt="true">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="-1.35897426e-02" ty="-5.44093251e-02" tz="-3.61826308e-02"/>
+		</mesh>
+	</meshes>
+	<wheels>
+		<wheel steerable="true" steering_magnitude="1.00000000e+00" stiffness="1.20000000e+01" damping="1.00000000e+02" suspension_length="3.00000012e-01" relax_rate="5.00000007e-02" grip="1.00000000e+02" radius="2.50000006e-01" name="wheel_front_left" acceleration="1.00000000e+01">
+			<pos x="-2.50000000e-01" y="0.00000000e+00" z="2.50000000e-01"/>
+		</wheel>
+		<wheel steerable="false" steering_magnitude="1.00000000e+00" stiffness="1.20000000e+01" damping="1.00000000e+02" suspension_length="3.00000012e-01" relax_rate="5.00000007e-02" grip="1.00000000e+02" radius="2.50000006e-01" name="wheel_back_left" acceleration="1.00000000e+01">
+			<pos x="-2.50000000e-01" y="0.00000000e+00" z="-2.50000000e-01"/>
+		</wheel>
+		<wheel steerable="true" steering_magnitude="1.00000000e+00" stiffness="1.20000000e+01" damping="1.00000000e+02" suspension_length="3.00000012e-01" relax_rate="5.00000007e-02" grip="1.00000000e+02" radius="2.50000006e-01" name="wheel_front_right" acceleration="1.00000000e+01">
+			<pos x="2.50000000e-01" y="0.00000000e+00" z="2.50000000e-01"/>
+		</wheel>
+		<wheel steerable="false" steering_magnitude="1.00000000e+00" stiffness="1.20000000e+01" damping="1.00000000e+02" suspension_length="3.00000012e-01" relax_rate="5.00000007e-02" grip="1.00000000e+02" radius="2.50000006e-01" name="wheel_back_right" acceleration="1.00000000e+01">
+			<pos x="2.50000000e-01" y="0.00000000e+00" z="-2.50000000e-01"/>
+		</wheel>
+	</wheels>
+	<attachments>
+		<attachment name="attachment" type="0">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="0.00000000e+00" ty="-3.17859985e-02" tz="3.34331781e-01"/>
+		</attachment>
+		<attachment name="attachment" type="1">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="1.54821537e-04" ty="9.61754471e-02" tz="4.71106097e-02"/>
+		</attachment>
+	</attachments>
+	<force_emitters/>
+	<control_surfaces/>
+	<projectile_emitters/>
+	<cameras/>
+	<buoyancys>
+		<buoyancy name="buoyancy" radius="4.00000000e-01" magnitude="1.00000005e-03">
+			<pos x="0.00000000e+00" y="-2.00322852e-01" z="-1.62201915e-02"/>
+		</buoyancy>
+	</buoyancys>
+	<vehicle_attachments/>
+	<lights/>
+	<seats/>
+	<button_panels/>
+	<buttons/>
+	<indicators/>
+	<achievements/>
+	<dials/>
+	<screens/>
+	<doors/>
+	<graph_nodes/>
+	<graph_links/>
+	<foam_emitters/>
+	<particle_emitters/>
+	<sensors>
+		<sensor name="sensor_front_left" body_index="0" start="0.00000000e+00" length="6.49999976e-01">
+			<transform m00="9.65925813e-01" m01="-2.50000030e-01" m02="6.69872835e-02" m10="0.00000000e+00" m11="2.58818984e-01" m12="9.65925872e-01" m20="-2.58819073e-01" m21="-9.33012724e-01" m22="2.49999940e-01" tx="-2.00000003e-01" ty="0.00000000e+00" tz="2.50000000e-01"/>
+		</sensor>
+		<sensor name="sensor_back_left" body_index="0" start="0.00000000e+00" length="6.49999976e-01">
+			<transform m00="9.65925813e-01" m01="-2.58819044e-01" m02="0.00000000e+00" m10="-6.69873282e-02" m11="-2.50000119e-01" m12="9.65925813e-01" m20="-2.50000000e-01" m21="-9.33012664e-01" m22="-2.58819163e-01" tx="-2.00000003e-01" ty="0.00000000e+00" tz="-3.00000012e-01"/>
+		</sensor>
+		<sensor name="sensor_back_right" body_index="0" start="0.00000000e+00" length="6.49999976e-01">
+			<transform m00="9.65925813e-01" m01="2.24143863e-01" m02="1.29409522e-01" m10="-6.69872984e-02" m11="-2.66456515e-01" m12="9.61516261e-01" m20="2.50000000e-01" m21="-9.37422156e-01" m22="-2.42362455e-01" tx="2.00000003e-01" ty="0.00000000e+00" tz="-3.00000012e-01"/>
+		</sensor>
+		<sensor name="sensor_front_right" body_index="0" start="0.00000000e+00" length="6.49999976e-01">
+			<transform m00="9.65925813e-01" m01="2.50000000e-01" m02="-6.69873059e-02" m10="0.00000000e+00" m11="2.58819073e-01" m12="9.65925813e-01" m20="2.58819044e-01" m21="-9.33012664e-01" m22="2.50000030e-01" tx="2.00000003e-01" ty="0.00000000e+00" tz="2.50000000e-01"/>
+		</sensor>
+	</sensors>
+	<splash_emitters/>
+	<holomaps/>
+	<damage_zones/>
+	<audio_zones/>
+	<nav_meshes/>
+</data>
+

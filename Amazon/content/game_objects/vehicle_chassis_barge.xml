@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data display_name_loc="0" bounding_radius="5" lod_scale="1.00000000e+00" ai_type="4">
+	<bodies>
+		<body mass="3.00000000e+04" name="body" is_static="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="0.00000000e+00" ty="2.50000000e+00" tz="0.00000000e+00"/>
+			<meshes/>
+			<boxes>
+				<box>
+					<size x="3.00000000e+01" y="5.00000000e+00" z="6.00000000e+01"/>
+					<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="0.00000000e+00" ty="0.00000000e+00" tz="0.00000000e+00"/>
+				</box>
+			</boxes>
+			<spheres/>
+		</body>
+	</bodies>
+	<constraints/>
+	<meshes>
+		<mesh file="meshes/vehicles/barge/barge.mesh" name="main body" lod="0" body="0" is_paint_dirt="true">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="0.00000000e+00" ty="5.00000000e-01" tz="-3.00000000e+00"/>
+		</mesh>
+		<mesh file="meshes/vehicles/barge/barge_propeller.mesh" name="barge_propeller" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="9.99999940e-01" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="-4.37113883e-08" m12="-1.00000000e+00" m20="0.00000000e+00" m21="1.00000000e+00" m22="-4.37113883e-08" tx="1.29876204e+01" ty="-3.55690861e+00" tz="-2.24088135e+01"/>
+		</mesh>
+		<mesh file="meshes/vehicles/barge/barge_propeller.mesh" name="barge_propeller" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="9.99999940e-01" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="-4.37113883e-08" m12="-1.00000000e+00" m20="0.00000000e+00" m21="1.00000000e+00" m22="-4.37113883e-08" tx="-1.28156786e+01" ty="-3.55699992e+00" tz="-2.24090004e+01"/>
+		</mesh>
+		<mesh file="meshes/vehicles/vehicle_lods/barge_low.mesh" name="lod 1" lod="1" body="0" is_paint_dirt="true">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="0.00000000e+00" ty="5.00000000e-01" tz="-3.00000000e+00"/>
+		</mesh>
+		<mesh file="meshes/vehicles/shipping_containers/shipping_container_shipping_container.mesh" name="container_0" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="8.70920753e+00" ty="3.86962438e+00" tz="1.78879757e+01"/>
+			<variants>
+				<v file="meshes/vehicles/shipping_containers/shipping_container_open.mesh"/>
+				<v file="meshes/vehicles/shipping_containers/shipping_container_fuel.mesh"/>
+			</variants>
+		</mesh>
+		<mesh file="meshes/vehicles/shipping_containers/shipping_container_shipping_container.mesh" name="container_1" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="4.37988234e+00" ty="3.86962438e+00" tz="1.78879757e+01"/>
+			<variants>
+				<v file="meshes/vehicles/shipping_containers/shipping_container_open.mesh"/>
+				<v file="meshes/vehicles/shipping_containers/shipping_container_fuel.mesh"/>
+			</variants>
+		</mesh>
+		<mesh file="meshes/vehicles/shipping_containers/shipping_container_shipping_container.mesh" name="container_2" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="-6.37540501e-03" ty="3.86962438e+00" tz="1.78879757e+01"/>
+			<variants>
+				<v file="meshes/vehicles/shipping_containers/shipping_container_open.mesh"/>
+				<v file="meshes/vehicles/shipping_containers/shipping_container_fuel.mesh"/>
+			</variants>
+		</mesh>
+		<mesh file="meshes/vehicles/shipping_containers/shipping_container_shipping_container.mesh" name="container_3" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="-4.35150290e+00" ty="3.86962438e+00" tz="1.78879757e+01"/>
+			<variants>
+				<v file="meshes/vehicles/shipping_containers/shipping_container_open.mesh"/>
+				<v file="meshes/vehicles/shipping_containers/shipping_container_fuel.mesh"/>
+			</variants>
+		</mesh>
+		<mesh file="meshes/vehicles/shipping_containers/shipping_container_shipping_container.mesh" name="container_4" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="-8.66001415e+00" ty="3.86962438e+00" tz="1.78879757e+01"/>
+			<variants>
+				<v file="meshes/vehicles/shipping_containers/shipping_container_open.mesh"/>
+				<v file="meshes/vehicles/shipping_containers/shipping_container_fuel.mesh"/>
+			</variants>
+		</mesh>
+		<mesh file="meshes/vehicles/shipping_containers/shipping_container_shipping_container.mesh" name="container_5" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="8.70920753e+00" ty="3.86962438e+00" tz="9.38797569e+00"/>
+			<variants>
+				<v file="meshes/vehicles/shipping_containers/shipping_container_open.mesh"/>
+				<v file="meshes/vehicles/shipping_containers/shipping_container_fuel.mesh"/>
+			</variants>
+		</mesh>
+		<mesh file="meshes/vehicles/shipping_containers/shipping_container_shipping_container.mesh" name="container_6" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="4.37988234e+00" ty="3.86962438e+00" tz="9.38797569e+00"/>
+			<variants>
+				<v file="meshes/vehicles/shipping_containers/shipping_container_open.mesh"/>
+				<v file="meshes/vehicles/shipping_containers/shipping_container_fuel.mesh"/>
+			</variants>
+		</mesh>
+		<mesh file="meshes/vehicles/shipping_containers/shipping_container_shipping_container.mesh" name="container_7" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="-6.37540501e-03" ty="3.86962438e+00" tz="9.38797569e+00"/>
+			<variants>
+				<v file="meshes/vehicles/shipping_containers/shipping_container_open.mesh"/>
+				<v file="meshes/vehicles/shipping_containers/shipping_container_fuel.mesh"/>
+			</variants>
+		</mesh>
+		<mesh file="meshes/vehicles/shipping_containers/shipping_container_shipping_container.mesh" name="container_8" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="-4.35150290e+00" ty="3.86962438e+00" tz="9.38797569e+00"/>
+			<variants>
+				<v file="meshes/vehicles/shipping_containers/shipping_container_open.mesh"/>
+				<v file="meshes/vehicles/shipping_containers/shipping_container_fuel.mesh"/>
+			</variants>
+		</mesh>
+		<mesh file="meshes/vehicles/shipping_containers/shipping_container_shipping_container.mesh" name="container_9" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="-8.66001415e+00" ty="3.86962438e+00" tz="9.38797569e+00"/>
+			<variants>
+				<v file="meshes/vehicles/shipping_containers/shipping_container_open.mesh"/>
+				<v file="meshes/vehicles/shipping_containers/shipping_container_fuel.mesh"/>
+			</variants>
+		</mesh>
+		<mesh file="meshes/vehicles/shipping_containers/shipping_container_shipping_container.mesh" name="container_10" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="8.70920753e+00" ty="3.86962438e+00" tz="8.87975693e-01"/>
+			<variants>
+				<v file="meshes/vehicles/shipping_containers/shipping_container_open.mesh"/>
+				<v file="meshes/vehicles/shipping_containers/shipping_container_fuel.mesh"/>
+			</variants>
+		</mesh>
+		<mesh file="meshes/vehicles/shipping_containers/shipping_container_shipping_container.mesh" name="container_11" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="4.37988234e+00" ty="3.86962438e+00" tz="8.87975693e-01"/>
+			<variants>
+				<v file="meshes/vehicles/shipping_containers/shipping_container_open.mesh"/>
+				<v file="meshes/vehicles/shipping_containers/shipping_container_fuel.mesh"/>
+			</variants>
+		</mesh>
+		<mesh file="meshes/vehicles/shipping_containers/shipping_container_shipping_container.mesh" name="container_12" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="-6.37540501e-03" ty="3.86962438e+00" tz="8.87975693e-01"/>
+			<variants>
+				<v file="meshes/vehicles/shipping_containers/shipping_container_open.mesh"/>
+				<v file="meshes/vehicles/shipping_containers/shipping_container_fuel.mesh"/>
+			</variants>
+		</mesh>
+		<mesh file="meshes/vehicles/shipping_containers/shipping_container_shipping_container.mesh" name="container_13" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="-4.35150290e+00" ty="3.86962438e+00" tz="8.87975693e-01"/>
+			<variants>
+				<v file="meshes/vehicles/shipping_containers/shipping_container_open.mesh"/>
+				<v file="meshes/vehicles/shipping_containers/shipping_container_fuel.mesh"/>
+			</variants>
+		</mesh>
+		<mesh file="meshes/vehicles/shipping_containers/shipping_container_shipping_container.mesh" name="container_14" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="-8.66001415e+00" ty="3.86962438e+00" tz="8.87975693e-01"/>
+			<variants>
+				<v file="meshes/vehicles/shipping_containers/shipping_container_open.mesh"/>
+				<v file="meshes/vehicles/shipping_containers/shipping_container_fuel.mesh"/>
+			</variants>
+		</mesh>
+		<mesh file="meshes/vehicles/shipping_containers/shipping_container_shipping_container.mesh" name="container_15" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="8.70920753e+00" ty="3.86962438e+00" tz="-7.61202431e+00"/>
+			<variants>
+				<v file="meshes/vehicles/shipping_containers/shipping_container_open.mesh"/>
+				<v file="meshes/vehicles/shipping_containers/shipping_container_fuel.mesh"/>
+			</variants>
+		</mesh>
+		<mesh file="meshes/vehicles/shipping_containers/shipping_container_shipping_container.mesh" name="container_16" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="4.37988234e+00" ty="3.86962438e+00" tz="-7.61202431e+00"/>
+			<variants>
+				<v file="meshes/vehicles/shipping_containers/shipping_container_open.mesh"/>
+				<v file="meshes/vehicles/shipping_containers/shipping_container_fuel.mesh"/>
+			</variants>
+		</mesh>
+		<mesh file="meshes/vehicles/shipping_containers/shipping_container_shipping_container.mesh" name="container_17" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="-6.37540501e-03" ty="3.86962438e+00" tz="-7.61202431e+00"/>
+			<variants>
+				<v file="meshes/vehicles/shipping_containers/shipping_container_open.mesh"/>
+				<v file="meshes/vehicles/shipping_containers/shipping_container_fuel.mesh"/>
+			</variants>
+		</mesh>
+		<mesh file="meshes/vehicles/shipping_containers/shipping_container_shipping_container.mesh" name="container_18" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="-4.35150290e+00" ty="3.86962438e+00" tz="-7.61202431e+00"/>
+			<variants>
+				<v file="meshes/vehicles/shipping_containers/shipping_container_open.mesh"/>
+				<v file="meshes/vehicles/shipping_containers/shipping_container_fuel.mesh"/>
+			</variants>
+		</mesh>
+		<mesh file="meshes/vehicles/shipping_containers/shipping_container_shipping_container.mesh" name="container_19" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="-8.66001415e+00" ty="3.86962438e+00" tz="-7.61202431e+00"/>
+			<variants>
+				<v file="meshes/vehicles/shipping_containers/shipping_container_open.mesh"/>
+				<v file="meshes/vehicles/shipping_containers/shipping_container_fuel.mesh"/>
+			</variants>
+		</mesh>
+		<mesh file="meshes/vehicles/shipping_containers/shipping_container_shipping_container.mesh" name="container_20" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="8.70920753e+00" ty="3.86962438e+00" tz="-1.61120243e+01"/>
+			<variants>
+				<v file="meshes/vehicles/shipping_containers/shipping_container_open.mesh"/>
+				<v file="meshes/vehicles/shipping_containers/shipping_container_fuel.mesh"/>
+			</variants>
+		</mesh>
+		<mesh file="meshes/vehicles/shipping_containers/shipping_container_shipping_container.mesh" name="container_21" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="4.37988234e+00" ty="3.86962438e+00" tz="-1.61120243e+01"/>
+			<variants>
+				<v file="meshes/vehicles/shipping_containers/shipping_container_open.mesh"/>
+				<v file="meshes/vehicles/shipping_containers/shipping_container_fuel.mesh"/>
+			</variants>
+		</mesh>
+		<mesh file="meshes/vehicles/shipping_containers/shipping_container_shipping_container.mesh" name="container_22" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="-6.37540501e-03" ty="3.86962438e+00" tz="-1.61120243e+01"/>
+			<variants>
+				<v file="meshes/vehicles/shipping_containers/shipping_container_open.mesh"/>
+				<v file="meshes/vehicles/shipping_containers/shipping_container_fuel.mesh"/>
+			</variants>
+		</mesh>
+		<mesh file="meshes/vehicles/shipping_containers/shipping_container_shipping_container.mesh" name="container_23" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="-4.35150290e+00" ty="3.86962438e+00" tz="-1.61120243e+01"/>
+			<variants>
+				<v file="meshes/vehicles/shipping_containers/shipping_container_open.mesh"/>
+				<v file="meshes/vehicles/shipping_containers/shipping_container_fuel.mesh"/>
+			</variants>
+		</mesh>
+		<mesh file="meshes/vehicles/shipping_containers/shipping_container_shipping_container.mesh" name="container_24" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="-8.66001415e+00" ty="3.86962438e+00" tz="-1.61120243e+01"/>
+			<variants>
+				<v file="meshes/vehicles/shipping_containers/shipping_container_open.mesh"/>
+				<v file="meshes/vehicles/shipping_containers/shipping_container_fuel.mesh"/>
+			</variants>
+		</mesh>
+	</meshes>
+	<wheels/>
+	<attachments>
+		<attachment name="attachment" type="0">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="0.00000000e+00" ty="2.55313253e+00" tz="2.68692608e+01"/>
+		</attachment>
+	</attachments>
+	<force_emitters>
+		<force_emitter name="water_left" magnitude="2.0000000e+03">
+			<transform m00="9.99999940e-01" m01="0.00000000e+00" m02="-0.00000000e+00" m10="0.00000000e+00" m11="-4.37113883e-08" m12="-1.00000000e+00" m20="0.00000000e+00" m21="1.00000000e+00" m22="-4.37113883e-08" tx="-1.50000000e+01" ty="0.00000000e+00" tz="-4.00000000e+00"/>
+		</force_emitter>
+		<force_emitter name="water_right" magnitude="2.0000000e+03">
+			<transform m00="9.99999940e-01" m01="0.00000000e+00" m02="-0.00000000e+00" m10="0.00000000e+00" m11="-4.37113883e-08" m12="-1.00000000e+00" m20="0.00000000e+00" m21="1.00000000e+00" m22="-4.37113883e-08" tx="1.50000000e+01" ty="0.00000000e+00" tz="-4.00000000e+00"/>
+		</force_emitter>
+	</force_emitters>
+	<control_surfaces>
+
+		<control_surface size="1.60000000e+01" max_angle="1.00000000e+00" water="true" name="control_surface">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="8.66025388e-01" m12="-5.00000000e-01" m20="0.00000000e+00" m21="5.00000000e-01" m22="8.66025388e-01" tx="0.00000000e+00" ty="0.00000000e+00" tz="3.00000000e+01"/>
+		</control_surface>
+		<control_surface size="1.60000000e+01" max_angle="1.00000000e+00" water="true" name="control_surface">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="6.79865098e-09" m20="0.00000000e+00" m21="-6.79865098e-09" m22="1.00000000e+00" tx="-8.39999962e+00" ty="-4.23795652e+00" tz="1.42970343e+01"/>
+		</control_surface>
+		<control_surface size="1.60000000e+01" max_angle="1.00000000e+00" water="true" name="control_surface">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="6.79865098e-09" m20="0.00000000e+00" m21="-6.79865098e-09" m22="1.00000000e+00" tx="8.39999962e+00" ty="-4.23795652e+00" tz="1.42970343e+01"/>
+		</control_surface>
+		<control_surface size="1.60000000e+01" max_angle="1.00000000e+00" water="true" name="control_surface">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="6.79865098e-09" m20="0.00000000e+00" m21="-6.79865098e-09" m22="1.00000000e+00" tx="8.39999962e+00" ty="-4.23795652e+00" tz="-2.50688648e+00"/>
+		</control_surface>
+		<control_surface size="1.60000000e+01" max_angle="1.00000000e+00" water="true" name="control_surface">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="6.79865098e-09" m20="0.00000000e+00" m21="-6.79865098e-09" m22="1.00000000e+00" tx="-8.39999962e+00" ty="-4.23795652e+00" tz="-2.50688648e+00"/>
+		</control_surface>
+		<control_surface size="1.60000000e+01" max_angle="1.00000000e+00" water="true" name="control_surface">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="6.79865098e-09" m20="0.00000000e+00" m21="-6.79865098e-09" m22="1.00000000e+00" tx="-8.39999962e+00" ty="-4.23795652e+00" tz="-1.93381042e+01"/>
+		</control_surface>
+		<control_surface size="1.60000000e+01" max_angle="1.00000000e+00" water="true" name="control_surface">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="6.79865098e-09" m20="0.00000000e+00" m21="-6.79865098e-09" m22="1.00000000e+00" tx="8.39999962e+00" ty="-4.23795652e+00" tz="-1.93381042e+01"/>
+		</control_surface>
+	</control_surfaces>
+	<projectile_emitters/>
+	<cameras/>
+	<buoyancys>
+		<buoyancy name="buoyancy" radius="6.00000000e+00" magnitude="2.00000003e-01">
+			<pos x="-1.60000000e+01" y="-1.00000000e+00" z="3.20000000e+01"/>
+		</buoyancy>
+		<buoyancy name="buoyancy" radius="6.00000000e+00" magnitude="2.00000003e-01">
+			<pos x="1.60000000e+01" y="-1.00000000e+00" z="3.20000000e+01"/>
+		</buoyancy>
+		<buoyancy name="buoyancy" radius="6.00000000e+00" magnitude="2.00000003e-01">
+			<pos x="-1.60000000e+01" y="-1.00000000e+00" z="-3.20000000e+01"/>
+		</buoyancy>
+		<buoyancy name="buoyancy" radius="6.00000000e+00" magnitude="2.00000003e-01">
+			<pos x="1.60000000e+01" y="-1.00000000e+00" z="-3.20000000e+01"/>
+		</buoyancy>
+		<buoyancy name="buoyancy" radius="6.00000000e+00" magnitude="4.00000006e-01">
+			<pos x="0.00000000e+00" y="3.76173782e+01" z="0.00000000e+00"/>
+		</buoyancy>
+	</buoyancys>
+	<vehicle_attachments/>
+	<lights>
+		<light name="light_port" body_index="0" scale="3.00000000e+01" is_spotlight="false" is_bounds="false" is_volume="true" fov="7.85398185e-01">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="-1.11950073e+01" ty="2.72565174e+00" tz="2.75067596e+01"/>
+			<color x="1.00000000e+00" y="2.00000003e-01" z="2.00000003e-01"/>
+			<bounds_min x="0.00000000e+00" y="0.00000000e+00" z="0.00000000e+00"/>
+			<bounds_max x="0.00000000e+00" y="0.00000000e+00" z="0.00000000e+00"/>
+		</light>
+		<light name="light_starboard" body_index="0" scale="3.00000000e+01" is_spotlight="false" is_bounds="false" is_volume="true" fov="7.85398185e-01">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="1.10150204e+01" ty="2.72565174e+00" tz="2.75067596e+01"/>
+			<color x="2.00000003e-01" y="1.00000000e+00" z="2.00000003e-01"/>
+			<bounds_min x="0.00000000e+00" y="0.00000000e+00" z="0.00000000e+00"/>
+			<bounds_max x="0.00000000e+00" y="0.00000000e+00" z="0.00000000e+00"/>
+		</light>
+		<light name="light_starboard_back" body_index="0" scale="3.00000000e+01" is_spotlight="false" is_bounds="false" is_volume="true" fov="7.85398185e-01">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="1.45843163e+01" ty="2.72565174e+00" tz="-2.48618183e+01"/>
+			<color x="2.00000003e-01" y="1.00000000e+00" z="2.00000003e-01"/>
+			<bounds_min x="0.00000000e+00" y="0.00000000e+00" z="0.00000000e+00"/>
+			<bounds_max x="0.00000000e+00" y="0.00000000e+00" z="0.00000000e+00"/>
+		</light>
+		<light name="light_port_back" body_index="0" scale="3.00000000e+01" is_spotlight="false" is_bounds="false" is_volume="true" fov="7.85398185e-01">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="-1.42216396e+01" ty="2.72565174e+00" tz="-2.48618183e+01"/>
+			<color x="1.00000000e+00" y="2.00000003e-01" z="2.00000003e-01"/>
+			<bounds_min x="0.00000000e+00" y="0.00000000e+00" z="0.00000000e+00"/>
+			<bounds_max x="0.00000000e+00" y="0.00000000e+00" z="0.00000000e+00"/>
+		</light>
+	</lights>
+	<seats/>
+	<button_panels/>
+	<buttons/>
+	<indicators/>
+	<achievements/>
+	<dials/>
+	<screens/>
+	<doors/>
+	<graph_nodes/>
+	<graph_links/>
+	<foam_emitters/>
+	<particle_emitters/>
+	<sensors/>
+	<splash_emitters/>
+	<holomaps/>
+	<damage_zones/>
+	<audio_zones/>
+	<nav_meshes/>
+</data>
+
