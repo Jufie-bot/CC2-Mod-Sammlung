@@ -1,4 +1,5 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
-<data name="Specialized Chassis V" author="Crow" description="Reupload of Specialized Chassis on steam. Vanilla version, does not support UI Enchancer mod (cause no scripd merge idk)">
+<data author="Crow"
+    description="Reupload of Specialized Chassis on steam. Vanilla version, does not support UI Enchancer mod (cause no scripd merge idk)">
+    <name>Specialized Chassis V</name>
 </data>

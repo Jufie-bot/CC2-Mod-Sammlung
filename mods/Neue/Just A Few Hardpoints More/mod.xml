@@ -1,6 +1,5 @@
-
-<?xml version="1.0" encoding="UTF-8"?>
-<data name="Just A Few Hardpoints More" author="Darloth" description="Adds and changes a few vehicle hardpoints.  Not nearly as all consuming or widespread as Ribbons' specialized chassis mod, this just tweaks things and makes units a little more capable.  For now.
+<data name="Just A Few Hardpoints More" author="Darloth"
+    description="Adds and changes a few vehicle hardpoints.  Not nearly as all consuming or widespread as Ribbons' specialized chassis mod, this just tweaks things and makes units a little more capable.  For now.
 
 Walrus gains two external missile mounts capable of mounting any missile type.  You can technically put chainguns or rockets on these, but the hardpoint is tilted up so they may not aim nicely.
 Albatross gains two missile hardpoints on wing pylons, exactly the same as its others, bringing the total to six.  This makes it a useful missile bus for loitering as well as a scout.
