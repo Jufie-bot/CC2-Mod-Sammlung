@@ -1,6 +1,6 @@
 # Carrier Command 2 - Mod Development Hub �
 
-![Mods Total](https://img.shields.io/badge/Mods_Total-90-blue?style=for-the-badge&logo=github)
+![Mods Total](https://img.shields.io/badge/Mods_Total-95-blue?style=for-the-badge&logo=github)
 ![Analyzed](https://img.shields.io/badge/Analysed-2-orange?style=for-the-badge&logo=bookstack)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Active_Development-success?style=for-the-badge)
@@ -64,7 +64,7 @@ Damit die Zusammenarbeit funktioniert, haben wir klare Spielregeln:
 
 ## 📦 Inhalt der Sammlung (Live-Status)
 
-### Audio (17)
+### Audio (18)
 - AA & Depth Wolfenstein alarm
 - Alarm Ahhh
 - Apocalypse Sound Mod
@@ -77,13 +77,14 @@ Damit die Zusammenarbeit funktioniert, haben wir klare Spielregeln:
 - Highfleet sound replacer
 - Klaxon Alarm
 - Phalanx CIWS Gun Sound
+- Skidders Pack
 - Sound Enhancement
 - Unit Death Wolfenstein alarm
 - Wolfenstein Bridge Alarm
 - alarm_unsc
 - deep sound
 
-### Gameplay (28)
+### Gameplay (29)
 - 20mm Balance Test
 - AGM-114
 - AGM-65K
@@ -104,6 +105,7 @@ Damit die Zusammenarbeit funktioniert, haben wir klare Spielregeln:
 - Just A Few Hardpoints More
 - Light Blue Water Color
 - Lubricant
+- R-60M
 - RIM-161
 - Rev_Auto Scout
 - Rev_Engineering
@@ -113,20 +115,25 @@ Damit die Zusammenarbeit funktioniert, haben wir klare Spielregeln:
 - Spread modifier
 - logistics+
 
-### UI (7)
+### Overhauls (1)
+- Overhauls
+
+### UI (8)
 - AdvancedRadar
 - FC Navy x UI Enhancer
+- HUD Rate of Climb
 - Higher Resolution Radar
 - Radar Range 20km
 - Rotate Power Screen
 - Tactical Operations Centre 1.5
 - UI Enhancer
 
-### Vehicles (25)
+### Vehicles (26)
 - 20mm Aircraft Wider Spread
 - 2x Vehicle Water Speed
 - 3x Vehicle Water Speed
 - 5x Vehicle Water Speed
+- Assault Barge
 - Battle Carrier Refit + Captain Controls
 - Callsigns for Vehicles
 - Carrier CIWS Ammo Increase
@@ -165,7 +172,7 @@ Damit die Zusammenarbeit funktioniert, haben wir klare Spielregeln:
 - Turret Utility
 
 
-**Gesamtanzahl Mods in der Library:** 90
+**Gesamtanzahl Mods in der Library:** 95
 
 ---
 
