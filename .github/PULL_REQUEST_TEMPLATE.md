@@ -1,16 +1,16 @@
-# Pull Request
+# Änderungsbeschreibung (Pull Request)
 
-## Description
-Please include a summary of the change and which issue is fixed.
+## Art der Änderung
+- [ ] Fehlerbehebung (Bug fix)
+- [ ] Neue Funktion (New feature)
+- [ ] Breaking Change (Änderung, die Inkompatibilität verursacht)
+- [ ] Dokumentations-Update
 
-## Type of change
-- [ ] Bug fix (non-breaking change which fixes an issue)
-- [ ] New feature (non-breaking change which adds functionality)
-- [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
-- [ ] Documentation update
+## Beschreibung
+Bitte beschreibe kurz, was du geändert hast und warum. Verlinke relevante Issues (z.B. "Fixes #12").
 
-## Checklist:
-- [ ] My code follows the style guidelines of this project
-- [ ] I have performed a self-review of my own code
-- [ ] I have commented my code, particularly in hard-to-understand areas
-- [ ] I have made corresponding changes to the documentation
+## Checkliste für den Entwickler
+- [ ] Ich habe meinen Code selbst überprüft (Self-review).
+- [ ] Mein Code folgt den [Entwickler-Standards](../wiki/Best-Practices).
+- [ ] Ich habe die Dokumentation angepasst (falls nötig).
+- [ ] Ich habe keine unnötigen Dateien (Logs, Temp-Files) committet.

@@ -1,30 +1,35 @@
 ---
-name: Bug Report
-about: Create a report to help us improve
+name: Fehlerbericht (Bug Report)
+about: Melde einen Fehler, um die Mod zu verbessern
 title: "[BUG] "
 labels: bug
 assignees: ''
 
 ---
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+**Beschreibung des Fehlers**
+Beschreibe kurz und prägnant, was nicht funktioniert.
 
 **Mod Version**
-Which version of the mod are you using? (e.g. 1.0.0 or Git Commit ID)
+Welche Version der Mod nutzt du? (z.B. 1.0.0 oder Git Commit ID)
 
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '...'
-3. Scroll down to '...'
-4. See error
+**Spiel Version**
+Welche Version von Carrier Command 2 nutzt du?
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+**Schritte zur Reproduktion**
+Wie können wir den Fehler nachstellen?
+1. Gehe zu '...'
+2. Mache '...'
+3. Fehler tritt auf
+
+**Erwartetes Verhalten**
+Was hätte eigentlich passieren sollen?
+
+**Logs / Fehlermeldungen**
+Bitte füge hier relevante Auszüge aus deiner `log.txt` ein (oder hänge die Datei an).
 
 **Screenshots**
-If applicable, add screenshots to help explain your problem.
+Bilder sagen mehr als 1000 Worte. Füge sie hier ein.
 
-**Additional context**
-Add any other context about the problem here.
+**Zusätzliche Infos**
+Alles was sonst noch wichtig sein könnte.

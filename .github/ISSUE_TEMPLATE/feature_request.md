@@ -1,20 +1,20 @@
 ---
-name: Feature Request
-about: Suggest an idea for this project
+name: Funktionsvorschlag (Feature Request)
+about: Schlage eine neue Idee für die Mod vor
 title: "[FEATURE] "
-labels: enhancement
+labels: enhancement, mod-request
 assignees: ''
 
 ---
 
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+**Ist dein Vorschlag eine Lösung für ein Problem?**
+Wenn ja, beschreibe das Problem kurz. (z.B. "Ich bin frustriert, wenn...")
 
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
+**Beschreibung der Lösung**
+Was genau wünschst du dir? Wie soll es funktionieren?
 
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
+**Alternativen betrachtet?**
+Gibt es andere Wege, das Ziel zu erreichen?
 
-**Additional context**
-Add any other context or screenshots about the feature request here.
+**Zusätzliche Infos / Mockups**
+Skizzen oder Screenshots, wie es aussehen könnte.
