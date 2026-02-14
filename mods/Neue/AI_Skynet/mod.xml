@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data name="AI:Skynet" author="Bredroll" description="
+
+[i]
+  'Remember the message... the future is not set.
+    There is not fate but what we make for ourselves.'
+[/i]
+
+The UEC has lost control of it's autonomous defence project. STANZA has corrupted the AI systems in control
+of island production and defence, now with access to near limitless computing power it is believed that the
+island defence AI system has formed a kind of distributed neural network.
+
+We've lost contact with all work crews and computer assets except the Epsilon..
+
+---
+
+This mod makes the Red AI units more aggressive. When you get within visual range of an island, it's defences
+will spring into action, ships, ground units and aircraft will head for you intent on your destruction.
+
+2024-12-22 - Skynet is now compatible with most mods (except any mod that edits library_custom_3.lua.
+
+">
+</data>
