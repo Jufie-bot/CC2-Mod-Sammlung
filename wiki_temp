@@ -1,0 +1,82 @@
+# Mod-Sammlung: Code Detail-Analyse & Dokumentation
+
+> **Status:** Work in Progress
+> **Erstellt am:** 14.02.2026
+> **Zweck:** Technische Dokumentation aller Mods für Entwickler und Maintainer.
+
+---
+
+## 2. Gameplay Mods
+
+### **20mm Balance Test (Autor: N/A)**
+*   **Beschreibung:** Test-Mod für Schadenswerte.
+*   **Code-Analyse:**
+    *   **Datei:** `vehicle_attachment_turret_ciws.xml`
+    *   **Änderung:** Erhöht den `projectile_emitter` FOV massiv auf ~57°, was die Waffe in eine Schrotflinte verwandelt.
+    *   **Datei:** `vehicle_attachment_turret_plane_chaingun.xml`
+    *   **Änderung:** Setzt FOV auf 0 für perfekte Präzision.
+*   **Verbesserungsidee:** Nutzen der `constants.txt` für Schadensanpassung statt FOV-Hacks.
+
+### **Just A Few Hardpoints More (Autor: N/A)**
+*   **Beschreibung:** Fügt Fahrzeugen mehr Slots hinzu.
+*   **Code-Analyse:**
+    *   **Datei:** `vehicle_chassis_wheel_medium.xml` (Bear)
+    *   **Änderung:** Fügt `missile_1` und `missile_2` als Typ 3 (Raketen) Attachments hinzu.
+    *   **Position:** Leicht versetzt (`ty="0.52"`) am Chassis.
+*   **Verbesserungsidee:** Gewichtsbeschränkung pro Slot für Balancing.
+
+### **Spread modifier (Autor: Ribbons)**
+*   **Beschreibung:** Ändert die Streuung von Geschützen.
+*   **Code-Analyse:**
+    *   **Datei:** `vehicle_attachment_turret_30mm.xml`
+    *   **Änderung:** `fov` von `0.04` (~2.3°) auf `0.02` (~1.15°) reduziert.
+*   **Verbesserungsidee:** Realistischer Rückstoß-Offset per Skript.
+
+### **AGM-114 / AGM-65K / AGM-X / AIM-120**
+*   **Typ:** Visual Replacement
+*   **Code-Analyse:**
+    *   Keine XML/Lua-Änderungen.
+    *   Enthält nur `.mesh` Dateien in `content/meshes`.
+    *   Ersetzt das Standard-Modell der Raketen rein optisch.
+
+### **Rev_Auto Scout (Autor: Bredroll)**
+*   **Beschreibung:** Automatisches Aufklären durch Flugzeuge.
+*   **Code-Analyse:**
+    *   **Datei:** `library_custom_0.lua`
+    *   **Technik:** Hook in `get_is_visible_by_modded_radar`.
+    *   **Logik:** Wenn Kamera-Flugzeug < 4.5km zum Ziel -> Sichtbar.
+    *   **Abhängigkeit:** Mod "Revolution" Framework.
+
+### **Rev_Engineering (Autor: Bredroll)**
+*   **Beschreibung:** Crafting/Upgrade-System für Einheiten.
+*   **Code-Analyse:**
+    *   **Datei:** `library_custom_1.lua`
+    *   **Technik:** UI-Injection in Loadout-Screen.
+    *   **Logik:** Definiert "Rezepte" (`g_revolution_crafting_items`). Beispiel: "Specops Petrel" kostet 1x Fuel, 1x Virus Module. Ändert dynamisch die `attachment_options` des Vehikels.
+
+### **Rev_Heavy Manta (Autor: Bredroll)**
+*   **Beschreibung:** Erweitertes Loadout für Manta.
+*   **Code-Analyse:**
+    *   **Datei:** `library_custom_1.lua`
+    *   **Technik:** Override der Hardpoint-Definitionen (`g_revolution_override_attachment_options`).
+    *   **Logik:** Definiert neue Rows/Slots für `chassis_air_wing_heavy`. Nutzt eine Whitelist (`g_std_wing_attachments`) für erlaubte Waffen.
+
+### **AI_Skynet (Autor: N/A)**
+*   **Beschreibung:** Aggressive, eskalierende KI.
+*   **Code-Analyse:**
+    *   **Datei:** `library_custom_3.lua`
+    *   **Technik:** Hook in `update()` via `skynet_begin_load()`.
+    *   **Logik:**
+        *   Berechnet "Bedrohungslevel" basierend auf Spieler-Inseln.
+        *   Spawnt Angriffswellen (Schiffe, Air, Land).
+        *   Nutzt Taktiken: "Encircle" (Einkreisen), "Ambush" (Hinterhalt).
+        *   Rekrutiert "neutrale" Einheiten in der Nähe (18km Radius).
+*   **Bewertung:** Sehr fortschrittliche KI-Modifikation. Nutzt clevere Vektor-Mathematik für Formationsflüge.
+
+---
+
+## 3. Weapon Mods
+*(Analyse folgt)*
+
+## 4. UI Mods
+*(Analyse folgt)*

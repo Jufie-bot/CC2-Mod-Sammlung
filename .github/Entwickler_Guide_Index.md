@@ -3,6 +3,10 @@
 Willkommen im lokalen Modding-Wiki für Carrier Command 2. Diese Dokumentation spiegelt die offiziellen Wikis wider und enthält exklusive technische Analysen.
 
 ## 📚 Grundlagen
+*   **[Projekt Entwicklung](Projekt_Entwicklung.md)**
+    *   Chronologie des Projekts
+    *   Vom Ordner zur Automatisierung
+    *   Workspace-Übersicht
 *   **[Modding Grundlagen](Modding_Grundlagen.md)**
     *   Wie Mods funktionieren (Dateistruktur & `mod.xml`)
     *   Das Override-System
