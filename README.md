@@ -13,107 +13,107 @@ Diese Sammlung zielt darauf ab, das Gameplay durch Audio-, Visuelle- und Balance
 Die Mods sind in folgende Kategorien unterteilt:
 
 ### Audio
-- deep sound
-- Sound Enhancement
-- Phalanx CIWS Gun Sound
-- Highfleet sound replacer
 - Apocalypse Sound Mod
+- deep sound
 - Goofy lil sound mod (WIP)
+- Highfleet sound replacer
+- Phalanx CIWS Gun Sound
+- Sound Enhancement
 
 ### Neue
-- Skidders Pack
-- Combat Carrier VLS
-- AIM-120
-- deep sound
-- Walrus I am
-- Callsigns for Vehicles
-- DramaticAlarmMod
-- Combat Carrier
-- 5x Vehicle Water Speed
-- Rev_Resupply+
-- Cement bomb
-- Battle Carrier Refit + Captain Controls
-- EagleEye Scouting Buff
-- AA & Depth Wolfenstein alarm
-- 2x Vehicle Water Speed
-- Reused
-- logistics+
-- Condition One Alarm
-- Arleigh Burke GQ Alarm
-- AIM-9
-- Carrier CIWS Ammo Increase
-- Droid Speed
-- FC Navy x UI Enhancer
-- Wolfenstein Bridge Alarm
-- Rotate Power Screen
-- 2x Cruise Missile Speed
-- Quality of Life+ p2 - Blue Bridge Light, Repair Bay Terminals, Captain Controls, Carrier VLS, Lubricant
-- Naval Gun Stabilizer
-- ST pod (v1.0)
-- Island turret placement QoL
-- AdvancedRadar
-- alarm_unsc
-- Specialized Chassis V
-- Beginner Mod
-- Alarm Ahhh
-- Higher Resolution Combined
-- Muffled Carrier Engine
-- Higher Resolution Navigation
-- Light Blue Water Color
-- 20mm Balance Test
-- Torpedo & Missile Wolfenstein alarm
-- Just A Few Hardpoints More
-- Revolution 1.6-2
-- First Order Dreadnought Alarm
-- Unit Death Wolfenstein alarm
 - 15mm Turrets
-- Mark84 bomb
-- AI_Skynet
-- Sound Enhancement
-- Supersonic Cruise Missile
-- AGM-65K
-- Phalanx CIWS Gun Sound
-- Enter the Life Raft
-- Vehicle IDs
-- HUD Rate of Climb
-- Salty's Missile Damage Edit
-- Lubricant
-- Higher Resolution Radar
-- Radar Range 20km
-- Missile Reformat
-- Highfleet sound replacer
-- R-60M
-- Spread modifier
-- Ship Wakes
-- Klaxon Alarm
-- Specialized Chassis UI
-- SKY TV
-- Apocalypse Sound Mod
-- Blue Bridge Light
-- Tactical Operations Centre 1.5
-- Blue Camo Skin for Character
-- Mule 2
-- AGM-X
-- Starting Aircraft Altitude
+- 20mm Aircraft Wider Spread
+- 20mm Balance Test
+- 2x Cruise Missile Speed
+- 2x Vehicle Water Speed
 - 3x Vehicle Water Speed
-- Utility
-- GBU-27 Paveway III
+- 5x Vehicle Water Speed
+- AA & Depth Wolfenstein alarm
+- AdvancedRadar
+- AGM-114
+- AGM-65K
+- AGM-X
+- AIM-120
+- AIM-9
+- AI_Skynet
+- Alarm Ahhh
+- alarm_unsc
+- Apocalypse Sound Mod
+- Arleigh Burke GQ Alarm
+- Assault Barge
+- Battle Carrier Refit + Captain Controls
+- Beginner Mod
+- Blue Bridge Light
+- Blue Camo Skin for Character
 - Bot Head
+- Callsigns for Vehicles
+- Carrier CIWS Ammo Increase
+- Cement bomb
+- Combat Carrier
+- Combat Carrier VLS
+- Condition One Alarm
+- Cyclops Alarm - Subnautica
+- deep sound
+- DramaticAlarmMod
+- Droid Speed
+- EagleEye Scouting Buff
+- Enter the Life Raft
+- FC Navy x UI Enhancer
+- First Order Dreadnought Alarm
+- GBU-27 Paveway III
+- Gentle Missile Speed Buff
+- Goofy lil sound mod (WIP)
+- Higher Resolution Combined
+- Higher Resolution Navigation
+- Higher Resolution Radar
+- Highfleet sound replacer
+- HUD Rate of Climb
+- Island turret placement QoL
+- Just A Few Hardpoints More
+- Klaxon Alarm
+- Light Blue Water Color
+- logistics+
+- Lubricant
+- Luz's Naval Expansion Beta - 1.0.1
+- Mark84 bomb
+- Missile Reformat
+- Muffled Carrier Engine
+- Mule 2
+- Naval Gun Stabilizer
+- Needlefish Mk2
+- Phalanx CIWS Gun Sound
+- Quality of Life+ p2 - Blue Bridge Light, Repair Bay Terminals, Captain Controls, Carrier VLS, Lubricant
+- R-60M
+- Radar Range 20km
+- Reused
+- Revolution 1.6-2
+- Rev_Auto Scout
+- Rev_Engineering
+- Rev_Heavy Manta
+- Rev_Resupply+
+- RIM-161
+- Rotate Power Screen
+- Salty's Missile Damage Edit
+- Ship Wakes
+- Skidders Pack
+- SKY TV
+- Sound Enhancement
+- Specialized Chassis UI
+- Specialized Chassis V
+- Spread modifier
+- ST pod (v1.0)
+- Starting Aircraft Altitude
+- Supersonic Cruise Missile
+- Tactical Operations Centre 1.5
+- Torpedo & Missile Wolfenstein alarm
 - Torpedo Reformat
 - Turret Utility
-- AGM-114
-- 20mm Aircraft Wider Spread
+- Unit Death Wolfenstein alarm
+- Utility
 - Vanilla Friendly Barge Boost
-- Rev_Engineering
-- Needlefish Mk2
-- Assault Barge
-- Gentle Missile Speed Buff
-- Luz's Naval Expansion Beta - 1.0.1
-- Cyclops Alarm - Subnautica
-- RIM-161
-- Goofy lil sound mod (WIP)
-- Rev_Auto Scout
-- Rev_Heavy Manta
+- Vehicle IDs
+- Walrus I am
+- Wolfenstein Bridge Alarm
 
 ### UI
 - FC Navy x UI Enhancer
@@ -121,34 +121,34 @@ Die Mods sind in folgende Kategorien unterteilt:
 - UI Enhancer
 
 ### Vehicles
-- Combat Carrier VLS
-- Callsigns for Vehicles
-- Combat Carrier
+- 20mm Aircraft Wider Spread
+- 2x Vehicle Water Speed
+- 3x Vehicle Water Speed
 - 5x Vehicle Water Speed
 - Battle Carrier Refit + Captain Controls
-- 2x Vehicle Water Speed
+- Callsigns for Vehicles
 - Carrier CIWS Ammo Increase
-- Quality of Life+ p2 - Blue Bridge Light, Repair Bay Terminals, Captain Controls, Carrier VLS, Lubricant
-- Specialized Chassis V
+- Combat Carrier
+- Combat Carrier VLS
 - Combat Carrier+Carrier Speed Change
 - Muffled Carrier Engine
-- Vehicle IDs
+- Quality of Life+ p2 - Blue Bridge Light, Repair Bay Terminals, Captain Controls, Carrier VLS, Lubricant
 - Specialized Chassis UI
+- Specialized Chassis V
 - Starting Aircraft Altitude
-- 3x Vehicle Water Speed
-- 20mm Aircraft Wider Spread
+- Vehicle IDs
 
 ### Weapons
-- 2x Cruise Missile Speed
-- Naval Gun Stabilizer
-- Island turret placement QoL
-- Torpedo & Missile Wolfenstein alarm
 - 15mm Turrets
-- Supersonic Cruise Missile
-- Salty's Missile Damage Edit
-- Missile Reformat
-- Turret Utility
+- 2x Cruise Missile Speed
 - Gentle Missile Speed Buff
+- Island turret placement QoL
+- Missile Reformat
+- Naval Gun Stabilizer
+- Salty's Missile Damage Edit
+- Supersonic Cruise Missile
+- Torpedo & Missile Wolfenstein alarm
+- Turret Utility
 
 
 **Gesamtanzahl Mods:** 128
