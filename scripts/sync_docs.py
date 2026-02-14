@@ -14,8 +14,12 @@ def generate_readme():
     content.append("## 📊 Projekt-Übersicht\n")
     
     # Analyze directory for count
-    items = os.listdir(workspace_path)
-    mod_count = len([d for d in items if os.path.isdir(os.path.join(workspace_path, d)) and not d.startswith('.')])
+    mods_path = os.path.join(workspace_path, "mods")
+    if not os.path.exists(mods_path):
+        os.makedirs(mods_path)
+        
+    items = os.listdir(mods_path)
+    mod_count = len([d for d in items if os.path.isdir(os.path.join(mods_path, d)) and not d.startswith('.')])
     
     content.append(f"- **Anzahl der Mods:** {mod_count}")
     content.append("- **Fokus:** XML-Tuning, Lua-Scripting, Audio-Assets")
