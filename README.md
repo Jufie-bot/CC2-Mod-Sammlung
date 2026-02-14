@@ -83,7 +83,7 @@ Damit die Zusammenarbeit funktioniert, haben wir klare Spielregeln:
 - alarm_unsc
 - deep sound
 
-### Gameplay (33)
+### Gameplay (22)
 - 20mm Balance Test
 - AGM-114
 - AGM-65K
@@ -91,7 +91,6 @@ Damit die Zusammenarbeit funktioniert, haben wir klare Spielregeln:
 - AIM-120
 - AIM-9
 - AI_Skynet
-- Beginner Mod
 - Blue Bridge Light
 - Blue Camo Skin for Character
 - Bot Head
@@ -104,16 +103,19 @@ Damit die Zusammenarbeit funktioniert, haben wir klare Spielregeln:
 - Just A Few Hardpoints More
 - Light Blue Water Color
 - Lubricant
-- Luz's Naval Expansion Beta - 1.0.1
 - RIM-161
+- SKY TV
+- Spread modifier
+
+### Mixed (11)
+- Beginner Mod
+- Luz's Naval Expansion Beta - 1.0.1
 - Reused
 - Rev_Auto Scout
 - Rev_Engineering
 - Rev_Heavy Manta
 - Rev_Resupply+
-- SKY TV
 - ST pod (v1.0)
-- Spread modifier
 - Tactical Operations Centre 1.5
 - Utility
 - logistics+
