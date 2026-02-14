@@ -6,7 +6,81 @@
 
 ---
 
+---
+
+## 1. Praxis-Beispiele: Wie Mods funktionieren
+
+Um die Theorie greifbarer zu machen, analysieren wir hier zwei konkrete Code-Beispiele aus der Sammlung. Wir vergleichen die Mod-Dateien mit dem Standard-Verhalten.
+
+### Beispiel A: Fahrzeug-Definition (`Mule 2`)
+
+Die Datei `vehicle_chassis_wheel_mule.xml` definiert das physische Modell und die Eigenschaften des Mule-Chassis.
+
+**Auszug aus der XML:**
+```xml
+<!-- Definition der Räder: Grip, Dämpfung und Position -->
+<wheel steerable="true" 
+       steering_magnitude="1.0" 
+       stiffness="10.0" 
+       damping="100.0" 
+       suspension_length="0.65" 
+       grip="100.0" 
+       radius="0.575" 
+       name="wheel_front_left">
+    <pos x="-1.625" y="-0.60" z="2.645"/>
+</wheel>
+
+<!-- Definition von Waffen-Slots (Attachments) -->
+<attachment name="attachment_front_left" type="7"> <!-- Typ 7 = Light Weapon z.B. Virus Bot -->
+    <transform ... tx="-0.56" ty="0.68" tz="1.35"/>
+</attachment>
+```
+
+**Was macht der Mod anders?**
+- **Mehr Räder:** Der Standard-Mule hat 6 Räder. Dieser Mod definiert zusätzliche `<wheel>` Einträge für die mittleren Achsen, was die Geländegängigkeit erhöht.
+- **Feste Waffen:** Der Mod integriert `air_defence_missile_stand` direkt in das Chassis-Mesh (`<mesh>`), anstatt es als optionales Attachment zu definieren. Das macht das Fahrzeug standardmäßig zu einer mobilen Flugabwehr.
+
+### Beispiel B: UI-Logik (`UI Enhancer`)
+
+Die Datei `screen_radar.lua` steuert das Radar-Verhalten. Der UI Enhancer ersetzt das simple Standard-Radar durch ein mehrschichtiges System.
+
+**Auszug aus der Lua-Datei:**
+```lua
+-- Konfiguration für Multi-Layer Scan
+g_scan_layer_count = 4 
+g_layer_colors = { 
+    color8(255, 0, 0, 255),   -- Rot (Layer 1)
+    color8(255, 255, 0, 255), -- Gelb (Layer 2)
+    color8(0, 255, 0, 255),   -- Grün (Layer 3)
+    color8(0, 0, 255, 255),   -- Blau (Layer 4)
+}
+
+function update(screen_w, screen_h, ticks) 
+    -- ...
+    -- Scan-Logik: Raycast auf verschiedenen Höhen (-0.02 * i)
+    for i=1, g_scan_layer_count do
+        -- get_carrier_raycast ist eine interne Engine-Funktion
+        local depth = this_vehicle_object:get_carrier_raycast(scan_angle, -0.02 * i)
+        
+        -- Speichern der Tiefe für das Rendering
+        g_depth_data[i][g_scan_cursor].depth = math.min(g_max_scan_distance, depth)
+    end
+    -- ...
+end
+```
+
+**Analyse:**
+- **Raycasting:** Statt nur auf einer Ebene zu scannen (Vanilla), führt der Mod 4 Raycasts auf unterschiedlichen Höhen durch (`-0.02 * i`).
+- **Visualisierung:** Die Ergebnisse werden in `g_depth_data` gespeichert und später als Dreiecke in verschiedenen Farben (`g_layer_colors`) gezeichnet. Das erlaubt dem Spieler, Hindernisse besser in der Tiefe einzuschätzen.
+
+---
+
+---
+
 ## 2. Gameplay Mods
+
+> [!TIP]
+> Weitere Code-Beispiele für Gameplay-Balancing (Schaden, HP) findest du in der separaten **[Game Constants Analyse](Game_Constants_Analyse.md)**.
 
 ### **20mm Balance Test (Autor: N/A)**
 *   **Beschreibung:** Test-Mod für Schadenswerte.
