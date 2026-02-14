@@ -1,0 +1,68 @@
+name: Release Mod
+
+on:
+  push:
+    tags:
+      - 'v*'
+      - 'ai-*'
+      - 'weapon-*'
+      - 'ui-*'
+  workflow_dispatch:
+    inputs:
+      mod_name:
+        description: 'Name of the mod to release'
+        required: true
+      category:
+        description: 'Category (Folder name in mods/)'
+        required: true
+        default: 'AI'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Sync Documentation
+        run: python scripts/sync_docs.py
+
+      - name: Package Mod
+        run: |
+          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+            MOD_NAME="${{ github.event.inputs.mod_name }}"
+            CATEGORY="${{ github.event.inputs.category }}"
+          else
+            # Extract from tag (e.g., ai-v1.0 -> AI)
+            TAG="${{ github.ref_name }}"
+            if [[ $TAG == ai-* ]]; then
+              CATEGORY="AI"
+              MOD_NAME="${TAG#ai-}"
+            elif [[ $TAG == weapon-* ]]; then
+              CATEGORY="Weapons"
+              MOD_NAME="${TAG#weapon-}"
+            elif [[ $TAG == ui-* ]]; then
+              CATEGORY="UI"
+              MOD_NAME="${TAG#ui-}"
+            else
+              CATEGORY="General"
+              MOD_NAME="$TAG"
+            fi
+          fi
+          
+          echo "Releasing $MOD_NAME in category $CATEGORY"
+          zip -r "${MOD_NAME}.zip" "mods/${CATEGORY}/${MOD_NAME}" || echo "Mod not found in mods/${CATEGORY}/${MOD_NAME}"
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        if: startsWith(github.ref, 'refs/tags/') || github.event_name == 'workflow_dispatch'
+        with:
+          files: "*.zip"
+          body: "Automatischer Release für Mod: ${{ github.ref_name }}"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
