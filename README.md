@@ -1,6 +1,6 @@
 # Carrier Command 2 - Mod Development Hub �
 
-![Mods Total](https://img.shields.io/badge/Mods_Total-128-blue?style=for-the-badge&logo=github)
+![Mods Total](https://img.shields.io/badge/Mods_Total-90-blue?style=for-the-badge&logo=github)
 ![Analyzed](https://img.shields.io/badge/Analysed-2-orange?style=for-the-badge&logo=bookstack)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Active_Development-success?style=for-the-badge)
@@ -64,115 +64,69 @@ Damit die Zusammenarbeit funktioniert, haben wir klare Spielregeln:
 
 ## 📦 Inhalt der Sammlung (Live-Status)
 
-### Audio (6)
+### Audio (17)
+- AA & Depth Wolfenstein alarm
+- Alarm Ahhh
 - Apocalypse Sound Mod
+- Arleigh Burke GQ Alarm
+- Condition One Alarm
+- Cyclops Alarm - Subnautica
+- DramaticAlarmMod
+- First Order Dreadnought Alarm
 - Goofy lil sound mod (WIP)
 - Highfleet sound replacer
+- Klaxon Alarm
 - Phalanx CIWS Gun Sound
 - Sound Enhancement
+- Unit Death Wolfenstein alarm
+- Wolfenstein Bridge Alarm
+- alarm_unsc
 - deep sound
 
-### Neue (93)
-- 15mm Turrets
-- 20mm Aircraft Wider Spread
+### Gameplay (33)
 - 20mm Balance Test
-- 2x Cruise Missile Speed
-- 2x Vehicle Water Speed
-- 3x Vehicle Water Speed
-- 5x Vehicle Water Speed
-- AA & Depth Wolfenstein alarm
 - AGM-114
 - AGM-65K
 - AGM-X
 - AIM-120
 - AIM-9
 - AI_Skynet
-- AdvancedRadar
-- Alarm Ahhh
-- Apocalypse Sound Mod
-- Arleigh Burke GQ Alarm
-- Assault Barge
-- Battle Carrier Refit + Captain Controls
 - Beginner Mod
 - Blue Bridge Light
 - Blue Camo Skin for Character
 - Bot Head
-- Callsigns for Vehicles
-- Carrier CIWS Ammo Increase
-- Cement bomb
-- Combat Carrier
-- Combat Carrier VLS
-- Condition One Alarm
-- Cyclops Alarm - Subnautica
-- DramaticAlarmMod
 - Droid Speed
 - EagleEye Scouting Buff
 - Enter the Life Raft
-- FC Navy x UI Enhancer
-- First Order Dreadnought Alarm
 - GBU-27 Paveway III
-- Gentle Missile Speed Buff
-- Goofy lil sound mod (WIP)
-- HUD Rate of Climb
 - Higher Resolution Combined
 - Higher Resolution Navigation
-- Higher Resolution Radar
-- Highfleet sound replacer
-- Island turret placement QoL
 - Just A Few Hardpoints More
-- Klaxon Alarm
 - Light Blue Water Color
 - Lubricant
 - Luz's Naval Expansion Beta - 1.0.1
-- Mark84 bomb
-- Missile Reformat
-- Muffled Carrier Engine
-- Mule 2
-- Naval Gun Stabilizer
-- Needlefish Mk2
-- Phalanx CIWS Gun Sound
-- Quality of Life+ p2 - Blue Bridge Light, Repair Bay Terminals, Captain Controls, Carrier VLS, Lubricant
-- R-60M
 - RIM-161
-- Radar Range 20km
 - Reused
 - Rev_Auto Scout
 - Rev_Engineering
 - Rev_Heavy Manta
 - Rev_Resupply+
-- Revolution 1.6-2
-- Rotate Power Screen
 - SKY TV
 - ST pod (v1.0)
-- Salty's Missile Damage Edit
-- Ship Wakes
-- Skidders Pack
-- Sound Enhancement
-- Specialized Chassis UI
-- Specialized Chassis V
 - Spread modifier
-- Starting Aircraft Altitude
-- Supersonic Cruise Missile
 - Tactical Operations Centre 1.5
-- Torpedo & Missile Wolfenstein alarm
-- Torpedo Reformat
-- Turret Utility
-- Unit Death Wolfenstein alarm
 - Utility
-- Vanilla Friendly Barge Boost
-- Vehicle IDs
-- Walrus I am
-- Wolfenstein Bridge Alarm
-- alarm_unsc
-- deep sound
 - logistics+
 
-### UI (3)
+### UI (6)
+- AdvancedRadar
 - FC Navy x UI Enhancer
+- Higher Resolution Radar
+- Radar Range 20km
 - Rotate Power Screen
 - UI Enhancer
 
-### Vehicles (16)
+### Vehicles (21)
 - 20mm Aircraft Wider Spread
 - 2x Vehicle Water Speed
 - 3x Vehicle Water Speed
@@ -184,26 +138,34 @@ Damit die Zusammenarbeit funktioniert, haben wir klare Spielregeln:
 - Combat Carrier VLS
 - Combat Carrier+Carrier Speed Change
 - Muffled Carrier Engine
+- Mule 2
+- Needlefish Mk2
 - Quality of Life+ p2 - Blue Bridge Light, Repair Bay Terminals, Captain Controls, Carrier VLS, Lubricant
+- Ship Wakes
 - Specialized Chassis UI
 - Specialized Chassis V
 - Starting Aircraft Altitude
+- Vanilla Friendly Barge Boost
 - Vehicle IDs
+- Walrus I am
 
-### Weapons (10)
+### Weapons (13)
 - 15mm Turrets
 - 2x Cruise Missile Speed
+- Cement bomb
 - Gentle Missile Speed Buff
 - Island turret placement QoL
+- Mark84 bomb
 - Missile Reformat
 - Naval Gun Stabilizer
 - Salty's Missile Damage Edit
 - Supersonic Cruise Missile
 - Torpedo & Missile Wolfenstein alarm
+- Torpedo Reformat
 - Turret Utility
 
 
-**Gesamtanzahl Mods in der Library:** 128
+**Gesamtanzahl Mods in der Library:** 90
 
 ---
 
