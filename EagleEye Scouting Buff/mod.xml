@@ -1,0 +1,3 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<data name="EagleEye Scouting Buff" author="Xuptio" description="Scouting with Gimbal is instant but still need to identify targets. Appears to be a hard limit of 10km for scouting sea and 5km for groud. vec3_dist(update_get_camera_position(), hit_pos) never goes above 10km so you cant 'see' past 10km. If there is interest, I can make a mod with a smaller buff to scouting...  ">
+</data>

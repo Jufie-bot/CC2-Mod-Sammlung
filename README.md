@@ -83,7 +83,7 @@ Damit die Zusammenarbeit funktioniert, haben wir klare Spielregeln:
 - alarm_unsc
 - deep sound
 
-### Gameplay (22)
+### Gameplay (28)
 - 20mm Balance Test
 - AGM-114
 - AGM-65K
@@ -91,6 +91,7 @@ Damit die Zusammenarbeit funktioniert, haben wir klare Spielregeln:
 - AIM-120
 - AIM-9
 - AI_Skynet
+- Beginner Mod
 - Blue Bridge Light
 - Blue Camo Skin for Character
 - Bot Head
@@ -104,31 +105,24 @@ Damit die Zusammenarbeit funktioniert, haben wir klare Spielregeln:
 - Light Blue Water Color
 - Lubricant
 - RIM-161
-- SKY TV
-- Spread modifier
-
-### Mixed (11)
-- Beginner Mod
-- Luz's Naval Expansion Beta - 1.0.1
-- Reused
 - Rev_Auto Scout
 - Rev_Engineering
 - Rev_Heavy Manta
 - Rev_Resupply+
-- ST pod (v1.0)
-- Tactical Operations Centre 1.5
-- Utility
+- SKY TV
+- Spread modifier
 - logistics+
 
-### UI (6)
+### UI (7)
 - AdvancedRadar
 - FC Navy x UI Enhancer
 - Higher Resolution Radar
 - Radar Range 20km
 - Rotate Power Screen
+- Tactical Operations Centre 1.5
 - UI Enhancer
 
-### Vehicles (21)
+### Vehicles (25)
 - 20mm Aircraft Wider Spread
 - 2x Vehicle Water Speed
 - 3x Vehicle Water Speed
@@ -139,14 +133,18 @@ Damit die Zusammenarbeit funktioniert, haben wir klare Spielregeln:
 - Combat Carrier
 - Combat Carrier VLS
 - Combat Carrier+Carrier Speed Change
+- Luz's Naval Expansion Beta - 1.0.1
 - Muffled Carrier Engine
 - Mule 2
 - Needlefish Mk2
 - Quality of Life+ p2 - Blue Bridge Light, Repair Bay Terminals, Captain Controls, Carrier VLS, Lubricant
+- Reused
+- ST pod (v1.0)
 - Ship Wakes
 - Specialized Chassis UI
 - Specialized Chassis V
 - Starting Aircraft Altitude
+- Utility
 - Vanilla Friendly Barge Boost
 - Vehicle IDs
 - Walrus I am

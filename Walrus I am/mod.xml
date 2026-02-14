@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<data author="Bredroll"
+      description="
+
+“The time has come,” the Walrus said,
+“To talk of many things:
+Of shoes—and ships—and sealing-wax—
+Of cabbages—and kings—
+And why the sea is boiling hot—
+And whether pigs have wings.”
+
+Doubles the movement speed of the Walrus while in the water and adds basic anti-air
+missile capability.
+
+* 2x AA missile hardpoints.
+* Includes 2x water speed.
+
+Note - requires Revolution 1.6.
+
+" name="Walrus I am"
+/>
