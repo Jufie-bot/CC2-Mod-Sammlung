@@ -106,6 +106,23 @@ Dieses Dokument ist das Herzstück der technischen Analyse. Es zeigt für jede M
     Simpler XML-Tweak.
     *Bewertung:* ⚠️ Okay, aber visueller Effekt (Partikel) skaliert nicht automatisch mit -> Diskrepanz zwischen Explosion und Schaden.
 
+### **20mm Balance Test**
+*   **Betroffene Dateien:**
+    *   `content/game_objects/vehicle_attachment_carrier_turret_ciws.xml`
+    *   `content/game_objects/vehicle_attachment_turret_ciws.xml`
+    *   `content/game_objects/vehicle_attachment_turret_plane_chaingun.xml`
+    *   `content/game_objects/vehicle_attachment_turret_plane_ciws.xml` (Neu)
+*   **Original Code (Vanilla):**
+    *   CIWS (Carrier/Turret): `fov="3.99999991e-02"` (ca. 2.3°)
+    *   Plane Chaingun: `fov="9.99999978e-03"` (ca. 0.5°)
+*   **Mod Code:**
+    *   CIWS (Carrier/Turret): `fov="1.00000000e+00"` (ca. 57°)
+    *   Plane Chaingun/CIWS: `fov="0.00000000e+00"` (0°, Punktgenau)
+*   **Analyse:**
+    Erhöht den Streukreis (FOV) von Schiffs-CIWS massiv (von 2° auf 57°), was die Effektivität auf Distanz drastisch senkt (Schrotflinten-Effekt).
+    Im Gegensatz dazu wird die Flugzeug-Bordkanone (und die neue Plane-CIWS Variante) auf 0° Streuung gesetzt (Laser-Präzision).
+    *Bewertung:* ⚠️ Extreme Balance-Änderung. CIWS wird zur Nahbereichswaffe degradiert, Flugzeuge erhalten Sniper-Präzision.
+
 ---
 
 ## 4. Audio & Assets
