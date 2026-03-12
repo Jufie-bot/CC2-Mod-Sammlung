@@ -1,46 +1,45 @@
 # 📟 CC2 Modding Command Center (Wiki)
 
-> **"Eines der wichtigsten Archive für CC2 Technik – Strukturiert, Dekonstruiert, Optimiert."**
+> **"Die systematische Wissensdatenbank für Carrier Command 2 Technik."**
 
-Willkommen in der zentralen Wissensdatenbank. Hier findest du alles von den ersten Schritten bis hin zu komplexen Code-Analysen.
-
----
-
-## 🗺️ Master-Dashboard
-
-| 🚀 Grundlagen & Start | 🧬 Code & Technik | 📈 Projekt-Leitung |
-| :--- | :--- | :--- |
-| [[Modding Grundlagen]] | [[Technische Referenz]] | [[Projekt Entwicklung]] |
-| [[Entwickler Standards]] | [[Code Detail Analyse]] | [[Git Quickstart]] |
-| [[Mod Kategorien Liste]] | [[Lua Referenz]] | [Beitrag leisten](https://github.com/Jufie-bot/CC2-Mod-Sammlung/blob/main/CONTRIBUTING.md) |
+Willkommen in der Forschungszentrale. Dieses Wiki folgt einer klaren Hierarchie, um dich vom Fundament bis zur Experten-Analyse zu führen.
 
 ---
 
-## 📑 Forschungs-Roadmap
+## 🏗️ 1. Das Fundament
+Verstehe die Basis des Modding-Workflows und wie du deinen Workspace optimal einrichtest.
 
-### 🛠️ Stufe 1: Das Fundament
-Verstehe, wie Carrier Command 2 "tickt". Lerne die Ordnerstrukturen und das Laden von Mod-Dateien kennen.
-- [[Modding Grundlagen]]
-- [[Projekt Entwicklung]]
-
-### 🔬 Stufe 2: Dekonstruktion
-Der wichtigste Teil: Wir untersuchen existierende Mods, um zu verstehen, welche Variablen was bewirken.
-- [[Code Detail Analyse]]
-- [[Game Constants Analyse]]
-- [[Forschungs Berichte]]
-
-### 🚀 Stufe 3: Neuschöpfung
-Basierend auf unseren Analysen erstellen wir Mods, die über das Standard-Scaling hinausgehen.
-- [[Lua Referenz]]
-- [[Entwickler Standards]]
+- [[Modding Grundlagen]] – Erste Schritte und Ordnerstrukturen.
+- [[Projekt Entwicklung]] – Die Evolution und der Stack dieses Labors.
+- [[Git Quickstart]] – Master-Guide für die Versionskontrolle.
+- [[Entwickler Standards]] – Kodex für sauberen und kompatiblen Code.
 
 ---
 
-## 📡 Aktueller System-Status
-- **Mod-Bibliothek**: `95 Einträge`
-- **Analysierte Logik**: `13 Berichte`
-- **Automatisierung**: `Aktiv (GitHub Sync)`
+## 🛠️ 2. Modding-Anleitungen
+Praktische Guides und Referenzen zur Erstellung eigener Modifikationen.
+
+- [[Technisches Entwickler Handbuch]] – Deep-Dive in die Engine.
+- [[Lua Referenz]] – Archiv der wichtigsten Funktionen.
+- [[Mod Kategorien Liste]] – Übersicht der verwalteten Mods.
+- [[PULL REQUEST TEMPLATE]] – Standard für Beiträge zum Projekt.
+
+---
+
+## 🔬 3. Forschungs-Berichte
+Detaillierte Dekonstruktion bestehender Mods und Spiel-Konstanten.
+
+- [[Code Detail Analyse]] – Praxis-Beispiele (Mule 2, UI Enhancer).
+- [[Game Constants Analyse]] – Reverse Engineering der `constants.txt`.
+- [[Forschungs Berichte]] – **Index aller 13 detaillierten Einzelberichte**.
+- [[Lua-Script-Analysis]] – (Archiv) Deep-Dive in Kernbibliotheken.
+
+---
+
+## 📡 System-Funktionen
+- [[Admin]] – System-Testseite.
+- [[labels]] – Kategorisierungs-Übersicht.
 
 ---
 > [!NOTE]
-> *Dieses Wiki wird automatisch durch unsere Forschungs-Skripte aktuell gehalten. Stand: März 2026.*
+> *Dieses Wiki ist das Ergebnis hunderter Stunden Analyse. Stand: März 2026.*

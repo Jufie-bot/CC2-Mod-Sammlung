@@ -1,19 +1,23 @@
 # 🧭 Navigation
 
 - [[Home]]
+
+### 🏗️ Fundament
 - [[Modding Grundlagen]]
-- [[Technische Referenz]]
+- [[Projekt Entwicklung]]
+- [[Git Quickstart]]
+- [[Entwickler Standards]]
+
+### 🛠️ Modding
+- [[Lua Referenz]]
+- [[Technisches Entwickler Handbuch]]
+- [[Mod Kategorien Liste]]
+
+### 🔬 Forschung
 - [[Code Detail Analyse]]
 - [[Forschungs Berichte]]
-- [[Projekt Entwicklung]]
+- [[Game Constants Analyse]]
 
 ---
-
-### 🧬 Archiv
-- [[Mod Kategorien Liste]]
-- [[Lua Referenz]]
-- [[Entwickler Standards]]
-- [[Git Quickstart]]
-
----
-> CC2 Mod-Dev Hub
+- [[Admin]] (Test)
+- [[GitHub Home]](https://github.com/Jufie-bot/CC2-Mod-Sammlung/blob/main/README.md)
