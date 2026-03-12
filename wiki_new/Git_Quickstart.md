@@ -88,3 +88,21 @@ Wenn du einen **Pull** machst und Git sagt "Konflikt":
 ---
 > [!TIP]
 > **Goldene Regel**: Mache lieber viele kleine Commits ("Schneidbrenner angepasst", "Textur korrigiert") als einen riesigen am Ende des Tages. Das macht das Rückgängigmachen viel einfacher!
+---
+
+## 📦 7. Profi-Tipp: Einzelne Mods teilen (Branches & Tags)
+
+Wenn du möchtest, dass man auf GitHub gezielt einen Mod herunterladen kann, ohne die ganze Sammlung zu sehen:
+
+### Die "Zweig"-Methode (Branches)
+Stell dir `Lokale-Dateien` als deinen Haupt-Stamm vor. Ein **Branch** ist ein Seitentrieb:
+- Du kannst einen Zweig nur für "Assault Barge" erstellen.
+- In diesem Zweig löschst du alles andere.
+- Auf GitHub kann man dann oben links den Zweig umschalten und sieht **nur** diesen Mod.
+
+### Die "Stempel"-Methode (Tags)
+Ein **Tag** ist ein fester Name für einen Zeitpunkt:
+- Wenn Version 1.0 fertig ist, gibst du dem Commit den Tag `v1.0`.
+- Nutzer können dann gezielt diese Version herunterladen, auch wenn du später weiterarbeitest.
+
+---
