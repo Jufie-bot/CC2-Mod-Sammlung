@@ -16,9 +16,9 @@ Unsere Mission ist es, bestehende Mods und Spieldateien (XML/Lua) bis ins kleins
 ## 🏛️ Forschungs-Zentrale (Das Wiki)
 Die gesamte technische Dokumentation, Code-Breakdowns und Entwickler-Standards haben wir in unser umfangreiches Wiki ausgelagert. Dort findest du das gebündelte Wissen aus hunderten Stunden Reverse Engineering.
 
-👉 **[Zum offiziellen Dokumentations-Wiki](wiki_new/Home.md)**
+👉 **[Zum offiziellen Dokumentations-Wiki](https://github.com/Jufie-bot/CC2-Mod-Sammlung/wiki)**
 
-*Hinweis: Im Wiki findest du auch den [Git Master-Guide](wiki_new/Git_Quickstart.md), falls du selbst zum Projekt beitragen möchtest.*
+*Hinweis: Im Wiki findest du auch den [Git Master-Guide](https://github.com/Jufie-bot/CC2-Mod-Sammlung/wiki/Git_Quickstart), falls du selbst zum Projekt beitragen möchtest.*
 
 ## 📂 Archivierte Sammlungen
 Unser Labor verwaltet derzeit **95 verschiedene Modifikationen**, die als Grundlage für unsere Analysen dienen.
