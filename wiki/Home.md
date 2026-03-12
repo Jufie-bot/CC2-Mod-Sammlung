@@ -1,4 +1,4 @@
-# 📟 CC2 Modding Command Center
+# 📟 CC2 Modding Command Center (Wiki)
 
 > **"Eines der wichtigsten Archive für CC2 Technik – Strukturiert, Dekonstruiert, Optimiert."**
 
@@ -10,9 +10,9 @@ Willkommen in der zentralen Wissensdatenbank. Hier findest du alles von den erst
 
 | 🚀 Grundlagen & Start | 🧬 Code & Technik | 📈 Projekt-Leitung |
 | :--- | :--- | :--- |
-| [**Modding Guide**](Modding_Grundlagen.md) | [**Technische Referenz**](Technische-Referenz.md) | [**Entwicklungshistorie**](Projekt_Entwicklung.md) |
-| [**Entwickler-Kodex**](Entwickler_Standards.md) | [**Code-Detail-Analyse**](Code_Detail_Analyse.md) | [**Git Master-Guide**](Git_Quickstart.md) |
-| [**Kategorien-Index**](Mod_Kategorien_Liste.md) | [**Lua-Funktionsarchiv**](Lua_Referenz.md) | [**Beitrag leisten**](../CONTRIBUTING.md) |
+| [[Modding Grundlagen]] | [[Technische Referenz]] | [[Projekt Entwicklung]] |
+| [[Entwickler Standards]] | [[Code Detail Analyse]] | [[Git Quickstart]] |
+| [[Mod Kategorien Liste]] | [[Lua Referenz]] | [Beitrag leisten](https://github.com/Jufie-bot/CC2-Mod-Sammlung/blob/main/CONTRIBUTING.md) |
 
 ---
 
@@ -20,18 +20,19 @@ Willkommen in der zentralen Wissensdatenbank. Hier findest du alles von den erst
 
 ### 🛠️ Stufe 1: Das Fundament
 Verstehe, wie Carrier Command 2 "tickt". Lerne die Ordnerstrukturen und das Laden von Mod-Dateien kennen.
-- [Einstieg in das Modding](Modding_Grundlagen.md)
-- [Workspace & Tools](Projekt_Entwicklung.md)
+- [[Modding Grundlagen]]
+- [[Projekt Entwicklung]]
 
 ### 🔬 Stufe 2: Dekonstruktion
 Der wichtigste Teil: Wir untersuchen existierende Mods, um zu verstehen, welche Variablen was bewirken.
-- [Analyse: Waffen-Placement](Code_Detail_Analyse.md)
-- [Reverse Engineering: Constants.txt](Game_Constants_Analyse.md)
+- [[Code Detail Analyse]]
+- [[Game Constants Analyse]]
+- [[Forschungs Berichte]]
 
 ### 🚀 Stufe 3: Neuschöpfung
 Basierend auf unseren Analysen erstellen wir Mods, die über das Standard-Scaling hinausgehen.
-- [Fortgeschrittene Lua-Scripts](Lua_Referenz.md)
-- [Overhaul Standards](Entwickler_Standards.md)
+- [[Lua Referenz]]
+- [[Entwickler Standards]]
 
 ---
 
@@ -42,4 +43,4 @@ Basierend auf unseren Analysen erstellen wir Mods, die über das Standard-Scalin
 
 ---
 > [!NOTE]
-> *Dieses Wiki wird automatisch durch unsere Forschungs-Skripte aktuell gehalten. Stand: März 2026. [Zurück zur Landing Page](../README.md)*
+> *Dieses Wiki wird automatisch durch unsere Forschungs-Skripte aktuell gehalten. Stand: März 2026.*
