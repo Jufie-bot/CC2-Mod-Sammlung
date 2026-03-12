@@ -22,17 +22,18 @@ Praktische Guides und Referenzen zur Erstellung eigener Modifikationen.
 - [[Technisches Entwickler Handbuch]] – Deep-Dive in die Engine.
 - [[Lua Referenz]] – Archiv der wichtigsten Funktionen.
 - [[Mod Kategorien Liste]] – Übersicht der verwalteten Mods.
-- [[PULL REQUEST TEMPLATE]] – Standard für Beiträge zum Projekt.
+- [[PULL REQUEST TEMPLATE]]
 
 ---
 
 ## 🔬 3. Forschungs-Berichte
 Detaillierte Dekonstruktion bestehender Mods und Spiel-Konstanten.
-
-- [[Code Detail Analyse]] – Praxis-Beispiele (Mule 2, UI Enhancer).
-- [[Game Constants Analyse]] – Reverse Engineering der `constants.txt`.
-- [[Forschungs Berichte]] – **Index aller 13 detaillierten Einzelberichte**.
-- [[Lua-Script-Analysis]] – (Archiv) Deep-Dive in Kernbibliotheken.
+### 🔬 Stufe 2: Dekonstruktion
+Der wichtigste Teil: Wir untersuchen existierende Mods, um zu verstehen, welche Variablen was bewirken.
+- [[Code Detail Analyse]]
+- [[Game Constants Analyse]]
+- [[Forschungs-Berichte]]
+- [[Lua-Script-Analysis]]
 
 ---
 

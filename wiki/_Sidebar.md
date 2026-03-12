@@ -15,7 +15,7 @@
 
 ### 🔬 Forschung
 - [[Code Detail Analyse]]
-- [[Forschungs Berichte]]
+- [[Forschungs-Berichte]]
 - [[Game Constants Analyse]]
 
 ---
