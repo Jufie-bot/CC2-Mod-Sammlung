@@ -36,39 +36,46 @@ def generate_readme():
 
     content = []
     
-    # --- 1. Header & Vision ---
+    # --- 1. Hero Section & Vision ---
     content.append("# 📟 CC2 Mod Development Hub\n")
     content.append(f"![Mods Total](https://img.shields.io/badge/Mods_Total-{mod_count}-blue?style=for-the-badge&logo=github)")
     content.append(f"![Analyzed](https://img.shields.io/badge/Analysed-{analyzed_count}-orange?style=for-the-badge&logo=bookstack)")
-    content.append("![Status](https://img.shields.io/badge/Status-Active_Development-success?style=for-the-badge)\n")
+    content.append("![Discord](https://img.shields.io/badge/Discord-Join%20Us-7289DA?style=for-the-badge&logo=discord&logoColor=white)\n")
     
     content.append("## 🎯 Die Vision")
-    content.append("> **\"Dekonstruktion bestehender Logik, um die nächste Generation von CC2-Mods zu erschaffen.\"**\n")
-    content.append("Dieser Hub ist nicht nur ein Archiv. Er ist ein technisches Forschungslabor für Carrier Command 2. Hier werden Mods in ihre Einzelteile zerlegt (XML/Lua), um Best-Practices für zukünftige Overhauls zu etablieren.\n")
+    content.append("> **\"Die ultimative Mod-Entwicklung: Ich analysiere nicht nur, ich erschaffe neu.\"**\n")
+    content.append("Herzlich willkommen in meinem Forschungslabor. Dies ist weit mehr als nur eine Sammlung von existierenden Mods. Hier werden die Grenzen von Carrier Command 2 durch dekonstruktive Analyse und innovatives Re-Engineering neu definiert.\n")
 
-    # --- 2. Modding Guide (Navigation Hub) ---
-    content.append("## 🗺️ Der ultimative Modding-Explorer\n")
-    content.append("| 🟢 Einstieg für Neulinge | 🔬 Forschung & Deep-Dives | 🛠️ Projekt-Steuerung |")
+    # --- 2. Central Navigation (The Hub) ---
+    content.append("## 🗺️ Forschungs-Zentrale")
+    content.append("Nutze das Wiki für detaillierte Einblicke in unsere Entdeckungen und Standards.\n")
+    content.append("| 🟢 Für Einsteiger | 🔬 Forschung & Technik | 🛠️ Projekt & Leitung |")
     content.append("| :--- | :--- | :--- |")
     content.append("| [**Wiki Home**](wiki_new/Home.md) | [**Technische Referenz**](wiki_new/Technische-Referenz.md) | [**Projekt-Entwicklung**](wiki_new/Projekt_Entwicklung.md) |")
-    content.append("| [**Grundlagen**](wiki_new/Modding_Grundlagen.md) | [**Code-Analysen**](wiki_new/Code_Detail_Analyse.md) | [**Entwickler-Standards**](wiki_new/Entwickler_Standards.md) |")
-    content.append("| [**Mod-Liste**](wiki_new/Mod_Kategorien_Liste.md) | [**Lua Referenz**](wiki_new/Lua_Referenz.md) | [**Live-Status**](#-live-status-sammlung) |\n")
+    content.append("| [**Git Quickstart**](wiki_new/Git_Quickstart.md) | [**Code-Detail-Analyse**](wiki_new/Code_Detail_Analyse.md) | [**Entwickler-Standards**](wiki_new/Entwickler_Standards.md) |")
+    content.append("| [**Anleitung: Release**](wiki_new/Git_Quickstart.md#📦-7-profi-tipp-einzelne-mods-teilen-branches--tags) | [**Lua Referenz**](wiki_new/Lua_Referenz.md) | [**Community Discord**](https://discord.gg/example) |\n")
 
-    # --- 3. Live-Status ---
-    content.append("## 📡 Live-Status Sammlung\n")
-    content.append(f"Derzeit befinden sich **{mod_count} Mods** in der Bibliothek, wovon **{analyzed_count} tiefgehend technisch analysiert** wurden.\n")
+    # --- 3. Community & News ---
+    content.append("## 📡 Projekt-News & Community")
+    content.append("Aktuelle Durchbrüche und Ankündigungen direkt aus dem Labor.\n")
+    content.append("> [!TIP]")
+    content.append("> **Neuankündigung**: Die technische Analyse der `Island_turret_placement_QoL` ist abgeschlossen und liefert bahnbrechende Erkenntnisse für die KI-Platzierung!\n")
     
+    # --- 4. Library Overview (Collapsed) ---
+    content.append("## 📂 Archivierte Sammlungen")
+    content.append(f"Derzeit befinden sich **{mod_count} Mods** in unserer Bibliothek.\n")
     content.append("<details>")
-    content.append("<summary><b>📂 Vollständige Mod-Liste anzeigen (Klicken zum Ausklappen)</b></summary>\n")
+    content.append("<summary><b>Vollständige Mod-Liste anzeigen</b></summary>\n")
     content.extend(categories_content)
     content.append("</details>\n")
 
-    # --- 4. Footer ---
+    # --- 5. Footer ---
     content.append("---\n")
-    content.append("### 💬 Kontakt")
-    content.append("- [Fehler oder neue Analyse vorschlagen](.github/ISSUE_TEMPLATE/bug_report.md)")
+    content.append("### 🛰️ Kontakt & Mitwirkung")
+    content.append("- [Fehler melden](.github/ISSUE_TEMPLATE/bug_report.md)")
+    content.append("- [Zum Discord Server](https://discord.gg/example)")
     content.append("- [Wiki-Beitrag leisten](CONTRIBUTING.md)\n")
-    content.append(f"*Zuletzt automatisch synchronisiert: März 2026 via `sync_docs.py`*")
+    content.append(f"*Letzte Synchronisierung: {os.popen('date /t').read().strip()} | Automatischer Hub Status: ✔️*")
 
     with open(readme_path, "w", encoding="utf-8-sig") as f:
         f.write("\n".join(content))

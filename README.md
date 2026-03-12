@@ -2,27 +2,33 @@
 
 ![Mods Total](https://img.shields.io/badge/Mods_Total-95-blue?style=for-the-badge&logo=github)
 ![Analyzed](https://img.shields.io/badge/Analysed-13-orange?style=for-the-badge&logo=bookstack)
-![Status](https://img.shields.io/badge/Status-Active_Development-success?style=for-the-badge)
+![Discord](https://img.shields.io/badge/Discord-Join%20Us-7289DA?style=for-the-badge&logo=discord&logoColor=white)
 
 ## 🎯 Die Vision
-> **"Dekonstruktion bestehender Logik, um die nächste Generation von CC2-Mods zu erschaffen."**
+> **"Die ultimative Mod-Entwicklung: Ich analysiere nicht nur, ich erschaffe neu."**
 
-Dieser Hub ist nicht nur ein Archiv. Er ist ein technisches Forschungslabor für Carrier Command 2. Hier werden Mods in ihre Einzelteile zerlegt (XML/Lua), um Best-Practices für zukünftige Overhauls zu etablieren.
+Herzlich willkommen in meinem Forschungslabor. Dies ist weit mehr als nur eine Sammlung von existierenden Mods. Hier werden die Grenzen von Carrier Command 2 durch dekonstruktive Analyse und innovatives Re-Engineering neu definiert.
 
-## 🗺️ Der ultimative Modding-Explorer
+## 🗺️ Forschungs-Zentrale
+Nutze das Wiki für detaillierte Einblicke in unsere Entdeckungen und Standards.
 
-| 🟢 Einstieg für Neulinge | 🔬 Forschung & Deep-Dives | 🛠️ Projekt-Steuerung |
+| 🟢 Für Einsteiger | 🔬 Forschung & Technik | 🛠️ Projekt & Leitung |
 | :--- | :--- | :--- |
 | [**Wiki Home**](wiki_new/Home.md) | [**Technische Referenz**](wiki_new/Technische-Referenz.md) | [**Projekt-Entwicklung**](wiki_new/Projekt_Entwicklung.md) |
-| [**Grundlagen**](wiki_new/Modding_Grundlagen.md) | [**Code-Analysen**](wiki_new/Code_Detail_Analyse.md) | [**Entwickler-Standards**](wiki_new/Entwickler_Standards.md) |
-| [**Mod-Liste**](wiki_new/Mod_Kategorien_Liste.md) | [**Lua Referenz**](wiki_new/Lua_Referenz.md) | [**Live-Status**](#-live-status-sammlung) |
+| [**Git Quickstart**](wiki_new/Git_Quickstart.md) | [**Code-Detail-Analyse**](wiki_new/Code_Detail_Analyse.md) | [**Entwickler-Standards**](wiki_new/Entwickler_Standards.md) |
+| [**Anleitung: Release**](wiki_new/Git_Quickstart.md#📦-7-profi-tipp-einzelne-mods-teilen-branches--tags) | [**Lua Referenz**](wiki_new/Lua_Referenz.md) | [**Community Discord**](https://discord.gg/example) |
 
-## 📡 Live-Status Sammlung
+## 📡 Projekt-News & Community
+Aktuelle Durchbrüche und Ankündigungen direkt aus dem Labor.
 
-Derzeit befinden sich **95 Mods** in der Bibliothek, wovon **13 tiefgehend technisch analysiert** wurden.
+> [!TIP]
+> **Neuankündigung**: Die technische Analyse der `Island_turret_placement_QoL` ist abgeschlossen und liefert bahnbrechende Erkenntnisse für die KI-Platzierung!
+
+## 📂 Archivierte Sammlungen
+Derzeit befinden sich **95 Mods** in unserer Bibliothek.
 
 <details>
-<summary><b>📂 Vollständige Mod-Liste anzeigen (Klicken zum Ausklappen)</b></summary>
+<summary><b>Vollständige Mod-Liste anzeigen</b></summary>
 
 #### Audio (18)
 - AA & Depth Wolfenstein alarm
@@ -135,8 +141,9 @@ Derzeit befinden sich **95 Mods** in der Bibliothek, wovon **13 tiefgehend techn
 
 ---
 
-### 💬 Kontakt
-- [Fehler oder neue Analyse vorschlagen](.github/ISSUE_TEMPLATE/bug_report.md)
+### 🛰️ Kontakt & Mitwirkung
+- [Fehler melden](.github/ISSUE_TEMPLATE/bug_report.md)
+- [Zum Discord Server](https://discord.gg/example)
 - [Wiki-Beitrag leisten](CONTRIBUTING.md)
 
-*Zuletzt automatisch synchronisiert: März 2026 via `sync_docs.py`*
+*Letzte Synchronisierung: 12.03.2026 | Automatischer Hub Status: ✔️*

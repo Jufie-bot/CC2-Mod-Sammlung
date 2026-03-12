@@ -1,35 +1,45 @@
 # 📟 CC2 Modding Command Center
 
-Willkommen in der zentralen Wissensdatenbank der Mod-Sammlung. Dieses Wiki dient als technisches Rückgrat für die Dekonstruktion und Neuentwicklung von Inhalten für Carrier Command 2.
+> **"Eines der wichtigsten Archive für CC2 Technik – Strukturiert, Dekonstruiert, Optimiert."**
+
+Willkommen in der zentralen Wissensdatenbank. Hier findest du alles von den ersten Schritten bis hin zu komplexen Code-Analysen.
 
 ---
 
-## 🗺️ Master Navigation
+## 🗺️ Master-Dashboard
 
-| 🚀 Einstieg & Grundlagen | 🔬 Analyse & Forschung | 🛠️ Projekt-Entwicklung |
+| 🚀 Grundlagen & Start | 🧬 Code & Technik | 📈 Projekt-Leitung |
 | :--- | :--- | :--- |
-| [**Modding Grundlagen**](Modding_Grundlagen.md) | [**Technische Referenz**](Technische-Referenz.md) | [**Projekt Status**](Projekt_Entwicklung.md) |
-| [**Entwickler Standards**](Entwickler_Standards.md) | [**Code Detail-Analyse**](Code_Detail_Analyse.md) | [**Git Quickstart**](Git_Quickstart.md) |
-| [**Mod-Kategorien**](Mod_Kategorien_Liste.md) | [**Lua Referenz**](Lua_Referenz.md) | [**Code-Regeln**](Entwickler_Standards.md) |
+| [**Modding Guide**](Modding_Grundlagen.md) | [**Technische Referenz**](Technische-Referenz.md) | [**Entwicklungshistorie**](Projekt_Entwicklung.md) |
+| [**Entwickler-Kodex**](Entwickler_Standards.md) | [**Code-Detail-Analyse**](Code_Detail_Analyse.md) | [**Git Master-Guide**](Git_Quickstart.md) |
+| [**Kategorien-Index**](Mod_Kategorien_Liste.md) | [**Lua-Funktionsarchiv**](Lua_Referenz.md) | [**Beitrag leisten**](../CONTRIBUTING.md) |
 
 ---
 
-## 🛤️ Der Weg zum Modder
+## 📑 Forschungs-Roadmap
 
-> [!IMPORTANT]
-> **Neu hier?** Folge diesem Pfad, um deinen ersten Mod zu verstehen oder zu erstellen.
+### 🛠️ Stufe 1: Das Fundament
+Verstehe, wie Carrier Command 2 "tickt". Lerne die Ordnerstrukturen und das Laden von Mod-Dateien kennen.
+- [Einstieg in das Modding](Modding_Grundlagen.md)
+- [Workspace & Tools](Projekt_Entwicklung.md)
 
-1.  **[Grundlagen verstehen](Modding_Grundlagen.md)**: Lerne wie das Spiel Dateien lädt.
-2.  **[Code dekonstruieren](Code_Detail_Analyse.md)**: Schau dir an, wie Profis ihre Mods aufgebaut haben.
-3.  **[Referenz nutzen](Technische-Referenz.md)**: Suche nach spezifischen Bauteilen (Türmen, Raketen, etc.).
-4.  **[Standards halten](Entwickler_Standards.md)**: Sorge dafür, dass dein Mod stabil und kompatibel bleibt.
+### 🔬 Stufe 2: Dekonstruktion
+Der wichtigste Teil: Wir untersuchen existierende Mods, um zu verstehen, welche Variablen was bewirken.
+- [Analyse: Waffen-Placement](Code_Detail_Analyse.md)
+- [Reverse Engineering: Constants.txt](Game_Constants_Analyse.md)
+
+### 🚀 Stufe 3: Neuschöpfung
+Basierend auf unseren Analysen erstellen wir Mods, die über das Standard-Scaling hinausgehen.
+- [Fortgeschrittene Lua-Scripts](Lua_Referenz.md)
+- [Overhaul Standards](Entwickler_Standards.md)
 
 ---
 
-## 📡 Live-Forschung
-- **[Spiel-Konstanten](Game_Constants_Analyse.md)**: Tiefgehende Analyse der `constants.txt`.
-- **[Vektoren & KI](Code_Detail_Analyse.md)**: Fortgeschrittene Algorithmen-Analyse.
+## 📡 Aktueller System-Status
+- **Mod-Bibliothek**: `95 Einträge`
+- **Analysierte Logik**: `13 Berichte`
+- **Automatisierung**: `Aktiv (GitHub Sync)`
 
 ---
 > [!NOTE]
-> *Dokumentation Stand: März 2026 | Automatisch synchronisiert via GitHub Actions.*
+> *Dieses Wiki wird automatisch durch unsere Forschungs-Skripte aktuell gehalten. Stand: März 2026.*
