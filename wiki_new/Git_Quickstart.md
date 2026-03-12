@@ -35,9 +35,11 @@ Wenn du fertig bist, klicke im Git-Tab auf das kleine **+** neben den Dateien.
 - Nur Dateien, die hier liegen, werden im nächsten Schritt gespeichert!
 
 ### Schritt 2: Speichern (Commit)
-Gib oben im Textfeld eine kurze Nachricht ein (z.B. "Turbo-Missile Reichweite erhöht").
-- Klicke auf den **Haken (Checkmark)** oder den Button **Commit**.
-- Deine Änderungen sind jetzt sicher auf deinem PC gespeichert.
+Hier gibt es oft mehrere Optionen im Menü:
+- **Commit**: Speichert deine Änderungen nur lokal auf deinem PC.
+- **Commit & Push**: Speichert lokal UND lädt es sofort auf GitHub hoch.
+- **Commit & Synchronisieren**: Speichert lokal, lädt neue Sachen von GitHub runter und deine Sachen hoch.
+- **Commit korrigieren (Amend)**: Packt deine aktuellen Änderungen in den *letzten* Speicherpunkt mit rein (gut für kleine Fixes).
 
 ### Schritt 3: Veröffentlichen (Push / Sync)
 Klicke auf den blauen Button **Sync Changes** oder auf die kleine Wolke/Pfeil nach oben.
@@ -61,10 +63,20 @@ Klicke auf den blauen Button **Sync Changes** oder auf die kleine Wolke/Pfeil na
 
 ---
 
-## 🏷️ 5. Umbenennen & Priorisieren
+## 🔍 5. Hilfe: "Ich sehe keine Änderungen im Git-Tab!"
+
+Wenn du ein gelbes **M** an der Datei siehst, aber die Liste unter "Änderungen" leer ist, liegt das meistens an der **Ordner-Struktur**:
+
+1.  **Das Problem**: Dein Editor ist im Hauptordner `Workspace` geöffnet, aber das Git-Paket liegt im Unterordner `Mod sammlung`. Manche Programme "übersehen" den Unterordner dann.
+2.  **Die Lösung (Variante A)**: Gehe auf **Datei -> Ordner öffnen** und öffne direkt den Ordner `Mod sammlung`. Dann ist Git sofort aktiv.
+3.  **Die Lösung (Variante B)**: Klicke im Git-Tab auf das Symbol für **"Repository hinzufügen"** (oft ein kleiner Ordner mit einem +) und wähle den Ordner `Mod sammlung` manuell aus.
+
+---
+
+## 🏷️ 6. Umbenennen & Priorisieren
 
 ### Einen Zweig (Branch) umbenennen
-Das haben wir gerade getan. Im Terminal geht das so:
+Das haben wir bereits getan. Im Terminal geht das so:
 `git branch -m alter-name neuer-name`
 
 ### Konflikte lösen (Wenn zwei Leute dasselbe ändern)
