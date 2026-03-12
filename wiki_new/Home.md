@@ -1,21 +1,35 @@
-# Willkommen im CC2 Modding Wiki
+# 📟 CC2 Modding Command Center
 
-Dieses Wiki ist das zentrale Dashboard für die technische Dokumentation der Mod-Sammlung. Hier fließen alle Analysen und Standards zusammen.
-
-## 🚀 Einstieg
-- **[Modding Grundlagen](Modding_Grundlagen.md)**: Dateistrukturen, Overrides und die `mod.xml`.
-- **[Entwickler Standards](Entwickler_Standards.md)**: Regeln für sauberen und kompatiblen Code.
-- **[Mod-Kategorien Übersicht](Mod_Kategorien_Liste.md)**: Thematische Übersicht aller verfügbaren Mods.
-
-## 🔬 Analyse & Referenz
-- **[Technische Referenz](Technische-Referenz.md)**: **NEU!** Automatisch konsolidierte Detail-Analysen jeder Mod.
-- **[Lua Referenz](Lua_Referenz.md)**: Dokumentation der Screen-API und Bibliotheken.
-- **[Spiel-Konstanten](Game_Constants_Analyse.md)**: Tiefgehende Analyse der `constants.txt`.
-
-## 🛠️ Projekt & Tools
-- **[Projekt Entwicklung](Projekt_Entwicklung.md)**: Historie und Automatisierung des Workspace.
-- **[Code Detail Analyse](Code_Detail_Analyse.md)**: Deep-Dives in komplexe Algorithmen.
-- **[Technisches Entwickler-Handbuch](Technisches_Entwickler_Handbuch.md)**: Dokumentations-Hub.
+Willkommen in der zentralen Wissensdatenbank der Mod-Sammlung. Dieses Wiki dient als technisches Rückgrat für die Dekonstruktion und Neuentwicklung von Inhalten für Carrier Command 2.
 
 ---
-*Stand: März 2026 | Dokumentation wird automatisch via GitHub Actions synchronisiert.*
+
+## 🗺️ Master Navigation
+
+| 🚀 Einstieg & Grundlagen | 🔬 Analyse & Forschung | 🛠️ Projekt-Entwicklung |
+| :--- | :--- | :--- |
+| [**Modding Grundlagen**](Modding_Grundlagen.md) | [**Technische Referenz**](Technische-Referenz.md) | [**Projekt Status**](Projekt_Entwicklung.md) |
+| [**Entwickler Standards**](Entwickler_Standards.md) | [**Code Detail-Analyse**](Code_Detail_Analyse.md) | [**Git Quickstart**](Git_Quickstart.md) |
+| [**Mod-Kategorien**](Mod_Kategorien_Liste.md) | [**Lua Referenz**](Lua_Referenz.md) | [**Code-Regeln**](Entwickler_Standards.md) |
+
+---
+
+## 🛤️ Der Weg zum Modder
+
+> [!IMPORTANT]
+> **Neu hier?** Folge diesem Pfad, um deinen ersten Mod zu verstehen oder zu erstellen.
+
+1.  **[Grundlagen verstehen](Modding_Grundlagen.md)**: Lerne wie das Spiel Dateien lädt.
+2.  **[Code dekonstruieren](Code_Detail_Analyse.md)**: Schau dir an, wie Profis ihre Mods aufgebaut haben.
+3.  **[Referenz nutzen](Technische-Referenz.md)**: Suche nach spezifischen Bauteilen (Türmen, Raketen, etc.).
+4.  **[Standards halten](Entwickler_Standards.md)**: Sorge dafür, dass dein Mod stabil und kompatibel bleibt.
+
+---
+
+## 📡 Live-Forschung
+- **[Spiel-Konstanten](Game_Constants_Analyse.md)**: Tiefgehende Analyse der `constants.txt`.
+- **[Vektoren & KI](Code_Detail_Analyse.md)**: Fortgeschrittene Algorithmen-Analyse.
+
+---
+> [!NOTE]
+> *Dokumentation Stand: März 2026 | Automatisch synchronisiert via GitHub Actions.*

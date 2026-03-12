@@ -1,9 +1,26 @@
-# Technische Referenz: Mod-Analysen
+# 🔬 Technische Referenz: Mod-Analysen
+
 > [!NOTE]
-> Diese Seite wird automatisch aus den Einzel-Analysen in `.github/` generiert.
+> Diese Seite wird automatisch aus den Einzel-Analysen in `.github/workflows/Detailanalyse/` generiert und konsolidiert.
 
+## 📑 Inhaltsverzeichnis
+- [15mm Turrets](#-15mm-turrets)
+- [2x Cruise Missile Speed](#-2x-cruise-missile-speed)
+- [Cement bomb](#-cement-bomb)
+- [Gentle Missile Speed Buff](#-gentle-missile-speed-buff)
+- [Island turret placement QoL](#-island-turret-placement-qol)
+- [Mark84 bomb](#-mark84-bomb)
+- [Missile Reformat](#-missile-reformat)
+- [Naval Gun Stabilizer](#-naval-gun-stabilizer)
+- [Salty's Missile Damage Edit](#-saltys-missile-damage-edit)
+- [Supersonic Cruise Missile](#-supersonic-cruise-missile)
+- [Torpedo & Missile Wolfenstein alarm](#-torpedo--missile-wolfenstein-alarm)
+- [Torpedo Reformat](#-torpedo-reformat)
+- [Turret Utility](#-turret-utility)
 
-## Übersicht
+---
+
+## 🛠️ 15mm Turrets
 - **Mod-Name:** 15mm Turrets
 - **Kategorie:** Weapons
 - **Dateien:** `content/scripts/screen_vehicle_loadout.lua`

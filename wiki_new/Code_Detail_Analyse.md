@@ -291,82 +291,35 @@ end
     *   **Autoland:** Eigene `setup_autoland`-Funktion mit komplexer Wegpunkt-Berechnung für Landeanflüge.
 *   **Verbesserung:**
     *   Sehr mächtiges Framework. Entwickler von Unit-Mods sollten prüfen, ob sie sich in dieses Framework einklinken können, statt Vanilla-Methoden zu überschreiben.
-*
+
 ---
 
-## 3. Weapon Mods
+## 3. Deep-Dive Analyse-Berichte
 
-### **15mm Turrets (Autor: N/A)**
-*   **Beschreibung:** Ermöglicht die Nutzung von 15mm-Türmen.
-*   **Code-Analyse:**
-    *   **Datei:** `screen_vehicle_loadout.lua`
-    *   **Logik:** Erweitert das Loadout-Script, um die 15mm-Variante korrekt im UI anzuzeigen und ausrüstbar zu machen.
-    *   **Technik:** Entfernt die Sichtbarkeitsprüfung `update_get_attachment_option_hidden`, wodurch versteckte Vanilla-Inhalte freigeschaltet werden.
-*   **Detaillierter Bericht:** [15mm_Turrets_analysiert.md](file:///f:/Workspace/Mod%20sammlung/.github/workflows/Detailanalyse/15mm_Turrets_analysiert.md)
+Für eine vollständige technische Untersuchung jeder Mod stehen detaillierte Einzelberichte zur Verfügung. Diese enthalten spezifische Code-Gegenüberstellungen und physikalische Erklärungen.
 
-### **Naval Gun Stabilizer (Autor: N/A)**
-*   **Beschreibung:** Stabilisiert das Hauptgeschütz des Trägers.
-*   **Code-Analyse:**
-    *   **Datei:** `vehicle_attachment_carrier_turret_main_gun.xml`
-    *   **Änderung:** Verringert `fov` im `projectile_emitter` von `0.06` auf `0.02`.
-    *   **Detaillierter Bericht:** [Naval_Gun_Stabilizer_analysiert.md](file:///f:/Workspace/Mod%20sammlung/.github/workflows/Detailanalyse/Naval_Gun_Stabilizer_analysiert.md)
+### 🛡️ Waffen & Verteidigung
+- [**15mm Turrets**](file:///f:/Workspace/Mod%20sammlung/.github/workflows/Detailanalyse/15mm_Turrets_analysiert.md): UI-Logic Hijacking.
+- [**Island Turret QoL**](file:///f:/Workspace/Mod%20sammlung/.github/workflows/Detailanalyse/Island_turret_placement_QoL_analysiert.md): Script-Erweiterung für Karten-Interaktion.
+- [**Turret Utility**](file:///f:/Workspace/Mod%20sammlung/.github/workflows/Detailanalyse/Turret_Utility_analysiert.md): Hardware-Slot Erweiterung.
+- [**Naval Gun Stabilizer**](file:///f:/Workspace/Mod%20sammlung/.github/workflows/Detailanalyse/Naval_Gun_Stabilizer_analysiert.md): Emitter FOV Tuning.
 
-### **Turret Utility (Autor: N/A)**
-*   **Beschreibung:** Fügt stationären Türen zusätzliche Slots für Kameras/Sensoren hinzu.
-*   **Code-Analyse:**
-    *   **Datei:** `stationary_turret.xml`.
-    *   **Änderung:** Fügt `<attachment>` Slots vom Typ 0 und 2 hinzu.
-    *   **Detaillierter Bericht:** [Turret_Utility_analysiert.md](file:///f:/Workspace/Mod%20sammlung/.github/workflows/Detailanalyse/Turret_Utility_analysiert.md)
+### 🚀 Raketen & Projektile
+- [**Missile Reformat**](file:///f:/Workspace/Mod%20sammlung/.github/workflows/Detailanalyse/Missile_Reformat_analysiert.md): Globales Physik-Overhaul.
+- [**Supersonic Cruise Missile**](file:///f:/Workspace/Mod%20sammlung/.github/workflows/Detailanalyse/Supersonic_Cruise_Missile_analysiert.md): Grenzbereich der Engine-Physik.
+- [**Gentle Missile Speed Buff**](file:///f:/Workspace/Mod%20sammlung/.github/workflows/Detailanalyse/Gentle_Missile_Speed_Buff_analysiert.md): Balanciertes Mass-Tuning.
+- [**2x Cruise Missile Speed**](file:///f:/Workspace/Mod%20sammlung/.github/workflows/Detailanalyse/2x_Cruise_Missile_Speed_analysiert.md): Klassischer Physik-Tweak.
+- [**Salty's Missile Damage**](file:///f:/Workspace/Mod%20sammlung/.github/workflows/Detailanalyse/Saltys_Missile_Damage_Edit_analysiert.md): Constants-Override Methode.
 
-### **Island turret placement QoL (Autor: N/A)**
-*   **Beschreibung:** Verbessertes Platzieren von Insel-Türmen.
-*   **Code-Analyse:**
-    *   **Datei:** `screen_vehicle_control.lua`
-    *   **Logik:** Ermöglicht das Abbrechen von Turm-Produktionen direkt über die Karte und fügt Status-Abfragen für die Queue hinzu.
-    *   **Detaillierter Bericht:** [Island_turret_placement_QoL_analysiert.md](file:///f:/Workspace/Mod%20sammlung/.github/workflows/Detailanalyse/Island_turret_placement_QoL_analysiert.md)
+### 🌊 Marine & Torpedos
+- [**Torpedo Reformat**](file:///f:/Workspace/Mod%20sammlung/.github/workflows/Detailanalyse/Torpedo_Reformat_analysiert.md): Unterwasser-Physik Optimierung.
+- [**Torpedo Alarm (Audio)**](file:///f:/Workspace/Mod%20sammlung/.github/workflows/Detailanalyse/Torpedo_Missile_Wolfenstein_alarm_analysiert.md): Asset-Replacement Workflow.
 
-### **Salty's Missile Damage Edit (Autor: SaltySeabisc)**
-*   **Beschreibung:** +5% Schaden für Raketen.
-*   **Code-Analyse:**
-    *   **Datei:** `constants.txt` (Script-Override).
-    *   **Änderung:**
-        *   `missile_1_explosion_damage_scale` 1.0 -> 1.05
-        *   `missile_2_explosion_damage_scale` 1.0 -> 1.05
-        *   `missile_tv_explosion_damage_scale` 1.0 -> 1.05
-    *   **Technik:** Nutzt die saubere Methode via `constants.txt` Override.
-    *   **Detaillierter Bericht:** [Saltys_Missile_Damage_Edit_analysiert.md](file:///f:/Workspace/Mod%20sammlung/.github/workflows/Detailanalyse/Saltys_Missile_Damage_Edit_analysiert.md)
-    *   **Detaillierter Bericht (Island Turrets):** [Island_turret_placement_QoL_analysiert.md](file:///f:/Workspace/Mod%20sammlung/.github/workflows/Detailanalyse/Island_turret_placement_QoL_analysiert.md)
+### 🎨 Assets & Kosmetik
+- [**Cement Bomb**](file:///f:/Workspace/Mod%20sammlung/.github/workflows/Detailanalyse/Cement_bomb_analysiert.md): Mesh-Replacement (Bomb 1).
+- [**Mark84 Bomb**](file:///f:/Workspace/Mod%20sammlung/.github/workflows/Detailanalyse/Mark84_bomb_analysiert.md): Mesh-Replacement (Bomb 3).
 
-### **Speed Mods (2x Cruise Speed, Gentle Buff, Supersonic)**
-*   **Beschreibung:** Erhöhen die Geschwindigkeit von Raketen.
-*   **Code-Analyse:**
-    *   **Dateien:** `missile_cruise.xml`, `missile_2.xml`, etc.
-    *   **Technik:**
-        *   Diese Mods definieren den **physikalischen Körper** (`body`) der Rakete neu.
-        *   **Trace:** Die Mods setzen die Masse oft auf sehr niedrige Werte (z.B. `mass="1.0"`, `0.1`, oder `1.0` bei 2x Speed).
-        *   **Effekt:** Da die Schubkraft (`thruster`) der Waffe gleich bleibt, sorgt die verringerte Masse (F=m*a) für eine drastisch höhere Beschleunigung.
-    *   **Detaillierter Bericht (2x Speed):** [2x_Cruise_Missile_Speed_analysiert.md](file:///f:/Workspace/Mod%20sammlung/.github/workflows/Detailanalyse/2x_Cruise_Missile_Speed_analysiert.md)
-    *   **Detaillierter Bericht (Gentle Buff):** [Gentle_Missile_Speed_Buff_analysiert.md](file:///f:/Workspace/Mod%20sammlung/.github/workflows/Detailanalyse/Gentle_Missile_Speed_Buff_analysiert.md)
-    *   **Detaillierter Bericht (Supersonic):** [Supersonic_Cruise_Missile_analysiert.md](file:///f:/Workspace/Mod%20sammlung/.github/workflows/Detailanalyse/Supersonic_Cruise_Missile_analysiert.md)
-    *   **Hinweis:** Vanilla-Dateien haben oft keine expliziten `body`-Definitionen an dieser Stelle (nutzen Defaults), weshalb diese Mods durch das Hinzufügen expliziter, leichter Bodies funktionieren.
-
-### **Missile / Torpedo Reformat (Autor: N/A)**
-*   **Beschreibung:** Überarbeitung von Raketen und Torpedos.
-*   **Code-Analyse:**
-    *   **Dateien:** `missile_1.xml` bis `missile_5.xml`, `torpedo.xml`.
-    *   **Technik:**
-        *   Definiert explizite `bodies` mit `mass="0.1"` (sehr leicht -> sehr schnell).
-        *   Passt `bounding_radius` und Collision-Boxen an.
-        *   Scheint ein komplettes Rebalancing der Flugphysik durch Masseverringerung zu sein.
-    *   **Detaillierter Bericht (Missile Reformat):** [Missile_Reformat_analysiert.md](file:///f:/Workspace/Mod%20sammlung/.github/workflows/Detailanalyse/Missile_Reformat_analysiert.md)
-    *   **Detaillierter Bericht (Torpedo Reformat):** [Torpedo_Reformat_analysiert.md](file:///f:/Workspace/Mod%20sammlung/.github/workflows/Detailanalyse/Torpedo_Reformat_analysiert.md)
-
-### **Visual / Audio Replacements**
-*   **Cement bomb / Mark84 bomb**: Reine Mesh-Replacements (`.mesh`), keine Logik-Änderungen.
-    *   **Detaillierter Bericht (Cement bomb):** [Cement_bomb_analysiert.md](file:///f:/Workspace/Mod%20sammlung/.github/workflows/Detailanalyse/Cement_bomb_analysiert.md)
-    *   **Detaillierter Bericht (Mark84 bomb):** [Mark84_bomb_analysiert.md](file:///f:/Workspace/Mod%20sammlung/.github/workflows/Detailanalyse/Mark84_bomb_analysiert.md)
-*   **Torpedo & Missile Wolfenstein alarm**: Reines Audio-Replacement (`telemetry07.ogg`), ersetzt den Alarm-Sound.
-    *   **Detaillierter Bericht:** [Torpedo_Missile_Wolfenstein_alarm_analysiert.md](file:///f:/Workspace/Mod%20sammlung/.github/workflows/Detailanalyse/Torpedo_Missile_Wolfenstein_alarm_analysiert.md)
+---
 
 ## 4. UI Mods
 
