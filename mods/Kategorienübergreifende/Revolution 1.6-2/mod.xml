@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data name="Revolution 1.6-2" author="Thumblegudget, Bredroll, QuantX, NexusQuille, Dr-RazdalByte + Others" description="
+
+The Revolution mod brings Radar enhancements, a more immersive fog-of-war for island captures and
+other features.
+
+v1.6 new features:
+[list]
+[*] Excess aircraft payloads shown visually in loadout, Some units have hard max payloads for balance
+[*] 2x water speed as standard for all units, WLR can deploy AA missiles
+[*] Helm and Radar screens are HD, Helm HUD and VLS as standard.
+[*] QoL changes to the inventory screen map display/tooltips
+[*] Barges and Virus bots now actually have names.
+[*] Removed the EW pod and EWar mechanic
+[/list]
+
+v1.5:
+[list]
+[*] Improved UI for turret deployment by Dr-RazdalByte
+[*] Reduced network traffic/congestion sent by shared holomap cursor, Fixed captain's holomap markers
+[*] TV missile shows minimap and distances to target and launcher and has compass marks
+[*] Next generation aircraft RWR sensor
+[*] Turrets can now be moved around by ground vehicles pushing.
+[/list]
+
+[list]
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3098073689]v1.5 available here[/url]
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3496283808]v1.4 available here[/url]
+[/list]
+
+For full details on what the mod does, how you can contribute or request features see
+[url=https://cc2maps.com/revolution-mod/]https://cc2maps.com/revolution-mod/[/url]
+
+The mod is based on UI Enhancer and Albatross AWACS, so you get those amazing benefits included.
+
+">
+</data>
