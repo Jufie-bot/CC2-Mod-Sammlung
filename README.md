@@ -1,7 +1,7 @@
 # Carrier Command 2 - Mod Development Hub �
 
 ![Mods Total](https://img.shields.io/badge/Mods_Total-95-blue?style=for-the-badge&logo=github)
-![Analyzed](https://img.shields.io/badge/Analysed-2-orange?style=for-the-badge&logo=bookstack)
+![Analyzed](https://img.shields.io/badge/Analysed-3-orange?style=for-the-badge&logo=bookstack)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Active_Development-success?style=for-the-badge)
 ![Discord](https://img.shields.io/badge/Discord-Join-5865F2?style=for-the-badge&logo=discord&logoColor=white)
@@ -38,7 +38,7 @@ Jeder Ordner in `mods/` repräsentiert einen technischen Bereich:
 Hier findest du das Herzstück meiner Arbeit – die Dokumentation.
 
 ### 📘 [Technisches Entwickler-Handbuch](.github/Technisches_Entwickler_Handbuch.md)
-> **Status:** 2 Mods detailliert analysiert.
+> **Status:** 3 Mods detailliert analysiert.
 Hier zerlege ich Mods in ihre Einzelteile. Ich dokumentiere XML-Tricks, Lua-Hacks und versteckte Spielmechaniken.
 
 ### � [Code Detail Analyse](.github/Code_Detail_Analyse.md)

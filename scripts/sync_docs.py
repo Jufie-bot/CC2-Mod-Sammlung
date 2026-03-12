@@ -27,6 +27,13 @@ def generate_readme():
             for line in f:
                 if line.strip().startswith("## ") and "Zusammenfassung" not in line:
                     analyzed_count += 1
+    
+    # Also count files in Detailanalyse directory
+    detail_analyse_path = os.path.join(github_path, "workflows/Detailanalyse")
+    if os.path.exists(detail_analyse_path):
+        for file in os.listdir(detail_analyse_path):
+            if file.endswith(".md"):
+                analyzed_count += 1
 
     content = []
     

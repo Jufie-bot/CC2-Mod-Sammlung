@@ -301,6 +301,8 @@ end
 *   **Code-Analyse:**
     *   **Datei:** `screen_vehicle_loadout.lua`
     *   **Logik:** Erweitert das Loadout-Script, um die 15mm-Variante korrekt im UI anzuzeigen und ausrüstbar zu machen.
+    *   **Technik:** Entfernt die Sichtbarkeitsprüfung `update_get_attachment_option_hidden`, wodurch versteckte Vanilla-Inhalte freigeschaltet werden.
+*   **Detaillierter Bericht:** [15mm_Turrets_analysiert.md](file:///f:/Workspace/Mod%20sammlung/.github/workflows/Detailanalyse/15mm_Turrets_analysiert.md)
 
 ### **Naval Gun Stabilizer (Autor: N/A)**
 *   **Beschreibung:** Stabilisiert das Hauptgeschütz des Trägers.
