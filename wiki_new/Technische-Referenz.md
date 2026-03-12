@@ -1,513 +1,572 @@
-# Mod-Sammlung: Technisches Entwickler-Handbuch (V11b)
+# Technische Referenz: Mod-Analysen
+> [!NOTE]
+> Diese Seite wird automatisch aus den Einzel-Analysen in `.github/` generiert.
 
-> **Zweck dieses Dokuments:**
-> Eine lückenlose technische Referenz für ALLE Mods in diesem Ordner.
-> Fokus: Code-Analyse und generische Verbesserungsvorschläge für die Entwicklung.
 
----
+## Übersicht
+- **Mod-Name:** 15mm Turrets
+- **Kategorie:** Weapons
+- **Dateien:** `content/scripts/screen_vehicle_loadout.lua`
 
-## 2. Vollständige Mod-Liste (A-Z)
-Jede Mod wurde technisch analysiert.
+## Technische Analyse
 
-### **15mm Turrets (Autor: N/A)**
-*   **Beschreibung:** Fügt 15mm Geschütztürme hinzu.
-*   **Code-Analyse:** Neue XML-Definition (`turret_15mm.xml`) basierend auf Vanilla-Turm.
-*   **Verbesserungsidee:** Nutzung von `attachment_slot` Änderungen per Lua-Skript, um den Turm dynamisch auf Inseln zu platzieren.
+### Mechanik
+Die Mod ermöglicht es Spielern, 15mm-Geschütztürme auszurüsten, die im Basisspiel (Vanilla) zwar definiert, aber im Loadout-Menü versteckt sind. Dies wird durch eine kleine, aber entscheidende Änderung im UI-Skript erreicht.
 
-### **20mm Aircraft Wider Spread (Autor: N/A)**
-*   **Beschreibung:** Erhöht Streuung der 20mm Kanone.
-*   **Code-Analyse:** XML-Edit `projectile_emitter` -> `fov` erhöht.
-*   **Verbesserungsidee:** Dynamische Streuung basierend auf Geschwindigkeit des Flugzeugs.
+### Code-Änderung in `screen_vehicle_loadout.lua`
 
-### **20mm Balance Test (Autor: N/A)**
-*   **Beschreibung:** Test-Mod für Schadenswerte.
-*   **Code-Analyse:** Ändert `damage` Werte in XML.
-*   **Verbesserungsidee:** Config-Datei für Balance-Werte nutzen.
-
-### **2x Cruise Missile Speed (Autor: N/A)**
-*   **Beschreibung:** Verdoppelt die Geschwindigkeit von Marschflugkörpern.
-*   **Code-Analyse:** `force_emitter` magnitude in `missile_cruise.xml` erhöht.
-*   **Verbesserungsidee:** PID-Erhöhung statt plumper Kraftsteigerung für bessere Kurvenstabilität.
-
-### **2x / 3x / 5x Vehicle Water Speed (Autor: QuantX)**
-*   **Beschreibung:** Erhöht Schiffsgeschwindigkeit massiv.
-*   **Code-Analyse:** `force_emitter` magnitude in `vehicle_chassis_*.xml` angepasst.
-*   **Verbesserungsidee:** `drag` Reduzierung ist physikalisch konstanter als Kraft-Erhöhung.
-
-### **AA & Depth Wolfenstein alarm (Autor: Spoozufy)**
-*   **Beschreibung:** Wolfenstein-Alarm für Fliegerabwehr und Tiefe.
-*   **Code-Analyse:** Audio-Replace von SFX-Files.
-*   **Verbesserungsidee:** Hook in das Alarm-System, um Sounds ohne Dateiersatz abzuspielen.
-
-### **AdvancedRadar (Autor: N/A)**
-*   **Beschreibung:** Erhöht Radarreichweite.
-*   **Code-Analyse:** XML-Edit an `radar_*.xml`.
-*   **Verbesserungsidee:** Signal-Rauschen per Lua bei extremer Reichweite simulieren.
-
-### **AGM-114 / AGM-65K / AGM-X (Diverse)**
-*   **Beschreibung:** Reale Luft-Boden-Raketen.
-*   **Code-Analyse:** XML-Varianten basierend auf `missile_tv` und `missile_laser`.
-*   **Verbesserungsidee:** Gemeinsame Library für Sensor-Logik nutzen.
-
-### **AIM-120 / AIM-9 / R-60M (Diverse)**
-*   **Beschreibung:** Luft-Luft-Raketen-Varianten.
-*   **Code-Analyse:** Anpassung von `turn_rate` und `guidance`.
-*   **Verbesserungsidee:** Implementierung von Proportional-Navigation (PN) im Skript.
-
-### **Alarm Ahhh / alarm_unsc (Diverse)**
-*   **Beschreibung:** Humoristische oder Halo-bezogene Alarmsounds.
-*   **Code-Analyse:** Audio-Asset Replacement.
-*   **Verbesserungsidee:** Dynamische Sound-Auswahl via UI.
-
-### **Albatross AWACS v2 (Autor: Thumblegudget)**
-*   **Beschreibung:** AWACS-Fähigkeit für Albatros.
-*   **Code-Analyse:** Fügt `radar` Komponente zur Albatros-XML hinzu.
-*   **Verbesserungsidee:** Energieverbrauch des Radars erhöhen, um Balancing zu wahren (kleineres Flugzeug = schwächerer Generator).
-
-### **Alarm Mods (Alle Varianten)**
-*   **Beschreibung:** Wolfenstein, Star Wars, Subnautica Sirenen.
-*   **Code-Analyse:** Ersetzen `alarm_general_quarters.wav`.
-*   **Verbesserungsidee:** Eigene Sound-Events per Lua (`audio:play_event`) definieren, damit User im Menü den Alarmton wählen können, statt Dateien zu überschreiben.
-
-### **Alt Barge (Autor: Bredroll)**
-*   **Beschreibung:** Needlefish-Skin für Barken.
-*   **Code-Analyse:** Referenziert das Needlefish-Mesh in der Barge-XML.
-*   **Verbesserungsidee:** Sicherstellen, dass die Hitboxen (Collider) auch an das neue Mesh angepasst sind, sonst fahren Torpedos durch das Schiff.
-
-### **Amazon (Autor: C4V)**
-*   **Beschreibung:** Cheat-Mod (Produktion).
-*   **Code-Analyse:** Setzt `production_time` in `constants.txt` auf ~0.
-*   **Verbesserungsidee:** "Debug Mode" Toggle im Spiel implementieren, statt dauerhaft die Balance zu ruinieren.
-
-### **Apocalypse Sound Mod (Autor: N/A)**
-*   **Beschreibung:** Sound-Overhaul.
-*   **Code-Analyse:** Massives Asset-Replacement.
-*   **Verbesserungsidee:** Audio-Mixing-Skript nutzen, um Lautstärken dynamisch anzupassen (z.B. leiser im Innenraum).
-
-### **Arleigh Burke GQ Alarm (Autor: N/A)**
-*   **Beschreibung:** US Navy Arleigh-Burke Alarm.
-*   **Code-Analyse:** Audio Replacement.
-*   **Verbesserungsidee:** Sound-Überblendung im Nahbereich der Brücke.
-
-### **Assault Barge (Autor: N/A)**
-*   **Beschreibung:** Bewaffnete oder verstärkte Barke.
-*   **Code-Analyse:** XML-Edit für Hardpoints.
-*   **Verbesserungsidee:** Hitpoint-Skalierung basierend auf Ladung.
-
-### **Battle Carrier Refit + Captain Controls (Autor: Boomslayer / Mr. Scoot)**
-*   **Beschreibung:** Träger-Upgrade mit Brücken-Kontrollen.
-*   **Code-Analyse:** Mix aus XML-Chassis und Lua-Screen Skripten.
-*   **Verbesserungsidee:** Synchronisation der Terminal-Zustände im Multiplayer optimieren.
-
-### **Beginner Mod (Autor: N/A)**
-*   **Beschreibung:** Starter-Buffs.
-*   **Code-Analyse:** `constants.txt` Tweaks für Ressourcen.
-*   **Verbesserungsidee:** In-Game Menü für "Difficulty Modifiers".
-
-### **Blue Bridge Light (Autor: Bredroll)**
-*   **Beschreibung:** Blaues Licht auf der Brücke.
-*   **Code-Analyse:** Emissive Texture oder Licht-Offset in `vehicle_chassis_carrier.xml`.
-*   **Verbesserungsidee:** Dynamisches Licht (Rot bei Gefecht, Blau bei Fahrt).
-
-### **Blue Camo Skin for Character (Autor: N/A)**
-*   **Beschreibung:** Blaues Tarnmuster für Spieler-Modell.
-*   **Code-Analyse:** Textur-Swap für Charakter-Materialien.
-*   **Verbesserungsidee:** Team-Farben Unterstützung.
-
-### **Bot Head (Autor: N/A)**
-*   **Beschreibung:** Visuelle Änderung für Droiden oder Spieler.
-*   **Code-Analyse:** Mesh-Austausch.
-*   **Verbesserungsidee:** Animation-Hooks für "Sprechen".
-
-### **Callsigns for Vehicles (Autor: N/A)**
-*   **Beschreibung:** Rufnamen-System.
-*   **Code-Analyse:** Lua-Erweiterung für UI-Labeling.
-*   **Verbesserungsidee:** Sprachausgabe per Skript-Triggert.
-
-### **Carrier CIWS Ammo Increase (Autor: N/A)**
-*   **Beschreibung:** Mehr Munition für Träger-Phalanx.
-*   **Code-Analyse:** XML-Edit `magazine_capacity`.
-*   **Verbesserungsidee:** Visuelle Magazin-Anzeige im HUD.
-
-### **Cement bomb (Autor: N/A)**
-*   **Beschreibung:** Trainingsbombe oder schwerfälliges Projektil.
-*   **Code-Analyse:** XML-Anpassung von Masse und Schaden.
-*   **Verbesserungsidee:** Aufprall-Partikel (Staubwolke) vergrößern.
-
----
-
----
-
-*(Fortsetzung Mod-Liste)*
-
-### **Combat Carrier / VLS / Speed Change (Autor: Boomslayer / Diverse)**
-*   **Beschreibung:** Verschiedene Ausführungen zur Bewaffnung und Geschwindigkeit des Trägers.
-*   **Code-Analyse:** Fokus auf `vehicle_chassis_carrier.xml` und `magazine_capacity`.
-*   **Verbesserungsidee:** Modularisierung der Brücken-Erweiterungen, um Inkompatibilitäten zu vermeiden.
-
-### **Condition One Alarm (Autor: N/A)**
-*   **Beschreibung:** "Condition One" Alarm-Sound.
-*   **Code-Analyse:** Audio Replacement.
-*   **Verbesserungsidee:** Einbindung in ein globales Alarm-Management-Skript.
-
-### **Cyclops Alarm - Subnautica (Autor: N/A)**
-*   **Beschreibung:** Der berühmte Alarm vom Subnautica Cyclops.
-*   **Code-Analyse:** Asset Replacement.
-*   **Verbesserungsidee:** (Siehe Alarm Mods)
-
-### **deep sound (Autor: N/A)**
-*   **Beschreibung:** Modifiziert Unterwasser-Sounds.
-*   **Code-Analyse:** Bearbeitung von `.ogg` Ambience-Files.
-*   **Verbesserungsidee:** Tiefenabhängige Soundfilter per Lua simulieren.
-
-### **DramaticAlarmMod (Autor: N/A)**
-*   **Beschreibung:** Dramatischerer Alarm-Sound.
-*   **Code-Analyse:** Audio Replacement.
-*   **Verbesserungsidee:** (Siehe Alarm Mods)
-
-### **Droid Speed (Autor: Bredroll)**
-*   **Beschreibung:** Erhöht Tempo der Boden-Einheiten.
-*   **Code-Analyse:** XML-Edit `force_emitter` magnitude.
-*   **Verbesserungsidee:** Geländeabhängige Geschwindigkeitsregelung.
-
-### **EagleEye Scouting Buff (Autor: N/A)**
-*   **Beschreibung:** Erhöht Sensor-Reichweite.
-*   **Code-Analyse:** XML-Edit an Radar/Sensor Komponenten.
-*   **Verbesserungsidee:** Reichweite an Energieverbrauch koppeln.
-
-### **Enter the Life Raft (Autor: N/A)**
-*   **Beschreibung:** Ermöglicht Interaktion mit Rettungsflößen.
-*   **Code-Analyse:** Skript-Erweiterung für Ein- und Ausstieg.
-*   **Verbesserungsidee:** Integration in ein Survival-System (Hunger/Durst der Besatzung).
-
-### **FC Navy x UI Enhancer (Autor: QuantX)**
-*   **Beschreibung:** Blaues UI-Design für FC Navy.
-*   **Code-Analyse:** Lua-Replacer für Texturen/Farben.
-*   **Verbesserungsidee:** UI-Themes dynamisch umschaltbar machen.
-
-### **First Order Dreadnought Alarm (Autor: N/A)**
-*   **Beschreibung:** Star Wars Alarm aus Ep. VIII.
-*   **Code-Analyse:** Audio-Replace.
-*   **Verbesserungsidee:** (Siehe Alarm Mods)
-
-### **Flyable Jets (Autor: Juan)**
-*   **Beschreibung:** Manta/Albatros steuerbar.
-*   **Code-Analyse:** XML Flag `is_player_controllable`.
-*   **Verbesserungsidee:** Überarbeitung der HUD-Elemente für Jet-Geschwindigkeiten.
-
-### **GBU-27 Paveway III (Autor: N/A)**
-*   **Beschreibung:** Laser-gelenkte Präzisionsbombe.
-*   **Code-Analyse:** XML basierend auf `missile_laser`.
-*   **Verbesserungsidee:** Implementierung von Gleitpfad-Physik.
-
-### **Gentle Missile Speed Buff (Autor: Cylindrical Bobcat)**
-*   **Beschreibung:** Moderates Speed-Upgrade für Raketen.
-*   **Code-Analyse:** Konservativer XML-Edit.
-*   **Verbesserungsidee:** Beschleunigungskurve statt statischem Speed.
-
-### **Goofy lil sound mod (WIP) (Autor: N/A)**
-*   **Beschreibung:** Experimentelle Sound-Änderungen.
-*   **Code-Analyse:** Asset-Replacement.
-*   **Verbesserungsidee:** Eigene Kategorie für Humor-Mods schaffen.
-
-### **Grey Splinter Camo (Autor: ThatGuyZiM)**
-*   **Beschreibung:** Modernes Tarnmuster für Schiffe.
-*   **Code-Analyse:** Textur-Swap.
-*   **Verbesserungsidee:** Masking-System für unterschiedliche Team-Camos.
-
-### **Helm Controls (Autor: Mr. Scoot)**
-*   **Beschreibung:** Fokus auf Brücken-Kontrollen.
-*   **Code-Analyse:** Umfangreiches Lua-Scripting für UI-Events.
-*   **Verbesserungsidee:** Vereinheitlichung der UI-Styles mit UI Enhancer.
-
-### **Higher Resolution Combined / Nav / Radar (Autor: N/A)**
-*   **Beschreibung:** Erhöht die Texturauflösung der In-Game Bildschirme.
-*   **Code-Analyse:** Austausch von UI-Bitmaps.
-*   **Verbesserungsidee:** Vektorbasierte UI-Elemente (wo möglich) für scharfe Kanten.
-
-### **Highfleet sound replacer (Autor: N/A)**
-*   **Beschreibung:** Düstere Sounds im Highfleet-Stil.
-*   **Code-Analyse:** Massiver Asset-Tausch.
-*   **Verbesserungsidee:** Mischen von Highfleet und Vanilla Sounds für maximale Atmosphäre.
-
-### **HUD Rate of Climb (Autor: N/A)**
-*   **Beschreibung:** Anzeige der vertikalen Geschwindigkeit.
-*   **Code-Analyse:** Mathematische Berechnung im HUD-Skript.
-*   **Verbesserungsidee:** Integration in ein künstliches Horizont-Modul.
-
-### **Island turret placement QoL (Autor: N/A)**
-*   **Beschreibung:** Intelligentere Turm-Positionierung auf Inseln.
-*   **Code-Analyse:** Änderungen an der Map-Generierungs-Logik.
-*   **Verbesserungsidee:** Verteidigungs-Zonen Logik statt fixer Spawnpunkte.
-
-### **Just A Few Hardpoints More (Autor: N/A)**
-*   **Beschreibung:** Fügt Fahrzeugen mehr Slots hinzu.
-*   **Code-Analyse:** XML `attachment_slot` Edits.
-*   **Verbesserungsidee:** Gewichtsbeschränkung pro Slot für Balancing.
-
-### **Klaxon Alarm (Autor: N/A)**
-*   **Beschreibung:** Alter U-Boot Alarm.
-*   **Code-Analyse:** Audio-Replace.
-*   **Verbesserungsidee:** (Siehe Alarm Mods)
-
-### **Larger Airfields (Autor: Bredroll)**
-*   **Beschreibung:** Verlängert die Start- und Landebahnen.
-*   **Code-Analyse:** Modifikation von Tile-Meshes und XML.
-*   **Verbesserungsidee:** Hinzufügen von Landelichtern (VASI/PAPI).
-
-### **Light Blue Water Color (Autor: N/A)**
-*   **Beschreibung:** Ändert die Farbe des Ozeans.
-*   **Code-Analyse:** Shader-Parameter oder Textur-Edit.
-*   **Verbesserungsidee:** Tiefe-Abhängige Farbänderung.
-
-### **logistics+ (Autor: N/A)**
-*   **Beschreibung:** Optimiert das Verladen von Fracht.
-*   **Code-Analyse:** Logistik-Skript Logik.
-*   **Verbesserungsidee:** Vorausplanung von Routen.
-
-### **Lubricant / Combat Edition (Autor: Ribbons)**
-*   **Beschreibung:** Erhöht die Geschwindigkeit von Animationen.
-*   **Code-Analyse:** XML-Edit `animation_speed`.
-*   **Verbesserungsidee:** (Siehe QoL Mods)
-
-### **Luz's Naval Expansion Beta - 1.0.1 (Autor: Luz)**
-*   **Beschreibung:** Große Erweiterung für Schiffe.
-*   **Code-Analyse:** Neue Chassis und Bewaffnungsmuster.
-*   **Verbesserungsidee:** Stabilitäts-Check der neuen Modelle im schweren Wellengang.
-
-### **Mark84 bomb (Autor: N/A)**
-*   **Beschreibung:** Schwere Bombe.
-*   **Code-Analyse:** XML-Def mit hohem Explosionsradius.
-*   **Verbesserungsidee:** Realistischer Fall-Widerstand (`drag`), damit Bombe nicht wie ein Stein fällt.
-
-### **Missile Reformat (Autor: Ribbons)**
-*   **Beschreibung:** Raketen-Physik.
-*   **Code-Analyse:** Siehe oben (Turn Rate, Fuel).
-*   **Verbesserungsidee:** Proportional-Navigation (PN) im Skript implementieren für bessere Trefferquote gegen bewegliche Ziele.
-
-### **Muffled Carrier Engine (Autor: N/A)**
-*   **Beschreibung:** Leiserer Motor.
-*   **Code-Analyse:** Audio-File Gain reduziert (Audacity Edit?).
-*   **Verbesserungsidee:** Engine-Sound dynamisch dimmen, wenn man auf der Brücke ist (via Lua Audio-API).
-
-### **Mule 2 (Autor: N/A)**
-*   **Beschreibung:** Verbesserter Mule.
-*   **Code-Analyse:** XML-Werte (Speed, HP) erhöht.
-*   **Verbesserungsidee:** Schwachstellen am Modell definieren (z.B. Reifen verwundbar machen).
-
-### **Naval Gun Stabilizer (Autor: N/A)**
-*   **Beschreibung:** Stabilisierte Kanonen.
-*   **Code-Analyse:** Erhöht `tracking_speed` der Turrets in XML.
-*   **Verbesserungsidee:** PID-Controller für Turm-Bewegung, um "Überschwingen" zu simulieren.
-
-### **Needlefish Mk2 (Autor: N/A)**
-*   **Beschreibung:** Stärkeres Schiff.
-*   **Code-Analyse:** Buffed XML-Stats.
-*   **Verbesserungsidee:** Visuelles Unterscheidungsmerkmal (z.B. Antenne, Farbe) zum normalen Needlefish hinzufügen.
-
----
-
----
-
-*(Fortsetzung Mod-Liste)*
-
-### **Missile Reformat (Autor: Ribbons)**
-*   **Beschreibung:** Anpassung von Reichweite, Wendigkeit und Treibstoff für Raketen.
-*   **Code-Analyse:** XML-Edit `missile` Parameter.
-*   **Verbesserungsidee:** Dynamisches Tracking-Verhalten je nach Zieltyp.
-
-### **Muffled Carrier Engine (Autor: N/A)**
-*   **Beschreibung:** Reduziert die Lautstärke der Träger-Motoren.
-*   **Code-Analyse:** Gain-Reduzierung in Audio-Dateien.
-*   **Verbesserungsidee:** Frequenz-Filter statt nur Lautstärke für realistischeres "Muffeln".
-
-### **Mule 2 (Autor: N/A)**
-*   **Beschreibung:** Erweiterte Version des Mule-Logistikfahrzeugs.
-*   **Code-Analyse:** XML Chassis Modifikation.
-*   **Verbesserungsidee:** KI-Pfadfindung für engere Räume optimieren.
-
-### **Naval Gun Stabilizer (Autor: N/A)**
-*   **Beschreibung:** Stabilisiert Schiffsgeschütze gegen Wellengang.
-*   **Code-Analyse:** XML-Edit an Turret-Parametern (`tracking_speed`, `stabilization`).
-*   **Verbesserungsidee:** PID-basierte Stabilisierung in Lua für perfekte Präzision.
-
-### **Needlefish Mk2 (Autor: N/A)**
-*   **Beschreibung:** Stärker bewaffnete Needlefish.
-*   **Code-Analyse:** XML Hardpoint-Erweiterung.
-*   **Verbesserungsidee:** Skalierbare Bewaffnung per UI.
-
-### **Phalanx CIWS Gun Sound (Autor: N/A)**
-*   **Beschreibung:** Realistischerer Sound für das CIWS.
-*   **Code-Analyse:** Audio Replacement.
-*   **Verbesserungsidee:** (Siehe Sound Mods)
-
-### **Quality of Life+ p2 (Autor: Bredroll)**
-*   **Beschreibung:** Sammlung von QoL-Verbesserungen (Licht, Terminals, VLS).
-*   **Code-Analyse:** Multi-File Patching (XML/Lua).
-*   **Verbesserungsidee:** Automatischer Installer/Manager für die einzelnen Sub-Module.
-
-### **R-60M (Diverse)**
-*   **Beschreibung:** Sowjetische Luft-Luft-Rakete.
-*   **Code-Analyse:** XML Anpassung.
-*   **Verbesserungsidee:** Implementierung von Flare-Resistance Logik.
-
-### **Radar Range 20km (Autor: N/A)**
-*   **Beschreibung:** Fixe Einstellung der Radarreichweite auf 20km.
-*   **Code-Analyse:** XML-Edit `max_range`.
-*   **Verbesserungsidee:** Dynamische Reichweite basierend auf Bewölkung.
-
-### **Reused (Autor: N/A)**
-*   **Beschreibung:** Asset-Recycling für neue Komponenten.
-*   **Code-Analyse:** Referenzierung vorhandener Meshes in neuen XMLs.
-*   **Verbesserungsidee:** Dokumentation der internen Asset-IDs für andere Modder.
-
-### **Revolution 1.6-2 (Autor: Bredroll)**
-*   **Beschreibung:** Das wohl wichtigste Modding-Framework der Community.
-*   **Code-Analyse:** Globales Lua-Environment Hooking.
-*   **Verbesserungsidee:** Performance-Monitoring der einzelnen Revolution-Module.
-
-### **Rev_Auto Scout / Engineering / Heavy Manta / Resupply+ (Autor: Bredroll)**
-*   **Beschreibung:** Spezialmodule für das Revolution-Framework.
-*   **Code-Analyse:** Lua Extension Scripts.
-*   **Verbesserungsidee:** Vereinheitlichung der UI-Benachrichtigungen.
-
-### **RIM-161 (Autor: FelineCat)**
-*   **Beschreibung:** Hochleistungs-Abfangrakete.
-*   **Code-Analyse:** XML/Lua Hybrid für Guidance.
-*   **Verbesserungsidee:** Exo-atmosphärisches Trägheitsmodell (Skript).
-
-### **Rotate Power Screen (Autor: Musket)**
-*   **Beschreibung:** Orientierung des Energiemanagement-Screens geändert.
-*   **Code-Analyse:** Lua UI Koordinaten-Transformation.
-*   **Verbesserungsidee:** Touch-Unterstützung für das gedrehte Layout.
-
-### **Salty's Missile Damage Edit (Autor: SaltySeabisc)**
-*   **Beschreibung:** Balancing-Änderung für Raketenschaden.
-*   **Code-Analyse:** XML `damage` Tweaks.
-*   **Verbesserungsidee:** Schadensmodell basierend auf Auftreffwinkel.
-
-### **Ship Wakes (Autor: Bredroll)**
-*   **Beschreibung:** Realistischere Kielwasser-Effekte.
-*   **Code-Analyse:** Partikel-System XML Modifikation.
-*   **Verbesserungsidee:** Gischt-Farbe an die Wasserfarbe der Map anpassen.
-
-### **Skidders Pack (Autor: Red Dragon)**
-*   **Beschreibung:** Gameplay & Assets Mix.
-*   **Code-Analyse:** Diverse XML/Audio Patches.
-*   **Verbesserungsidee:** Aufteilung in funktionale Pakete.
-
-### **SKY TV (Autor: Bredroll)**
-*   **Beschreibung:** Kamera-gesteuerte Raketen mit 25km Reichweite.
-*   **Code-Analyse:** XML `camera_range` und `max_range`.
-*   **Verbesserungsidee:** Signal-Rauschen per Lua bei großer Distanz zum Träger.
-
-### **Sound Enhancement (Autor: N/A)**
-*   **Beschreibung:** Umfassendes Audio-Update.
-*   **Code-Analyse:** Asset Replacement.
-*   **Verbesserungsidee:** Nutzung von Audio-Echtzeiteffekten der Engine.
-
-### **Specialized Chassis UI / V (Diverse)**
-*   **Beschreibung:** UI-Anpassungen für verschiedene Fahrzeugtypen.
-*   **Code-Analyse:** Lua Screen Scripting.
-*   **Verbesserungsidee:** Universelles UI-Framework für alle Chassis.
-
-### **Spread modifier (Autor: Ribbons)**
-*   **Beschreibung:** Ändert die Streuung von Geschützen.
-*   **Code-Analyse:** XML-Edit `spread`.
-*   **Verbesserungsidee:** Realistischer Rückstoß-Offset per Skript.
-
-### **ST pod (v1.0) (Autor: FelineCat)**
-*   **Beschreibung:** Zusätzlicher Targeting-Pod für Flugzeuge.
-*   **Code-Analyse:** Kamera-Komponenten XML.
-*   **Verbesserungsidee:** Nachtsicht/Infrarot-Modus per Skript.
-
-### **Starting Aircraft Altitude (Autor: Mr. Scoot)**
-*   **Beschreibung:** Ermöglicht die Wahl der Starthöhe beim Launch.
-*   **Code-Analyse:** Lua UI Edit in `screen_landing.lua`.
-*   **Verbesserungsidee:** Geländebasierte Sicherheits-Abfrage für die gewählte Höhe.
-
-### **Supersonic Cruise Missile (Autor: No Name)**
-*   **Beschreibung:** Extrem schnelle Marschflugkörper.
-*   **Code-Analyse:** XML `force_emitter` auf Maximum.
-*   **Verbesserungsidee:** (Siehe Physik-Kapitel: Tunneling vermeiden).
-
-### **Tactical Operations Centre 1.5 / HD (Autor: Bredroll)**
-*   **Beschreibung:** Massive Erweiterung der Brücke und der Träger-Funktionen.
-*   **Code-Analyse:** Komplexes Mesh-Replacement und Lua-Scripting.
-*   **Verbesserungsidee:** Integration in ein globales Ship-Management-System.
-
-### **Torpedo & Missile Wolfenstein alarm (Autor: Spoozufy)**
-*   **Beschreibung:** Spezielle Warnsounds für Torpedo/Raketen-Anflug.
-*   **Code-Analyse:** Audio Replacement.
-*   **Verbesserungsidee:** (Siehe Alarm Mods)
-
-### **Torpedo Reformat (Autor: Ribbons)**
-*   **Beschreibung:** Überarbeitung der Torpedo-Physik (Geschwindigkeit, Turn-Rate).
-*   **Code-Analyse:** XML-Edit an Torpedo-Daten.
-*   **Verbesserungsidee:** Kavitations-Effekte (Sound/Partikel) bei hoher Geschwindigkeit simulieren.
-
-### **Turret Utility (Autor: Ribbons)**
-*   **Beschreibung:** Hilfsfunktionen für Geschütztürme.
-*   **Code-Analyse:** XML/Lua Mix.
-*   **Verbesserungsidee:** Automatisches Ausrichten auf markierte Ziele.
-
-### **UI Enhancer (Autor: QuantX)**
-*   **Beschreibung:** Die Standard-Mod für UI-Verbesserungen.
-*   **Code-Analyse:** Exzellente Nutzung von Lua-Hooks.
-*   **Verbesserungsidee:** Benutzerdefinierte Profile für verschiedene Rollen (Kommandant vs. Pilot).
-
-### **Unit Death Wolfenstein alarm (Autor: Spoozufy)**
-*   **Beschreibung:** Alarm-Sound beim Verlust von Einheiten.
-*   **Code-Analyse:** Audio Replacement.
-*   **Verbesserungsidee:** (Siehe Alarm Mods)
-
-### **Utility (Autor: Ribbons)**
-*   **Beschreibung:** Sammlung von kleinen Hilfskonzepten.
-*   **Code-Analyse:** XML/Lua Tweaks.
-*   **Verbesserungsidee:** Zusammenführung in ein einheitliches Dienstprogramm.
-
-### **Vanilla Friendly Barge Boost (Autor: Teledahn)**
-*   **Beschreibung:** Moderater Speed-Boost für Barken, der die Spielbalance erhält.
-*   **Code-Analyse:** Konservativer XML-Edit.
-*   **Verbesserungsidee:** (Hervorragende Mod, kein Handlungsbedarf).
-
-### **Vehicle IDs (Autor: HSAR)**
-*   **Beschreibung:** Zeigt IDs direkt über den Fahrzeugen in der 3D-Welt.
-*   **Code-Analyse:** Lua `world_to_screen` Transformationen.
-*   **Verbesserungsidee:** Performance-Optimierung durch Reduzierung der Update-Rate für ferne Ziele.
-
-### **Walrus I am (Autor: Bredroll)**
-*   **Beschreibung:** Walrus-Chassis mit erweiterten Fähigkeiten (Speed/Bewaffnung).
-*   **Code-Analyse:** XML Chassis Modifikation.
-*   **Verbesserungsidee:** Dynamisches Umschalten zwischen Rad- und Wasserantriebsanimationen.
-
-### **Wolfenstein Bridge Alarm (Autor: Spoozufy)**
-*   **Beschreibung:** Der klassische Wolfenstein-Alarmsound für die Brücke.
-*   **Code-Analyse:** Audio Replacement.
-*   **Verbesserungsidee:** (Siehe Alarm Mods)
-
----
-
-## 3. Technische Detail-Analyse (Deep Dive)
-*Ausgewählte Beispiele für sauberen vs. unsauberen Code.*
-
-### 3.1. Physik & Movement
-Der Unterschied zwischen **Kraft** (`force_emitter`) und **Widerstand** (`drag`) ist entscheidend.
-*   **Sauber:** Widerstand verringern (Schiff gleitet besser).
-*   **Unsauber:** Kraft verzehnfachen (Schiff wird zur Rakete und fliegt bei Wellen weg).
-*   *Lektion:* Immer erst `drag` tunen, dann `force`.
-
-### 3.2. Scripting & UI
-Der **UI Enhancer** zeigt, wie man `Hooks` schreibt:
+**Vanilla-Code (Original):**
 ```lua
-local old_update = update
-function update()
-  old_update() -- Original-Code ausführen
-  my_custom_code() -- Eigenes Overlay rendern
+function get_selected_vehicle_attachment_options(attachment_type)
+    -- ...
+    for i = 0, option_count - 1 do
+        local attachment_definition = update_get_attachment_option(attachment_type, i)
+
+        if attachment_definition > -1 and update_get_attachment_option_hidden(attachment_definition) == false then
+            local attachment_data = get_attachment_data_by_definition_index(attachment_definition)
+            -- ...
+        end
+    end
+    -- ...
 end
 ```
-Das ist der einzige Weg, um Kompatibilität mit Updates zu sichern.
+
+**Mod-Code (Geändert):**
+```lua
+function get_selected_vehicle_attachment_options(attachment_type)
+    -- ...
+    for i = 0, option_count - 1 do
+        local attachment_definition = update_get_attachment_option(attachment_type, i)
+
+        if attachment_definition > -1 then -- Prüfung auf 'hidden' wurde entfernt
+            local attachment_data = get_attachment_data_by_definition_index(attachment_definition)
+            -- ...
+        end
+    end
+    -- ...
+end
+```
+
+### Zusammenfassung der Auswirkung
+Durch das Entfernen des Checks `update_get_attachment_option_hidden(attachment_definition) == false` werden alle für einen Slot-Typ verfügbaren Attachments angezeigt, auch wenn sie in den Spieldaten als "versteckt" markiert sind. Da das 15mm-Geschütz im Spiel existiert, aber standardmäßig versteckt ist, wird es durch diese Änderung im Menü wählbar.
+
+## Fazit
+Eine sehr effiziente Modifikation, die bestehende Spielressourcen freischaltet, ohne neue Assets hinzufügen zu müssen. Sie demonstriert, wie die Spiel-Engine von Carrier Command 2 Filter für Inhalte nutzt, die durch einfache Skript-Overrides umgangen werden können.
 
 ---
-*Vollständiges Entwickler-Verzeichnis erstellt für Modding-Referenz (V11b).*
 
+## Übersicht
+- **Mod-Name:** 2x Cruise Missile Speed
+- **Kategorie:** Weapons
+- **Dateien:** `content/game_objects/missile_cruise.xml`
+
+## Technische Analyse
+
+### Mechanik
+Die Mod erhöht die Geschwindigkeit von Marschflugkörpern (Cruise Missiles) von ca. 78 m/s auf 139 m/s (Faktor ~1,78x). Dies wird nicht durch eine direkt Geschwindigkeitsvariable erreicht, sondern durch einen Eingriff in die Physik-Definition des Objekts.
+
+### Physik-Tweak in `missile_cruise.xml`
+
+**Vanilla (Original):**
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<data display_name="Cruise Missile" bounding_radius="2.50000000e+00" ai_type="0">
+	<bodies/>
+	<constraints/>
+    <!-- ... meshes, lights, etc. ... -->
+</data>
+```
+
+**Mod-Version:**
+Die Mod fügt eine explizite Körperdefinition hinzu, um die Masse zu kontrollieren:
+
+```xml
+<bodies>
+    <body mass="1.00000000e+00" name="body" is_static="false">
+        <transform m00="1.00000000e-01" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="0.00000000e+00" ty="0.00000000e+00" tz="0.00000000e+00"/>
+        <boxes>
+            <box>
+                <size x="3.50000000e-01" y="3.50000000e+00" z="3.50000000e-01"/>
+            </box>
+        </boxes>
+    </body>
+</bodies>
+```
+
+### Funktionsweise
+1.  **Masse-Reduktion:** Durch das Setzen der Masse auf `1.0` (ein sehr niedriger Wert im Vergleich zu den Standardwerten der Engine für solche Objekte) wird die Beschleunigung massiv erhöht.
+2.  **F = m * a:** Da die Schubkraft (`thruster`) des Triebwerks in den Spieldaten gleich bleibt, führt eine geringere Masse (`m`) zu einer deutlich höheren Beschleunigung (`a`).
+3.  **Gleichgewicht:** Das Projektil erreicht schneller seine Endgeschwindigkeit, die durch den Luftwiderstand und die Schubkraft begrenzt wird. 
+
+### Wichtige Erkenntnis
+Der Autor merkt an, dass 139 m/s die "absolute Höchstgeschwindigkeit" ist, bei der die Zielgenauigkeit (Pinpoint Accuracy) noch erhalten bleibt. Höhere Geschwindigkeiten würden vermutlich dazu führen, dass die KI-Steuerung des Marschflugkörpers übersteuert oder das Ziel aufgrund der hohen Geschwindigkeit verfehlt.
+
+## Fazit
+Die Mod nutzt das physikalische Prinzip der Massereduzierung, um die Leistung von Waffen zu steigern. Dies ist eine saubere Methode, da sie keine Skripte benötigt und direkt die Engine-Physik anspricht.
+
+---
+
+## Übersicht
+- **Mod-Name:** Cement bomb
+- **Kategorie:** Weapons
+- **Dateien:** `content/meshes/projectiles/projectiles/bomb_1.mesh`
+
+## Technische Analyse
+
+### Mechanik
+Die "Cement bomb" Mod ist eine reine Asset-Replacement-Modifikation. Sie ändert weder die Physik noch die Schadenswerte oder die Logik der Bomben im Spiel.
+
+### Analyse der Dateistruktur
+Die Mod überschreibt die Binärdatei für das Modell:
+`content/meshes/projectiles/projectiles/bomb_1.mesh`
+
+### Besonderheiten
+- **Keine XML-Änderungen:** Da keine XML-Datei (wie `bomb_1.xml`) mitgeliefert wird, bleiben die funktionalen Eigenschaften identisch mit Vanilla:
+  ```xml
+  <!-- Beispiel für eine unveränderte Eigenschaft in den Spieldaten -->
+  <physics mass="250.0" drag="0.01" /> <!-- Werte bleiben Vanilla -->
+  ```
+- **Kompatibilität:** Die Mod ist mit allen Mods kompatibel, die keine Änderungen an `bomb_1.mesh` vornehmen.
+
+## Fazit
+Eine einfache kosmetische Modifikation, die zeigt, wie das Spiel durch das Überschreiben von Verzeichnispfaden in der `content/`-Struktur Assets austauscht.
+
+---
+
+## Übersicht
+- **Mod-Name:** Gentle Missile Speed Buff
+- **Kategorie:** Weapons
+- **Dateien:** 
+    - `content/game_objects/missile_2.xml` (IR Missile)
+    - `content/game_objects/missile_4.xml` (Laser Missile)
+    - `content/game_objects/missile_cruise.xml` (Cruise Missile)
+    - `content/game_objects/missile_tv.xml` (TV Missile)
+
+## Technische Analyse
+
+### Mechanik
+Wie der Name vermuten lässt, bietet diese Mod eine "sanftere" Erhöhung der Geschwindigkeiten im Vergleich zu extremeren Mods. Sie deckt jedoch eine breitere Palette von Raketentypen ab.
+
+### Physik-Tweak
+Die Mod nutzt die gleiche technische Grundlage wie die "2x Speed" Mod: Sie fügt einen expliziten `<body mass="1.0">` hinzu, wo Vanilla-Dateien leere Sektionen haben.
+
+**Vergleich der Massen:**
+- **Vanilla:** Undefiniert (nutzt Engine-Defaults).
+- **Mod:** `1.0` für alle Raketentypen.
+
+Durch die Reduktion der Masse bei gleichbleibender Schubkraft (`thruster`) erhöht sich die Beschleunigung (`a = F/m`).
+
+### Unterschiede zu anderen Speed-Mods
+Interessant ist der Vergleich der **Kollisionsboxen** (`<box>`) in der `missile_cruise.xml`:
+- **2x Cruise Missile Speed Mod:** Nutzt eine Box-Größe von `0.35`.
+- **Gentle Missile Speed Buff Mod:** Nutzt eine Box-Größe von `0.385`.
+
+Die "Gentle"-Mod verwendet also leicht größere Kollisionsboxen. Dies könnte dazu dienen, die Trefferwahrscheinlichkeit bei höheren Geschwindigkeiten zu stabilisieren, da Projektile bei hoher Geschwindigkeit dazu neigen können, durch Objekte "hindurchzutunneln", wenn die Kollisionsprüfung zwischen zwei Frames stattfindet.
+
+## Fazit
+Eine umfassende Balance-Mod, die das gesamte Raketen-Arsenal beschleunigt. Sie folgt dem Standard-Muster der Massereduktion, achtet aber durch leicht angepasste Kollisionsboxen auf die Stabilität der Spielphysik.
+
+---
+
+## Übersicht
+- **Mod-Name:** Island turret placement QoL
+- **Kategorie:** Weapons
+- **Dateien:** `content/scripts/screen_vehicle_control.lua`
+
+## Technische Analyse
+
+### Mechanik
+Diese Mod verbessert die Benutzerfreundlichkeit (Quality of Life) bei der Verteidigung von Inseln. Sie ermöglicht es dem Spieler, die Produktion von Geschütztürmen direkt über die Kartenoberfläche abzubrechen, anstatt nur über das Menü des Command Centers.
+
+### Code-Änderungen in `screen_vehicle_control.lua`
+
+Die Mod fügt eine Logik hinzu, die beim Klicken auf einen Turm-Spawn-Punkt prüft, ob dort bereits ein Bauauftrag vorliegt. Falls ja, wird dieser abgebrochen.
+
+**Vanilla-Verhalten (Auszug):**
+```lua
+-- In der Funktion, die Klicks auf Turm-Spawns verarbeitet
+local marker_index, is_valid = island:get_turret_spawn(turret_spawn_index)
+if is_valid then
+    island:set_facility_add_production_queue_defense_item(item, marker_index)
+    g_command_center_ui.is_place_turret = false
+    g_command_center_ui.selected_item = -1
+    g_selection:clear()
+end
+```
+
+**Mod-Verhalten (Geändert):**
+```lua
+local marker_index, is_valid = island:get_turret_spawn(turret_spawn_index)
+if is_valid then
+    island:set_facility_add_production_queue_defense_item(item, marker_index)
+else
+    -- NEU: Wenn der Spot nicht valid ist (weil er belegt ist), 
+    -- wird versucht, den Auftrag zu stornieren.
+    local item_type_id, queue_index = get_island_turret_queue_number(island, marker_index)
+    cancel_turret(island, queue_index)
+end
+```
+
+### Neue Hilfsfunktionen
+Die Mod führt mehrere neue Funktionen ein, um den Status der Turm-Queue zu verwalten und anzuzeigen:
+
+1.  **`cancel_turret(island, turret_queue_index)`**: Ruft die Engine-Funktion zum Entfernen eines Queue-Items auf.
+2.  **`get_island_turret_queue_number(island, marker_index)`**: Findet heraus, an welcher Position in der Warteschlange sich ein bestimmter Marker befindet.
+3.  **`get_island_turret_progress(island, turret_spawn_index)`**: Berechnet den Fortschritt (Baut gerade, in Warteschlange, fertig oder leer).
+4.  **`imgui_turret_button(...)`**: Eine neue UI-Komponente für die Darstellung der Turm-Optionen im Command Center.
+
+## Fazit
+Eine technisch ausgereifte Mod, die tief in das `screen_vehicle_control.lua` Skript eingreift. Sie nutzt geschickt vorhandene Marker-Daten, um die Interaktion mit der Spielwelt (Insel-Verteidigung) intuitiver zu gestalten.
+
+---
+
+## Übersicht
+- **Mod-Name:** Mark84 bomb
+- **Kategorie:** Weapons
+- **Dateien:** `content/meshes/projectiles/projectiles/bomb_3.mesh`
+
+## Technische Analyse
+
+### Mechanik
+Die "Mark84 bomb" Mod ist eine reine Asset-Replacement-Modifikation. Sie ersetzt das visuelle Modell der schweren Bombe (Bomb 3) durch ein Modell, das der realen Mark 84 Mehrzweckbombe nachempfunden ist.
+
+### Analyse der Dateistruktur
+Die Mod überschreibt die Datei:
+`content/meshes/projectiles/projectiles/bomb_3.mesh`
+
+Dies ist das Standard-Mesh für die schweren Bomben (Bomb 3) in *Carrier Command 2*. Da nur die `.mesh` Datei vorhanden ist, werden keine XML-Eigenschaften (wie Explosionsradius oder Masse) verändert.
+
+### Code-Beispiel (Vanilla-Referenz)
+Da die Mod keine XML-Dateien enthält, nutzt sie die Standardwerte aus der `bomb_3.xml` des Spiels. Ein Vergleich zeigt, dass die Logik unverändert bleibt:
+
+**Vanilla/Mod Spiellogik (Identisch):**
+```xml
+<!-- Auszug aus der internen bomb_3.xml Definition -->
+<projectile_definition explosion_magnitude="250.0" search_radius="10.0" />
+<physics mass="500.0" drag="0.015" />
+```
+
+### Besonderheiten
+- **Visueller Effekt:** Die Mark 84 ist in der Realität eine 2000-Pfund-Bombe. Das neue Modell verleiht der schweren Bombe im Spiel ein realistischeres Aussehen.
+- **Kompatibilität:** Da keine Skripte oder XML-Dateien geändert werden, ist die Mod extrem stabil und mit allen Gameplay-Mods kompatibel, außer solchen, die ebenfalls `bomb_3.mesh` ersetzen.
+
+## Fazit
+Eine ästhetische Modifikation für Enthusiasten realistischer Militärtechnik. Sie demonstriert die einfache Austauschbarkeit von 3D-Modellen in *Carrier Command 2*.
+
+---
+
+## Übersicht
+- **Mod-Name:** Missile Reformat
+- **Kategorie:** Weapons
+- **Dateien:** 
+    - `content/game_objects/missile_1.xml` bis `missile_5.xml`
+    - `content/game_objects/missile_cruise.xml`
+    - `content/game_objects/missile_tv.xml`
+
+## Technische Analyse
+
+### Mechanik
+"Missile Reformat" ist eine der aggressivsten Speed-Mods für Raketen. Während andere Mods oft einen Einheitswert von `1.0` verwenden, nutzt diese Mod extrem niedrige Massenwerte bis hin zu `0.1`, um eine explosive Beschleunigung zu erzielen.
+
+### Code-Vergleich: Physik-Tweaks
+
+#### IR Raketen (`missile_1.xml`)
+Hier ist der Eingriff am stärksten. Die Masse wird auf ein Zehntel des Niveaus anderer Speed-Mods gesenkt.
+
+**Vanilla (Original):**
+```xml
+<data display_name="Missile 1" bounding_radius="2.00000000e+00" ai_type="0">
+	<bodies/> <!-- Leer: nutzt Standard-Engine-Masse -->
+</data>
+```
+
+**Mod-Version:**
+```xml
+<bodies>
+    <body mass="0.10000000e+00" name="body" is_static="false">
+        <!-- Massiv verringerte Masse für extreme Beschleunigung -->
+    </body>
+</bodies>
+```
+
+#### Schwere Raketen (`missile_5.xml`)
+Bei schwereren Projektilen wie der Gimbale-Rakete (Missile 5) ist die Mod defensiver, aber immer noch schneller als Vanilla.
+
+**Vanilla (Original):**
+```xml
+<body mass="1.00000000e+00" name="body" is_static="false">
+```
+
+**Mod-Version:**
+```xml
+<body mass="0.50000000e+00" name="body" is_static="false">
+```
+
+### Zusammenfassung der Massen-Werte
+| Raketentyp | Vanilla (Standard) | Gentle Buff Mod | Missile Reformat |
+| :--- | :--- | :--- | :--- |
+| Cruise Missile | ~250.0 (est.) | 1.0 | 1.0 |
+| IR Missile (1/2) | ~50.0 (est.) | 1.0 | **0.1** |
+| Laser Missile (4) | ~50.0 (est.) | 1.0 | **0.1** |
+
+## Fazit
+Die "Missile Reformat" Mod bietet die höchste Beschleunigung für taktische Raketen im gesamten Mod-Pack. Durch die Reduzierung der Masse auf `0.1` reagieren die Projektile fast instand auf Kurskorrekturen und erreichen ihre Höchstgeschwindigkeit in Millisekunden. Dies macht sie extrem schwer abzufangen, kann aber bei sehr hohen Geschwindigkeiten zu physikalischen Artefakten (Clipping) führen.
+
+---
+
+## Übersicht
+- **Mod-Name:** Naval Gun Stabilizer
+- **Kategorie:** Weapons
+- **Dateien:** `content/game_objects/vehicle_attachment_carrier_turret_main_gun.xml`
+
+## Technische Analyse
+
+### Mechanik
+Die "Naval Gun Stabilizer" Mod verbessert die Präzision des Hauptgeschützes des Flugzeugträgers. Entgegen dem Namen wird kein physikalischer Stabilisator hinzugefügt, sondern die Streuung des Projektilauslasses (Muzzle) reduziert.
+
+### Code-Vergleich: Präzisions-Tweak
+
+In *Carrier Command 2* definiert der Wert `fov` (Field of View) bei einem `projectile_emitter` die Streuung der Schüsse. Ein niedrigerer Wert bedeutet höhere Genauigkeit.
+
+**Vanilla (Original):**
+```xml
+<projectile_emitters>
+    <projectile_emitter name="muzzle" fov="5.99999987e-02">
+        <!-- ... -->
+    </projectile_emitter>
+</projectile_emitters>
+```
+
+**Mod-Version:**
+Die Mod reduziert diesen Wert massiv (~66% weniger Streuung):
+```xml
+<projectile_emitters>
+    <projectile_emitter name="muzzle" fov="1.99999987e-02">
+        <!-- ... -->
+    </projectile_emitter>
+</projectile_emitters>
+```
+
+### Effekt im Spiel
+Durch die Reduktion von `0.06` auf `0.02` wird der Streukreis des Geschützes auf Drittel des ursprünglichen Maßes verkleinert. Dies ermöglicht präzise Treffer auf große Distanzen, was besonders gegen kleine Ziele oder spezifische Subsysteme nützlich ist.
+
+## Fazit
+Eine einfache, aber sehr effektive Modifikation. Sie zeigt, wie durch das Anpassen eines einzelnen Attributs (`fov`) in der XML-Definition einer Waffe das Balancing und das "Gefühl" der Steuerung signifikant verändert werden kann.
+
+---
+
+## Übersicht
+- **Mod-Name:** Salty's Missile Damage Edit
+- **Kategorie:** Weapons
+- **Dateien:** `content/scripts/constants.txt`
+
+## Technische Analyse
+
+### Mechanik
+Diese Mod bietet eine subtile Balance-Änderung für das Raketen-Arsenal. Sie erhöht den Explosionsschaden von taktischen Raketen um genau 5%.
+
+### Code-Vergleich: `constants.txt`
+
+Die Mod nutzt die `constants.txt`, um globale Variablen der Spiel-Engine zu überschreiben. Dies ist eine sehr saubere und kompatible Methode des Moddings.
+
+**Vanilla (Original):**
+```text
+missile_1_explosion_damage_scale 1.0
+missile_2_explosion_damage_scale 1.0
+missile_tv_explosion_damage_scale 1.0
+```
+
+**Mod-Version:**
+```text
+missile_1_explosion_damage_scale 1.05
+missile_2_explosion_damage_scale 1.05
+missile_tv_explosion_damage_scale 1.05
+```
+
+### Analyse der betroffenen Einheiten
+- **Missile 1 (IR):** Profitiert von der Erhöhung, was besonders gegen leicht gepanzerte Ziele einen Unterschied machen kann.
+- **Missile 2 (Laser):** Erhält ebenfalls den 5% Buff.
+- **TV Missile:** Die ferngesteuerte Rakete wird leicht schlagkräftiger.
+
+Interessanterweise bleibt die `missile_5_explosion_damage_scale` (Gimbale/Schwere Rakete) auf `1.0` (Vanilla), was darauf hindeutet, dass der Autor nur die leichteren, taktischen Raketen stärken wollte.
+
+## Fazit
+Eine minimale, aber präzise Modifikation. Sie ist ein perfektes Beispiel für "Data-Only" Modding, das keine Skripte verändert und somit maximale Kompatibilität mit anderen Mods (wie z.B. Speed-Mods) gewährleistet.
+
+---
+
+## Übersicht
+- **Mod-Name:** Supersonic Cruise Missile
+- **Kategorie:** Weapons
+- **Dateien:** `content/game_objects/missile_cruise.xml`
+
+## Technische Analyse
+
+### Mechanik
+Dies ist die extremste Variante der Cruise-Missile-Geschwindigkeits-Mods. Sie zielt darauf ab, die Rakete so schnell wie möglich zu machen, während sie gerade noch innerhalb der physikalischen Grenzen des Spiels funktioniert.
+
+### Code-Vergleich: Physik-Tweak
+
+Wie bei der "2x Speed" Mod wird die Masse auf `1.0` gesetzt. Der entscheidende Unterschied liegt jedoch in der Größe der Kollisionsbox (`<box>`).
+
+**Vanilla (Original):**
+```xml
+<bodies/> <!-- Nutzt Engine-Standardwerte -->
+```
+
+**Supersonic Mod-Version:**
+```xml
+<bodies>
+    <body mass="1.00000000e+00" name="body" is_static="false">
+        <boxes>
+            <box>
+                <size x="2.50000000e-01" y="2.50000000e+00" z="2.50000000e-01"/>
+            </box>
+        </boxes>
+    </body>
+</bodies>
+```
+
+### Vergleich der Cruise-Missile-Mods
+| Mod | Masse | Box-Größe (x/z) | Fokus |
+| :--- | :--- | :--- | :--- |
+| Gentle Missile Speed Buff | 1.0 | 0.385 | Stabilität & Trefferrate |
+| 2x Cruise Missile Speed | 1.0 | 0.350 | Balance |
+| **Supersonic Cruise Missile** | **1.0** | **0.250** | **Maximale Geschwindigkeit** |
+
+### Analyse der Auswirkungen
+Durch die Reduktion der Kollisionsbox auf `0.25` (ca. 35% kleiner als bei der Gentle-Mod) verringert die Mod das Risiko, dass die Rakete bei extrem hohen Geschwindigkeiten durch "Ghost-Kollisionen" mit der eigenen Abschussrampe oder nahen Objekten explodiert. Zudem ermöglicht die geringe Größe ein noch engeres Vorbeifliegen an Hindernissen.
+
+## Fazit
+Die "Supersonic" Mod reizt die Engine von *Carrier Command 2* bis zum Äußersten aus. Sie kombiniert die bewährte Massereduktion mit einer aggressiven Verkleinerung der Hitbox. Dies ist die Wahl für Spieler, die Raketen wollen, denen man kaum ausweichen kann, allerdings auf Kosten der visuellen Konsistenz bei der Kollision (die Rakete muss "näher" am Ziel sein, um zu explodieren).
+
+---
+
+## Übersicht
+- **Mod-Name:** Torpedo & Missile Wolfenstein alarm
+- **Kategorie:** Weapons / Audio
+- **Dateien:** `content/audio/telemetry07.ogg`
+
+## Technische Analyse
+
+### Mechanik
+Diese Mod ist eine reine Audio-Modifikation. Sie ändert keine Spiellogik, sondern ersetzt lediglich ein Sound-Asset durch ein anderes.
+
+### Analyse der Dateistruktur
+Die Mod überschreibt die Datei:
+`content/audio/telemetry07.ogg`
+
+In *Carrier Command 2* ist dies der Sound-Effekt für den Alarm bei anfliegenden Raketen oder Torpedos. Durch das Ersetzen dieser Datei wird der Standard-Piepton durch einen atmosphärischeren Alarm ersetzt, der an klassische Militärsimulatoren oder Spiele erinnert (Referenz: Wolfenstein).
+
+### Code-Beispiel (Referenz)
+Da es sich um ein reines Asset-Replacement handelt, gibt es keine Code-Änderungen in XML- oder Lua-Dateien. Das Spiel lädt die Datei dynamisch aus dem Mod-Ordner, da der Pfad in der `content`-Struktur identisch mit dem des Hauptspiels ist.
+
+### Besonderheiten
+- **Kompatibilität:** Da keine Skripte oder XML-Dateien betroffen sind, ist diese Mod zu 100% mit allen Gameplay-Mods kompatibel. Es kann jedoch nur eine Mod gleichzeitig den `telemetry07.ogg` Sound ändern.
+- **Audio-Format:** Die Datei liegt im `.ogg` (Vorbis) Format vor, was dem Standard von CC2 entspricht.
+
+## Fazit
+Eine einfache, aber atmosphärische Modifikation für die akustische Rückmeldung im Spiel. Sie zeigt, wie leicht Audio-Assets durch das Einhalten der Ordnerstruktur ausgetauscht werden können.
+
+---
+
+## Übersicht
+- **Mod-Name:** Torpedo Reformat
+- **Kategorie:** Weapons
+- **Dateien:** 
+    - `content/game_objects/torpedo.xml`
+    - `content/game_objects/torpedo_decoy.xml`
+    - `content/game_objects/torpedo_noisemaker.xml`
+    - `content/game_objects/torpedo_sonar_buoy.xml`
+
+## Technische Analyse
+
+### Mechanik
+Ähnlich wie die "Missile Reformat" Mod, zielt diese Modifikation darauf ab, die Leistung von Unterwasser-Projektilen durch physikalische Eingriffe zu verbessern. Der Fokus liegt hierbei auf der Beschleunigung und Manövrierfähigkeit unter Wasser.
+
+### Code-Vergleich: Physik-Tweak in `torpedo.xml`
+
+Die Mod fügt explizite Körperdefinitionen hinzu, um die standardmäßigen (und oft trägen) Unterwasser-Physikeigenschaften der Engine zu umgehen.
+
+**Vanilla (Original):**
+```xml
+<data display_name="Bomb 1" bounding_radius="1.00000000e+00" lod_scale="1.00000000e+00" ai_type="0">
+	<bodies/> <!-- Leer: nutzt Standardwerte für Wasserwiderstand und Masse -->
+</data>
+```
+
+**Mod-Version:**
+```xml
+<bodies>
+    <body mass="1.00000000e+00" name="body" is_static="false">
+        <boxes>
+            <box>
+                <size x="3.50000000e-01" y="3.50000000e+00" z="3.50000000e-01"/>
+            </box>
+        </boxes>
+    </body>
+</bodies>
+```
+
+### Auswirkungen auf Untersysteme
+Die Mod beschränkt sich nicht nur auf den Standard-Torpedo, sondern passt auch Hilfssysteme an:
+- **Decoys & Noisemakers:** Durch die Massereduzierung auf `1.0` können diese Gegenstände schneller ausgestoßen werden und nehmen schneller ihre Position im Wasser ein, was die Verteidigungsfähigkeit des Trägers gegen feindliche Torpedos verbessert.
+- **Sonar Buoys:** Die Bojen erreichen schneller ihre Zieltiefe/Position.
+
+## Fazit
+Eine umfassende Überarbeitung der Unterwasser-Waffensysteme. Durch die Angleichung der Massenwerte auf `1.0` fühlen sich Torpedos deutlich reaktionsschneller an und leiden weniger unter der oft simulierten "Trägheit" des Wassers in der Physik-Engine. Dies ist eine essentielle Mod für Spieler, die eine direktere Kontrolle über ihre Marine-Bewaffnung bevorzugen.
+
+---
+
+## Übersicht
+- **Mod-Name:** Turret Utility
+- **Kategorie:** Weapons
+- **Dateien:** `content/game_objects/stationary_turret.xml`
+
+## Technische Analyse
+
+### Mechanik
+Diese Mod erweitert die Hardware-Fähigkeiten der stationären Insel-Türme. Im Standardspiel sind diese Türme rein auf ihre Hauptbewaffnung beschränkt. Die Mod fügt zusätzliche "Attachment Slots" hinzu, was es ermöglicht, die Türme mit Hilfssystemen auszustatten.
+
+### Code-Vergleich: `stationary_turret.xml`
+
+In *Carrier Command 2* werden verfügbare Ausrüstungsslots über die `<attachments>` Sektion in der XML des Objekts definiert.
+
+**Vanilla (Original):**
+```xml
+<attachments>
+    <!-- Slot für das Hauptgeschütz (z.B. 30mm Turret) -->
+    <attachment name="attachment" type="5">
+        <transform ... />
+    </attachment>
+</attachments>
+```
+
+**Mod-Version:**
+Die Mod fügt zwei neue Slots hinzu:
+```xml
+<attachments>
+    <attachment name="attachment" type="5"> <!-- Hauptgeschütz -->
+        <transform ... />
+    </attachment>
+    
+    <!-- NEU: Kamera/Sensor Slot -->
+    <attachment name="attachment" type="0">
+        <transform ... />
+    </attachment>
+    
+    <!-- NEU: Utility/Defense Slot -->
+    <attachment name="attachment" type="2">
+        <transform ... />
+    </attachment>
+</attachments>
+```
+
+### Funktionalität der neuen Slots
+- **Type 0 (Camera/Sensor):** Erlaubt das Anbringen eines Gimbale-Sensors oder einer Kamera. Dadurch können stationäre Türme als Fernbeobachtungspunkte genutzt werden, was die Aufklärung auf Inseln massiv verbessert.
+- **Type 2 (Utility):** Ermöglicht das Anbringen von Systemen wie Flare-Launchern. Dies erhöht die Überlebensfähigkeit der Türme gegen Raketenangriffe erheblich.
+
+## Fazit
+Eine exzellente Erweiterung für das Insel-Verteidigungs-Gameplay. Technisch gesehen ist es ein einfacher, aber wirkungsvoller Eingriff in die Objekt-Struktur. Durch das Hinzufügen von nur zwei Zeilen XML-Code wird die taktische Tiefe der stationären Verteidigung vervielfacht.
+
+---

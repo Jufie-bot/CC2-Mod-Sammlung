@@ -1,32 +1,21 @@
-# Entwickler Guide Index
+# Willkommen im CC2 Modding Wiki
 
-Willkommen im lokalen Modding-Wiki für Carrier Command 2. Diese Dokumentation spiegelt die offiziellen Wikis wider und enthält exklusive technische Analysen.
+Dieses Wiki ist das zentrale Dashboard für die technische Dokumentation der Mod-Sammlung. Hier fließen alle Analysen und Standards zusammen.
 
-## 📚 Grundlagen
-*   **[Projekt Entwicklung](Projekt_Entwicklung.md)**
-    *   Chronologie des Projekts
-    *   Vom Ordner zur Automatisierung
-    *   Workspace-Übersicht
-*   **[Modding Grundlagen](Modding_Grundlagen.md)**
-    *   Wie Mods funktionieren (Dateistruktur & `mod.xml`)
-    *   Das Override-System
-    *   Nutzung des `mod_dev_kit`
-    *   Kompilierung von Assets
+## 🚀 Einstieg
+- **[Modding Grundlagen](Modding_Grundlagen.md)**: Dateistrukturen, Overrides und die `mod.xml`.
+- **[Entwickler Standards](Entwickler_Standards.md)**: Regeln für sauberen und kompatiblen Code.
+- **[Mod-Kategorien Übersicht](Mod_Kategorien_Liste.md)**: Thematische Übersicht aller verfügbaren Mods.
 
-## 🔧 Scripting & Lua
-*   **[Lua Referenz](Lua_Referenz.md)**
-    *   Alle verfügbaren Lua-Funktionen
-    *   Unterschied zwischen Native- und Lua-Funktionen
-    *   Wichtige Funktionen wie `update_world_to_screen`
+## 🔬 Analyse & Referenz
+- **[Technische Referenz](Technische-Referenz.md)**: **NEU!** Automatisch konsolidierte Detail-Analysen jeder Mod.
+- **[Lua Referenz](Lua_Referenz.md)**: Dokumentation der Screen-API und Bibliotheken.
+- **[Spiel-Konstanten](Game_Constants_Analyse.md)**: Tiefgehende Analyse der `constants.txt`.
 
-## ⚙️ Spiel-Mechaniken & Konstanten
-*   **[Spiel-Konstanten Analyse](Game_Constants_Analyse.md)**
-    *   **NEU:** Analyse der `constants.txt`
-    *   Waffenschaden & Explosionsradien ändern
-    *   Fahrzeug-TP, Rüstung und Treibstoff anpassen
-    *   Produktionskosten und -zeiten
-    *   KI- und Umwelt-Einstellungen
+## 🛠️ Projekt & Tools
+- **[Projekt Entwicklung](Projekt_Entwicklung.md)**: Historie und Automatisierung des Workspace.
+- **[Code Detail Analyse](Code_Detail_Analyse.md)**: Deep-Dives in komplexe Algorithmen.
+- **[Technisches Entwickler-Handbuch](Technisches_Entwickler_Handbuch.md)**: Dokumentations-Hub.
 
-## 📖 Bestehende Dokumentation
-*   **[Technisches Entwickler Handbuch](Technisches_Entwickler_Handbuch.md)** (Legacy / Spezifische Projekt-Infos)
-*   **[Code Detail Analyse](Code_Detail_Analyse.md)** (Analyse von Fremd-Mods)
+---
+*Stand: März 2026 | Dokumentation wird automatisch via GitHub Actions synchronisiert.*
