@@ -36,46 +36,42 @@ def generate_readme():
 
     content = []
     
-    # --- 1. Hero Section & Vision ---
+    # --- 1. Hero & Vision Header ---
     content.append("# 📟 CC2 Mod Development Hub\n")
     content.append(f"![Mods Total](https://img.shields.io/badge/Mods_Total-{mod_count}-blue?style=for-the-badge&logo=github)")
     content.append(f"![Analyzed](https://img.shields.io/badge/Analysed-{analyzed_count}-orange?style=for-the-badge&logo=bookstack)")
     content.append("![Discord](https://img.shields.io/badge/Discord-Join%20Us-7289DA?style=for-the-badge&logo=discord&logoColor=white)\n")
     
-    content.append("## 🎯 Die Vision")
-    content.append("> **\"Die ultimative Mod-Entwicklung: Ich analysiere nicht nur, ich erschaffe neu.\"**\n")
-    content.append("Herzlich willkommen in meinem Forschungslabor. Dies ist weit mehr als nur eine Sammlung von existierenden Mods. Hier werden die Grenzen von Carrier Command 2 durch dekonstruktive Analyse und innovatives Re-Engineering neu definiert.\n")
+    content.append("## 🎯 Die Vision: Dekonstruktion & Neuschöpfung")
+    content.append("Willkommen im Herzen der Carrier Command 2 Modding-Forschung. Dieses Projekt ist weit mehr als eine bloße Sammlung von Dateien – es ist ein **technisches Labor**, das darauf spezialisiert ist, die verborgene Logik des Spiels zu entschlüsseln.\n")
+    content.append("Unsere Mission ist es, bestehende Mods und Spieldateien (XML/Lua) bis ins kleinste Detail zu analysieren, um Best-Practices zu etablieren und die Grundlage für die nächste Generation von Overhauls zu schaffen. Jede Variable, jede Vektorberechnung und jede Konstante wird hier hinterfragt, um das Maximum aus der Simulation herauszuholen.\n")
 
-    # --- 2. Central Navigation (The Hub) ---
-    content.append("## 🗺️ Forschungs-Zentrale")
-    content.append("Nutze das Wiki für detaillierte Einblicke in unsere Entdeckungen und Standards.\n")
-    content.append("| 🟢 Für Einsteiger | 🔬 Forschung & Technik | 🛠️ Projekt & Leitung |")
-    content.append("| :--- | :--- | :--- |")
-    content.append("| [**Wiki Home**](wiki_new/Home.md) | [**Technische Referenz**](wiki_new/Technische-Referenz.md) | [**Projekt-Entwicklung**](wiki_new/Projekt_Entwicklung.md) |")
-    content.append("| [**Git Quickstart**](wiki_new/Git_Quickstart.md) | [**Code-Detail-Analyse**](wiki_new/Code_Detail_Analyse.md) | [**Entwickler-Standards**](wiki_new/Entwickler_Standards.md) |")
-    content.append("| [**Anleitung: Release**](wiki_new/Git_Quickstart.md#📦-7-profi-tipp-einzelne-mods-teilen-branches--tags) | [**Lua Referenz**](wiki_new/Lua_Referenz.md) | [**Community Discord**](https://discord.gg/example) |\n")
+    # --- 2. News & Breakthroughs ---
+    content.append("## 📡 Labor-Bericht: Aktuelle Durchbrüche")
+    content.append("> [!IMPORTANT]")
+    content.append("> **Fokus-Analyse**: Die Dekonstruktion der `Island_turret_placement_QoL` liefert aktuell bahnbrechende Erkenntnisse darüber, wie das Spiel Objekt-IDs für Verteidigungstürme zur Laufzeit verarbeitet. Diese Entdeckung wird die Entwicklung eigener Map-Verteidigungen revolutionieren.\n")
 
-    # --- 3. Community & News ---
-    content.append("## 📡 Projekt-News & Community")
-    content.append("Aktuelle Durchbrüche und Ankündigungen direkt aus dem Labor.\n")
-    content.append("> [!TIP]")
-    content.append("> **Neuankündigung**: Die technische Analyse der `Island_turret_placement_QoL` ist abgeschlossen und liefert bahnbrechende Erkenntnisse für die KI-Platzierung!\n")
-    
-    # --- 4. Library Overview (Collapsed) ---
+    # --- 3. Main Wiki Referral ---
+    content.append("## 🏛️ Forschungs-Zentrale (Das Wiki)")
+    content.append("Die gesamte technische Dokumentation, Code-Breakdowns und Entwickler-Standards haben wir in unser umfangreiches Wiki ausgelagert. Dort findest du das gebündelte Wissen aus hunderten Stunden Reverse Engineering.\n")
+    content.append("👉 **[Zum offiziellen Dokumentations-Wiki](wiki_new/Home.md)**\n")
+    content.append("*Hinweis: Im Wiki findest du auch den [Git Master-Guide](wiki_new/Git_Quickstart.md), falls du selbst zum Projekt beitragen möchtest.*\n")
+
+    # --- 4. Collapsed Mod Archive ---
     content.append("## 📂 Archivierte Sammlungen")
-    content.append(f"Derzeit befinden sich **{mod_count} Mods** in unserer Bibliothek.\n")
+    content.append(f"Unser Labor verwaltet derzeit **{mod_count} verschiedene Modifikationen**, die als Grundlage für unsere Analysen dienen.\n")
     content.append("<details>")
-    content.append("<summary><b>Vollständige Mod-Liste anzeigen</b></summary>\n")
+    content.append("<summary><b>📂 Vollständiges Archiv anzeigen (Klicken zum Ausklappen)</b></summary>\n")
     content.extend(categories_content)
     content.append("</details>\n")
 
     # --- 5. Footer ---
     content.append("---\n")
     content.append("### 🛰️ Kontakt & Mitwirkung")
-    content.append("- [Fehler melden](.github/ISSUE_TEMPLATE/bug_report.md)")
-    content.append("- [Zum Discord Server](https://discord.gg/example)")
-    content.append("- [Wiki-Beitrag leisten](CONTRIBUTING.md)\n")
-    content.append(f"*Letzte Synchronisierung: {os.popen('date /t').read().strip()} | Automatischer Hub Status: ✔️*")
+    content.append("- [Feedback oder Analyse-Wunsch](.github/ISSUE_TEMPLATE/bug_report.md)")
+    content.append("- [Community Discord](https://discord.gg/example)")
+    content.append("- [Entwickler-Portal](CONTRIBUTING.md)\n")
+    content.append(f"*Letzte automatische Synchronisierung: {os.popen('date /t').read().strip()} | Status: ✔️ Online*")
 
     with open(readme_path, "w", encoding="utf-8-sig") as f:
         f.write("\n".join(content))

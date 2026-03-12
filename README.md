@@ -4,31 +4,27 @@
 ![Analyzed](https://img.shields.io/badge/Analysed-13-orange?style=for-the-badge&logo=bookstack)
 ![Discord](https://img.shields.io/badge/Discord-Join%20Us-7289DA?style=for-the-badge&logo=discord&logoColor=white)
 
-## 🎯 Die Vision
-> **"Die ultimative Mod-Entwicklung: Ich analysiere nicht nur, ich erschaffe neu."**
+## 🎯 Die Vision: Dekonstruktion & Neuschöpfung
+Willkommen im Herzen der Carrier Command 2 Modding-Forschung. Dieses Projekt ist weit mehr als eine bloße Sammlung von Dateien – es ist ein **technisches Labor**, das darauf spezialisiert ist, die verborgene Logik des Spiels zu entschlüsseln.
 
-Herzlich willkommen in meinem Forschungslabor. Dies ist weit mehr als nur eine Sammlung von existierenden Mods. Hier werden die Grenzen von Carrier Command 2 durch dekonstruktive Analyse und innovatives Re-Engineering neu definiert.
+Unsere Mission ist es, bestehende Mods und Spieldateien (XML/Lua) bis ins kleinste Detail zu analysieren, um Best-Practices zu etablieren und die Grundlage für die nächste Generation von Overhauls zu schaffen. Jede Variable, jede Vektorberechnung und jede Konstante wird hier hinterfragt, um das Maximum aus der Simulation herauszuholen.
 
-## 🗺️ Forschungs-Zentrale
-Nutze das Wiki für detaillierte Einblicke in unsere Entdeckungen und Standards.
+## 📡 Labor-Bericht: Aktuelle Durchbrüche
+> [!IMPORTANT]
+> **Fokus-Analyse**: Die Dekonstruktion der `Island_turret_placement_QoL` liefert aktuell bahnbrechende Erkenntnisse darüber, wie das Spiel Objekt-IDs für Verteidigungstürme zur Laufzeit verarbeitet. Diese Entdeckung wird die Entwicklung eigener Map-Verteidigungen revolutionieren.
 
-| 🟢 Für Einsteiger | 🔬 Forschung & Technik | 🛠️ Projekt & Leitung |
-| :--- | :--- | :--- |
-| [**Wiki Home**](wiki_new/Home.md) | [**Technische Referenz**](wiki_new/Technische-Referenz.md) | [**Projekt-Entwicklung**](wiki_new/Projekt_Entwicklung.md) |
-| [**Git Quickstart**](wiki_new/Git_Quickstart.md) | [**Code-Detail-Analyse**](wiki_new/Code_Detail_Analyse.md) | [**Entwickler-Standards**](wiki_new/Entwickler_Standards.md) |
-| [**Anleitung: Release**](wiki_new/Git_Quickstart.md#📦-7-profi-tipp-einzelne-mods-teilen-branches--tags) | [**Lua Referenz**](wiki_new/Lua_Referenz.md) | [**Community Discord**](https://discord.gg/example) |
+## 🏛️ Forschungs-Zentrale (Das Wiki)
+Die gesamte technische Dokumentation, Code-Breakdowns und Entwickler-Standards haben wir in unser umfangreiches Wiki ausgelagert. Dort findest du das gebündelte Wissen aus hunderten Stunden Reverse Engineering.
 
-## 📡 Projekt-News & Community
-Aktuelle Durchbrüche und Ankündigungen direkt aus dem Labor.
+👉 **[Zum offiziellen Dokumentations-Wiki](wiki_new/Home.md)**
 
-> [!TIP]
-> **Neuankündigung**: Die technische Analyse der `Island_turret_placement_QoL` ist abgeschlossen und liefert bahnbrechende Erkenntnisse für die KI-Platzierung!
+*Hinweis: Im Wiki findest du auch den [Git Master-Guide](wiki_new/Git_Quickstart.md), falls du selbst zum Projekt beitragen möchtest.*
 
 ## 📂 Archivierte Sammlungen
-Derzeit befinden sich **95 Mods** in unserer Bibliothek.
+Unser Labor verwaltet derzeit **95 verschiedene Modifikationen**, die als Grundlage für unsere Analysen dienen.
 
 <details>
-<summary><b>Vollständige Mod-Liste anzeigen</b></summary>
+<summary><b>📂 Vollständiges Archiv anzeigen (Klicken zum Ausklappen)</b></summary>
 
 #### Audio (18)
 - AA & Depth Wolfenstein alarm
@@ -142,8 +138,8 @@ Derzeit befinden sich **95 Mods** in unserer Bibliothek.
 ---
 
 ### 🛰️ Kontakt & Mitwirkung
-- [Fehler melden](.github/ISSUE_TEMPLATE/bug_report.md)
-- [Zum Discord Server](https://discord.gg/example)
-- [Wiki-Beitrag leisten](CONTRIBUTING.md)
+- [Feedback oder Analyse-Wunsch](.github/ISSUE_TEMPLATE/bug_report.md)
+- [Community Discord](https://discord.gg/example)
+- [Entwickler-Portal](CONTRIBUTING.md)
 
-*Letzte Synchronisierung: 12.03.2026 | Automatischer Hub Status: ✔️*
+*Letzte automatische Synchronisierung: 12.03.2026 | Status: ✔️ Online*

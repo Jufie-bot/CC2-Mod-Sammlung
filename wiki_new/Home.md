@@ -42,4 +42,4 @@ Basierend auf unseren Analysen erstellen wir Mods, die über das Standard-Scalin
 
 ---
 > [!NOTE]
-> *Dieses Wiki wird automatisch durch unsere Forschungs-Skripte aktuell gehalten. Stand: März 2026.*
+> *Dieses Wiki wird automatisch durch unsere Forschungs-Skripte aktuell gehalten. Stand: März 2026. [Zurück zur Landing Page](../README.md)*
