@@ -40,22 +40,45 @@ def generate_readme():
     content.append("# 📟 CC2 Mod Development Hub\n")
     content.append(f"![Mods Total](https://img.shields.io/badge/Mods_Total-{mod_count}-blue?style=for-the-badge&logo=github)")
     content.append(f"![Analyzed](https://img.shields.io/badge/Analysed-{analyzed_count}-orange?style=for-the-badge&logo=bookstack)")
-    content.append("![Discord](https://img.shields.io/badge/Discord-Join%20Us-7289DA?style=for-the-badge&logo=discord&logoColor=white)\n")
+    content.append("![System_Version](https://img.shields.io/badge/Systemstruktur-v5.3-success?style=for-the-badge)\n")
     
     content.append("## 🎯 Die Vision: Dekonstruktion & Neuschöpfung")
-    content.append("Willkommen im Herzen der Carrier Command 2 Modding-Forschung. Dieses Projekt ist weit mehr als eine bloße Sammlung von Dateien – es ist ein **technisches Labor**, das darauf spezialisiert ist, die verborgene Logik des Spiels zu entschlüsseln.\n")
-    content.append("Unsere Mission ist es, bestehende Mods und Spieldateien (XML/Lua) bis ins kleinste Detail zu analysieren, um Best-Practices zu etablieren und die Grundlage für die nächste Generation von Overhauls zu schaffen. Jede Variable, jede Vektorberechnung und jede Konstante wird hier hinterfragt, um das Maximum aus der Simulation herauszuholen.\n")
+    content.append("Willkommen im Herzen der Carrier Command 2 Modding-Forschung. Dieses Repository ist keine klassische Mod-Ablage, sondern ein echtes **technisches Labor**, das sich der vollständigen Dekonstruktion der Spielmechaniken verschrieben hat.\n")
+    content.append("Unsere Mission: Wir belassen es nicht dabei, Mods einfach nur herunterzuladen und zu spielen. Wir zerlegen hunderte von existierenden Mods und Spieldateien (XML/Lua) bis auf die elementarste Ebene. Wir analysieren Parameter, testen Geschwindigkeitsvektoren und sezieren KI-Skripte. Unser absolutes Ziel ist es, Best-Practices zu etablieren, die **Grundlage für die nächste Generation von gigantischen Overhauls** zu schaffen und das absolute Maximum aus der Simulation herauszuholen.\n")
 
-    # --- 2. News & Breakthroughs ---
-    content.append("## 📡 Labor-Bericht: Aktuelle Durchbrüche")
-    content.append("> [!IMPORTANT]")
-    content.append("> **Fokus-Analyse**: Die Dekonstruktion der `Island_turret_placement_QoL` liefert aktuell bahnbrechende Erkenntnisse darüber, wie das Spiel Objekt-IDs für Verteidigungstürme zur Laufzeit verarbeitet. Diese Entdeckung wird die Entwicklung eigener Map-Verteidigungen revolutionieren.\n")
+    # --- 2. Workflow ---
+    content.append("## ⚙️ Wie wir arbeiten (Der Labor-Workflow)")
+    content.append("Jede Modifikation, die unser Labor betritt, durchläuft einen strengen **Forschungs-Fließbandprozess**:")
+    content.append("1. **Code lesen**: Wir analysieren den rohen XML/Lua-Code der Mod, um die Logik exakt zu verstehen.")
+    content.append("2. **Referenz-Vergleich**: Die Mod wird gegen unsere Vanilla-Game-Referenzen geprüft, um die Änderungen zum Original herauszuarbeiten.")
+    content.append("3. **Labor-Bericht**: Wir verfassen eine Deep-Dive Detailanalyse der Mod-Struktur und Parameter.")
+    content.append("4. **Extraktion (Sandkasten)**: Nützliche Code-Snippets, Hooks und IDs werden in unseren Sandkasten extrahiert, um sofort für neue Bastel-Projekte wiederverwendet werden zu können.")
+    content.append("5. **Wissens-Transfer**: Die finale Analyse fließt in unser zentrales Wiki-System ein, damit das gesamte Wissen persistent dokumentiert ist.\n")
 
-    # --- 3. Main Wiki Referral ---
-    content.append("## 🏛️ Forschungs-Zentrale (Das Wiki)")
-    content.append("Die gesamte technische Dokumentation, Code-Breakdowns und Entwickler-Standards haben wir in unser umfangreiches Wiki ausgelagert. Dort findest du das gebündelte Wissen aus hunderten Stunden Reverse Engineering.\n")
-    content.append("👉 **[Zum offiziellen Dokumentations-Wiki](https://github.com/Jufie-bot/CC2-Mod-Sammlung/wiki)**\n")
-    content.append("*Hinweis: Im Wiki findest du auch den [Git Master-Guide](https://github.com/Jufie-bot/CC2-Mod-Sammlung/wiki/Git_Quickstart), falls du selbst zum Projekt beitragen möchtest.*\n")
+    # --- 3. Kontext & System-Architektur ---
+    content.append("## 🏗️ System-Architektur (Masterpläne v5.3)")
+    content.append("Dieses Labor basiert auf einer streng strukturierten Architektur. Diese vier internen Kontext-Dokumente bilden den **konzeptionellen Masterplan** für unsere Arbeitsweise:")
+    content.append("1. 🏛️ [**00_SYSTEMSTRUKTUR.md**](00_SYSTEMSTRUKTUR.md) – Übersicht unserer 6 Säulen (Forschung, Wiki, Sandkasten, Eigene Mods, Community, Konfiguration).")
+    content.append("2. 🏷️ [**01_BOARDS_UND_LABELS.md**](01_BOARDS_UND_LABELS.md) – Die feste Definition unseres GitHub-Projekt-Routings und der Fließbänder.")
+    content.append("3. 📖 [**02_WIKI_STRUKTUR.md**](02_WIKI_STRUKTUR.md) – Architektur unseres 15-teiligen Wissens-Hubs.")
+    content.append("4. 🚀 [**03_IMPLEMENTATION.md**](03_IMPLEMENTATION.md) – Der Arbeits- und Umbau-Plan des Labors.\n")
+
+    # --- 4. Der Sandkasten ---
+    content.append("## 🪣 Der Sandkasten (Unsere Werkbank)")
+    content.append("Der **Sandkasten** (`sandbox/`) ist das operative Herzstück für Mod-Entwickler. Hier lagern wir alles, was man braucht, um eigene Kreationen zu formen:")
+    content.append("- **Vanilla-Referenzen**: Die extrahierten Originaldateien des Spiels, katalogisiert nach Patch-Datum.")
+    content.append("- **Snippets & IDs**: Tausende Objekt-IDs, komplexe LUA-Hook-Gerüste und Balance-Strings für die `constants.txt`, um blitzschnell Prototypen bauen zu können.")
+    content.append("- **Templates**: Vorgefertigte Boilerplates für neue Mods, die unsere Best-Practices bereits integrieren.\n")
+
+    # --- 5. The Non-Classical Wiki ---
+    content.append("## 🧠 Das Wiki: Ein 15-teiliges System, kein klassisches Wiki")
+    content.append("Unser Wiki ist **keine lose Sammlung von Artikeln**! Vergiss klassische Wikis. Unser Wissens-Hub ist ein hochgradig durchdachtes, **15-teiliges System**, das als das primäre 'Hirn' des Projekts dient. Nur strukturierte, kuratierte und im Spiel getestete Informationen erhalten einen Platz.\n")
+    content.append("Dort findest du unter anderem:")
+    content.append("- **Theoretische Grenzen**: Was ist im Spiel überhaupt moddbar und was nicht?")
+    content.append("- **Labor-Experimente**: Direkte Gegenüberstellungen, wenn mehrere Mods dasselbe Problem lösen.")
+    content.append("- **Mod-Galerien**: Der Status-Bericht aller je von uns getesteten Mods.")
+    content.append("- **Game-Referenzen**: Das extrem tiefe Nachschlagewerk zu allen XML-Dateien, Lua-Umgebungen und Physik-Vektoren.\n")
+    content.append("👉 **[Betritt das offizielle CC2-Forschungs-Wiki](https://github.com/Jufie-bot/CC2-Mod-Sammlung/wiki)**\n")
 
     # --- 4. Collapsed Mod Archive ---
     content.append("## 📂 Archivierte Sammlungen")
