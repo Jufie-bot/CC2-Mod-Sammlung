@@ -1,24 +1,34 @@
 ﻿# 📟 CC2 Mod Development Hub
 
 ![Mods Total](https://img.shields.io/badge/Mods_Total-95-blue?style=for-the-badge&logo=github)
-![Analyzed](https://img.shields.io/badge/Analysed-13-orange?style=for-the-badge&logo=bookstack)
-![Discord](https://img.shields.io/badge/Discord-Join%20Us-7289DA?style=for-the-badge&logo=discord&logoColor=white)
+![Analyzed](https://img.shields.io/badge/Analysed-0-orange?style=for-the-badge&logo=bookstack)
+![System_Version](https://img.shields.io/badge/Systemstruktur-v5.3-success?style=for-the-badge)
 
 ## 🎯 Die Vision: Dekonstruktion & Neuschöpfung
 Willkommen im Herzen der Carrier Command 2 Modding-Forschung. Dieses Projekt ist weit mehr als eine bloße Sammlung von Dateien – es ist ein **technisches Labor**, das darauf spezialisiert ist, die verborgene Logik des Spiels zu entschlüsseln.
 
-Unsere Mission ist es, bestehende Mods und Spieldateien (XML/Lua) bis ins kleinste Detail zu analysieren, um Best-Practices zu etablieren und die Grundlage für die nächste Generation von Overhauls zu schaffen. Jede Variable, jede Vektorberechnung und jede Konstante wird hier hinterfragt, um das Maximum aus der Simulation herauszuholen.
+Unsere Mission ist es, bestehende Mods und Spieldateien (XML/Lua) bis ins kleinste Detail zu analysieren, um Best-Practices zu etablieren und die Grundlage für die nächste Generation von Overhauls zu schaffen.
+
+## 🏗️ Architektur des Labors (Systemstruktur v5.3)
+Damit wir effizient forschen und entwickeln können, basiert dieses Projekt auf strengen Strukturplänen. Unser zentraler **Kontext** (definiert durch die vier internen Masterpläne) unterteilt das Labor in sechs logische Säulen:
+
+1. **🔬 Forschung (`mods/` & `analysis/`)**: Hier zerlegen wir bestehende Mods und extrahieren ihr Wissen.
+2. **🏛️ Wiki (`wiki/`)**: Das kollektive Gehirn des Labors. Hier wird das strukturierte Wissen veröffentlicht.
+3. **🪣 Der Sandkasten (`sandbox/`)**: Unsere wichtigste Werkbank. Hier liegen wiederverwendbare Bausteine, Vanilla-Referenzen, Start-Templates, IDs und Code-Snippets bereit, um sofort neue Mods zu bauen.
+4. **🛠️ Eigene Projekte (`eigene-mods/` & `Kategorienübergreifende/`)**: Isolierte Workspaces für die Entwicklung komplett eigener Mod-Kreationen.
+5. **⚙️ Konfiguration (`.github/`)**: Das Automatisierungs-Modul, welches Labels, Issues und Pipelines steuert.
+6. **🤝 Community**: Die Plattform zur externen Fehlermeldung und Weiterentwicklung.
 
 ## 📡 Labor-Bericht: Aktuelle Durchbrüche
 > [!IMPORTANT]
 > **Fokus-Analyse**: Die Dekonstruktion der `Island_turret_placement_QoL` liefert aktuell bahnbrechende Erkenntnisse darüber, wie das Spiel Objekt-IDs für Verteidigungstürme zur Laufzeit verarbeitet. Diese Entdeckung wird die Entwicklung eigener Map-Verteidigungen revolutionieren.
 
 ## 🏛️ Forschungs-Zentrale (Das Wiki)
-Die gesamte technische Dokumentation, Code-Breakdowns und Entwickler-Standards haben wir in unser umfangreiches Wiki ausgelagert. Dort findest du das gebündelte Wissen aus hunderten Stunden Reverse Engineering.
+Unsere gesamte tiefgehende Dokumentation wurde in unser Wiki ausgelagert. Dort findest du das gebündelte Wissen, die Entwickler-Standards und detailverliebte Analysen aus hunderten Stunden Reverse Engineering.
 
 👉 **[Zum offiziellen Dokumentations-Wiki](https://github.com/Jufie-bot/CC2-Mod-Sammlung/wiki)**
 
-*Hinweis: Im Wiki findest du auch den [Git Master-Guide](https://github.com/Jufie-bot/CC2-Mod-Sammlung/wiki/Git_Quickstart), falls du selbst zum Projekt beitragen möchtest.*
+*Hinweis: Im Wiki findest du auch entsprechende Quickstart-Guides, falls du zum Projekt beitragen möchtest.*
 
 ## 📂 Archivierte Sammlungen
 Unser Labor verwaltet derzeit **95 verschiedene Modifikationen**, die als Grundlage für unsere Analysen dienen.
@@ -77,7 +87,7 @@ Unser Labor verwaltet derzeit **95 verschiedene Modifikationen**, die als Grundl
 - Spread modifier
 - logistics+
 
-#### Overhauls (1)
+#### Kategorienübergreifende (1)
 - Revolution 1.6-2
 
 #### UI (8)
@@ -142,4 +152,4 @@ Unser Labor verwaltet derzeit **95 verschiedene Modifikationen**, die als Grundl
 - [Community Discord](https://discord.gg/example)
 - [Entwickler-Portal](CONTRIBUTING.md)
 
-*Letzte automatische Synchronisierung: 12.03.2026 | Status: ✔️ Online*
+*Letzte automatische Synchronisierung: 15.03.2026 | Status: ✔️ Online*
