@@ -7,6 +7,7 @@ Hier findest du die detaillierten Analysen unserer Forschungs-Modifikationen. Je
 - [[Analysis-Island-Turret-Placement-QoL]]
 - [[Analysis-Turret-Utility]]
 - [[Analysis-Naval-Gun-Stabilizer]]
+- [[Analysis-Countermeasure-API-Research]]
 
 ### 🚀 Raketen & Projektile
 - [[Analysis-Missile-Reformat]]

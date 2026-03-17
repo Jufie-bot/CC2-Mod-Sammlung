@@ -54,8 +54,7 @@ function wrap_update(screen_w, screen_h, ticks)
     end
 
     if g_skynet_screen_type == "hud" then
-        -- Dezenten Status auf Navigationsbildschirmen rendern
-        update_ui_text(2, screen_h - 10, "[SKYNET AKTIV]", 100, 0, color8(0, 255, 255, 60), 0)
+        -- HUD Anzeige entfernt (auf Wunsch des Users)
     elseif g_skynet_screen_type == "log" then
         -- Benutzerdefinierte Logs in den Schiffslog-Bildschirm injizieren
         if g_skynet_log and #g_skynet_log > 0 and g_ui ~= nil then
@@ -77,11 +76,12 @@ end
 
 g_skynet_log = {}
 
-function skynet_log(text, col)
+function skynet_log(text, col, icon)
     table.insert(g_skynet_log, {
         time = update_get_logic_tick() / 30,
-        message = "[SKYNET] " .. text,
-        col = col or color8(0, 255, 255, 255)
+        message = text,
+        col = col or color8(0, 255, 255, 255),
+        icon = icon or atlas_icons.column_pending
     })
     -- Nur die letzten 50 Einträge im Speicher behalten
     if #g_skynet_log > 50 then
@@ -133,6 +133,12 @@ g_skynet_alarm_level = 0 -- 0=Peace, 1=Warning, 2=War
 g_skynet_alarm_timer = 0
 g_skynet_last_known_player_pos = nil
 
+g_skynet_chassis_names = {
+    [6] = "BEAR",
+    [77] = "SEAL",
+    [10] = "ALBATROSS"
+}
+
 function ai_skynet_update()
     local now = update_get_logic_tick()
     if now - g_last_skynet_update < g_skynet_interval then
@@ -176,7 +182,7 @@ function skynet_assess_threat()
     if is_visible and dist_to_nearest_base < 5000 then
         if g_skynet_alarm_level < 1 then
             g_skynet_alarm_level = 1
-            skynet_log("Eindringling in Basis-Nähe! Warne lokale Einheiten.", color_status_warning)
+            skynet_log("Eindringling in Basis-Nähe! Warne lokale Einheiten.", color_status_warning, atlas_icons.hud_warning)
             print("Skynet: Eindringling in Basis-Nähe entdeckt! (Warnung)")
         end
         g_skynet_last_known_player_pos = carrier_pos
@@ -198,7 +204,7 @@ function skynet_assess_threat()
 
     if g_skynet_alarm_level == 1 and dist_to_nearest_base < 2000 then
         g_skynet_alarm_level = 2
-        skynet_log("Feindliche Aktivität entdeckt! Wechsle zum KRIEG-Protokoll.", color_status_bad)
+        skynet_log("Feindliche Aktivität entdeckt! Wechsle zum KRIEG-Protokoll.", color_status_bad, atlas_icons.hud_warning)
         print("Skynet: Feindliche Handlung vermutet! (Krieg)")
     end
 end
@@ -226,7 +232,8 @@ function skynet_production()
                 if g_skynet_budget >= cost then
                     tile:set_facility_add_production_queue_defense_item(item_to_build, 1)
                     g_skynet_budget = g_skynet_budget - cost
-                    skynet_log("Produziere Einheit bei " .. tile:get_name() .. " (Budget: " .. math.floor(g_skynet_budget) .. ")")
+                    local unit_name = g_skynet_chassis_names[item_to_build] or "Unbekannte Einheit"
+                    skynet_log("Produziere " .. unit_name .. " bei " .. tile:get_name(), nil, atlas_icons.map_icon_factory)
                 end
             end
         end
@@ -240,54 +247,58 @@ function skynet_tactics()
     if not target_pos then return end
 
     local vehicle_count = update_get_map_vehicle_count()
-    local commanded = 0
 
     for i = 0, vehicle_count - 1 do
         local vehicle = update_get_map_vehicle_by_index(i)
         if vehicle ~= nil and vehicle:get() and vehicle:get_team() == 0 then
-            local dist_sq = vec2_dist_sq(target_pos, vehicle:get_position_xz())
+            local pos = vehicle:get_position_xz()
+            local dist_sq = vec2_dist_sq(target_pos, pos)
 
-            -- Maximale Reichweite 10km
-            if dist_sq < (10000 * 10000) then
+            -- 1. Rückzugslogik (Neu in V4)
+            local hp = vehicle:get_hitpoints()
+            local total_hp = vehicle:get_total_hitpoints()
+            
+            if hp < (total_hp * 0.3) then
+                if not vehicle.skynet_retreat then
+                    skynet_log("Einheit " .. vehicle:get_id() .. " beschaedigt! Rueckzug zur Basis.", color_status_warning, atlas_icons.map_icon_surface_vehicle)
+                    vehicle.skynet_retreat = true
+                    vehicle:clear_waypoints()
+                    local nearest_island, _ = get_nearest_friendly_island(pos)
+                    if nearest_island then
+                        local i_pos = nearest_island:get_position_xz()
+                        vehicle:add_waypoint(i_pos:x(), i_pos:y())
+                    end
+                end
+            -- 2. Angriffslogik
+            elseif dist_sq < (10000 * 10000) then
                 if math.random() < 0.3 then
                     local unit_id = vehicle:get_id()
 
                     -- V4 Logik: Insel-Schwierigkeitsgrad prüfen
-                    -- Nächste befreundete Insel zu dieser Einheit finden, um "Squad Level" zu bestimmen
-                    local nearest_island, dist_island = get_nearest_friendly_island(vehicle:get_position_xz())
+                    local nearest_island, dist_island = get_nearest_friendly_island(pos)
                     local difficulty = 1
                     if nearest_island then
                         difficulty = nearest_island:get_difficulty_level()
                     end
 
                     if g_skynet_alarm_level == 2 then
-                        -- V4: Schwierigkeitsgrad-Verhalten
-                        -- Level 3 Inseln sind "Elite/Klug": 50% Chance auf VERSTECKEN/WARTEN anstelle eines direkten Angriffs
+                        -- Elite-KI (Level 3+)
                         if difficulty >= 3 and math.random() < 0.5 then
                             if not vehicle.skynet_ambush then
-                                skynet_log("Einheit " .. unit_id .. " (Elite) bereitet einen Hinterhalt vor.", color_status_ok)
+                                skynet_log("Einheit " .. unit_id .. " (Elite) im Hinterhalt.", color_status_ok, atlas_icons.map_icon_last_known_pos)
                                 vehicle.skynet_ambush = true
                             end
-                            print("Skynet: Elite-Einheit " ..
-                                unit_id .. " wartet im Hinterhalt.")
                         else
                             -- Angriff!
                             local wid = vehicle:add_waypoint(target_pos:x(), target_pos:y())
                             local jitter = (math.random() - 0.5) * 200
                             vehicle:set_waypoint_position(wid, target_pos:x() + jitter, target_pos:y() + jitter)
 
-                            -- V4: Torpedo-Einsatz
+                            -- Torpedo/Raketen Logik
                             local atype = e_attack_type.any
-
-                            -- Wenn Torpedos verfügbar sind und das Ziel wahrscheinlich ein Schiff (Träger) ist, abfeuern!
                             if vehicle:get_is_attack_type_capable(e_attack_type.torpedo_single, true) then
                                 atype = e_attack_type.torpedo_single
-                                skynet_log("Einheit " .. unit_id .. " feuert Torpedos ab!", color_status_bad)
-                                print("Skynet: Einheit " .. unit_id .. " feuert Torpedos!")
-                            elseif vehicle:get_is_attack_type_capable(e_attack_type.order_cruise_missile, true, true,
-                                true) then
-                                atype = e_attack_type.order_cruise_missile
-                                skynet_log("Einheit " .. unit_id .. " hat Marschflugkörper-Unterstützung angefordert.", color_status_bad)
+                                skynet_log("Einheit " .. unit_id .. " feuert Torpedos!", color_status_bad, atlas_icons.map_icon_torpedo)
                             end
 
                             local carrier = update_get_screen_vehicle()
@@ -302,6 +313,7 @@ function skynet_tactics()
         end
     end
 end
+
 
 -- Hilfsfunktionen
 function get_dist_to_nearest_ai_base(pos)
@@ -352,3 +364,96 @@ end
 if _G["g_rev_mods"] ~= nil then
     table.insert(_G["g_rev_mods"], "AI: Skynet V4 (Levels & Torpedoes)")
 end
+
+--------------------------------------------------------------------------------
+-- REVOLUTION AUTOLAND FEATURES (PORTED)
+--------------------------------------------------------------------------------
+
+function setup_autoland(vehicle, pos, start_pos)
+    if vehicle == nil or vehicle:get() == nil then return end
+    
+    if pos == nil then
+        pos = vehicle:get_position_xz()
+    end
+    
+    vehicle:clear_waypoints()
+    local steps = 12
+    local gnd = 0
+    local glide_len = 350
+    
+    if start_pos == nil then
+        start_pos = vec2(pos:x() - glide_len, pos:y() - glide_len)
+    else
+        local dx = pos:x() - start_pos:x()
+        local dy = pos:y() - start_pos:y()
+        local b = math.atan(dy, dx)
+        local sy = math.sin(b) * glide_len
+        local sx = math.cos(b) * glide_len
+        start_pos = vec2(pos:x() - sx, pos:y() - sy)
+    end
+
+    local glide_start_x = start_pos:x()
+    local glide_start_y = start_pos:y()
+    local glide_end_x = pos:x()
+    local glide_end_y = pos:y()
+    local step_x = (glide_end_x - glide_start_x) / steps
+    local step_y = (glide_end_y - glide_start_y) / steps
+    
+    -- Verschiebe den Haltepunkt um ca. 2.5 Schritte nach vorne, um exakt am Ziel zu landen
+    glide_end_x = glide_end_x + (step_x * 2.5)
+    glide_end_y = glide_end_y + (step_y * 2.5)
+    glide_start_x = glide_start_x + (step_x * 2.5)
+    glide_start_y = glide_start_y + (step_y * 2.5)
+
+    -- Nächste befreundete Bodeneinheit für Höhenreferenz suchen
+    local nearest_gnd_unit = nil
+    local best_dist_sq = 100 * 100
+    local vehicle_count = update_get_map_vehicle_count()
+    local our_team = vehicle:get_team_id()
+    
+    for i = 0, vehicle_count - 1 do
+        local unit = update_get_map_vehicle_by_index(i)
+        if unit and unit:get() and unit:get_team_id() == our_team and not unit:get_is_docked() then
+            local udef = unit:get_definition_index()
+            -- Prüfe auf Träger, Bären, Maultiere (Bodeneinheiten)
+            if udef == e_game_object_type.chassis_carrier or 
+               udef == e_game_object_type.chassis_land_wheel_heavy or 
+               udef == e_game_object_type.chassis_land_wheel_mule then
+                local upos = unit:get_position_xz()
+                local dsq = vec2_dist_sq(pos, upos)
+                if dsq < best_dist_sq then
+                    best_dist_sq = dsq
+                    nearest_gnd_unit = unit
+                end
+            end
+        end
+    end
+
+    if nearest_gnd_unit then
+        gnd = math.floor(nearest_gnd_unit:get_position():y() - 5.5)
+    end
+
+    local approach_alt = 110
+    for descent_steps = steps, 0, -1 do
+        local wx = glide_end_x - (descent_steps * step_x)
+        local wy = glide_end_y - (descent_steps * step_y)
+        local walt = math.floor(gnd + approach_alt * descent_steps / steps)
+        
+        local wid = vehicle:add_waypoint(wx, wy)
+        vehicle:set_waypoint_altitude(wid, walt)
+    end
+    
+    local final_wid = vehicle:add_waypoint(glide_end_x, glide_end_y)
+    vehicle:set_waypoint_altitude(final_wid, gnd)
+    vehicle:set_waypoint_wait_group(final_wid, 3, true)
+    
+    skynet_log("Autoland für Einheit " .. vehicle:get_id() .. " eingeleitet.", color_status_ok)
+end
+
+--------------------------------------------------------------------------------
+-- FOG OF WAR (FOW) FEATURES
+--------------------------------------------------------------------------------
+
+
+
+

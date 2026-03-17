@@ -45,18 +45,6 @@ function update(screen_w, screen_h, ticks)
                 imgui_notification_log(ui, log, column_widths, column_margins, i < g_last_read_index)
             end
         end
-
-        -- Injiziert: Skynet KI-Logs
-        if g_skynet_log then
-            for i = #g_skynet_log, 1, -1 do
-                local entry = g_skynet_log[i]
-                local columns = { 
-                    { w=column_widths[1], margin=column_margins[1], value=format_time(entry.time), col=color_grey_dark },
-                    { w=column_widths[2], margin=column_margins[2], value=entry.message, col=entry.col },
-                }
-                imgui_table_entry(ui, columns)
-            end
-        end
     ui:end_window()
 
     if window.is_scrollbar_visible then
@@ -130,10 +118,10 @@ function imgui_notification_log(ui, log, column_widths, column_margins, is_read)
     local text_col = color_grey_dark
 
     if log_type == e_map_notification_type.island_captured then
-        log_message = update_get_loc(e_loc.island_captured) .. ": " .. get_tile_name(log:get_tile_id())
+        log_message = update_get_loc(e_loc.island_captured) .. " - " .. get_tile_name(log:get_tile_id())
         text_col = color_status_ok
     elseif log_type == e_map_notification_type.island_lost then
-        log_message = update_get_loc(e_loc.island_lost) .. ": " .. get_tile_name(log:get_tile_id())
+        log_message = update_get_loc(e_loc.island_lost) .. " - " .. get_tile_name(log:get_tile_id())
         text_col = color_status_bad
     elseif log_type == e_map_notification_type.blueprint_unlocked then
         local blueprints = log:get_blueprints()
@@ -141,23 +129,17 @@ function imgui_notification_log(ui, log, column_widths, column_margins, is_read)
         text_col = color_highlight
     elseif log_type == e_map_notification_type.enemy_vehicle_destroyed then
         local definition_name = get_chassis_data_by_definition_index(log:get_vehicle_definition_index())
-        log_message = update_get_loc(e_loc.vehicle_destroyed) .. ": " .. definition_name .. " - " .. log:get_team_id()
+        log_message = update_get_loc(e_loc.destroyed) .. " " .. definition_name .. " - " .. log:get_team_id()
     elseif log_type == e_map_notification_type.team_vehicle_destroyed then
         local definition_name = get_chassis_data_by_definition_index(log:get_vehicle_definition_index())
-        log_message = update_get_loc(e_loc.vehicle_destroyed) .. ": "  .. definition_name
-        text_col = color_status_bad
-    elseif log_type == e_map_notification_type.team_vehicle_self_destructed then
-        local definition_name = get_chassis_data_by_definition_index(log:get_vehicle_definition_index())
-        log_message = update_get_loc(e_loc.vehicle_self_destructed) .. ": "  .. definition_name
+        log_message = update_get_loc(e_loc.vehicle_destroyed) .. " - "  .. definition_name
         text_col = color_status_bad
     elseif log_type == e_map_notification_type.team_player_joined then
-        log_message = update_get_loc(e_loc.crew_joined) .. ": "  .. log:get_name()
+        log_message = update_get_loc(e_loc.crew_joined) .. " - "  .. log:get_name()
     elseif log_type == e_map_notification_type.team_player_left then
-        log_message = update_get_loc(e_loc.crew_left) .. ": "  .. log:get_name()
+        log_message = update_get_loc(e_loc.crew_left) .. " - "  .. log:get_name()
     elseif log_type == e_map_notification_type.team_virus_bot_retired then
         log_message = update_get_loc(e_loc.virus_bot_retired)
-    elseif log_type == e_map_notification_type.team_droid_retired then
-        log_message = update_get_loc(e_loc.droid_retired)
     end
 
     if #log_message > 0 then
@@ -170,19 +152,11 @@ function imgui_notification_log(ui, log, column_widths, column_margins, is_read)
     end
 end
 
-function format_time(time)
-    local seconds = math.floor(time) % 60
-    local minutes = math.floor(time / 60) % 60
-    local hours = math.min(math.floor(time / 60 / 60), 99)
-
-    return string.format("%02.f:%02.f:%02.f", hours, minutes, seconds)
-end
-
 function get_tile_name(id)
     local tile = update_get_tile_by_id(id)
 
     if tile:get() then
-        return tile:get_name()
+        return get_island_name(tile)
     end
 
     return id

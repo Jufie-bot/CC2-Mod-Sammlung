@@ -326,15 +326,15 @@ torpedo_noisemaker_explosion_magnitude 1
 torpedo_sonar_buoy_explosion_magnitude 1
 
 // range of radar attachments for the player carrier
-radar_awacs_vision_range 12000.0
-radar_golfball_vision_range 12000.0
+radar_awacs_vision_range 25000.0
+radar_golfball_vision_range 25000.0
 
 // range of built in short-range radar for missiles
 missile_vision_range 1000.0
 
 // range of radar attachments of enemy ai
-ai_radar_awacs_vision_range 30000.0
-ai_radar_golfball_vision_range 20000.0
+ai_radar_awacs_vision_range 15000.0
+ai_radar_golfball_vision_range 12000.0
 
 // range modifier added to base vision range of enemy ai
 ai_aircraft_vision_range_modifier 2000.0
