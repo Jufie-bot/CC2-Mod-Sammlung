@@ -122,7 +122,7 @@ function update(screen_w, screen_h, ticks)
 
             local vehicle_count = update_get_map_vehicle_count()
 
-            -- render vehicles to the map
+            -- Fahrzeuge auf der Karte rendern
 
             for i = 0, vehicle_count - 1, 1 do
                 local vehicle = update_get_map_vehicle_by_index(i)
@@ -133,7 +133,7 @@ function update(screen_w, screen_h, ticks)
 
                     if vehicle:get_is_visible() and vehicle:get_is_observation_revealed() then
                         if vehicle_attached_parent_id == 0 and i ~= this_vehicle_index then
-                            -- render vehicle icon
+                            -- Fahrzeug-Icon rendern
 
                             local vehicle_definition_index = vehicle:get_definition_index()
 

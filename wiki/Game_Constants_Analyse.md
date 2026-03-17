@@ -49,5 +49,22 @@ Wie viel Munition ein Turm oder Container fasst.
 *   **Wetter:** `cloud_count 350`, `cloud_height_base 2000.0` (Kann für Performance-Mods genutzt werden!)
 *   **Inseln:** `island_difficulty_max 4`
 
+## 7. Versteckte Hardcodes (Spezial-Fähigkeiten)
+Einige Mechaniken lassen sich nicht modifizieren, da das Spiel sie anhand der Unit- oder Item-ID hart im Code verankert. Die CC2 Knowledge Base hat folgende Hardcodes aufgedeckt:
+
+### Einheiten-Sonderfähigkeiten
+*   **Carrier (Träger):** Kann als einziges Schiff Treibstoff/Munition an *Schiffe* liefern. Kann Luft-, Boden- und Rettungsboote *launchen*.
+*   **Mule:** Kann als einziges Fahrzeug Treibstoff/Munition an *Bodenfahrzeuge* liefern.
+*   **Petrel:** Hat exklusiv die Fähigkeit, Bodenfahrzeuge per *Airlift* zu transportieren.
+*   **Drydock:** Kann als einzige Basis den Träger "launchen"/reparieren.
+
+### Unendliche Munition (Infinite Supply)
+Diese Turm-Attachments verbrauchen *keine* Träger-Munition, da sie intern auf unendlichen Vorrat gesetzt sind (Das gilt *nicht*, wenn du normalen Schaden anpasst!):
+*   `15mm turret` (verbraucht intern 30mm für Nachladen, aber keinen Inventar-Platz).
+*   `160mm gun`
+*   `Naval Torpedo Launcher` / `Naval Camera` / `Naval Flare Launcher` / `Naval Countermeasures`
+*   `Cruise Missile Launcher`
+
 ## Fazit für Modder
 Anstatt Physik-Tricks zu nutzen (z.B. extrem hohe Geschwindigkeiten für mehr "Wumms"), sollten Balance-Mods primär diese Datei nutzen. Sie ist sauberer und verursacht weniger Nebenwirkungen (wie Glitches oder Lag).
+Beachte jedoch die in Sektion 7 gelisteten Hardcodes, die sich auch durch XML-Änderungen nicht umgehen lassen.

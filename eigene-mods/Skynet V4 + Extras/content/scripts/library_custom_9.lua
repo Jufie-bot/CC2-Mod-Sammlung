@@ -1,14 +1,37 @@
 -- Skynet V4.0 - Island Levels, Torpedoes & Bilingual Logs
 -- Implementiert von: Antigravity AI
 -- Datum: 2026-02-14
+-- Datum: 2026-02-14
 
 function skynet_begin_load()
     if begin_get_screen_name ~= nil then
         local screen_name = begin_get_screen_name()
+        
+        -- KI-Hook für Holomap (PRIORITÄT 1)
         if screen_name == "holomap_screen" then
             if g_original_update == nil then
                 g_original_update = update
-                print("Skynet V4: Hook in holomap_screen erfolgreich. / Hook successful.")
+                g_skynet_screen_type = "ai"
+                g_skynet_is_master = true
+                skynet_log("KI-Meistersystem initialisiert (HOLO).")
+                update = wrap_update
+            end
+        -- HUD-Hook für Navigationsbildschirme (PRIORITÄT 2)
+        elseif screen_name == "screen_nav_l" or screen_name == "screen_nav_m" or screen_name == "screen_nav_r" then
+            if g_original_update == nil then
+                g_original_update = update
+                g_skynet_screen_type = "hud"
+                -- Nur zum Master werden, wenn es der mittlere Bildschirm ist und kein anderer Bildschirm in dieser VM Master ist
+                if screen_name == "screen_nav_m" then 
+                    g_skynet_is_master = true
+                    skynet_log("KI-Meistersystem initialisiert (NAV).")
+                end
+                update = wrap_update
+            end
+        elseif screen_name == "screen_ship_log" then
+            if g_original_update == nil then
+                g_original_update = update
+                g_skynet_screen_type = "log"
                 update = wrap_update
             end
         end
@@ -20,16 +43,59 @@ function skynet_begin_load()
 end
 
 function wrap_update(screen_w, screen_h, ticks)
-    g_original_update(screen_w, screen_h, ticks)
+    if g_original_update ~= nil then
+        g_original_update(screen_w, screen_h, ticks)
+    end
 
-    if get_is_controller_peer() then
-        ai_skynet_update()
+    if g_skynet_is_master then
+        if get_is_controller_peer() then
+            ai_skynet_update()
+        end
+    end
+
+    if g_skynet_screen_type == "hud" then
+        -- Dezenten Status auf Navigationsbildschirmen rendern
+        update_ui_text(2, screen_h - 10, "[SKYNET AKTIV]", 100, 0, color8(0, 255, 255, 60), 0)
+    elseif g_skynet_screen_type == "log" then
+        -- Benutzerdefinierte Logs in den Schiffslog-Bildschirm injizieren
+        if g_skynet_log and #g_skynet_log > 0 and g_ui ~= nil then
+            for _, entry in ipairs(g_skynet_log) do
+                local columns = {
+                    { w=55, margin=5, value=format_time(entry.time), col=color_grey_dark },
+                    { w=200, margin=5, value=entry.message, col=entry.col },
+                }
+                imgui_table_entry(g_ui, columns)
+            end
+        end
     end
 end
 
 if begin_load and g_original_begin_load == nil then
     g_original_begin_load = begin_load
     begin_load = skynet_begin_load
+end
+
+g_skynet_log = {}
+
+function skynet_log(text, col)
+    table.insert(g_skynet_log, {
+        time = update_get_logic_tick() / 30,
+        message = "[SKYNET] " .. text,
+        col = col or color8(0, 255, 255, 255)
+    })
+    -- Nur die letzten 50 Einträge im Speicher behalten
+    if #g_skynet_log > 50 then
+        table.remove(g_skynet_log, 1)
+    end
+    print("Skynet Log: " .. text)
+end
+
+function format_time(time)
+    local seconds = math.floor(time) % 60
+    local minutes = math.floor(time / 60) % 60
+    local hours = math.min(math.floor(time / 60 / 60), 99)
+
+    return string.format("%02.f:%02.f:%02.f", hours, minutes, seconds)
 end
 
 function get_is_controller_peer()
@@ -53,7 +119,6 @@ function get_is_controller_peer()
         if peer.pid == current_peer then
             return true
         end
-        return false
     end
     return false
 end
@@ -61,6 +126,7 @@ end
 g_controller = false
 g_last_skynet_update = 0
 g_skynet_interval = 600 -- 20 Sekunden / 20 Seconds
+g_skynet_budget = 1000 -- Startbudget
 
 -- Konfiguration V4
 g_skynet_alarm_level = 0 -- 0=Peace, 1=Warning, 2=War
@@ -74,19 +140,28 @@ function ai_skynet_update()
     end
     g_last_skynet_update = now
 
-    if get_is_controller_peer() then
-        g_controller = true
+    -- Budget-Aktualisierung
+    local ai_islands = 0
+    local tile_count = update_get_tile_count()
+    for i = 0, tile_count - 1 do
+        local tile = update_get_tile_by_index(i)
+        if tile and tile:get() and tile:get_team_control() == 0 then
+            ai_islands = ai_islands + 1
+        end
     end
+    -- Generiere alle 20s 50 pro Insel + 100 Basis
+    g_skynet_budget = g_skynet_budget + (ai_islands * 50) + 100
+    if g_skynet_budget > 25000 then g_skynet_budget = 25000 end -- Limit
 
-    -- 1. Bedrohungsanalyse / Threat Assessment
+    -- 1. Bedrohungsanalyse
     skynet_assess_threat()
 
-    -- 2. Produktion / Production
+    -- 2. Produktion
     if g_skynet_alarm_level > 0 then
         skynet_production()
     end
 
-    -- 3. Taktik / Tactics
+    -- 3. Taktik
     skynet_tactics()
 end
 
@@ -101,19 +176,20 @@ function skynet_assess_threat()
     if is_visible and dist_to_nearest_base < 5000 then
         if g_skynet_alarm_level < 1 then
             g_skynet_alarm_level = 1
-            print("Skynet: Eindringling in Basis-Nähe entdeckt! (Warnung) / Intruder near base! (Warning)")
+            skynet_log("Eindringling in Basis-Nähe! Warne lokale Einheiten.", color_status_warning)
+            print("Skynet: Eindringling in Basis-Nähe entdeckt! (Warnung)")
         end
         g_skynet_last_known_player_pos = carrier_pos
         g_skynet_alarm_timer = 3000
     elseif is_visible then
         g_skynet_last_known_player_pos = carrier_pos
-        print("Skynet: Spieler auf Radar. / Player on radar.")
+        print("Skynet: Spieler auf Radar.")
     else
         if g_skynet_alarm_timer > 0 then
             g_skynet_alarm_timer = g_skynet_alarm_timer - g_skynet_interval
         else
             if g_skynet_alarm_level > 0 then
-                print("Skynet: Ziel verloren. Alarm aufgehoben. / Target lost. Alarm cancelled.")
+                print("Skynet: Ziel verloren. Alarm aufgehoben.")
                 g_skynet_alarm_level = 0
                 g_skynet_last_known_player_pos = nil
             end
@@ -122,7 +198,8 @@ function skynet_assess_threat()
 
     if g_skynet_alarm_level == 1 and dist_to_nearest_base < 2000 then
         g_skynet_alarm_level = 2
-        print("Skynet: Feindliche Handlung vermutet! (Krieg) / Hostile action detected! (War)")
+        skynet_log("Feindliche Aktivität entdeckt! Wechsle zum KRIEG-Protokoll.", color_status_bad)
+        print("Skynet: Feindliche Handlung vermutet! (Krieg)")
     end
 end
 
@@ -130,17 +207,27 @@ function skynet_production()
     local tile_count = update_get_tile_count()
     for i = 0, tile_count - 1 do
         local tile = update_get_tile_by_index(i)
-        if tile:get() and tile:get_team_control() == 0 then -- Team 0 (AI)
+        if tile and tile:get() and tile:get_team_control() == 0 then -- Team 0 (KI)
             local queue_count = tile:get_facility_production_queue_defense_count()
 
             if queue_count < 1 then
                 local roll = math.random()
                 local item_to_build = 10 -- Albatross
+                local cost = 1000
 
-                if roll < 0.33 then item_to_build = 6 end -- Bear
-                if roll < 0.66 then item_to_build = 77 end -- Seal
+                if roll < 0.33 then 
+                    item_to_build = 6 -- Bear
+                    cost = 500
+                elseif roll < 0.66 then 
+                    item_to_build = 77 -- Seal
+                    cost = 750
+                end
 
-                tile:set_facility_add_production_queue_defense_item(item_to_build, 1)
+                if g_skynet_budget >= cost then
+                    tile:set_facility_add_production_queue_defense_item(item_to_build, 1)
+                    g_skynet_budget = g_skynet_budget - cost
+                    skynet_log("Produziere Einheit bei " .. tile:get_name() .. " (Budget: " .. math.floor(g_skynet_budget) .. ")")
+                end
             end
         end
     end
@@ -157,16 +244,16 @@ function skynet_tactics()
 
     for i = 0, vehicle_count - 1 do
         local vehicle = update_get_map_vehicle_by_index(i)
-        if vehicle:get() and vehicle:get_team() == 0 then
+        if vehicle ~= nil and vehicle:get() and vehicle:get_team() == 0 then
             local dist_sq = vec2_dist_sq(target_pos, vehicle:get_position_xz())
 
-            -- Max Range 10km
+            -- Maximale Reichweite 10km
             if dist_sq < (10000 * 10000) then
                 if math.random() < 0.3 then
                     local unit_id = vehicle:get_id()
 
-                    -- V4 Logic: Check Island Difficulty
-                    -- Find nearest friendly island to this unit to determine "Squad Level"
+                    -- V4 Logik: Insel-Schwierigkeitsgrad prüfen
+                    -- Nächste befreundete Insel zu dieser Einheit finden, um "Squad Level" zu bestimmen
                     local nearest_island, dist_island = get_nearest_friendly_island(vehicle:get_position_xz())
                     local difficulty = 1
                     if nearest_island then
@@ -174,33 +261,40 @@ function skynet_tactics()
                     end
 
                     if g_skynet_alarm_level == 2 then
-                        -- V4: Difficulty Behavior
-                        -- Level 3 Islands are "Elite/Smart": 50% chance to HIDE/WAIT instead of charging
+                        -- V4: Schwierigkeitsgrad-Verhalten
+                        -- Level 3 Inseln sind "Elite/Klug": 50% Chance auf VERSTECKEN/WARTEN anstelle eines direkten Angriffs
                         if difficulty >= 3 and math.random() < 0.5 then
+                            if not vehicle.skynet_ambush then
+                                skynet_log("Einheit " .. unit_id .. " (Elite) bereitet einen Hinterhalt vor.", color_status_ok)
+                                vehicle.skynet_ambush = true
+                            end
                             print("Skynet: Elite-Einheit " ..
-                                unit_id .. " wartet im Hinterhalt. / Elite unit waiting in ambush.")
-                            -- Do nothing (Hold position) or maybe move slightly back?
-                            -- For now: Just don't give attack order -> Passive/Defensive behavior
+                                unit_id .. " wartet im Hinterhalt.")
                         else
-                            -- Attack!
+                            -- Angriff!
                             local wid = vehicle:add_waypoint(target_pos:x(), target_pos:y())
                             local jitter = (math.random() - 0.5) * 200
                             vehicle:set_waypoint_position(wid, target_pos:x() + jitter, target_pos:y() + jitter)
 
-                            -- V4: Torpedo Usage
+                            -- V4: Torpedo-Einsatz
                             local atype = e_attack_type.any
 
-                            -- If we have torpedoes and target is likely a ship (Carrier), use them!
+                            -- Wenn Torpedos verfügbar sind und das Ziel wahrscheinlich ein Schiff (Träger) ist, abfeuern!
                             if vehicle:get_is_attack_type_capable(e_attack_type.torpedo_single, true) then
                                 atype = e_attack_type.torpedo_single
-                                print("Skynet: Einheit " .. unit_id .. " feuert Torpedos! / Firing torpedoes!")
+                                skynet_log("Einheit " .. unit_id .. " feuert Torpedos ab!", color_status_bad)
+                                print("Skynet: Einheit " .. unit_id .. " feuert Torpedos!")
                             elseif vehicle:get_is_attack_type_capable(e_attack_type.order_cruise_missile, true, true,
                                 true) then
                                 atype = e_attack_type.order_cruise_missile
+                                skynet_log("Einheit " .. unit_id .. " hat Marschflugkörper-Unterstützung angefordert.", color_status_bad)
                             end
 
-                            vehicle:set_waypoint_attack_target_target_id(wid, update_get_screen_vehicle():get_id())
-                            vehicle:set_waypoint_attack_target_attack_type(wid, 1, atype)
+                            local carrier = update_get_screen_vehicle()
+                            if carrier and carrier:get() then
+                                vehicle:set_waypoint_attack_target_target_id(wid, carrier:get_id())
+                                vehicle:set_waypoint_attack_target_attack_type(wid, 1, atype)
+                            end
                         end
                     end
                 end
@@ -209,13 +303,13 @@ function skynet_tactics()
     end
 end
 
--- Hilfsfunktionen / Helper Functions
+-- Hilfsfunktionen
 function get_dist_to_nearest_ai_base(pos)
     local min_dist = 1000000000
     local tile_count = update_get_tile_count()
     for i = 0, tile_count - 1 do
         local tile = update_get_tile_by_index(i)
-        if tile:get() and tile:get_team_control() == 0 then
+        if tile ~= nil and tile:get() and tile:get_team_control() == 0 then
             local t_pos = tile:get_position_xz()
             local dist = math.sqrt(vec2_dist_sq(pos, t_pos))
             if dist < min_dist then min_dist = dist end
@@ -231,7 +325,7 @@ function get_nearest_friendly_island(pos)
     local tile_count = update_get_tile_count()
     for i = 0, tile_count - 1 do
         local tile = update_get_tile_by_index(i)
-        if tile:get() and tile:get_team_control() == 0 then -- Friendly to AI
+        if tile and tile:get() and tile:get_team_control() == 0 then -- KI-befreundet
             local t_pos = tile:get_position_xz()
             local dist = vec2_dist_sq(pos, t_pos)
             if dist < best_dist then
@@ -248,7 +342,7 @@ function get_player_island_count()
     local tile_count = update_get_tile_count()
     for i = 0, tile_count - 1 do
         local tile = update_get_tile_by_index(i)
-        if tile:get() and tile:get_team_control() == 1 then
+        if tile ~= nil and tile:get() and tile:get_team_control() == 1 then
             count = count + 1
         end
     end

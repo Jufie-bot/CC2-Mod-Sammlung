@@ -36,3 +36,18 @@ Das Spiel liefert ein `mod_dev_kit` (zu finden im Spielordner).
 
 > [!WARNING]
 > Änderungen direkt im `content/`-Ordner funktionieren bei Skripten (`.lua`, `.xml`), aber Modelle und Texturen müssen zwingend durch den Compiler laufen!
+
+## 4. Save-Editing (Fortgeschritten)
+Das direkte Bearbeiten der `save.xml`-Dateien eröffnet viele Möglichkeiten, die über normales Modding hinausgehen, birgt aber auch ein hohes Absturzrisiko.
+
+**Mögliche Modifikationen per Save-Game:**
+*   Menschlichen Teams bestimmte Einheiten geben (z.B. Swordfish).
+*   Beliebige Waffen an Flugzeuge, Schiffe oder Türme montieren.
+*   Inseln hinzufügen oder entfernen (bis zum Limit von 64).
+*   Inventar von Träger und Inseln direkt modifizieren.
+*   Insel-Biome und Produktionsarten ändern.
+
+**Community Map-Editoren (Empfohlen):**
+Anstatt die XML manuell zu bearbeiten, solltest du diese Tools nutzen:
+*   [**cc2me**](https://github.com/cc2modteam/cc2me): Fügt/entfernt Einheiten und Inseln, ändert Waffen und Munitionszahlen.
+*   [**carrier command 2 saves editor**](https://bitbucket.org/Developpeur3d/carrier-command-2-saves-editor/src/master/): Ändert Carrier Inventar, Insel-Blueprints und fügt/entfernt Inseln.

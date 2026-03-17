@@ -67,4 +67,26 @@ Denke daran, dass UI-Elemente auf verschiedenen Monitor-Größen und in VR funkt
 Wenn du 3D-Tags (wie in Vehicle IDs) renderst, prüfe, ob das Ziel sichtbar ist (Raycast). Text durch Berge hindurch zu sehen, zerstört die Immersion.
 
 ---
-*Leitfaden basierend auf Analyse V11.*
+
+## 5. Debugging & Testing
+
+### ✅ DO: Den Developer-Modus (`-dev`) nutzen
+Startest du das Spiel mit dem Befehlszeilenparameter `-dev` (z.B. über Git Bash oder Steam-Startoptionen), lädt CC2 lokale Lua-Skripte bei jeder Speicherung automatisch neu.
+*Warum?* Du sparst dir den ewigen Neustart des Spiels bei kleinen Code-Änderungen. **Achtung:** Ändere im laufenden Betrieb keine XML-Dateien, das führt oft direkt zum Absturz.
+
+### ✅ DO: `print()` über eine Konsole auslesen
+Standardmäßig ignoriert CC2 alle `print()`-Ausgaben. Wenn du das Spiel jedoch über ein Konsolenfenster wie Git Bash startest (`./carrier_command.exe -dev`), siehst du dort deine kompletten Lua-Konsolenausgaben. Perfekt, um sich Variablenwerte live ausgeben zu lassen.
+
+### ✅ DO: `pcall()` für sichere Aufrufe verwenden
+Da in CC2 ein Lua-Fehler oft dazu führt, dass ein Skript einfach lautlos abbricht und Bildschirme freezen, nutze `pcall()` (Protected Call). Damit kannst du Abstürze abfangen und die genaue Fehlermeldung ausgeben:
+```lua
+local status, err = pcall(function() 
+    -- Fehleranfälliger Code
+end)
+if not status then 
+    print("Skript-Fehler: " .. err) 
+end
+```
+
+---
+*Leitfaden basierend auf Analyse V11 und offizieller CC2 Knowledge Base.*

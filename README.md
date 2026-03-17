@@ -149,8 +149,7 @@ Unser Labor verwaltet derzeit **95 verschiedene Modifikationen**, die als Grundl
 - Missile Reformat
 - Naval Gun Stabilizer
 - Salty's Missile Damage Edit
-- Supersonic Cruise Missile
-- Torpedo & Missile Wolfenstein alarm
+- Supersonic Cruise Missile 66
 - Torpedo Reformat
 - Turret Utility
 
