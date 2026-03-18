@@ -1,46 +1,44 @@
-# 📟 CC2 Modding Command Center (Wiki)
+# 📟 CC2 Modding Command Center
 
 > **"Die systematische Wissensdatenbank für Carrier Command 2 Technik."**
-
-Willkommen in der Forschungszentrale. Dieses Wiki folgt einer klaren Hierarchie, um dich vom Fundament bis zur Experten-Analyse zu führen.
-
----
-
-## 🏗️ 1. Das Fundament
-Verstehe die Basis des Modding-Workflows und wie du deinen Workspace optimal einrichtest.
-
-- [[Modding Grundlagen]] – Erste Schritte und Ordnerstrukturen.
-- [[Projekt Entwicklung]] – Die Evolution und der Stack dieses Labors.
-- [[Git Quickstart]] – Master-Guide für die Versionskontrolle.
-- [[Entwickler Standards]] – Kodex für sauberen und kompatiblen Code.
+> *Wiki-Struktur v3.3 | Stand: März 2026*
 
 ---
 
-## 🛠️ 2. Modding-Anleitungen
-Praktische Guides und Referenzen zur Erstellung eigener Modifikationen.
+## 🗺️ Labor-Dashboard
 
-- [[Technisches Entwickler Handbuch]] – Deep-Dive in die Engine.
-- [[Lua Referenz]] – Archiv der wichtigsten Funktionen.
-- [[Mod Kategorien Liste]] – Übersicht der verwalteten Mods.
-- [[PULL REQUEST TEMPLATE]]
+| Bereich | Fokus |
+| :--- | :--- |
+| **[[0. Home\|Home]]** | Dashboard & News |
+| **[[1. System-Guide\|System-Guide/Was-ist-was]]** | Die Karte des Labors |
+| **[[2. Fundament\|Fundament/Uebersicht]]** | Architektur & Konzepte |
+| **[[3. Was ist möglich?\|Was-ist-moeglich/Modding-Tiefen-Uebersicht]]** | Grenzen & Potenziale |
+| **[[4. Game-Referenz\|Game-Referenz/Uebersicht]]** | Technik-Datenbank (XML/Lua) |
+| **[[5. Labor-Experimente\|Labor-Experimente/Uebersicht]]** | Code-Vergleiche & Lösungen |
+| **[[6. Guides & Tutorials\|Guides-und-Tutorials/Uebersicht]]** | Schritt-für-Schritt Anleitungen |
+| **[[7. Code-Standards\|Code-Standards/Uebersicht]]** | Regeln sauberer Arbeit |
+| **[[8. Mod-Galerie\|Mod-Galerie/Uebersicht]]** | Die kuratierte Sammlung |
+| **[[9. Sandkasten\|Sandkasten/Uebersicht]]** | Bausteine & Snippets |
+| **[[10. Kat-Mods\|Kategorienuebergreifende-Mods/Uebersicht]]** | Externe Großprojekte |
+| **[[11. Eigene Mods\|Eigene-Mods/Uebersicht]]** | Julians Projekte |
+| **[[12. Automatisierung\|Automatisierung/Uebersicht]]** | System-Dokumentation |
+| **[[13. Spiel-Updates\|Spiel-Updates/Uebersicht]]** | Patch-History & Auswirkungen |
+| **[[14. Community\|Community/Beitragen]]** | Mitmachen & Feedback |
+
+---
+
+### 🔬 Aktueller Fokus
+- **Knowledge Base Integration**: Übernahme technischer Referenzen (Einheiten, Attachments, Lua) aus der Community-KB.
+- **Integration Revolution-Mod**: Harmonisierung von Skynet AI mit dem Revolution Framework.
+- **Radar-Physik**: Analyse der Radar Cross Section (RCS) Berechnung in CC2.
 
 ---
 
-## 🔬 3. Forschungs-Berichte
-Detaillierte Dekonstruktion bestehender Mods und Spiel-Konstanten.
-### 🔬 Stufe 2: Dekonstruktion
-Der wichtigste Teil: Wir untersuchen existierende Mods, um zu verstehen, welche Variablen was bewirken.
-- [[Code Detail Analyse]]
-- [[Game Constants Analyse]]
-- [[Forschungs-Berichte]]
-- [[Lua-Script-Analysis]]
+### 📊 Labor-Statistiken (Snapshot)
+- **Gesammelte Mods**: 90+
+- **Analysierte Berichte**: 14 (Waffen-Fokus)
+- **Wiki-Status**: v3.3 Reorganisation abgeschlossen.
 
 ---
-
-## 📡 System-Funktionen
-- [[Admin]] – System-Testseite.
-- [[labels]] – Kategorisierungs-Übersicht.
-
----
-> [!NOTE]
-> *Dieses Wiki ist das Ergebnis hunderter Stunden Analyse. Stand: März 2026.*
+> [!TIP]
+> **Neu hier?** Starte am besten im [[1. System-Guide|System-Guide/Was-ist-was]], um die Philosophie dieses Labors zu verstehen.
