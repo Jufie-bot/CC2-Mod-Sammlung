@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data layer_count="1" is_underwater_allowed="false" is_rotatable="false">
+	<mesh file="meshes/lava_biome_tiles/lava_biome_flat_lava_floor_a.mesh"/>
+	<mesh_low_lod file="meshes/lava_biome_tiles/lava_biome_flat_lava_a_low.mesh"/>
+	<mesh_lava file="meshes/lava_biome_tiles/lava_biome_flat_lava_a.mesh"/>
+	<body file=""/>
+	<corner_0 min_height="0" max_height="3" is_snap_layers="false" layer_index="0"/>
+	<corner_1 min_height="0" max_height="3" is_snap_layers="false" layer_index="0"/>
+	<corner_2 min_height="0" max_height="3" is_snap_layers="false" layer_index="0"/>
+	<edge_0 type="4" height="0"/>
+	<edge_1 type="4" height="0"/>
+	<edge_2 type="4" height="0"/>
+	<navmesh/>
+	<forest/>
+	<markers/>
+	<details>
+		<detail name="detail_0" type="2" blink_pattern="" fov="1.00000000e+00" is_volume="true" radius="2.00000000e+01">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="7.95619812e+01" ty="-8.81871414e+00" tz="-4.95930443e+01"/>
+			<color x="1.00000000e+00" y="1.00000000e+00" z="1.00000000e+00"/>
+		</detail>
+		<detail name="detail_1" type="2" blink_pattern="" fov="1.00000000e+00" is_volume="true" radius="5.00000000e+01">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="5.07531090e+01" ty="-3.51175385e+01" tz="-2.95437813e+01"/>
+			<color x="1.00000000e+00" y="1.00000000e+00" z="1.00000000e+00"/>
+		</detail>
+		<detail name="detail_2" type="2" blink_pattern="" fov="1.00000000e+00" is_volume="true" radius="2.00000000e+01">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="-8.17986679e+01" ty="-1.03460655e+01" tz="-4.70124779e+01"/>
+			<color x="1.00000000e+00" y="1.00000000e+00" z="1.00000000e+00"/>
+		</detail>
+		<detail name="detail_3" type="2" blink_pattern="" fov="1.00000000e+00" is_volume="true" radius="5.00000000e+01">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="-4.94716225e+01" ty="-3.51180000e+01" tz="-2.90798340e+01"/>
+			<color x="1.00000000e+00" y="1.00000000e+00" z="1.00000000e+00"/>
+		</detail>
+		<detail name="detail_4" type="2" blink_pattern="" fov="1.00000000e+00" is_volume="true" radius="2.00000000e+01">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="4.81756806e-01" ty="-6.43400288e+00" tz="9.10124664e+01"/>
+			<color x="1.00000000e+00" y="1.00000000e+00" z="1.00000000e+00"/>
+		</detail>
+		<detail name="detail_5" type="2" blink_pattern="" fov="1.00000000e+00" is_volume="true" radius="5.00000000e+01">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="8.46456170e-01" ty="-3.32345467e+01" tz="5.52206421e+01"/>
+			<color x="1.00000000e+00" y="1.00000000e+00" z="1.00000000e+00"/>
+		</detail>
+		<detail name="detail_6" type="2" blink_pattern="" fov="1.00000000e+00" is_volume="true" radius="1.10000000e+02">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="0.00000000e+00" ty="-8.72173843e+01" tz="0.00000000e+00"/>
+			<color x="1.00000000e+00" y="1.00000000e+00" z="1.00000000e+00"/>
+		</detail>
+		<detail name="detail_7" type="0" blink_pattern="" fov="1.00000000e+00" is_volume="true" radius="1.00000000e+00">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="-5.35445213e-01" ty="2.11240053e+00" tz="-5.49963951e+01"/>
+			<color x="1.00000000e+00" y="1.00000000e+00" z="1.00000000e+00"/>
+		</detail>
+	</details>
+</data>
+

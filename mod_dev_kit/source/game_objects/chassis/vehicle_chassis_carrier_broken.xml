@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data display_name="Carrier" bounding_radius="1.25000000e+02" lod_scale="1.00000000e+01" ai_type="3">
+	<bodies>
+		<body mass="1.50000000e+05" name="body" is_static="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="0.00000000e+00" ty="0.00000000e+00" tz="0.00000000e+00"/>
+			<meshes>
+				<mesh file="meshes/aircraft_carrier/aircraft_carrier_hangar_physics.cphys"/>
+			</meshes>
+			<boxes/>
+			<spheres/>
+		</body>
+	</bodies>
+	<constraints/>
+	<meshes>
+		<mesh file="meshes/aircraft_carrier/aircraft_carrier_shell_broken/aircraft_carrier_broken.mesh" name="shell" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="0.00000000e+00" ty="0.00000000e+00" tz="0.00000000e+00"/>
+		</mesh>
+	</meshes>
+	<wheels/>
+	<attachments/>
+	<force_emitters/>
+	<control_surfaces/>
+	<projectile_emitters/>
+	<cameras/>
+	<buoyancys>
+		<buoyancy name="buoyancy" radius="1.60000000e+01" magnitude="1.00000001e-01">
+			<pos x="-3.20000000e+01" y="8.00000000e+00" z="-7.20000000e+01"/>
+		</buoyancy>
+		<buoyancy name="buoyancy" radius="1.60000000e+01" magnitude="1.00000001e-01">
+			<pos x="3.20000000e+01" y="8.00000000e+00" z="-7.20000000e+01"/>
+		</buoyancy>
+		<buoyancy name="buoyancy" radius="1.60000000e+01" magnitude="9.99999978e-03">
+			<pos x="-3.20000000e+01" y="8.00000000e+00" z="-4.80000000e+01"/>
+		</buoyancy>
+		<buoyancy name="buoyancy" radius="1.60000000e+01" magnitude="9.99999978e-03">
+			<pos x="3.20000000e+01" y="8.00000000e+00" z="-4.80000000e+01"/>
+		</buoyancy>
+		<buoyancy name="buoyancy" radius="1.60000000e+01" magnitude="9.99999978e-03">
+			<pos x="-3.20000000e+01" y="8.00000000e+00" z="-2.40000000e+01"/>
+		</buoyancy>
+		<buoyancy name="buoyancy" radius="1.60000000e+01" magnitude="9.99999978e-03">
+			<pos x="3.20000000e+01" y="8.00000000e+00" z="-2.40000000e+01"/>
+		</buoyancy>
+		<buoyancy name="buoyancy" radius="1.60000000e+01" magnitude="9.99999978e-03">
+			<pos x="-3.20000000e+01" y="8.00000000e+00" z="0.00000000e+00"/>
+		</buoyancy>
+		<buoyancy name="buoyancy" radius="1.60000000e+01" magnitude="9.99999978e-03">
+			<pos x="3.20000000e+01" y="8.00000000e+00" z="0.00000000e+00"/>
+		</buoyancy>
+		<buoyancy name="buoyancy" radius="1.60000000e+01" magnitude="9.99999978e-03">
+			<pos x="-3.20000000e+01" y="8.00000000e+00" z="2.40000000e+01"/>
+		</buoyancy>
+		<buoyancy name="buoyancy" radius="1.60000000e+01" magnitude="9.99999978e-03">
+			<pos x="3.20000000e+01" y="8.00000000e+00" z="2.40000000e+01"/>
+		</buoyancy>
+		<buoyancy name="buoyancy" radius="1.60000000e+01" magnitude="9.99999978e-03">
+			<pos x="-3.20000000e+01" y="8.00000000e+00" z="4.80000000e+01"/>
+		</buoyancy>
+		<buoyancy name="buoyancy" radius="1.60000000e+01" magnitude="9.99999978e-03">
+			<pos x="3.20000000e+01" y="8.00000000e+00" z="4.80000000e+01"/>
+		</buoyancy>
+		<buoyancy name="buoyancy" radius="1.60000000e+01" magnitude="9.99999978e-03">
+			<pos x="-3.20000000e+01" y="8.00000000e+00" z="7.20000000e+01"/>
+		</buoyancy>
+		<buoyancy name="buoyancy" radius="1.60000000e+01" magnitude="9.99999978e-03">
+			<pos x="3.20000000e+01" y="8.00000000e+00" z="7.20000000e+01"/>
+		</buoyancy>
+		<buoyancy name="buoyancy" radius="1.60000000e+01" magnitude="1.00000001e-01">
+			<pos x="0.00000000e+00" y="8.00000000e+00" z="9.60000000e+01"/>
+		</buoyancy>
+	</buoyancys>
+	<vehicle_attachments/>
+	<lights/>
+	<seats/>
+	<button_panels/>
+	<buttons/>
+	<indicators/>
+	<dials/>
+	<screens/>
+	<doors/>
+	<graph_nodes/>
+	<graph_links/>
+	<foam_emitters/>
+	<particle_emitters/>
+	<sensors/>
+	<holomaps/>
+</data>
+

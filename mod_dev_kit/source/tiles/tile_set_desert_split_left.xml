@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data layer_count="3" is_underwater_allowed="true" is_rotatable="true">
+	<mesh file="meshes/desert_biome_tiles/desert_biome_cliff_multi_left.mesh"/>
+	<mesh_low_lod file="meshes/desert_biome_tiles/desert_biome_cliff_multi_left_low.mesh"/>
+	<mesh_lava file=""/>
+	<body file=""/>
+	<corner_0 min_height="-1" max_height="0" is_snap_layers="false" layer_index="0"/>
+	<corner_1 min_height="2" max_height="2" is_snap_layers="false" layer_index="1"/>
+	<corner_2 min_height="4" max_height="4" is_snap_layers="false" layer_index="2"/>
+	<edge_0 type="1" height="0"/>
+	<edge_1 type="2" height="0"/>
+	<edge_2 type="2" height="0"/>
+	<navmesh>
+		<tri>
+			<p0 x="1.18654156e-02" y="-5.08248231e-05" z="2.76312199e+01"/>
+			<p1 x="1.18910780e+01" y="2.51071225e-03" z="7.02220917e+00"/>
+			<p2 x="-1.17203646e+01" y="3.30441562e-03" z="7.36786652e+00"/>
+		</tri>
+		<tri>
+			<p0 x="-2.39145737e+01" y="2.99994493e+00" z="-1.37551212e+01"/>
+			<p1 x="-1.84403648e+01" y="2.99994445e+00" z="-4.37306166e+00"/>
+			<p2 x="-8.54269922e-01" y="2.99809647e+00" z="-1.38216610e+01"/>
+		</tri>
+		<tri>
+			<p0 x="1.29487877e+01" y="5.99899054e+00" z="-1.38131542e+01"/>
+			<p1 x="1.84638882e+01" y="5.99950886e+00" z="-4.30897665e+00"/>
+			<p2 x="2.39727764e+01" y="5.99995995e+00" z="-1.38520689e+01"/>
+		</tri>
+	</navmesh>
+	<forest>
+		<tri>
+			<p0 x="1.26057806e+01" y="6.35382771e-01" z="5.64561462e+00"/>
+			<p1 x="-1.21689987e+01" y="2.32661322e-01" z="6.12840366e+00"/>
+			<p2 x="5.94990142e-02" y="-5.08445919e-05" z="2.71903687e+01"/>
+		</tri>
+		<tri>
+			<p0 x="2.37766147e+00" y="3.51108527e+00" z="-1.32585268e+01"/>
+			<p1 x="-2.38051109e+01" y="2.99994493e+00" z="-1.37573891e+01"/>
+			<p2 x="-1.50829210e+01" y="2.99694681e+00" z="-8.57345819e-01"/>
+		</tri>
+		<tri>
+			<p0 x="2.36845245e+01" y="5.99995995e+00" z="-1.37997131e+01"/>
+			<p1 x="7.65240955e+00" y="5.99431372e+00" z="-1.37377501e+01"/>
+			<p2 x="1.64959164e+01" y="5.99349070e+00" z="-1.03090322e+00"/>
+		</tri>
+	</forest>
+	<markers>
+		<marker vehicle_type="0" type="2">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="1.60632095e+01" ty="5.93074465e+00" tz="-1.07718105e+01"/>
+		</marker>
+		<marker vehicle_type="0" type="1">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="-8.60343799e-02" ty="3.03258806e-01" tz="7.86288404e+00"/>
+		</marker>
+	</markers>
+</data>
+

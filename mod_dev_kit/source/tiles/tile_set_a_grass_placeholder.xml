@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data layer_count="1" is_underwater_allowed="false" is_rotatable="false">
+	<mesh file="meshes/arctic_biome_tiles/arctic_biome_flat_snow_b.mesh"/>
+	<mesh_low_lod file=""/>
+	<body file=""/>
+	<corner_0 min_height="0" max_height="1" is_snap_layers="false" layer_index="0"/>
+	<corner_1 min_height="0" max_height="1" is_snap_layers="false" layer_index="0"/>
+	<corner_2 min_height="0" max_height="1" is_snap_layers="false" layer_index="0"/>
+	<edge_0 type="0" height="0"/>
+	<edge_1 type="0" height="0"/>
+	<edge_2 type="0" height="0"/>
+	<navmesh>
+		<tri>
+			<p0 x="7.21454620e-03" y="5.00000000e-01" z="2.73698120e+01"/>
+			<p1 x="2.38395805e+01" y="5.00000000e-01" z="-1.36939392e+01"/>
+			<p2 x="-2.37233658e+01" y="5.00000000e-01" z="-1.37147980e+01"/>
+		</tri>
+	</navmesh>
+	<forest/>
+	<markers>
+		<marker vehicle_type="0" type="0">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="-2.92079926e-01" ty="7.62939453e-06" tz="9.78841782e-01"/>
+		</marker>
+		<marker vehicle_type="1" type="0">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="-1.35758147e-01" ty="0.00000000e+00" tz="1.34790802e+00"/>
+		</marker>
+	</markers>
+</data>
+

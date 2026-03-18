@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data layer_count="1" is_underwater_allowed="true" is_rotatable="false">
+	<mesh file="meshes/desert_biome_tiles/desert_biome_flat_a.mesh"/>
+	<mesh_low_lod file="meshes/desert_biome_tiles/desert_biome_flat_a_low.mesh"/>
+	<mesh_lava file=""/>
+	<body file=""/>
+	<corner_0 min_height="0" max_height="1" is_snap_layers="false" layer_index="0"/>
+	<corner_1 min_height="0" max_height="1" is_snap_layers="false" layer_index="0"/>
+	<corner_2 min_height="0" max_height="1" is_snap_layers="false" layer_index="0"/>
+	<edge_0 type="0" height="0"/>
+	<edge_1 type="0" height="0"/>
+	<edge_2 type="0" height="0"/>
+	<navmesh>
+		<tri>
+			<p0 x="2.39097729e+01" y="5.99442842e-07" z="-1.37136555e+01"/>
+			<p1 x="-2.37112083e+01" y="6.04684828e-07" z="-1.38335781e+01"/>
+			<p2 x="6.75397143e-02" y="-1.20462278e-06" z="2.75585575e+01"/>
+		</tri>
+	</navmesh>
+	<forest>
+		<tri>
+			<p0 x="2.37965279e+01" y="6.04066827e-07" z="-1.38194399e+01"/>
+			<p1 x="-2.37806892e+01" y="6.05401112e-07" z="-1.38499641e+01"/>
+			<p2 x="2.46694088e-02" y="-1.20562709e-06" z="2.75815334e+01"/>
+		</tri>
+	</forest>
+	<markers>
+		<marker vehicle_type="0" type="0">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="-1.50929666e+00" ty="3.74931517e-08" tz="-8.57743382e-01"/>
+		</marker>
+		<marker vehicle_type="1" type="0">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="-1.48046601e+00" ty="3.03365653e-08" tz="-6.94020331e-01"/>
+		</marker>
+	</markers>
+</data>
+

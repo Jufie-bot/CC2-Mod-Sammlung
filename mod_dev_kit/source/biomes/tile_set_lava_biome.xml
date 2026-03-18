@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data texture_ambient_file_name="meshes/environment/lava_biome_ao.txtr" texture_lava_mask_file_name="meshes/environment/lava_biome_mask.txtr" tree_type="0">
+	<definitions>
+		<d file_name="tile_set_lava_concave_a.xml" probability="1.00000000e+00"/>
+		<d file_name="tile_set_lava_concave_b.xml" probability="1.00000000e+00"/>
+		<d file_name="tile_set_lava_connect_a.xml" probability="1.00000000e+00"/>
+		<d file_name="tile_set_lava_connect_b.xml" probability="1.00000000e+00"/>
+		<d file_name="tile_set_lava_convex_a.xml" probability="1.00000000e+00"/>
+		<d file_name="tile_set_lava_flat_a.xml" probability="1.00000000e+00"/>
+		<d file_name="tile_set_lava_multi.xml" probability="1.00000000e+00"/>
+		<d file_name="tile_set_lava_multi_bridge.xml" probability="1.00000000e+00"/>
+		<d file_name="tile_set_lava_path_a.xml" probability="1.00000000e+00"/>
+		<d file_name="tile_set_lava_path_b.xml" probability="1.00000000e+00"/>
+		<d file_name="tile_set_lava_path_bridge.xml" probability="1.00000000e+00"/>
+		<d file_name="tile_set_lava_flat_lava_a.xml" probability="1.00000000e+00"/>
+		<d file_name="tile_set_lava_end_a.xml" probability="1.00000000e+00"/>
+		<d file_name="tile_set_lava_end_b.xml" probability="1.00000000e+00"/>
+		<d file_name="tile_set_lava_rocks_f.xml" probability="1.00000001e-01"/>
+		<d file_name="tile_set_lava_rocks_e.xml" probability="1.00000001e-01"/>
+		<d file_name="tile_set_lava_rocks_d.xml" probability="1.00000001e-01"/>
+		<d file_name="tile_set_lava_rocks_b.xml" probability="1.00000001e-01"/>
+		<d file_name="tile_set_lava_rocks_a.xml" probability="1.00000001e-01"/>
+		<d file_name="tile_set_lava_rocks_c.xml" probability="1.00000001e-01"/>
+		<d file_name="tile_set_lava_geyser_c.xml" probability="1.00000001e-01"/>
+		<d file_name="tile_set_lava_geyser_b.xml" probability="1.00000001e-01"/>
+		<d file_name="tile_set_lava_geyser_a.xml" probability="1.00000001e-01"/>
+		<d file_name="tile_set_lava_flat_rocks_b.xml" probability="1.00000001e-01"/>
+		<d file_name="tile_set_lava_flat_rocks_a.xml" probability="1.00000001e-01"/>
+	</definitions>
+	<parameters max_grass_delta_height="3" max_edge_delta_height="3" noise_falloff="5.00000000e-01" is_constrain_sea_floor_to_grass="false" is_flat_sea_floor="true" is_square_sea_floor="true" sea_floor_distance_scale="1.00000000e+00" is_constrain_heights_before_grass="true" is_constrain_grass_again_after_prefabs="true" is_constrain_grass_islands_anchored="false" tree_threshold="6.99999988e-01" tree_radius="3.00000000e+00" tree_min_scale="6.99999988e-01" tree_max_scale="1.00000000e+00" deform_noies_influence="2.00000000e+00">
+		<island_noise_parameters noise_step_x="16" noise_step_y="16" noise_offset_x="0" noise_offset_y="0" noise_octaves="4" noise_persistence="1.20000005e+00" noise_frequency="1.00000000e+00" noise_power="8.99999976e-01" scale="1.00000000e+00"/>
+		<tree_noise_parameters noise_step_x="32" noise_step_y="32" noise_offset_x="0" noise_offset_y="0" noise_octaves="4" noise_persistence="2.00000003e-01" noise_frequency="1.00000000e+00" noise_power="1.00000000e+00" scale="1.00000000e+00"/>
+		<deform_noise_parameters noise_step_x="32" noise_step_y="32" noise_offset_x="0" noise_offset_y="0" noise_octaves="4" noise_persistence="8.00000012e-01" noise_frequency="2.00000000e+00" noise_power="1.00000000e+00" scale="1.00000000e+00"/>
+	</parameters>
+	<color_palette sand_color_high="A0A0AFF" sand_color_low="544722FF" grass_color="80808FF" cliff_color="FF" dirt_color="80808FF"/>
+</data>
+
