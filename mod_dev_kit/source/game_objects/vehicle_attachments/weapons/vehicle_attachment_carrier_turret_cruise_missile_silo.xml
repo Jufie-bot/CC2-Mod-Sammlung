@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data display_name_loc="0" bounding_radius="1.00000000e+01" lod_scale="1.00000000e+00" ai_type="0">
+	<bodies/>
+	<constraints/>
+	<meshes>
+		<mesh file="meshes/aircraft_carrier/aircraft_carrier_attachments/cruise_missile_silo_base.mesh" name="base" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="9.99999940e-01" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="9.99999940e-01" tx="0.00000000e+00" ty="0.00000000e+00" tz="1.80000007e-01"/>
+			<variants>
+				<v file="meshes/vehicles/attachments_broken_fixed/cruise_missile_silo_base_broken_fixed.mesh"/>
+			</variants>
+		</mesh>
+		<mesh file="meshes/aircraft_carrier/aircraft_carrier_attachments/cruise_missile_silo_top.mesh" name="pitch" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="-4.37113883e-08" m01="7.07106769e-01" m02="-7.07106769e-01" m10="-1.00000000e+00" m11="-3.09086197e-08" m12="3.09086197e-08" m20="0.00000000e+00" m21="7.07106709e-01" m22="7.07106709e-01" tx="0.00000000e+00" ty="8.49891424e-01" tz="-3.08586884e+00"/>
+			<variants>
+				<v file="meshes/vehicles/attachments_broken_fixed/cruise_missile_silo_top_broken_fixed.mesh"/>
+			</variants>
+		</mesh>
+		<mesh file="meshes/aircraft_carrier/aircraft_carrier_attachments/cruise_missile_silo_bar.mesh" name="gear_left" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="-4.37113883e-08" m01="-8.66025388e-01" m02="5.00000000e-01" m10="1.00000000e+00" m11="-3.78551732e-08" m12="2.18556941e-08" m20="0.00000000e+00" m21="4.99999970e-01" m22="8.66025329e-01" tx="-5.31939030e-01" ty="7.24278092e-01" tz="-3.72792125e-01"/>
+			<variants>
+				<v file="meshes/vehicles/attachments_broken_fixed/cruise_missile_silo_bar_broken_fixed.mesh"/>
+			</variants>
+		</mesh>
+		<mesh file="meshes/aircraft_carrier/aircraft_carrier_attachments/cruise_missile_silo_bar.mesh" name="gear_right" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="-4.37113883e-08" m01="-8.66025388e-01" m02="5.00000000e-01" m10="1.00000000e+00" m11="-3.78551732e-08" m12="2.18556941e-08" m20="0.00000000e+00" m21="4.99999970e-01" m22="8.66025329e-01" tx="5.34211874e-01" ty="7.24278092e-01" tz="-3.72792125e-01"/>
+			<variants>
+				<v file="meshes/vehicles/attachments_broken_fixed/cruise_missile_silo_bar_broken_fixed.mesh"/>
+			</variants>
+		</mesh>
+		<mesh file="meshes/aircraft_carrier/aircraft_carrier_attachments/cruise_missile_silo_bar_top.mesh" name="bar_top_left" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="-4.37113883e-08" m01="-8.66025388e-01" m02="5.00000000e-01" m10="1.00000000e+00" m11="-3.78551732e-08" m12="2.18556941e-08" m20="0.00000000e+00" m21="4.99999970e-01" m22="8.66025329e-01" tx="-5.33054233e-01" ty="1.82937729e+00" tz="-1.03567469e+00"/>
+		</mesh>
+		<mesh file="meshes/aircraft_carrier/aircraft_carrier_attachments/cruise_missile_silo_bar_top.mesh" name="bar_top_right" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="-4.37113883e-08" m01="-8.66025388e-01" m02="5.00000000e-01" m10="1.00000000e+00" m11="-3.78551732e-08" m12="2.18556941e-08" m20="0.00000000e+00" m21="4.99999970e-01" m22="8.66025329e-01" tx="5.48950434e-01" ty="1.82937729e+00" tz="-1.03567469e+00"/>
+		</mesh>
+		<mesh file="meshes/aircraft_carrier/aircraft_carrier_attachments/cruise_missile_silo_cap.mesh" name="door_2" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="7.07106769e-01" m12="-7.07106769e-01" m20="0.00000000e+00" m21="7.07106769e-01" m22="7.07106769e-01" tx="1.13003850e-02" ty="5.10784864e+00" tz="8.13000023e-01"/>
+		</mesh>
+		<mesh file="meshes/aircraft_carrier/aircraft_carrier_attachments/cruise_missile_silo_cap.mesh" name="door_3" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="7.07106769e-01" m12="-7.07106769e-01" m20="0.00000000e+00" m21="7.07106769e-01" m22="7.07106769e-01" tx="1.00051761e+00" ty="5.10784864e+00" tz="8.13469172e-01"/>
+		</mesh>
+		<mesh file="meshes/aircraft_carrier/aircraft_carrier_attachments/cruise_missile_silo_cap.mesh" name="door_1" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="7.07106769e-01" m12="-7.07106769e-01" m20="0.00000000e+00" m21="7.07106769e-01" m22="7.07106769e-01" tx="-9.47562099e-01" ty="5.10784864e+00" tz="8.13469172e-01"/>
+		</mesh>
+		<mesh file="meshes/aircraft_carrier/aircraft_carrier_attachments/cruise_missile_silo_cap.mesh" name="door_6" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="7.07106769e-01" m12="-7.07106769e-01" m20="0.00000000e+00" m21="7.07106769e-01" m22="7.07106769e-01" tx="-9.47562099e-01" ty="5.61041784e+00" tz="3.31194162e-01"/>
+		</mesh>
+		<mesh file="meshes/aircraft_carrier/aircraft_carrier_attachments/cruise_missile_silo_cap.mesh" name="door_5" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="7.07106769e-01" m12="-7.07106769e-01" m20="0.00000000e+00" m21="7.07106769e-01" m22="7.07106769e-01" tx="1.24595165e-02" ty="5.61041784e+00" tz="3.31194162e-01"/>
+		</mesh>
+		<mesh file="meshes/aircraft_carrier/aircraft_carrier_attachments/cruise_missile_silo_cap.mesh" name="door_4" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="7.07106769e-01" m12="-7.07106769e-01" m20="0.00000000e+00" m21="7.07106769e-01" m22="7.07106769e-01" tx="9.89724159e-01" ty="5.61041784e+00" tz="3.31194162e-01"/>
+		</mesh>
+		<mesh file="meshes/projectiles/projectiles/tomahawk_cruise_missile.mesh" name="missile_1" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="7.07106769e-01" m12="7.07106769e-01" m20="0.00000000e+00" m21="-7.07106769e-01" m22="7.07106769e-01" tx="-9.50154781e-01" ty="3.08212614e+00" tz="-1.22131252e+00"/>
+		</mesh>
+		<mesh file="meshes/projectiles/projectiles/tomahawk_cruise_missile.mesh" name="missile_2" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="7.07106769e-01" m12="7.07106769e-01" m20="0.00000000e+00" m21="-7.07106769e-01" m22="7.07106769e-01" tx="0.00000000e+00" ty="3.30201387e+00" tz="-9.55157757e-01"/>
+		</mesh>
+		<mesh file="meshes/projectiles/projectiles/tomahawk_cruise_missile.mesh" name="missile_3" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="7.07106769e-01" m12="7.07106769e-01" m20="0.00000000e+00" m21="-7.07106769e-01" m22="7.07106769e-01" tx="1.00252426e+00" ty="3.27827573e+00" tz="-8.91870022e-01"/>
+		</mesh>
+		<mesh file="meshes/projectiles/projectiles/tomahawk_cruise_missile.mesh" name="missile_4" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="7.07106769e-01" m12="7.07106769e-01" m20="0.00000000e+00" m21="-7.07106769e-01" m22="7.07106769e-01" tx="9.79828954e-01" ty="3.56448317e+00" tz="-1.79129601e+00"/>
+		</mesh>
+		<mesh file="meshes/projectiles/projectiles/tomahawk_cruise_missile.mesh" name="missile_5" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="7.07106769e-01" m12="7.07106769e-01" m20="0.00000000e+00" m21="-7.07106769e-01" m22="7.07106769e-01" tx="0.00000000e+00" ty="3.56448317e+00" tz="-1.79129601e+00"/>
+		</mesh>
+		<mesh file="meshes/projectiles/projectiles/tomahawk_cruise_missile.mesh" name="missile_6" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="7.07106769e-01" m12="7.07106769e-01" m20="0.00000000e+00" m21="-7.07106769e-01" m22="7.07106769e-01" tx="-9.41323400e-01" ty="3.75216794e+00" tz="-1.58460772e+00"/>
+		</mesh>
+		<mesh file="meshes/vehicles/attachment_lods/cruise_missile_silo_base_low.mesh" name="lod 1" lod="1" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="0.00000000e+00" ty="0.00000000e+00" tz="1.80000007e-01"/>
+		</mesh>
+	</meshes>
+	<wheels/>
+	<attachments/>
+	<force_emitters/>
+	<control_surfaces/>
+	<projectile_emitters/>
+	<cameras>
+		<camera name="camera">
+			<transform m00="-4.00130153e-01" m01="6.50916472e-02" m02="9.14143860e-01" m10="-1.61236420e-01" m11="9.76915836e-01" m12="-1.40136167e-01" m20="-9.02163267e-01" m21="-2.03465968e-01" m22="-3.80398363e-01" tx="1.21784544e+01" ty="7.46938515e+00" tz="9.31138992e+00"/>
+		</camera>
+	</cameras>
+	<buoyancys/>
+	<vehicle_attachments/>
+	<lights/>
+	<seats/>
+	<button_panels/>
+	<buttons/>
+	<indicators/>
+	<achievements/>
+	<dials/>
+	<screens/>
+	<doors/>
+	<graph_nodes/>
+	<graph_links/>
+	<foam_emitters/>
+	<particle_emitters>
+		<particle_emitter name="damage" body_index="4294967295" life="60" velocity="2.00000000e+00" magnitude="3.00000000e+00" rise="1.00000000e+01" color="30303FF">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="0.00000000e+00" ty="8.48471642e-01" tz="-8.07489991e-01"/>
+		</particle_emitter>
+	</particle_emitters>
+	<sensors/>
+	<splash_emitters/>
+	<holomaps/>
+	<damage_zones/>
+	<audio_zones/>
+	<nav_meshes/>
+</data>
+
