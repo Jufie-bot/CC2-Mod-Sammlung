@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data display_name_loc="0" bounding_radius="1.00000000e+01" lod_scale="1.00000000e+00" ai_type="0">
+	<bodies/>
+	<constraints/>
+	<meshes>
+		<mesh file="meshes/aircraft_carrier/aircraft_carrier_attachments/decoy_torpedo_laucher.mesh" name="base" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="-1.00000000e+00" m01="0.00000000e+00" m02="-8.74227766e-08" m10="0.00000000e+00" m11="9.99999940e-01" m12="0.00000000e+00" m20="8.74227766e-08" m21="0.00000000e+00" m22="-9.99999940e-01" tx="0.00000000e+00" ty="0.00000000e+00" tz="1.80000007e-01"/>
+			<variants>
+				<v file="meshes/vehicles/attachments_broken_fixed/decoy_torpedo_laucher_broken_fixed.mesh"/>
+			</variants>
+		</mesh>
+		<mesh file="meshes/vehicles/attachment_lods/decoy_torpedo_laucher_low.mesh" name="lod 1" lod="1" body="0" is_paint_dirt="false">
+			<transform m00="-1.00000000e+00" m01="0.00000000e+00" m02="-8.74227766e-08" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="8.74227766e-08" m21="0.00000000e+00" m22="-1.00000000e+00" tx="0.00000000e+00" ty="0.00000000e+00" tz="1.80000007e-01"/>
+		</mesh>
+		<mesh file="meshes/projectiles/projectiles/decoy_torpedo.mesh" name="decoy_torpedo_1" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="-1.00000000e+00" m01="0.00000000e+00" m02="1.35764012e-07" m10="7.37387680e-08" m11="8.17273080e-01" m12="5.76250494e-01" m20="-1.21816385e-07" m21="5.76250494e-01" m22="-8.17273080e-01" tx="5.33559561e-01" ty="2.91934276e+00" tz="2.40427804e+00"/>
+		</mesh>
+		<mesh file="meshes/projectiles/projectiles/decoy_torpedo.mesh" name="decoy_torpedo_2" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="-1.00000000e+00" m01="0.00000000e+00" m02="-8.74227766e-08" m10="-5.03774196e-08" m11="8.17273080e-01" m12="5.76250494e-01" m20="7.14482837e-08" m21="5.76250494e-01" m22="-8.17273080e-01" tx="-5.90199828e-01" ty="2.91764331e+00" tz="2.42486763e+00"/>
+		</mesh>
+		<mesh file="meshes/projectiles/projectiles/decoy_torpedo.mesh" name="decoy_torpedo_4" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="-1.00000000e+00" m01="0.00000000e+00" m02="-8.74227766e-08" m10="-5.03774196e-08" m11="8.17273080e-01" m12="5.76250494e-01" m20="7.14482837e-08" m21="5.76250494e-01" m22="-8.17273080e-01" tx="-5.90199828e-01" ty="2.91764331e+00" tz="1.41755748e+00"/>
+		</mesh>
+		<mesh file="meshes/projectiles/projectiles/decoy_torpedo.mesh" name="decoy_torpedo_6" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="-1.00000000e+00" m01="0.00000000e+00" m02="8.74227766e-08" m10="5.03774196e-08" m11="8.17273080e-01" m12="5.76250494e-01" m20="-7.14482837e-08" m21="5.76250494e-01" m22="-8.17273080e-01" tx="-5.90199828e-01" ty="2.91764331e+00" tz="4.14559841e-01"/>
+		</mesh>
+		<mesh file="meshes/projectiles/projectiles/decoy_torpedo.mesh" name="decoy_torpedo_3" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="-1.00000000e+00" m01="0.00000000e+00" m02="8.74227766e-08" m10="5.03774196e-08" m11="8.17273080e-01" m12="5.76250494e-01" m20="-7.14482837e-08" m21="5.76250494e-01" m22="-8.17273080e-01" tx="5.33559561e-01" ty="2.91934276e+00" tz="1.40782654e+00"/>
+		</mesh>
+		<mesh file="meshes/projectiles/projectiles/decoy_torpedo.mesh" name="decoy_torpedo_5" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="-1.00000000e+00" m01="0.00000000e+00" m02="8.74227766e-08" m10="5.03774196e-08" m11="8.17273080e-01" m12="5.76250494e-01" m20="-7.14482837e-08" m21="5.76250494e-01" m22="-8.17273080e-01" tx="5.33559561e-01" ty="2.91934276e+00" tz="3.31814051e-01"/>
+		</mesh>
+	</meshes>
+	<wheels/>
+	<attachments/>
+	<force_emitters/>
+	<control_surfaces/>
+	<projectile_emitters/>
+	<cameras>
+		<camera name="camera">
+			<transform m00="-4.00130153e-01" m01="6.50916472e-02" m02="9.14143860e-01" m10="-1.61236420e-01" m11="9.76915836e-01" m12="-1.40136167e-01" m20="-9.02163267e-01" m21="-2.03465968e-01" m22="-3.80398363e-01" tx="1.21784544e+01" ty="7.46938515e+00" tz="9.31138992e+00"/>
+		</camera>
+	</cameras>
+	<buoyancys/>
+	<vehicle_attachments/>
+	<lights/>
+	<seats/>
+	<button_panels/>
+	<buttons/>
+	<indicators/>
+	<achievements/>
+	<dials/>
+	<screens/>
+	<doors/>
+	<graph_nodes/>
+	<graph_links/>
+	<foam_emitters/>
+	<particle_emitters>
+		<particle_emitter name="damage" body_index="4294967295" life="60" velocity="2.00000000e+00" magnitude="2.00000000e+00" rise="1.00000000e+01" color="30303FF">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="0.00000000e+00" ty="1.04666615e+00" tz="2.07594737e-01"/>
+		</particle_emitter>
+	</particle_emitters>
+	<sensors/>
+	<splash_emitters/>
+	<holomaps/>
+	<damage_zones/>
+	<audio_zones/>
+	<nav_meshes/>
+</data>
+

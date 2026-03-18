@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data display_name="Turret (Rocket Pod)" bounding_radius="1.00000000e+01" ai_type="0">
+	<bodies/>
+	<constraints/>
+	<meshes>
+		<mesh file="meshes/vehicles/attachments/rocket_pod.mesh" name="base" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="0.00000000e+00" ty="-4.30000007e-01" tz="0.00000000e+00"/>
+		</mesh>
+		<mesh file="meshes/projectiles/projectiles/rocket.mesh" name="missile_0" lod="0" body="4294967295" is_paint_dirt="false">
+			<transform m00="9.99999940e-01" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="-4.37113883e-08" m12="1.00000000e+00" m20="0.00000000e+00" m21="-1.00000000e+00" m22="-4.37113883e-08" tx="1.49426758e-01" ty="-1.89999998e-01" tz="3.42556357e-01"/>
+		</mesh>
+		<mesh file="meshes/projectiles/projectiles/rocket.mesh" name="missile_1" lod="0" body="4294967295" is_paint_dirt="false">
+			<transform m00="9.99999940e-01" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="-4.37113883e-08" m12="1.00000000e+00" m20="0.00000000e+00" m21="-1.00000000e+00" m22="-4.37113883e-08" tx="0.00000000e+00" ty="-1.89999998e-01" tz="3.42999995e-01"/>
+		</mesh>
+		<mesh file="meshes/projectiles/projectiles/rocket.mesh" name="missile_2" lod="0" body="4294967295" is_paint_dirt="false">
+			<transform m00="9.99999940e-01" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="-4.37113883e-08" m12="1.00000000e+00" m20="0.00000000e+00" m21="-1.00000000e+00" m22="-4.37113883e-08" tx="-1.53334156e-01" ty="-1.89999998e-01" tz="3.42999995e-01"/>
+		</mesh>
+		<mesh file="meshes/projectiles/projectiles/rocket.mesh" name="missile_3" lod="0" body="4294967295" is_paint_dirt="false">
+			<transform m00="9.99999940e-01" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="-4.37113883e-08" m12="1.00000000e+00" m20="0.00000000e+00" m21="-1.00000000e+00" m22="-4.37113883e-08" tx="2.26732075e-01" ty="-3.21999997e-01" tz="3.42999995e-01"/>
+		</mesh>
+		<mesh file="meshes/projectiles/projectiles/rocket.mesh" name="missile_4" lod="0" body="4294967295" is_paint_dirt="false">
+			<transform m00="9.99999940e-01" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="-4.37113883e-08" m12="1.00000000e+00" m20="0.00000000e+00" m21="-1.00000000e+00" m22="-4.37113883e-08" tx="7.42594600e-02" ty="-3.21999997e-01" tz="3.42999995e-01"/>
+		</mesh>
+		<mesh file="meshes/projectiles/projectiles/rocket.mesh" name="missile_5" lod="0" body="4294967295" is_paint_dirt="false">
+			<transform m00="9.99999940e-01" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="-4.37113883e-08" m12="1.00000000e+00" m20="0.00000000e+00" m21="-1.00000000e+00" m22="-4.37113883e-08" tx="-7.95579255e-02" ty="-3.21999997e-01" tz="3.42999995e-01"/>
+		</mesh>
+		<mesh file="meshes/projectiles/projectiles/rocket.mesh" name="missile_6" lod="0" body="4294967295" is_paint_dirt="false">
+			<transform m00="9.99999940e-01" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="-4.37113883e-08" m12="1.00000000e+00" m20="0.00000000e+00" m21="-1.00000000e+00" m22="-4.37113883e-08" tx="-2.30354428e-01" ty="-3.21999997e-01" tz="3.42999995e-01"/>
+		</mesh>
+		<mesh file="meshes/projectiles/projectiles/rocket.mesh" name="missile_7" lod="0" body="4294967295" is_paint_dirt="false">
+			<transform m00="9.99999940e-01" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="-4.37113883e-08" m12="1.00000000e+00" m20="0.00000000e+00" m21="-1.00000000e+00" m22="-4.37113883e-08" tx="3.06877196e-01" ty="-4.55000013e-01" tz="3.42999995e-01"/>
+		</mesh>
+		<mesh file="meshes/projectiles/projectiles/rocket.mesh" name="missile_8" lod="0" body="4294967295" is_paint_dirt="false">
+			<transform m00="9.99999940e-01" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="-4.37113883e-08" m12="1.00000000e+00" m20="0.00000000e+00" m21="-1.00000000e+00" m22="-4.37113883e-08" tx="1.53948456e-01" ty="-4.55000013e-01" tz="3.42999995e-01"/>
+		</mesh>
+		<mesh file="meshes/projectiles/projectiles/rocket.mesh" name="missile_9" lod="0" body="4294967295" is_paint_dirt="false">
+			<transform m00="9.99999940e-01" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="-4.37113883e-08" m12="1.00000000e+00" m20="0.00000000e+00" m21="-1.00000000e+00" m22="-4.37113883e-08" tx="-1.15936995e-03" ty="-4.55000013e-01" tz="3.42999995e-01"/>
+		</mesh>
+		<mesh file="meshes/projectiles/projectiles/rocket.mesh" name="missile_10" lod="0" body="4294967295" is_paint_dirt="false">
+			<transform m00="9.99999940e-01" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="-4.37113883e-08" m12="1.00000000e+00" m20="0.00000000e+00" m21="-1.00000000e+00" m22="-4.37113883e-08" tx="-1.58604562e-01" ty="-4.55000013e-01" tz="3.42999995e-01"/>
+		</mesh>
+		<mesh file="meshes/projectiles/projectiles/rocket.mesh" name="missile_11" lod="0" body="4294967295" is_paint_dirt="false">
+			<transform m00="9.99999940e-01" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="-4.37113883e-08" m12="1.00000000e+00" m20="0.00000000e+00" m21="-1.00000000e+00" m22="-4.37113883e-08" tx="-3.10460061e-01" ty="-4.55000013e-01" tz="3.42999995e-01"/>
+		</mesh>
+		<mesh file="meshes/projectiles/projectiles/rocket.mesh" name="missile_12" lod="0" body="4294967295" is_paint_dirt="false">
+			<transform m00="9.99999940e-01" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="-4.37113883e-08" m12="1.00000000e+00" m20="0.00000000e+00" m21="-1.00000000e+00" m22="-4.37113883e-08" tx="2.28895515e-01" ty="-5.84999979e-01" tz="3.42999995e-01"/>
+		</mesh>
+		<mesh file="meshes/projectiles/projectiles/rocket.mesh" name="missile_13" lod="0" body="4294967295" is_paint_dirt="false">
+			<transform m00="9.99999940e-01" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="-4.37113883e-08" m12="1.00000000e+00" m20="0.00000000e+00" m21="-1.00000000e+00" m22="-4.37113883e-08" tx="7.39799440e-02" ty="-5.84999979e-01" tz="3.42999995e-01"/>
+		</mesh>
+		<mesh file="meshes/projectiles/projectiles/rocket.mesh" name="missile_14" lod="0" body="4294967295" is_paint_dirt="false">
+			<transform m00="9.99999940e-01" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="-4.37113883e-08" m12="1.00000000e+00" m20="0.00000000e+00" m21="-1.00000000e+00" m22="-4.37113883e-08" tx="-7.85649717e-02" ty="-5.84999979e-01" tz="3.42999995e-01"/>
+		</mesh>
+		<mesh file="meshes/projectiles/projectiles/rocket.mesh" name="missile_15" lod="0" body="4294967295" is_paint_dirt="false">
+			<transform m00="9.99999940e-01" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="-4.37113883e-08" m12="1.00000000e+00" m20="0.00000000e+00" m21="-1.00000000e+00" m22="-4.37113883e-08" tx="-2.35198587e-01" ty="-5.84999979e-01" tz="3.42999995e-01"/>
+		</mesh>
+		<mesh file="meshes/projectiles/projectiles/rocket.mesh" name="missile_16" lod="0" body="4294967295" is_paint_dirt="false">
+			<transform m00="9.99999940e-01" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="-4.37113883e-08" m12="1.00000000e+00" m20="0.00000000e+00" m21="-1.00000000e+00" m22="-4.37113883e-08" tx="1.49600446e-01" ty="-7.13999987e-01" tz="3.42999995e-01"/>
+		</mesh>
+		<mesh file="meshes/projectiles/projectiles/rocket.mesh" name="missile_17" lod="0" body="4294967295" is_paint_dirt="false">
+			<transform m00="9.99999940e-01" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="-4.37113883e-08" m12="1.00000000e+00" m20="0.00000000e+00" m21="-1.00000000e+00" m22="-4.37113883e-08" tx="-4.11742926e-03" ty="-7.13999987e-01" tz="3.42999995e-01"/>
+		</mesh>
+		<mesh file="meshes/projectiles/projectiles/rocket.mesh" name="missile_18" lod="0" body="4294967295" is_paint_dirt="false">
+			<transform m00="9.99999940e-01" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="-4.37113883e-08" m12="1.00000000e+00" m20="0.00000000e+00" m21="-1.00000000e+00" m22="-4.37113883e-08" tx="-1.55583262e-01" ty="-7.13999987e-01" tz="3.42999995e-01"/>
+		</mesh>
+		<mesh file="meshes/vehicles/attachment_lods/rocket_pod_low.mesh" name="lod 1" lod="1" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="0.00000000e+00" ty="-4.00000006e-01" tz="0.00000000e+00"/>
+		</mesh>
+	</meshes>
+	<wheels/>
+	<attachments/>
+	<force_emitters/>
+	<control_surfaces/>
+	<projectile_emitters/>
+	<cameras/>
+	<buoyancys/>
+	<vehicle_attachments/>
+	<lights/>
+	<seats/>
+	<button_panels/>
+	<buttons/>
+	<indicators/>
+	<dials/>
+	<screens/>
+	<doors/>
+	<graph_nodes/>
+	<graph_links/>
+	<foam_emitters/>
+	<particle_emitters/>
+	<sensors/>
+	<holomaps/>
+</data>
+
