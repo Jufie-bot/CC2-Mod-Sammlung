@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data display_name_loc="0" bounding_radius="1.00000000e+01" lod_scale="1.00000000e+00" ai_type="0">
+	<bodies/>
+	<constraints/>
+	<meshes>
+		<mesh file="meshes/aircraft_carrier/aircraft_carrier_attachments/air_defence_missile_base.mesh" name="base" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="0.00000000e+00" ty="0.00000000e+00" tz="1.80000007e-01"/>
+			<variants>
+				<v file="meshes/vehicles/attachments_broken_fixed/air_defence_missile_broken_base_fixed.mesh"/>
+			</variants>
+		</mesh>
+		<mesh file="meshes/aircraft_carrier/aircraft_carrier_attachments/air_defence_missile_stand.mesh" name="pitch" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="0.00000000e+00" ty="1.32599998e+00" tz="-2.83025444e-01"/>
+			<variants>
+				<v file="meshes/vehicles/attachments_broken_fixed/air_defence_missile_broken_fixed.mesh"/>
+			</variants>
+		</mesh>
+		<mesh file="meshes/aircraft_carrier/aircraft_carrier_attachments/air_defence_missile_camera_stand.mesh" name="camera_pivot" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="-1.64852142e-02" ty="1.36199999e+00" tz="3.58684242e-01"/>
+			<variants>
+				<v file="meshes/vehicles/attachments_broken_fixed/air_defence_missile_broken_cam_stand_fixed.mesh"/>
+			</variants>
+		</mesh>
+		<mesh file="meshes/aircraft_carrier/aircraft_carrier_attachments/air_defence_missile_camera.mesh" name="camera_pitch" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="-1.12208128e-02" ty="2.43600011e+00" tz="3.64707708e-01"/>
+			<variants>
+				<v file="meshes/vehicles/attachments_broken_fixed/air_defence_missile_broken_cam_fixed.mesh"/>
+			</variants>
+		</mesh>
+		<mesh file="meshes/aircraft_carrier/aircraft_carrier_attachments/air_defence_missile_base_top.mesh" name="pivot" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="0.00000000e+00" ty="4.35999990e-01" tz="1.80455029e-01"/>
+			<variants>
+				<v file="meshes/vehicles/attachments_broken_fixed/air_defence_missile_broken_base_top_fixed.mesh"/>
+			</variants>
+		</mesh>
+		<mesh file="meshes/projectiles/projectiles/missile_4.mesh" name="missile_1" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="-4.37113847e-08" m01="-9.99999940e-01" m02="0.00000000e+00" m10="-4.37113883e-08" m11="1.91068547e-15" m12="9.99999940e-01" m20="-1.00000000e+00" m21="4.37113883e-08" m22="-4.37113847e-08" tx="1.19240499e+00" ty="1.68900001e+00" tz="1.27158880e-01"/>
+		</mesh>
+		<mesh file="meshes/projectiles/projectiles/missile_4.mesh" name="missile_3" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="-4.37113847e-08" m01="-9.99999940e-01" m02="0.00000000e+00" m10="-4.37113883e-08" m11="1.91068547e-15" m12="9.99999940e-01" m20="-1.00000000e+00" m21="4.37113883e-08" m22="-4.37113847e-08" tx="1.19240499e+00" ty="9.54999983e-01" tz="1.27158880e-01"/>
+		</mesh>
+		<mesh file="meshes/projectiles/projectiles/missile_4.mesh" name="missile_4" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="5.96046448e-08" m01="9.99999881e-01" m02="0.00000000e+00" m10="4.37113883e-08" m11="0.00000000e+00" m12="9.99999940e-01" m20="9.99999940e-01" m21="-5.96046448e-08" m22="-4.37113847e-08" tx="-1.16548395e+00" ty="9.54999983e-01" tz="1.27158880e-01"/>
+		</mesh>
+		<mesh file="meshes/projectiles/projectiles/missile_4.mesh" name="missile_2" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="5.96046448e-08" m01="9.99999881e-01" m02="0.00000000e+00" m10="4.37113883e-08" m11="0.00000000e+00" m12="9.99999940e-01" m20="9.99999940e-01" m21="-5.96046448e-08" m22="-4.37113847e-08" tx="-1.16548395e+00" ty="1.68900001e+00" tz="1.27158880e-01"/>
+		</mesh>
+		<mesh file="meshes/vehicles/attachment_lods/air_defence_missile_base_top_low.mesh" name="lod 1" lod="1" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="0.00000000e+00" ty="4.35999990e-01" tz="1.80000007e-01"/>
+		</mesh>
+	</meshes>
+	<wheels/>
+	<attachments/>
+	<force_emitters/>
+	<control_surfaces/>
+	<projectile_emitters/>
+	<cameras>
+		<camera name="camera">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="5.30408025e-02" ty="2.57900000e+00" tz="8.86034489e-01"/>
+		</camera>
+	</cameras>
+	<buoyancys/>
+	<vehicle_attachments/>
+	<lights/>
+	<seats/>
+	<button_panels/>
+	<buttons/>
+	<indicators/>
+	<achievements/>
+	<dials/>
+	<screens/>
+	<doors/>
+	<graph_nodes/>
+	<graph_links/>
+	<foam_emitters/>
+	<particle_emitters>
+		<particle_emitter name="damage" body_index="4294967295" life="60" velocity="2.00000000e+00" magnitude="1.50000000e+00" rise="1.00000000e+01" color="30303FF">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="0.00000000e+00" ty="1.11500680e+00" tz="4.05333847e-01"/>
+		</particle_emitter>
+	</particle_emitters>
+	<sensors/>
+	<splash_emitters/>
+	<holomaps/>
+	<damage_zones/>
+	<audio_zones/>
+	<nav_meshes/>
+</data>
+

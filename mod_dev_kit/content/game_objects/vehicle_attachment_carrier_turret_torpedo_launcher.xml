@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data display_name_loc="0" bounding_radius="1.00000000e+01" lod_scale="1.00000000e+00" ai_type="0">
+	<bodies/>
+	<constraints/>
+	<meshes>
+		<mesh file="meshes/aircraft_carrier/aircraft_carrier_attachments/torpedo_launcher_base.mesh" name="base" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="9.99999940e-01" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="9.99999940e-01" tx="0.00000000e+00" ty="0.00000000e+00" tz="1.80000007e-01"/>
+			<variants>
+				<v file="meshes/vehicles/attachments_broken_fixed/torpedo_launcher_base_broken_fixed.mesh"/>
+			</variants>
+		</mesh>
+		<mesh file="meshes/vehicles/attachment_lods/torpedo_launcher_lod.mesh" name="lod 1" lod="1" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="0.00000000e+00" ty="0.00000000e+00" tz="1.80000007e-01"/>
+		</mesh>
+		<mesh file="meshes/aircraft_carrier/aircraft_carrier_attachments/torpedo_launcher.mesh" name="mesh" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="0.00000000e+00" ty="8.61290157e-01" tz="1.80000007e-01"/>
+			<variants>
+				<v file="meshes/vehicles/attachments_broken_fixed/torpedo_launcher_broken_fixed.mesh"/>
+			</variants>
+		</mesh>
+		<mesh file="meshes/projectiles/projectiles/torpedo.mesh" name="torpedo_1" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="-1.00000000e+00" m01="0.00000000e+00" m02="-8.74227766e-08" m10="-8.74227766e-08" m11="-4.37113883e-08" m12="1.00000000e+00" m20="-3.82137093e-15" m21="1.00000000e+00" m22="4.37113883e-08" tx="5.03381312e-01" ty="1.73781574e+00" tz="1.80000007e-01"/>
+		</mesh>
+		<mesh file="meshes/projectiles/projectiles/torpedo.mesh" name="torpedo_2" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="-1.00000000e+00" m01="0.00000000e+00" m02="-8.74227766e-08" m10="-8.74227766e-08" m11="-4.37113883e-08" m12="1.00000000e+00" m20="-3.82137093e-15" m21="1.00000000e+00" m22="4.37113883e-08" tx="-4.76997375e-01" ty="1.73781574e+00" tz="1.80000007e-01"/>
+		</mesh>
+		<mesh file="meshes/aircraft_carrier/aircraft_carrier_attachments/torpedo_launcher_lid.mesh" name="lid_1" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="4.52046961e-01" ty="1.75106943e+00" tz="3.32076859e+00"/>
+		</mesh>
+		<mesh file="meshes/aircraft_carrier/aircraft_carrier_attachments/torpedo_launcher_lid.mesh" name="lid_2" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="-4.40763623e-01" ty="1.75106943e+00" tz="3.32076859e+00"/>
+		</mesh>
+		<mesh file="meshes/aircraft_carrier/aircraft_carrier_attachments/torpedo_launcher_backplate.mesh" name="backplate_right" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="4.67405856e-01" ty="2.20524526e+00" tz="-2.84707260e+00"/>
+			<variants>
+				<v file="meshes/vehicles/attachments_broken_fixed/torpedo_launcher_backplate_broken_fixed.mesh"/>
+			</variants>
+		</mesh>
+		<mesh file="meshes/aircraft_carrier/aircraft_carrier_attachments/torpedo_launcher_backplate.mesh" name="backplate_left" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="-4.23228443e-01" ty="2.20524526e+00" tz="-2.84707260e+00"/>
+			<variants>
+				<v file="meshes/vehicles/attachments_broken_fixed/torpedo_launcher_backplate_broken_fixed.mesh"/>
+			</variants>
+		</mesh>
+	</meshes>
+	<wheels/>
+	<attachments/>
+	<force_emitters/>
+	<control_surfaces/>
+	<projectile_emitters/>
+	<cameras>
+		<camera name="camera">
+			<transform m00="-4.00130153e-01" m01="6.50916472e-02" m02="9.14143860e-01" m10="-1.61236420e-01" m11="9.76915836e-01" m12="-1.40136167e-01" m20="-9.02163267e-01" m21="-2.03465968e-01" m22="-3.80398363e-01" tx="1.21784544e+01" ty="7.46938515e+00" tz="9.31138992e+00"/>
+		</camera>
+	</cameras>
+	<buoyancys/>
+	<vehicle_attachments/>
+	<lights/>
+	<seats/>
+	<button_panels/>
+	<buttons/>
+	<indicators/>
+	<achievements/>
+	<dials/>
+	<screens/>
+	<doors/>
+	<graph_nodes/>
+	<graph_links/>
+	<foam_emitters/>
+	<particle_emitters>
+		<particle_emitter name="damage" body_index="4294967295" life="60" velocity="2.00000000e+00" magnitude="2.00000000e+00" rise="1.00000000e+01" color="30303FF">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="0.00000000e+00" ty="1.56471288e+00" tz="2.07594737e-01"/>
+		</particle_emitter>
+	</particle_emitters>
+	<sensors/>
+	<splash_emitters/>
+	<holomaps/>
+	<damage_zones/>
+	<audio_zones/>
+	<nav_meshes/>
+</data>
+

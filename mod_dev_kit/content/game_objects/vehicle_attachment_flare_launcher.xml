@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data display_name_loc="0" bounding_radius="1.00000000e+01" lod_scale="1.00000000e+00" ai_type="0">
+	<bodies/>
+	<constraints/>
+	<meshes>
+		<mesh file="meshes/vehicles/attachments/flare_launcher_stand.mesh" name="base" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="0.00000000e+00" ty="0.00000000e+00" tz="0.00000000e+00"/>
+		</mesh>
+		<mesh file="meshes/vehicles/attachments/flare_launcher.mesh" name="pivot" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="0.00000000e+00" ty="0.00000000e+00" tz="0.00000000e+00"/>
+		</mesh>
+		<mesh file="meshes/vehicles/attachments/flare_launcher_door.mesh" name="door_1" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="9.22564685e-01" m12="-3.85842443e-01" m20="0.00000000e+00" m21="3.85842443e-01" m22="9.22564685e-01" tx="4.52599265e-02" ty="1.94954708e-01" tz="1.24424487e-01"/>
+		</mesh>
+		<mesh file="meshes/vehicles/attachments/flare_launcher_door.mesh" name="door_3" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="9.73137617e-01" m01="-1.01850413e-01" m02="-2.06469491e-01" m10="0.00000000e+00" m11="8.96819413e-01" m12="-4.42396730e-01" m20="2.30224133e-01" m21="4.30512905e-01" m22="8.72728705e-01" tx="6.76604658e-02" ty="1.11683212e-01" tz="1.65973365e-01"/>
+		</mesh>
+		<mesh file="meshes/vehicles/attachments/flare_launcher_door.mesh" name="door_4" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="9.84705985e-01" m01="9.93503407e-02" m02="1.43121213e-01" m10="-2.36332398e-02" m11="8.90052497e-01" m12="-4.55245078e-01" m20="-1.72614142e-01" m21="4.44900095e-01" m22="8.78787935e-01" tx="-6.63930699e-02" ty="1.11848690e-01" tz="1.67977050e-01"/>
+		</mesh>
+		<mesh file="meshes/vehicles/attachments/flare_launcher_door.mesh" name="door_2" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="9.22564685e-01" m12="-3.85842443e-01" m20="0.00000000e+00" m21="3.85842443e-01" m22="9.22564685e-01" tx="-4.70806025e-02" ty="1.94954708e-01" tz="1.24424487e-01"/>
+		</mesh>
+	</meshes>
+	<wheels/>
+	<attachments/>
+	<force_emitters/>
+	<control_surfaces/>
+	<projectile_emitters>
+		<projectile_emitter name="projectile emitter" fov="0.00000000e+00">
+			<transform m00="9.99999940e-01" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="-4.37113883e-08" m12="-1.00000000e+00" m20="0.00000000e+00" m21="1.00000000e+00" m22="-4.37113883e-08" tx="0.00000000e+00" ty="2.17985868e-01" tz="0.00000000e+00"/>
+		</projectile_emitter>
+	</projectile_emitters>
+	<cameras/>
+	<buoyancys/>
+	<vehicle_attachments/>
+	<lights/>
+	<seats/>
+	<button_panels/>
+	<buttons/>
+	<indicators/>
+	<achievements/>
+	<dials/>
+	<screens/>
+	<doors/>
+	<graph_nodes/>
+	<graph_links/>
+	<foam_emitters/>
+	<particle_emitters/>
+	<sensors/>
+	<splash_emitters/>
+	<holomaps/>
+	<damage_zones/>
+	<audio_zones/>
+	<nav_meshes/>
+</data>
+

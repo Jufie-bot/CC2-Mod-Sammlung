@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data display_name="Tablet" bounding_radius="1.00000000e+01" lod_scale="1.00000000e+00" ai_type="0">
+	<bodies/>
+	<constraints/>
+	<meshes>
+		<mesh file="meshes/character/tablet.mesh" name="mesh" lod="0" body="0" is_paint_dirt="false">
+			<transform m00="-1.00000000e+00" m01="0.00000000e+00" m02="8.74227766e-08" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="-8.74227766e-08" m21="0.00000000e+00" m22="-1.00000000e+00" tx="0.00000000e+00" ty="-4.99999989e-03" tz="0.00000000e+00"/>
+		</mesh>
+	</meshes>
+	<wheels/>
+	<attachments/>
+	<force_emitters/>
+	<control_surfaces/>
+	<projectile_emitters/>
+	<cameras/>
+	<buoyancys/>
+	<vehicle_attachments/>
+	<lights/>
+	<seats/>
+	<button_panels/>
+	<buttons/>
+	<indicators/>
+	<dials/>
+	<screens>
+		<screen name="screen" display_name="" script_file_name="" body_index="4294967295" seat_index="4294967295" type="4">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="0.00000000e+00" ty="0.00000000e+00" tz="0.00000000e+00"/>
+		</screen>
+	</screens>
+	<doors/>
+	<graph_nodes/>
+	<graph_links/>
+	<foam_emitters/>
+	<particle_emitters/>
+	<sensors/>
+	<holomaps/>
+	<damage_zones/>
+</data>
+

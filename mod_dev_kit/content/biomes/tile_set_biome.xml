@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<definitions>
+		<d file_name="tile_set_grass.xml" probability="1.00000000e+00"/>
+		<d file_name="tile_set_cliff_3_to_2_convex.xml" probability="1.00000000e+00"/>
+		<d file_name="tile_set_cliff_3_to_2_concave.xml" probability="1.00000000e+00"/>
+		<d file_name="tile_set_cliff_3_to_1_convex.xml" probability="1.00000000e+00"/>
+		<d file_name="tile_set_cliff_3_to_1_concave.xml" probability="1.00000000e+00"/>
+		<d file_name="tile_set_cliff_3_end_right.xml" probability="1.00000000e+00"/>
+		<d file_name="tile_set_cliff_3_end_left.xml" probability="1.00000000e+00"/>
+		<d file_name="tile_set_cliff_3_convex.xml" probability="1.00000000e+00"/>
+		<d file_name="tile_set_cliff_3_concave.xml" probability="1.00000000e+00"/>
+		<d file_name="tile_set_cliff_2_to_3_convex.xml" probability="1.00000000e+00"/>
+		<d file_name="tile_set_cliff_2_to_3_concave.xml" probability="1.00000000e+00"/>
+		<d file_name="tile_set_cliff_2_to_1_convex.xml" probability="1.00000000e+00"/>
+		<d file_name="tile_set_cliff_2_to_1_concave.xml" probability="1.00000000e+00"/>
+		<d file_name="tile_set_cliff_2_end_right.xml" probability="1.00000000e+00"/>
+		<d file_name="tile_set_cliff_2_end_left.xml" probability="1.00000000e+00"/>
+		<d file_name="tile_set_cliff_2_convex.xml" probability="1.00000000e+00"/>
+		<d file_name="tile_set_cliff_2_concave.xml" probability="1.00000000e+00"/>
+		<d file_name="tile_set_cliff_1_to_3_convex.xml" probability="1.00000000e+00"/>
+		<d file_name="tile_set_cliff_1_to_3_concave.xml" probability="1.00000000e+00"/>
+		<d file_name="tile_set_cliff_1_to_2_convex.xml" probability="1.00000000e+00"/>
+		<d file_name="tile_set_cliff_1_to_2_concave.xml" probability="1.00000000e+00"/>
+		<d file_name="tile_set_cliff_1_end_right.xml" probability="1.00000000e+00"/>
+		<d file_name="tile_set_cliff_1_end_left.xml" probability="1.00000000e+00"/>
+		<d file_name="tile_set_cliff_1_convex.xml" probability="1.00000000e+00"/>
+		<d file_name="tile_set_cliff_1_concave.xml" probability="1.00000000e+00"/>
+		<d file_name="tile_set_cliff_2_end_right_high.xml" probability="1.00000000e+00"/>
+		<d file_name="tile_set_cliff_2_end_left_high.xml" probability="1.00000000e+00"/>
+		<d file_name="tile_set_cliff_1_end_right_low.xml" probability="1.00000000e+00"/>
+		<d file_name="tile_set_cliff_1_end_right_high.xml" probability="1.00000000e+00"/>
+		<d file_name="tile_set_cliff_1_end_left_high.xml" probability="1.00000000e+00"/>
+		<d file_name="tile_set_cliff_1_end_left_low.xml" probability="1.00000000e+00"/>
+	</definitions>
+	<parameters noise_falloff="4.49999988e-01"/>
+	<island_noise_parameters noise_step_x="16" noise_step_y="16" noise_offset_x="0" noise_offset_y="0" noise_octaves="4" noise_persistence="6.10000014e-01" noise_frequency="1.00999999e+00" noise_power="1.21000004e+00"/>
+	<tree_noise_parameters noise_step_x="32" noise_step_y="32" noise_offset_x="0" noise_offset_y="0" noise_octaves="4" noise_persistence="2.00000003e-01" noise_frequency="1.00000000e+00" noise_power="1.00000000e+00"/>
+</data>
+

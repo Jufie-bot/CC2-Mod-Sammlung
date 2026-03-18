@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data layer_count="1" is_underwater_allowed="false" is_rotatable="true">
+	<mesh file="meshes/building_biome_tiles/communication_command_building_b_multi_mid_b.mesh"/>
+	<mesh_low_lod file=""/>
+	<mesh_lava file=""/>
+	<body file=""/>
+	<corner_0 min_height="0" max_height="0" is_snap_layers="false" layer_index="0"/>
+	<corner_1 min_height="0" max_height="0" is_snap_layers="false" layer_index="0"/>
+	<corner_2 min_height="0" max_height="0" is_snap_layers="false" layer_index="0"/>
+	<edge_0 type="0" height="0"/>
+	<edge_1 type="0" height="0"/>
+	<edge_2 type="0" height="0"/>
+	<navmesh/>
+	<forest/>
+	<markers/>
+	<details/>
+</data>
+

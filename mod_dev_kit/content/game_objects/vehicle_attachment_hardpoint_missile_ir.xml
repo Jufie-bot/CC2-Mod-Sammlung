@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data display_name="Hardpoint Missile 1" bounding_radius="1.00000000e+00" ai_type="0">
+	<bodies/>
+	<constraints/>
+	<meshes>
+		<mesh file="meshes/projectiles/projectiles/missile_1.mesh" name="payload" body="4294967295" is_paint_dirt="false">
+			<transform m00="9.99999940e-01" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="-4.37113883e-08" m12="1.00000000e+00" m20="0.00000000e+00" m21="-1.00000000e+00" m22="-4.37113883e-08" tx="0.00000000e+00" ty="-5.23829460e-02" tz="0.00000000e+00"/>
+		</mesh>
+	</meshes>
+	<wheels/>
+	<attachments/>
+	<force_emitters/>
+	<control_surfaces/>
+	<projectile_emitters/>
+	<cameras/>
+	<buoyancys/>
+	<vehicle_attachments/>
+	<lights/>
+	<seats/>
+	<buttons/>
+	<indicators/>
+	<dials/>
+	<screens/>
+	<doors/>
+	<graph_nodes/>
+	<graph_links/>
+</data>
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data layer_count="1" is_underwater_allowed="false" is_rotatable="true">
+	<mesh file="meshes/building_biome_tiles/warehouse_building_b.mesh"/>
+	<mesh_low_lod file=""/>
+	<mesh_lava file=""/>
+	<body file=""/>
+	<corner_0 min_height="0" max_height="0" is_snap_layers="false" layer_index="0"/>
+	<corner_1 min_height="0" max_height="0" is_snap_layers="false" layer_index="0"/>
+	<corner_2 min_height="0" max_height="0" is_snap_layers="false" layer_index="0"/>
+	<edge_0 type="0" height="0"/>
+	<edge_1 type="0" height="0"/>
+	<edge_2 type="0" height="0"/>
+	<navmesh/>
+	<forest/>
+	<markers/>
+	<details>
+		<detail name="detail_0" type="3" blink_pattern="" fov="1.00000000e+00" is_volume="true" radius="1.00000000e+00">
+			<transform m00="1.00000000e+00" m01="0.00000000e+00" m02="0.00000000e+00" m10="0.00000000e+00" m11="1.00000000e+00" m12="0.00000000e+00" m20="0.00000000e+00" m21="0.00000000e+00" m22="1.00000000e+00" tx="-1.30789776e+01" ty="7.50000000e+00" tz="-4.55112457e-01"/>
+			<color x="1.00000000e+00" y="1.00000000e+00" z="1.00000000e+00"/>
+			<size x="3.50000000e+01" y="1.50000000e+01" z="4.00000000e+01"/>
+		</detail>
+	</details>
+</data>
+
