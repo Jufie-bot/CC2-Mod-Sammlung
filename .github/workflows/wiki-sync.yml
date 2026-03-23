@@ -17,6 +17,9 @@ jobs:
     - name: Checkout Repo
       uses: actions/checkout@v4
 
+    - name: Sidebar automatisch generieren
+      run: python .github/scripts/generate_sidebar.py
+
     - name: Sync wiki/ to GitHub Wiki
       run: |
         # Wiki-Repo klonen
