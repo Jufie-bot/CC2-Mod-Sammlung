@@ -1,43 +1,36 @@
 # 📟 CC2 Modding Command Center
 
-> **Die systematische Wissensdatenbank für Carrier Command 2 Technik.**
+> **Willkommen im Zentrallabor!** Dies ist die systematische Wissensdatenbank und das technische Herzstück des CC2-Modding-Projekts. 
+
+## 🗺️ Was ist dieses Wiki?
+
+Dieses Wiki dient als zentraler Anlaufpunkt für alle Entwickler, Forscher und Modder von Carrier Command 2. Unser Ziel ist es, das stark fragmentierte Wissen über die Spielmechaniken, Lua-Scripte und XML-Dateien an einem Ort zu bündeln, zu analysieren und strukturiert zugänglich zu machen. 
+
+Egal, ob du verstehen willst, wie die Spiele-KI funktioniert, eigene Benutzeroberflächen-Mods schreiben möchtest oder nach spezifischen Referenzwerten für Waffen suchst – hier findest du gesichertes und stetig wachsendes Wissen.
 
 ---
 
-## 🗺️ Willkommen im Labor
+## 📚 Was findest du hier? (Kategorien)
 
-Dieses Wiki ist das technische Herzstück des CC2-Modding-Projekts. Hier findest du alles von den Grundlagen bis zu tiefen Code-Analysen.
+Um dir die Navigation in unserem riesigen Wissensschatz zu erleichtern, ist alles in klare Kategorien unterteilt. Klicke auf eines der Themen, um direkt tiefer in die Materie einzutauchen:
 
-**Wo anfangen?**
-- 🆕 **Neu hier?** → [[Was ist was?|Was-ist-was]] erklärt die Philosophie und Struktur
-- 🏗️ **Grundlagen lernen?** → [[CC2-Architektur]] für die technische Basis
-- 🔬 **Analysen lesen?** → [[Kategorien-Liste]] für alle analysierten Mods
-
----
-
-## 📚 Bereiche im Überblick
-
-| # | Bereich | Einstiegsseite | Was findest du hier? |
-|:---|:---|:---|:---|
-| 0 | Home | [Home](Home) | Diese Seite — Dashboard & Einstieg |
-| 1 | System-Guide | [Was ist was?](Was-ist-was) | Die Karte des Labors |
-| 2 | Fundament | [CC2-Architektur](CC2-Architektur) | Architektur, XML, Lua, Grenzen |
-| 3 | Was ist möglich? | [Modding-Tiefen](Modding-Tiefen-Uebersicht) | Grenzen & Potenziale |
-| 4 | Game-Referenz | [Waffen-XML](Waffen-XML-Referenz) | Technik-Datenbank |
-| 5 | Labor-Experimente | *(folgt)* | Code-Vergleiche & Lösungen |
-| 6 | Guides & Tutorials | [Lua-Debugging](Lua-Debugging) | Schritt-für-Schritt Anleitungen |
-| 7 | Code-Standards | [Allgemeine Regeln](Allgemeine-Regeln) | Regeln sauberer Arbeit |
-| 8 | Mod-Galerie | [Kategorien-Liste](Kategorien-Liste) | Die kuratierte Sammlung |
-| 9 | Sandkasten | *(folgt)* | Bausteine & Snippets |
-| 10 | Kategorienübergreifend | *(folgt)* | Externe Großprojekte |
-| 11 | Eigene Mods | *(folgt)* | Julians Projekte |
-| 12 | Automatisierung | [Projekt-Entwicklung](Projekt-Entwicklung) | Scripts & GitHub Actions |
-| 13 | Spiel-Updates | [CHANGELOG](CHANGELOG) | Patch-History & Auswirkungen |
-| 14 | Community | [Beitragen](Beitragen) | Mitmachen & Feedback |
+*   📘 **[[System-Guide|Was-ist-was]]**: Die perfekte Einstiegsseite für Neulinge. Wir erklären die Philosophie hinter diesem Projekt, unsere Vorgaben und wie das gesamte Git-Ökosystem funktioniert.
+*   🏗️ **[[Fundament|CC2-Architektur]]**: Das technische Basiswissen. Hier dokumentieren wir die System-Architektur, absolute Grenzen der Engine sowie grundlegende XML- und Lua-Konzepte.
+*   📖 **[[Game-Referenz]]**: Unsere riesige technische Datenbank. Ein unverzichtbares Nachschlagewerk für XML-Parameter, globale Konstanten, alle nativen Lua-Funktionen und Modding-IDs.
+*   🔬 **[[Mod-Galerie]]**: Die kuratierte Sammlung der besten Analysen. Hier werden existierende Gameplay- und UI-Mods in ihre Code-Einzelteile zerlegt, um zu lernen, wie sie aufgebaut sind.
+*   🛠️ **[[Guides & Tutorials|Guides-und-Tutorials]]**: Konkrete Schritt-für-Schritt Anleitungen für die Praxis, wie beispielsweise unser detaillierter Leitfaden zum fehlerfreien Debuggen.
+*   📐 **[[Code-Standards]]**: Unsere goldenen Arbeitsregeln. Wer zu diesem Projekt beitragen möchte (Code oder Analysen), findet hier die nötigen Strukturen und Format-Vorlagen (YAML-Frontmatter).
+*   🧪 **[[Labor-Experimente]]**: Reale und dokumentierte Versuchsreihen, Benchmarks und Code-Vergleiche zu spezifischen, hochkomplexen Modding-Fragen.
+*   🏗️ **[[Sandkasten]]**: Eine Sammlung an wiederverwendbaren Code-Schnipseln, Templates und extrahierten Vanilla-Scripts zum schnellen Untersuchen und Kopieren.
+*   ⚙️ **[[Automatisierung]]**: Die Anleitung zu unseren Hintergrund-Skripten und GitHub Actions (z.B. der Wiki-Synchronisation und Statistik-Auswertung).
+*   📅 **[[Spiel-Updates|CHANGELOG]]**: Die offizielle Historie der CC2-Updates und präzise Analysen, welche Mods dadurch kompatibel geblieben sind oder kaputt gingen.
 
 ---
 
-## 📊 Labor-Statistiken
+## 📰 News & Labor-Automatisierung
+
+Unser Projekt hält sich selbst in Schuss! Hier siehst du die Live-Statistiken, die durch unsere GitHub-Actions dynamisch aus allen Markdown-Dokumenten generiert werden.
+
 <!-- BEGIN:stats -->
 | 📦 Mods analysiert | **13** |
 | ✅ Wiki-ready | **13** |
@@ -45,14 +38,11 @@ Dieses Wiki ist das technische Herzstück des CC2-Modding-Projekts. Hier findest
 | 📅 Zuletzt aktualisiert | **2026-03-23** |
 <!-- END:stats -->
 
----
-
-## 🔬 Aktueller Fokus
-
-- **Waffen-Analysen**: 12 Weapons-Mods + 1 Audio-Mod vollständig analysiert
-- **Sandkasten aufgebaut**: Vanilla-Scripts, ID-Referenzen und Code-Snippets verfügbar
-- **Automatisierung**: `sync_docs.py` generiert automatisch Statistiken aus Analysen
+### 🚀 Aktuelle Meilensteine (März 2026)
+*   **Waffen-Forschung abgeschlossen**: 12 Weapons-Mods und 1 Audio-Mod wurden erfolgreich in das YAML-Frontmatter System überführt und tiefgehend dokumentiert.
+*   **Single-Push Wiki-Workflow**: Die `wiki-sync.yml` Action ist jetzt live. Alles was in den `wiki/` Ordner committet wird, synchronisiert sich vollautomatisch in dieses Wiki.
 
 ---
 
-> **Mitmachen?** → [[Analyse einreichen|Analyse-einreichen]] erklärt wie du Beiträge einreichen kannst.
+> 🤝 **Du möchtest mitmachen?** 
+> Wunderbar! Wir suchen immer engagierte Forscher. Schau dir an, wie du einfach eine [[Analyse einreichen|Analyse-einreichen]] kannst, oder bring dich in der GitHub-Community ein.
