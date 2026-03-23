@@ -12,6 +12,7 @@ body:
         - "XML-Kopie (Vanilla)"
         - "Dokumentation (Markdown)"
         - "Asset (Sound/Mesh)"
+        - "Andere Art / Sonstiges"
     validations:
       required: true
 
@@ -22,9 +23,4 @@ body:
       placeholder: "Was ist das Ziel dieses Snippets?"
     validations:
       required: true
-
-  - type: textarea
-    id: benefit
-    attributes:
-      label: "Nutzen für andere Modder"
-      placeholder: "Warum ist dieses Snippet hilfreich?"
+...

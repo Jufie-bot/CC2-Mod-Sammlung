@@ -13,6 +13,7 @@ body:
         - "Mod-Galerie"
         - "Guides & Tutorials"
         - "Community-Bereich"
+        - "Andere Seite / Bereich"
     validations:
       required: true
 
@@ -23,9 +24,4 @@ body:
       placeholder: "Welches Thema soll dokumentiert werden?"
     validations:
       required: true
-
-  - type: textarea
-    id: sources
-    attributes:
-      label: "Informationsquellen"
-      placeholder: "Forschungsberichte, Vanilla-Dateien oder Labor-Tests"
+...

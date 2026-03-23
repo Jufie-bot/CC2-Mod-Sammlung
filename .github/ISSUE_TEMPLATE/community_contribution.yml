@@ -20,5 +20,6 @@ body:
         - "Verbesserungsvorschlag"
         - "Neue Analyse-Idee"
         - "Wiki-Ergänzung"
+        - "Andere / Sonstiges"
     validations:
       required: true

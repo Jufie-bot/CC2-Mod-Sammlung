@@ -12,6 +12,7 @@ body:
         - "Wiki & Dokumentation"
         - "Sandkasten (neues Snippet)"
         - "Allgemeine Labor-Funktion"
+        - "Andere / Sonstiges"
     validations:
       required: true
 
@@ -37,3 +38,4 @@ body:
         - "Niedrig (Quick Fix / Kleine Änderung)"
         - "Mittel (Neue Logik-Ebene)"
         - "Hoch (Komplexe System-Änderung)"
+        - "Noch unklar"

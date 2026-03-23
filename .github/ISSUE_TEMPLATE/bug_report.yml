@@ -13,6 +13,7 @@ body:
         - "Automatisierung (Python/Actions)"
         - "Sandkasten & Snippets"
         - "Global / Game Engine"
+        - "Sonstiges / Andere"
     validations:
       required: true
 
@@ -23,23 +24,4 @@ body:
       placeholder: "Was genau funktioniert nicht wie erwartet?"
     validations:
       required: true
-
-  - type: textarea
-    id: expected_vs_actual
-    attributes:
-      label: "Erwartetes vs. Tatsächliches Verhalten"
-      placeholder: "Soll-Zustand vs. Ist-Zustand"
-    validations:
-      required: true
-
-  - type: textarea
-    id: reproduction
-    attributes:
-      label: "Schritte zum Reproduzieren"
-      placeholder: "1. Spiel starten\n2. Schiff X spawnen\n3. ..."
-
-  - type: input
-    id: file_path
-    attributes:
-      label: "Betroffene Datei / Zeile"
-      placeholder: "z.B. eigene-mods/Skynet V4 + Extras/content/scripts/..."
+...
