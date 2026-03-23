@@ -1,0 +1,33 @@
+<!-- Snippet: Projektil-Physik Basisstruktur -->
+<!-- Quelle: analysis/mods/weapons/ Analysen -->
+<!-- game-version: 2026-03 -->
+
+<definition
+  name="my_projectile"
+  type="missile">
+
+  <!-- Basis-Physik -->
+  <body
+    mass="5"
+    drag="0.1"
+    buoyancy_scale="0.0" />
+
+  <!-- Antrieb -->
+  <engine
+    thrust="500"
+    burntime="2.0" />
+
+  <!-- Explosion -->
+  <warhead
+    radius="8"
+    damage="100"
+    missile_damage_scale="1.0"
+    missile_explosion_damage_scale="1.0" />
+
+  <!-- Kollision -->
+  <collision_body
+    width="0.1"
+    height="0.1"
+    length="0.5" />
+
+</definition>

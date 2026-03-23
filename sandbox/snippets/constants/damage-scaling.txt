@@ -1,0 +1,29 @@
+# Damage Scaling — CC2 Constants
+
+*Quelle: analysis/mods/weapons/ Analysen*
+*YAML: `game-version: 2026-03`*
+
+---
+
+## missile_*_explosion_damage_scale Werte
+
+Aus der constants.txt. Diese Multiplikatoren skalieren den Explosionsschaden
+von Raketen gegen verschiedene Zieltypen.
+
+| Konstante | Vanilla-Wert | Effekt bei Erhöhung |
+|:---|:---|:---|
+| `missile_air_explosion_damage_scale` | 1.0 | Mehr Schaden gegen Luftziele |
+| `missile_sea_explosion_damage_scale` | 1.0 | Mehr Schaden gegen Schiffe |
+| `missile_land_explosion_damage_scale` | 1.0 | Mehr Schaden gegen Landfahrzeuge |
+| `missile_structure_explosion_damage_scale` | 0.5 | Mehr Schaden gegen Gebäude |
+| `missile_sub_explosion_damage_scale` | 1.0 | Mehr Schaden gegen U-Boote |
+
+## Verwendungsbeispiel (in eigener constants.txt-Mod)
+
+```
+missile_air_explosion_damage_scale=2.0
+missile_sea_explosion_damage_scale=1.5
+```
+
+> **Hinweis:** Diese Datei per Override in `data/[dein_mod_id]/constants.txt` ablegen.
+> Die letzte geladene Mod gewinnt ("Last one wins"-Prinzip).
