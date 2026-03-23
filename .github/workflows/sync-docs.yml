@@ -2,6 +2,7 @@ name: Sync Documentation
 
 on:
   push:
+    branches: [auf-GitHub]
     paths:
       - 'analysis/**/*.md'
   workflow_dispatch:
