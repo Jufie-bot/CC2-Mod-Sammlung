@@ -34,10 +34,13 @@
 
 ---
 
-### 📊 Labor-Statistiken (Snapshot)
-- **Gesammelte Mods**: 90+
-- **Analysierte Berichte**: 14 (Waffen-Fokus)
-- **Wiki-Status**: v3.3 Reorganisation abgeschlossen.
+### 📊 Labor-Statistiken
+<!-- BEGIN:stats -->
+| 📦 Mods analysiert | **–** |
+| ✅ Wiki-ready | **–** |
+| 🔄 In Bearbeitung | **–** |
+| 📅 Zuletzt aktualisiert | **–** |
+<!-- END:stats -->
 
 ---
 > [!TIP]
