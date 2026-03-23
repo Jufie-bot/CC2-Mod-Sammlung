@@ -1,12 +1,11 @@
 ---
 name: Mod-Idee / Wunsch vorschlagen
-description: Schlage eine neue Mod-Idee vor oder äußere einen Wiki-Wunsch
+about: Schlage eine neue Mod-Idee vor oder Ã¤uÃŸere einen Wiki-Wunsch
 title: "[Idee] "
-category: "Mod-Ideen & Wünsche"
+category: "Mod-Ideen & WÃ¼nsche"
 ---
 **Beschreibung deiner Idee:**
-> Was stellst du dir vor? Warum wäre das eine Bereicherung für CC2?
+> Was stellst du dir vor? Warum wÃ¤re das eine Bereicherung fÃ¼r CC2?
 
 **Betroffener Bereich:**
 > z.B. Gameplay, UI, Audio, Skripting
-

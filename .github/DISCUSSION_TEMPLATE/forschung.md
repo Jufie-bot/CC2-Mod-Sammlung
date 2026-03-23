@@ -1,6 +1,6 @@
 ---
 name: Forschung & Analyse teilen
-description: Teile Teilergebnisse, Code-Snippets oder Reverse-Engineering Studien
+about: Teile Teilergebnisse, Code-Snippets oder Reverse-Engineering Studien
 title: "[Forschung] "
 category: "Forschung & Analysen"
 ---
@@ -11,5 +11,4 @@ category: "Forschung & Analysen"
 > Was genau hast du herausgefunden? Teile gerne Code-Ausschnitte.
 
 **Offene Fragen:**
-> Gibt es noch ungelˆste Probleme?
-
+> Gibt es noch ungel√∂ste Probleme?
