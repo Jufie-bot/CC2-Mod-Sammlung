@@ -10,7 +10,7 @@ Dieses Wiki ist das technische Herzstück des CC2-Modding-Projekts. Hier findest
 
 **Wo anfangen?**
 - 🆕 **Neu hier?** → [[Was ist was?|System-Guide/Was-ist-was]] erklärt die Philosophie und Struktur
-- 🏗️ **Grundlagen lernen?** → [[Fundament|Fundament/CC2-Architektur]] für die technische Basis
+- 🏗️ **Grundlagen lernen?** → [[CC2-Architektur|Fundament/CC2-Architektur]] für die technische Basis
 - 🔬 **Analysen lesen?** → [[Mod-Galerie|Mod-Galerie/Uebersicht]] für alle analysierten Mods
 
 ---
@@ -19,21 +19,21 @@ Dieses Wiki ist das technische Herzstück des CC2-Modding-Projekts. Hier findest
 
 | # | Bereich | Was findest du hier? |
 |:---|:---|:---|
-| 0 | [[Home]] | Diese Seite — Dashboard & Einstieg |
-| 1 | [[System-Guide|System-Guide/Was-ist-was]] | Die Karte des Labors |
-| 2 | [[Fundament|Fundament/CC2-Architektur]] | Architektur, XML, Lua, Grenzen |
-| 3 | [[Was ist möglich?|Was-ist-moeglich/Modding-Tiefen-Uebersicht]] | Grenzen & Potenziale |
-| 4 | [[Game-Referenz|Game-Referenz/Uebersicht]] | Technik-Datenbank (XML, Lua, Constants) |
-| 5 | [[Labor-Experimente|Labor-Experimente/Uebersicht]] | Code-Vergleiche & Lösungen |
-| 6 | [[Guides & Tutorials|Guides-und-Tutorials/Uebersicht]] | Schritt-für-Schritt Anleitungen |
-| 7 | [[Code-Standards|Code-Standards/Uebersicht]] | Regeln sauberer Arbeit |
-| 8 | [[Mod-Galerie|Mod-Galerie/Uebersicht]] | Die kuratierte Sammlung |
-| 9 | [[Sandkasten|Sandkasten/Uebersicht]] | Bausteine & Snippets |
-| 10 | [[Kategorienübergreifend|Kategorienuebergreifende-Mods/Uebersicht]] | Externe Großprojekte |
-| 11 | [[Eigene Mods|Eigene-Mods/Uebersicht]] | Julians Projekte |
-| 12 | [[Automatisierung|Automatisierung/Uebersicht]] | Scripts & GitHub Actions |
-| 13 | [[Spiel-Updates|Spiel-Updates/Uebersicht]] | Patch-History & Auswirkungen |
-| 14 | [[Community|Community/Beitragen]] | Mitmachen & Feedback |
+| 0 | [Home](Home) | Diese Seite — Dashboard & Einstieg |
+| 1 | [System-Guide](System-Guide/Was-ist-was) | Die Karte des Labors |
+| 2 | [Fundament](Fundament/CC2-Architektur) | Architektur, XML, Lua, Grenzen |
+| 3 | [Was ist möglich?](Was-ist-moeglich/Modding-Tiefen-Uebersicht) | Grenzen & Potenziale |
+| 4 | [Game-Referenz](Game-Referenz/Uebersicht) | Technik-Datenbank (XML, Lua, Constants) |
+| 5 | [Labor-Experimente](Labor-Experimente/Uebersicht) | Code-Vergleiche & Lösungen |
+| 6 | [Guides & Tutorials](Guides-und-Tutorials/Uebersicht) | Schritt-für-Schritt Anleitungen |
+| 7 | [Code-Standards](Code-Standards/Uebersicht) | Regeln sauberer Arbeit |
+| 8 | [Mod-Galerie](Mod-Galerie/Uebersicht) | Die kuratierte Sammlung |
+| 9 | [Sandkasten](Sandkasten/Uebersicht) | Bausteine & Snippets |
+| 10 | [Kategorienübergreifend](Kategorienuebergreifende-Mods/Uebersicht) | Externe Großprojekte |
+| 11 | [Eigene Mods](Eigene-Mods/Uebersicht) | Julians Projekte |
+| 12 | [Automatisierung](Automatisierung/Uebersicht) | Scripts & GitHub Actions |
+| 13 | [Spiel-Updates](Spiel-Updates/Uebersicht) | Patch-History & Auswirkungen |
+| 14 | [Community](Community/Beitragen) | Mitmachen & Feedback |
 
 ---
 
