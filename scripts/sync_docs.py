@@ -36,7 +36,7 @@ DRY_RUN = "--dry-run" in sys.argv
 def parse_frontmatter(filepath: Path) -> dict:
     """Liest YAML-Frontmatter aus einer Markdown-Datei."""
     try:
-        content = filepath.read_text(encoding="utf-8")
+        content = filepath.read_text(encoding="utf-8-sig")  # utf-8-sig entfernt Windows BOM
         if not content.startswith("---"):
             return {}
         end = content.find("---", 3)

@@ -1,3 +1,11 @@
+﻿---
+title: "Island Turret Placement QoL"
+category: weapons
+game-version: 2026-03
+status: wiki-ready
+level: basic
+author: julian
+---
 # Detailanalyse: Island turret placement QoL Mod
 
 ## Übersicht

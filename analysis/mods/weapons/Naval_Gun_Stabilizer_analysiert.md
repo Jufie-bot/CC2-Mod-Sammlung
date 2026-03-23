@@ -1,3 +1,11 @@
+﻿---
+title: "Naval Gun Stabilizer"
+category: weapons
+game-version: 2026-03
+status: wiki-ready
+level: basic
+author: julian
+---
 # Detailanalyse: Naval Gun Stabilizer Mod
 
 ## Übersicht

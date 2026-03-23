@@ -1,3 +1,11 @@
+﻿---
+title: "Mark 84 Bomb"
+category: weapons
+game-version: 2026-03
+status: wiki-ready
+level: basic
+author: julian
+---
 # Detailanalyse: Mark84 bomb Mod
 
 ## Übersicht

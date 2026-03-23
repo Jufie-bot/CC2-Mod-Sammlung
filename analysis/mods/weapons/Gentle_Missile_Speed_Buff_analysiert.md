@@ -1,3 +1,11 @@
+﻿---
+title: "Gentle Missile Speed Buff"
+category: weapons
+game-version: 2026-03
+status: wiki-ready
+level: basic
+author: julian
+---
 # Detailanalyse: Gentle Missile Speed Buff Mod
 
 ## Übersicht

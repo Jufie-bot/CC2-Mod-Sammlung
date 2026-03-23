@@ -36,10 +36,10 @@
 
 ### 📊 Labor-Statistiken
 <!-- BEGIN:stats -->
-| 📦 Mods analysiert | **–** |
-| ✅ Wiki-ready | **–** |
-| 🔄 In Bearbeitung | **–** |
-| 📅 Zuletzt aktualisiert | **–** |
+| 📦 Mods analysiert | **13** |
+| ✅ Wiki-ready | **13** |
+| 🔄 In Bearbeitung | **0** |
+| 📅 Zuletzt aktualisiert | **2026-03-23** |
 <!-- END:stats -->
 
 ---

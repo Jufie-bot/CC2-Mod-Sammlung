@@ -1,3 +1,11 @@
+﻿---
+title: "Turret Utility"
+category: weapons
+game-version: 2026-03
+status: wiki-ready
+level: deep-dive
+author: julian
+---
 # Detailanalyse: Turret Utility Mod
 
 ## Übersicht

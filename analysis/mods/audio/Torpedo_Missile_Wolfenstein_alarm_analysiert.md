@@ -1,3 +1,11 @@
+﻿---
+title: "Torpedo Missile Wolfenstein Alarm"
+category: audio
+game-version: 2026-03
+status: wiki-ready
+level: basic
+author: julian
+---
 # Detailanalyse: Torpedo & Missile Wolfenstein alarm Mod
 
 ## Übersicht

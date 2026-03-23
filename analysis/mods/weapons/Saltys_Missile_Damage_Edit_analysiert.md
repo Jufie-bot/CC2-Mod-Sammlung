@@ -1,3 +1,11 @@
+﻿---
+title: "Saltys Missile Damage Edit"
+category: weapons
+game-version: 2026-03
+status: wiki-ready
+level: basic
+author: julian
+---
 # Detailanalyse: Salty's Missile Damage Edit Mod
 
 ## Übersicht
