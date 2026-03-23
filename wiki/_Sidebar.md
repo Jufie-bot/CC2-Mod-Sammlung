@@ -3,37 +3,61 @@
 - [[Home]]
 
 ### 🗺️ Einstieg
-- [[0. Home|Home]]
-- [[1. System-Guide|System-Guide/Was-ist-was]]
+- [[Home]]
+- [[System-Guide/Was-ist-was|System-Guide]]
+
+### 🏗️ Fundament
+- [[Fundament/CC2-Architektur|CC2-Architektur]]
+- [[Fundament/Modding-Grundlagen|Modding-Grundprinzip]]
+- [[Fundament/Bekannte-Grenzen|Bekannte Grenzen]]
+- [[Fundament/XML-Grundlagen|XML-Grundlagen]]
+- [[Fundament/Lua-Hook-System|Lua-Hook-System]]
 - [[Fundament/Save-Editing|Save-Editing]]
 
-### 🏗️ Wissen & Basis
-- [[2. Fundament|Fundament/Uebersicht]]
-- [[3. Was ist möglich?|Was-ist-moeglich/Modding-Tiefen-Uebersicht]]
-- [[7. Code-Standards|Code-Standards/Uebersicht]]
+### 🔍 Was ist möglich?
+- [[Was-ist-moeglich/Modding-Tiefen-Uebersicht|Modding-Tiefen-Übersicht]]
+
+### 📖 Game-Referenz
+- [[Game-Referenz/Uebersicht|Übersicht]]
+  - [[Game-Referenz/XML-Referenz/Waffen-XML-Referenz|Waffen-XML]]
+  - [[Game-Referenz/XML-Referenz/Attachment-System|Attachments]]
+  - [[Game-Referenz/Lua-Referenz/Lua-Kernfunktionen|Lua-Funktionen]]
+  - [[Game-Referenz/Lua-Referenz/Globaler-Scope|Globaler Scope]]
+  - [[Game-Referenz/Fahrzeug-Referenz/Einheiten-Uebersicht|Fahrzeuge]]
+  - [[Game-Referenz/Constants-Referenz/Constants-Vollreferenz|Constants]]
+
+### 🧪 Labor-Experimente
+- [[Labor-Experimente/Uebersicht|Übersicht]]
+
+### 🛠️ Guides & Tutorials
+- [[Guides-und-Tutorials/Uebersicht|Übersicht]]
 - [[Guides-und-Tutorials/Lua-Debugging|Lua-Debugging]]
 
-### 🔬 Labor & Forschung
-- **[[4. Game-Referenz|Game-Referenz/Uebersicht]]**
-    - [[Game-Referenz/Fahrzeug-Referenz/Einheiten-Uebersicht|Einheiten]]
-    - [[Game-Referenz/XML-Referenz/Attachment-System|Attachments]]
-    - [[Game-Referenz/XML-Referenz/Spezial-Objekte|Spezial-Objekte]]
-    - [[Game-Referenz/Lua-Referenz/Lua-Kernfunktionen|Lua-Funktionen]]
-    - [[Game-Referenz/Lua-Referenz/Globaler-Scope|Globaler Scope]]
-- [[5. Labor-Experimente|Labor-Experimente/Uebersicht]]
-- [[10. Kategorienübergreifend|Kategorienuebergreifende-Mods/Uebersicht]]
-- [[11. Eigene Mods|Eigene-Mods/Uebersicht]]
+### 📐 Code-Standards
+- [[Code-Standards/Uebersicht|Übersicht]]
+- [[Code-Standards/YAML-Frontmatter|YAML-Frontmatter]]
+- [[Code-Standards/Allgemeine-Regeln|Allgemeine Regeln]]
 
-### 🛠️ Praxis & Ressourcen
-- [[6. Guides & Tutorials|Guides-und-Tutorials/Uebersicht]]
-- [[8. Mod-Galerie|Mod-Galerie/Uebersicht]]
-- [[9. Sandkasten|Sandkasten/Uebersicht]]
+### 🗂️ Mod-Galerie
+- [[Mod-Galerie/Uebersicht|Alle Mods]]
+  - [[Mod-Galerie/Weapons|Weapons]]
+  - [[Mod-Galerie/Audio|Audio]]
+
+### 🏗️ Sandkasten
+- [[Sandkasten/Uebersicht|Übersicht]]
+
+### 🔧 Kategorienübergreifend
+- [[Kategorienuebergreifende-Mods/Uebersicht|Übersicht]]
+
+### 👤 Eigene Mods
+- [[Eigene-Mods/Uebersicht|Übersicht]]
 
 ### ⚙️ System
-- [[12. Automatisierung|Automatisierung/Uebersicht]]
-- [[13. Spiel-Updates|Spiel-Updates/Uebersicht]]
-- [[14. Community|Community/Beitragen]]
+- [[Automatisierung/Uebersicht|Automatisierung]]
+- [[Spiel-Updates/Uebersicht|Spiel-Updates]]
+
+### 🌍 Community
+- [[Community/Beitragen|Beitragen]]
 
 ---
-- [[Admin]]
-- [[GitHub Repo]](https://github.com/Jufie-bot/CC2-Mod-Sammlung)
+[GitHub Repo](https://github.com/Jufie-bot/CC2-Mod-Sammlung)
