@@ -57,6 +57,10 @@ def generate_sidebar():
         for root, dirs, files in os.walk(folder_path):
             rel_root = Path(root).relative_to(folder_path)
             
+            # Registriere Unterordner, auch wenn sie noch leer sind
+            if rel_root != Path("."):
+                sub_items.append((1, rel_root.parts[0], None, None))
+            
             for file in sorted(files):
                 if not file.endswith(".md"):
                     continue
@@ -80,7 +84,12 @@ def generate_sidebar():
         from collections import defaultdict
         grouped = defaultdict(list)
         for level, subfolder, base, link in sub_items:
-            grouped[subfolder].append((base, link))
+            # Wenn es nur ein Platzhalter für einen leeren Ordner ist, lege die Liste an, ohne ein Element hinzuzufügen
+            if base is None:
+                if subfolder not in grouped:
+                    grouped[subfolder] = []
+            else:
+                grouped[subfolder].append((base, link))
             
         # Zuerst die direkten Dateien
         for base, link in grouped[None]:

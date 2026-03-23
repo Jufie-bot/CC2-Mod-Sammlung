@@ -5,98 +5,107 @@
 ---
 
 ### 🗺️ Einstieg
-- [System-Guide](System-Guide)
-  - [Was ist was?](Was-ist-was)
+- [System Guide](System-Guide)
+  - [Was ist was](Was-ist-was)
 
 ### 🏗️ Fundament
 - [Fundament](Fundament)
-  - [CC2-Architektur](CC2-Architektur)
-  - [Modding-Grundlagen](Modding-Grundlagen)
   - [Bekannte Grenzen](Bekannte-Grenzen)
-  - [XML-Grundlagen](XML-Grundlagen)
-  - [Lua-Hook-System](Lua-Hook-System)
-  - [Save-Editing](Save-Editing)
-  - [Git-Quickstart](Git-Quickstart)
+  - [CC2 Architektur](CC2-Architektur)
+  - [Git Quickstart](Git-Quickstart)
+  - [Lua Hook System](Lua-Hook-System)
+  - [Modding Grundlagen](Modding-Grundlagen)
+  - [Save Editing](Save-Editing)
+  - [XML Grundlagen](XML-Grundlagen)
 
 ### 🔍 Was ist möglich?
-- [Was ist möglich?](Was-ist-moeglich)
-  - [Modding-Tiefen](Modding-Tiefen-Uebersicht)
+- [Was ist moeglich](Was-ist-moeglich)
+  - [Modding Tiefen Uebersicht](Modding-Tiefen-Uebersicht)
 
 ### 📖 Game-Referenz
-- [Game-Referenz](Game-Referenz)
+- [Game Referenz](Game-Referenz)
+  - **Audio System**
+  - **Constants Referenz**
+    - [Constants Vollreferenz](Constants-Vollreferenz)
+  - **Fahrzeug Referenz**
+    - [Einheiten Uebersicht](Einheiten-Uebersicht)
   - **Lua Referenz**
     - [Globaler Scope](Globaler-Scope)
-    - [Lua-Kernfunktionen](Lua-Kernfunktionen)
-    - [Lua-Script-Analyse](Lua-Script-Analysis)
+    - [Lua Kernfunktionen](Lua-Kernfunktionen)
+    - [Lua Script Analysis](Lua-Script-Analysis)
+  - **Mesh und Asset Referenz**
+  - **Objekt IDs**
+  - **Physik Labor**
   - **XML Referenz**
-    - [Waffen-XML](Waffen-XML-Referenz)
-    - [XML-Parameter](XML-Parameter-Typen)
-    - [Attachment-System](Attachment-System)
-    - [Spezial-Objekte](Spezial-Objekte)
-  - **Fahrzeuge & Werte**
-    - [Einheiten](Einheiten-Uebersicht)
-    - [Constants](Constants-Vollreferenz)
+    - [Attachment System](Attachment-System)
+    - [Spezial Objekte](Spezial-Objekte)
+    - [Waffen XML Referenz](Waffen-XML-Referenz)
+    - [XML Parameter Typen](XML-Parameter-Typen)
 
 ### 🧪 Labor-Experimente
-- [Labor-Experimente](Labor-Experimente)
+- [Labor Experimente](Labor-Experimente)
 
 ### 🛠️ Guides & Tutorials
-- [Guides & Tutorials](Guides-und-Tutorials)
-  - [Entwickler-Guide-Index](Entwickler-Guide-Index)
-  - [Lua-Debugging](Lua-Debugging)
+- [Guides und Tutorials](Guides-und-Tutorials)
+  - [Entwickler Guide Index](Entwickler-Guide-Index)
+  - [Lua Debugging](Lua-Debugging)
 
 ### 📐 Code-Standards
-- [Code-Standards](Code-Standards)
+- [Code Standards](Code-Standards)
   - [Allgemeine Regeln](Allgemeine-Regeln)
   - [Technisches Handbuch](Technisches-Handbuch)
-  - [YAML-Frontmatter](YAML-Frontmatter)
+  - [YAML Frontmatter](YAML-Frontmatter)
 
 ### 🗂️ Mod-Galerie
-- [Mod-Galerie](Mod-Galerie)
-  - [Kategorien-Liste](Kategorien-Liste)
-  - [Forschungs-Berichte](Forschungs-Berichte)
+- [Mod Galerie](Mod-Galerie)
+  - [Forschungs Berichte](Forschungs-Berichte)
+  - [Kategorien Liste](Kategorien-Liste)
   - [Statistiken](Statistiken)
-  - **Weapons**
-    - [15mm Turrets](Analysis-15mm-Turrets)
-    - [2x Cruise Missile Speed](Analysis-2x-Cruise-Missile-Speed)
-    - [Cement Bomb](Analysis-Cement-Bomb)
-    - [Countermeasure API Research](Analysis-Countermeasure-API-Research)
-    - [Gentle Missile Speed Buff](Analysis-Gentle-Missile-Speed-Buff)
-    - [Mark 84 Bomb](Analysis-Mark84-Bomb)
-    - [Missile Reformat](Analysis-Missile-Reformat)
-    - [Naval Gun Stabilizer](Analysis-Naval-Gun-Stabilizer)
-    - [Salty's Missile Damage Edit](Analysis-Saltys-Missile-Damage-Edit)
-    - [Supersonic Cruise Missile](Analysis-Supersonic-Cruise-Missile)
-    - [Torpedo Missile Wolfenstein Alarm](Analysis-Torpedo-Missile-Wolfenstein-Alarm)
-    - [Torpedo Reformat](Analysis-Torpedo-Reformat)
-    - [Turret Utility](Analysis-Turret-Utility)
+  - **Audio**
+  - **Gameplay**
+  - **Kategorienuebergreifende**
   - **UI**
-    - [Island Turret Placement QoL](Analysis-Island-Turret-Placement-QoL)
+    - [Analysis Island Turret Placement QoL](Analysis-Island-Turret-Placement-QoL)
+  - **Vehicles**
+  - **Weapons**
+    - [Analysis 15mm Turrets](Analysis-15mm-Turrets)
+    - [Analysis 2x Cruise Missile Speed](Analysis-2x-Cruise-Missile-Speed)
+    - [Analysis Cement Bomb](Analysis-Cement-Bomb)
+    - [Analysis Countermeasure API Research](Analysis-Countermeasure-API-Research)
+    - [Analysis Gentle Missile Speed Buff](Analysis-Gentle-Missile-Speed-Buff)
+    - [Analysis Mark84 Bomb](Analysis-Mark84-Bomb)
+    - [Analysis Missile Reformat](Analysis-Missile-Reformat)
+    - [Analysis Naval Gun Stabilizer](Analysis-Naval-Gun-Stabilizer)
+    - [Analysis Saltys Missile Damage Edit](Analysis-Saltys-Missile-Damage-Edit)
+    - [Analysis Supersonic Cruise Missile](Analysis-Supersonic-Cruise-Missile)
+    - [Analysis Torpedo Missile Wolfenstein Alarm](Analysis-Torpedo-Missile-Wolfenstein-Alarm)
+    - [Analysis Torpedo Reformat](Analysis-Torpedo-Reformat)
+    - [Analysis Turret Utility](Analysis-Turret-Utility)
 
 ### 🏗️ Sandkasten
 - [Sandkasten](Sandkasten)
   - **Backups**
-    - [Code Detail Analyse](-Code_Detail_Analyse)
-    - [Projekt Entwicklung](-Projekt_Entwicklung)
+    - [Code_Detail_Analyse](-Code_Detail_Analyse)
+    - [Projekt_Entwicklung](-Projekt_Entwicklung)
 
 ### 🔧 Kategorienübergreifend
-- [Kategorienübergreifende Mods](Kategorienuebergreifende-Mods)
+- [Kategorienuebergreifende Mods](Kategorienuebergreifende-Mods)
 
 ### 👤 Eigene Mods
 - [Eigene Mods](Eigene-Mods)
 
 ### ⚙️ Automatisierung
 - [Automatisierung](Automatisierung)
-  - [Projekt-Entwicklung](Projekt-Entwicklung)
+  - [Projekt Entwicklung](Projekt-Entwicklung)
 
 ### 📅 Spiel-Updates
-- [Spiel-Updates](Spiel-Updates)
+- [Spiel Updates](Spiel-Updates)
   - [CHANGELOG](CHANGELOG)
 
 ### 🌍 Community
 - [Community](Community)
-  - [Beitragen](Beitragen)
   - [Analyse einreichen](Analyse-einreichen)
+  - [Beitragen](Beitragen)
 
 ---
 [GitHub Repo](https://github.com/Jufie-bot/CC2-Mod-Sammlung)
