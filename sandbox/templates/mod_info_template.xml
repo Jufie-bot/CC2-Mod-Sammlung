@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mod>
+    <!-- Grundeinstellungen der Mod -->
+    <title>Meine Mod</title>
+    <author>Julian</author>
+    <description>Eine kurze Beschreibung der Mod.</description>
+    <version>1.0.0</version>
+    <game_version>1.8.4</game_version> <!-- Kompatibilität -->
+
+    <!-- Dateien, die von dieser Mod ersetzt/geladen werden -->
+    <!-- <replace file="data/scripts/interactions.lua" /> -->
+</mod>
