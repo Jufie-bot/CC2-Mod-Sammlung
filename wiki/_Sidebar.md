@@ -5,72 +5,72 @@
 ---
 
 ### 🗺️ Einstieg
-- [[Was ist was?|System-Guide/Was-ist-was]]
+- [[Was ist was?|Was-ist-was]]
 
 ### 🏗️ Fundament
-- [[CC2-Architektur|Fundament/CC2-Architektur]]
-- [[Modding-Grundlagen|Fundament/Modding-Grundlagen]]
-- [[Bekannte Grenzen|Fundament/Bekannte-Grenzen]]
-- [[XML-Grundlagen|Fundament/XML-Grundlagen]]
-- [[Lua-Hook-System|Fundament/Lua-Hook-System]]
-- [[Save-Editing|Fundament/Save-Editing]]
-- [[Git-Quickstart|Fundament/Git-Quickstart]]
+- [[CC2-Architektur]]
+- [[Modding-Grundlagen]]
+- [[Bekannte Grenzen|Bekannte-Grenzen]]
+- [[XML-Grundlagen]]
+- [[Lua-Hook-System]]
+- [[Save-Editing]]
+- [[Git-Quickstart]]
 
 ### 🔍 Was ist möglich?
-- [[Modding-Tiefen|Was-ist-moeglich/Modding-Tiefen-Uebersicht]]
+- [[Modding-Tiefen|Modding-Tiefen-Uebersicht]]
 
 ### 📖 Game-Referenz
-- [[Übersicht|Game-Referenz/Uebersicht]]
-  - [[Waffen-XML|Game-Referenz/XML-Referenz/Waffen-XML-Referenz]]
-  - [[XML-Parameter|Game-Referenz/XML-Referenz/XML-Parameter-Typen]]
-  - [[Attachment-System|Game-Referenz/XML-Referenz/Attachment-System]]
-  - [[Spezial-Objekte|Game-Referenz/XML-Referenz/Spezial-Objekte]]
-  - [[Lua-Kernfunktionen|Game-Referenz/Lua-Referenz/Lua-Kernfunktionen]]
-  - [[Globaler Scope|Game-Referenz/Lua-Referenz/Globaler-Scope]]
-  - [[Lua-Script-Analyse|Game-Referenz/Lua-Referenz/Lua-Script-Analysis]]
-  - [[Einheiten|Game-Referenz/Fahrzeug-Referenz/Einheiten-Uebersicht]]
-  - [[Constants|Game-Referenz/Constants-Referenz/Constants-Vollreferenz]]
+- [[Übersicht|Uebersicht]]
+  - [[Waffen-XML|Waffen-XML-Referenz]]
+  - [[XML-Parameter|XML-Parameter-Typen]]
+  - [[Attachment-System]]
+  - [[Spezial-Objekte]]
+  - [[Lua-Kernfunktionen]]
+  - [[Globaler Scope|Globaler-Scope]]
+  - [[Lua-Script-Analyse|Lua-Script-Analysis]]
+  - [[Einheiten|Einheiten-Uebersicht]]
+  - [[Constants|Constants-Vollreferenz]]
 
 ### 🧪 Labor-Experimente
-- [[Übersicht|Labor-Experimente/Uebersicht]]
+- [[Übersicht|Uebersicht]]
 
 ### 🛠️ Guides & Tutorials
-- [[Übersicht|Guides-und-Tutorials/Uebersicht]]
-- [[Entwickler-Guide-Index|Guides-und-Tutorials/Entwickler-Guide-Index]]
-- [[Lua-Debugging|Guides-und-Tutorials/Lua-Debugging]]
+- [[Übersicht|Uebersicht]]
+- [[Entwickler-Guide-Index]]
+- [[Lua-Debugging]]
 
 ### 📐 Code-Standards
-- [[Übersicht|Code-Standards/Uebersicht]]
-- [[Allgemeine Regeln|Code-Standards/Allgemeine-Regeln]]
-- [[Technisches Handbuch|Code-Standards/Technisches-Handbuch]]
-- [[YAML-Frontmatter|Code-Standards/YAML-Frontmatter]]
+- [[Übersicht|Uebersicht]]
+- [[Allgemeine Regeln|Allgemeine-Regeln]]
+- [[Technisches Handbuch|Technisches-Handbuch]]
+- [[YAML-Frontmatter]]
 
 ### 🗂️ Mod-Galerie
-- [[Alle Mods|Mod-Galerie/Uebersicht]]
-- [[Kategorien-Liste|Mod-Galerie/Kategorien-Liste]]
-- [[Forschungs-Berichte|Mod-Galerie/Forschungs-Berichte]]
-- [[Statistiken|Mod-Galerie/Statistiken]]
+- [[Alle Mods|Uebersicht]]
+- [[Kategorien-Liste]]
+- [[Forschungs-Berichte]]
+- [[Statistiken]]
 
 ### 🏗️ Sandkasten
-- [[Übersicht|Sandkasten/Uebersicht]]
+- [[Übersicht|Uebersicht]]
 
 ### 🔧 Kategorienübergreifend
-- [[Übersicht|Kategorienuebergreifende-Mods/Uebersicht]]
+- [[Übersicht|Uebersicht]]
 
 ### 👤 Eigene Mods
-- [[Übersicht|Eigene-Mods/Uebersicht]]
+- [[Übersicht|Uebersicht]]
 
 ### ⚙️ Automatisierung
-- [[Übersicht|Automatisierung/Uebersicht]]
-- [[Projekt-Entwicklung|Automatisierung/Projekt-Entwicklung]]
+- [[Übersicht|Uebersicht]]
+- [[Projekt-Entwicklung]]
 
 ### 📅 Spiel-Updates
-- [[Übersicht|Spiel-Updates/Uebersicht]]
-- [[CHANGELOG|Spiel-Updates/CHANGELOG]]
+- [[Übersicht|Uebersicht]]
+- [[CHANGELOG]]
 
 ### 🌍 Community
-- [[Beitragen|Community/Beitragen]]
-- [[Analyse einreichen|Community/Analyse-einreichen]]
+- [[Beitragen]]
+- [[Analyse einreichen|Analyse-einreichen]]
 
 ---
 [GitHub Repo](https://github.com/Jufie-bot/CC2-Mod-Sammlung)
