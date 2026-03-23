@@ -11,29 +11,29 @@ Dieses Wiki ist das technische Herzstück des CC2-Modding-Projekts. Hier findest
 **Wo anfangen?**
 - 🆕 **Neu hier?** → [[Was ist was?|Was-ist-was]] erklärt die Philosophie und Struktur
 - 🏗️ **Grundlagen lernen?** → [[CC2-Architektur]] für die technische Basis
-- 🔬 **Analysen lesen?** → [[Mod-Galerie|Uebersicht]] für alle analysierten Mods
+- 🔬 **Analysen lesen?** → [[Kategorien-Liste]] für alle analysierten Mods
 
 ---
 
 ## 📚 Bereiche im Überblick
 
-| # | Bereich | Was findest du hier? |
-|:---|:---|:---|
-| 0 | [Home](Home) | Diese Seite — Dashboard & Einstieg |
-| 1 | [System-Guide](Was-ist-was) | Die Karte des Labors |
-| 2 | [Fundament](CC2-Architektur) | Architektur, XML, Lua, Grenzen |
-| 3 | [Was ist möglich?](Modding-Tiefen-Uebersicht) | Grenzen & Potenziale |
-| 4 | [Game-Referenz](Uebersicht) | Technik-Datenbank (XML, Lua, Constants) |
-| 5 | [Labor-Experimente](Uebersicht) | Code-Vergleiche & Lösungen |
-| 6 | [Guides & Tutorials](Uebersicht) | Schritt-für-Schritt Anleitungen |
-| 7 | [Code-Standards](Uebersicht) | Regeln sauberer Arbeit |
-| 8 | [Mod-Galerie](Uebersicht) | Die kuratierte Sammlung |
-| 9 | [Sandkasten](Uebersicht) | Bausteine & Snippets |
-| 10 | [Kategorienübergreifend](Uebersicht) | Externe Großprojekte |
-| 11 | [Eigene Mods](Uebersicht) | Julians Projekte |
-| 12 | [Automatisierung](Uebersicht) | Scripts & GitHub Actions |
-| 13 | [Spiel-Updates](Uebersicht) | Patch-History & Auswirkungen |
-| 14 | [Community](Beitragen) | Mitmachen & Feedback |
+| # | Bereich | Einstiegsseite | Was findest du hier? |
+|:---|:---|:---|:---|
+| 0 | Home | [Home](Home) | Diese Seite — Dashboard & Einstieg |
+| 1 | System-Guide | [Was ist was?](Was-ist-was) | Die Karte des Labors |
+| 2 | Fundament | [CC2-Architektur](CC2-Architektur) | Architektur, XML, Lua, Grenzen |
+| 3 | Was ist möglich? | [Modding-Tiefen](Modding-Tiefen-Uebersicht) | Grenzen & Potenziale |
+| 4 | Game-Referenz | [Waffen-XML](Waffen-XML-Referenz) | Technik-Datenbank |
+| 5 | Labor-Experimente | *(folgt)* | Code-Vergleiche & Lösungen |
+| 6 | Guides & Tutorials | [Lua-Debugging](Lua-Debugging) | Schritt-für-Schritt Anleitungen |
+| 7 | Code-Standards | [Allgemeine Regeln](Allgemeine-Regeln) | Regeln sauberer Arbeit |
+| 8 | Mod-Galerie | [Kategorien-Liste](Kategorien-Liste) | Die kuratierte Sammlung |
+| 9 | Sandkasten | *(folgt)* | Bausteine & Snippets |
+| 10 | Kategorienübergreifend | *(folgt)* | Externe Großprojekte |
+| 11 | Eigene Mods | *(folgt)* | Julians Projekte |
+| 12 | Automatisierung | [Projekt-Entwicklung](Projekt-Entwicklung) | Scripts & GitHub Actions |
+| 13 | Spiel-Updates | [CHANGELOG](CHANGELOG) | Patch-History & Auswirkungen |
+| 14 | Community | [Beitragen](Beitragen) | Mitmachen & Feedback |
 
 ---
 
