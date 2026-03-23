@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data channel_count="2" sample_rate="48000">
+	<tiles>
+		<tile file_name="in_game_carrier_intro/tile_00.ogg" />
+	</tiles>
+</data>
+
