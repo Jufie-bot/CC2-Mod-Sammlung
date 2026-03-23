@@ -1,6 +1,6 @@
 name: "📚 Wiki-Aufgabe"
 description: "Wiki-Seite erstellen, überarbeiten oder aktualisieren"
-labels: ["documentation", "wiki"]
+labels: ["Wiki & Doku"]
 body:
   - type: input
     id: page_title

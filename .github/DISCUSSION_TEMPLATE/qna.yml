@@ -1,7 +1,6 @@
 name: Frage stellen (Q&A)
 description: Stelle eine konkrete Frage zu Lua, XML oder CC2 Modding
 title: "[Frage] "
-labels: ["Hilfe gesucht"]
 category: "Q&A & Wissensaustausch"
 body:
   - type: markdown

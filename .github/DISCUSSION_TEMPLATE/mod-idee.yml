@@ -1,5 +1,4 @@
 title: "[Idee] "
-labels: []
 body:
   - type: dropdown
     id: category

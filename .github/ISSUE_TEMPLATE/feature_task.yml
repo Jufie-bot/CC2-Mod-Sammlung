@@ -1,6 +1,6 @@
 name: "✨ Feature-Task (Eigene Mod)"
 description: "Neue Funktion oder Verbesserung für eine eigene Mod"
-labels: ["enhancement"]
+labels: ["Typ: Mod-Feature"]
 body:
   - type: input
     id: mod_project

@@ -1,6 +1,6 @@
 name: "🏗️ Sandkasten-Aufgabe"
 description: "Snippet, Template, ID-Datei oder Vanilla-Referenz anlegen"
-labels: ["documentation"]
+labels: ["Sandkasten & Snippets"]
 body:
   - type: dropdown
     id: type

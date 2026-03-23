@@ -1,7 +1,6 @@
 name: Snippet / Showcase teilen
 description: Präsentiere ein funktionierendes Code-Snippet oder eine geniale Lösung
 title: "[Showcase] "
-labels: ["Sandkasten & Snippets", "Guter Einstieg"]
 category: "Sandkasten-Showcase"
 body:
   - type: markdown

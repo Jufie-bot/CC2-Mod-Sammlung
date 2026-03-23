@@ -1,6 +1,6 @@
 name: "🌍 Community-Beitrag"
 description: "Analyse einreichen, Fehler melden oder Idee vorschlagen (für externe Beitragende)"
-labels: ["community"]
+labels: ["Guter Einstieg"]
 body:
   - type: markdown
     attributes:

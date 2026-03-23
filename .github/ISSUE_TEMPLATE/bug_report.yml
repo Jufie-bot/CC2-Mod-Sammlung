@@ -1,6 +1,6 @@
 name: "🐞 Bug-Report (Eigene Mod)"
 description: "Fehler oder unerwartetes Verhalten in einer eigenen Mod"
-labels: ["bug"]
+labels: ["Typ: Bug / Fix"]
 body:
   - type: input
     id: mod_project

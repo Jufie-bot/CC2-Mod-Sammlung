@@ -1,5 +1,4 @@
 title: "[Forschung] "
-labels: []
 body:
   - type: dropdown
     id: category

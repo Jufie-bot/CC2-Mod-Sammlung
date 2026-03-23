@@ -1,6 +1,6 @@
 name: "🔬 Forschungsaufgabe (Mod-Analyse)"
 description: "Analyse einer Mod aus der Galerie"
-labels: ["research"]
+labels: ["Typ: Forschung & Analyse"]
 body:
   - type: input
     id: mod_name
