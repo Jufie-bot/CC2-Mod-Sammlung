@@ -1,42 +1,24 @@
-name: "🌍 Community-Beitrag"
-description: "Analyse einreichen, Fehler melden oder Idee vorschlagen (für externe Beitragende)"
+name: "🤝 Externer Community-Beitrag"
+description: "Vorschlag, Analyse oder Fehlerbericht von einem Gast-Entwickler"
+title: "[COMMUNITY] "
 labels: ["Guter Einstieg"]
 body:
-  - type: markdown
+  - type: textarea
+    id: contribution
     attributes:
-      value: |
-        Danke für deinen Beitrag! Bitte fülle das Formular so vollständig wie möglich aus.
+      label: "Dein Beitrag / Vorschlag"
+      placeholder: "Was möchtest du mit dem Labor teilen?"
+    validations:
+      required: true
 
   - type: dropdown
-    id: contribution_type
+    id: type
     attributes:
       label: "Art des Beitrags"
       options:
-        - "Neue Mod-Analyse"
-        - "Ergänzung zu bestehender Analyse"
-        - "Fehler in Wiki/Analyse gefunden"
-        - "Idee / Verbesserungsvorschlag"
+        - "Fehlermeldung"
+        - "Verbesserungsvorschlag"
+        - "Neue Analyse-Idee"
+        - "Wiki-Ergänzung"
     validations:
       required: true
-
-  - type: textarea
-    id: description
-    attributes:
-      label: "Beschreibung"
-      placeholder: "Was ist dein Beitrag? Beschreibe ihn so konkret wie möglich."
-    validations:
-      required: true
-
-  - type: textarea
-    id: mod_info
-    attributes:
-      label: "Mod-Informationen (falls zutreffend)"
-      placeholder: "Mod-Name, Steam Workshop URL, Kategorie"
-
-  - type: checkboxes
-    id: checklist
-    attributes:
-      label: "Checkliste"
-      options:
-        - label: "Ich habe die bestehenden Analysen geprüft und kein Duplikat gefunden"
-        - label: "Meine Angaben sind so vollständig wie möglich"

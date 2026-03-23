@@ -1,48 +1,38 @@
-name: "🔬 Forschungsaufgabe (Mod-Analyse)"
-description: "Analyse einer Mod aus der Galerie"
+name: "🔬 Forschungs-Aufgabe / Analyse"
+description: "Spezifische Engine-Komponente oder Mod dekonstruieren"
+title: "[RESEARCH] "
 labels: ["Typ: Forschung & Analyse"]
 body:
-  - type: input
-    id: mod_name
-    attributes:
-      label: "Mod-Name"
-      placeholder: "z.B. 15mm Turrets"
-    validations:
-      required: true
-
   - type: dropdown
     id: category
     attributes:
-      label: "Mod-Kategorie"
+      label: "Analyse-Fokus"
       options:
-        - "cat:audio"
-        - "cat:ui"
-        - "cat:gameplay"
-        - "cat:weapons"
-        - "cat:vehicles"
-        - "cat:kategorienuebergreifend"
-        - "cat:ki"
-    validations:
-      required: true
-
-  - type: input
-    id: steam_url
-    attributes:
-      label: "Steam Workshop URL"
-      placeholder: "https://steamcommunity.com/sharedfiles/filedetails/?id=..."
-
-  - type: textarea
-    id: goal
-    attributes:
-      label: "Forschungsziel"
-      description: "Was soll durch die Analyse herausgefunden werden?"
-      placeholder: "Was macht diese Mod? Welche Dateien verändert sie? Welche Hooks nutzt sie?"
+        - "Waffen & Geschütze"
+        - "Fahrzeuge & Einheiten"
+        - "KI & Skynet-Logik"
+        - "Audio-System"
+        - "UI / HUD / Monitore"
+        - "Physik & Balancing"
     validations:
       required: true
 
   - type: textarea
-    id: analysis_path
+    id: objective
     attributes:
-      label: "Analyse-Datei"
-      description: "Wo liegt oder soll die Analyse-Datei liegen?"
-      placeholder: "analysis/mods/weapons/15mm-turrets.md"
+      label: "Ziel der Analyse"
+      placeholder: "Was genau wollen wir herausfinden?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: reference_files
+    attributes:
+      label: "Referenz-Dateien"
+      placeholder: "z.B. vanilla-referenz/lua/library_vehicle_manager.lua"
+
+  - type: textarea
+    id: hypotheses
+    attributes:
+      label: "Hypothesen / Vermutungen"
+      placeholder: "Ich vermute, der Parameter X steuert das Verhalten Y..."

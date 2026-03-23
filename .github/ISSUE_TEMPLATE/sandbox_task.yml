@@ -1,26 +1,17 @@
-name: "🏗️ Sandkasten-Aufgabe"
-description: "Snippet, Template, ID-Datei oder Vanilla-Referenz anlegen"
+name: "🏗️ Sandkasten-Update"
+description: "Neue Snippets, Workarounds oder Referenz-Dateien einreichen"
+title: "[SANDBOX] "
 labels: ["Sandkasten & Snippets"]
 body:
   - type: dropdown
     id: type
     attributes:
-      label: "Art des Sandkasten-Inhalts"
+      label: "Art des Eintrags"
       options:
-        - "XML-Snippet"
-        - "Lua-Snippet"
-        - "Constants-Snippet"
-        - "Mod-Template"
-        - "ID-Datei"
-        - "Vanilla-Referenz"
-    validations:
-      required: true
-
-  - type: input
-    id: target_path
-    attributes:
-      label: "Ziel-Pfad"
-      placeholder: "z.B. sandbox/snippets/xml/projektil-physik.xml"
+        - "Lua Snippet (Funktion)"
+        - "XML-Kopie (Vanilla)"
+        - "Dokumentation (Markdown)"
+        - "Asset (Sound/Mesh)"
     validations:
       required: true
 
@@ -28,12 +19,12 @@ body:
     id: description
     attributes:
       label: "Beschreibung"
-      placeholder: "Was soll dieser Baustein enthalten? Woher stammen die Daten?"
+      placeholder: "Was ist das Ziel dieses Snippets?"
     validations:
       required: true
 
   - type: textarea
-    id: source
+    id: benefit
     attributes:
-      label: "Quelle"
-      placeholder: "z.B. aus Analysis-Datei analysis/mods/weapons/15mm-turrets.md"
+      label: "Nutzen für andere Modder"
+      placeholder: "Warum ist dieses Snippet hilfreich?"

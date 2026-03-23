@@ -1,51 +1,31 @@
-name: "📚 Wiki-Aufgabe"
-description: "Wiki-Seite erstellen, überarbeiten oder aktualisieren"
+name: "📚 Wiki-Inhalt erstellen / ergänzen"
+description: "Neue Guides oder Referenz-Seiten für das Wiki planen"
+title: "[WIKI] "
 labels: ["Wiki & Doku"]
 body:
-  - type: input
-    id: page_title
-    attributes:
-      label: "Wiki-Seite"
-      placeholder: "z.B. Fundament/Lua-Hook-System.md"
-    validations:
-      required: true
-
   - type: dropdown
-    id: sektion
+    id: category
     attributes:
-      label: "Wiki-Sektion"
+      label: "Wiki-Kategorie"
       options:
-        - "System-Guide"
-        - "Fundament"
-        - "Was-ist-möglich"
-        - "Game-Referenz"
-        - "Labor-Experimente"
-        - "Guides"
-        - "Code-Standards"
+        - "Fundament (Grundlagen)"
+        - "Game-Referenz (XML/Lua)"
         - "Mod-Galerie"
-        - "Sandkasten"
-        - "Kategorienübergreifende"
-        - "Eigene-Mods"
-        - "Automatisierung"
-        - "Spiel-Updates"
-        - "Community"
-    validations:
-      required: true
-
-  - type: dropdown
-    id: task_type
-    attributes:
-      label: "Art der Aufgabe"
-      options:
-        - "Neu erstellen"
-        - "Inhalt ergänzen"
-        - "Überarbeiten"
-        - "Update nach Spiel-Patch"
+        - "Guides & Tutorials"
+        - "Community-Bereich"
     validations:
       required: true
 
   - type: textarea
-    id: content_source
+    id: objective
     attributes:
-      label: "Quellen / vorhandenes Material"
-      placeholder: "z.B. analysis/mods/weapons/15mm-turrets.md"
+      label: "Geplanter Inhalt"
+      placeholder: "Welches Thema soll dokumentiert werden?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: sources
+    attributes:
+      label: "Informationsquellen"
+      placeholder: "Forschungsberichte, Vanilla-Dateien oder Labor-Tests"

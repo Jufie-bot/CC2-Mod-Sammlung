@@ -1,38 +1,45 @@
-name: "🐞 Bug-Report (Eigene Mod)"
-description: "Fehler oder unerwartetes Verhalten in einer eigenen Mod"
+name: "🐞 Bug / Fehler melden"
+description: "Fehler in einer Mod, im Wiki oder in der Automatisierung melden"
+title: "[BUG] "
 labels: ["Typ: Bug / Fix"]
 body:
-  - type: input
-    id: mod_project
+  - type: dropdown
+    id: area
     attributes:
-      label: "Mod-Projekt"
-      placeholder: "z.B. meine-mod"
+      label: "Betroffener Bereich / Mod"
+      options:
+        - "Skynet V4 + Extras"
+        - "Wiki & Dokumentation"
+        - "Automatisierung (Python/Actions)"
+        - "Sandkasten & Snippets"
+        - "Global / Game Engine"
     validations:
       required: true
 
   - type: textarea
     id: description
     attributes:
-      label: "Was passiert?"
-      placeholder: "Beschreibe den Fehler so konkret wie möglich."
+      label: "Fehlerbeschreibung"
+      placeholder: "Was genau funktioniert nicht wie erwartet?"
     validations:
       required: true
 
   - type: textarea
-    id: expected
+    id: expected_vs_actual
     attributes:
-      label: "Was sollte passieren?"
+      label: "Erwartetes vs. Tatsächliches Verhalten"
+      placeholder: "Soll-Zustand vs. Ist-Zustand"
     validations:
       required: true
 
   - type: textarea
-    id: steps
+    id: reproduction
     attributes:
       label: "Schritte zum Reproduzieren"
-      placeholder: "1. Spiel starten\n2. Mission X laden\n3. ..."
+      placeholder: "1. Spiel starten\n2. Schiff X spawnen\n3. ..."
 
-  - type: textarea
-    id: files
+  - type: input
+    id: file_path
     attributes:
-      label: "Betroffene Dateien"
-      placeholder: "eigene-mods/meine-mod/content/scripts/..."
+      label: "Betroffene Datei / Zeile"
+      placeholder: "z.B. eigene-mods/Skynet V4 + Extras/content/scripts/..."

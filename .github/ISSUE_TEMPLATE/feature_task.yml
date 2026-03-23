@@ -1,20 +1,25 @@
-name: "✨ Feature-Task (Eigene Mod)"
-description: "Neue Funktion oder Verbesserung für eine eigene Mod"
+name: "✨ Neue Funktion / Verbesserung"
+description: "Vorschlag für neue Features oder Optimierungen"
+title: "[FEAT] "
 labels: ["Typ: Mod-Feature"]
 body:
-  - type: input
-    id: mod_project
+  - type: dropdown
+    id: target
     attributes:
-      label: "Mod-Projekt"
-      placeholder: "z.B. meine-mod"
+      label: "Ziel-Projekt / Mod"
+      options:
+        - "Skynet V4 + Extras"
+        - "Wiki & Dokumentation"
+        - "Sandkasten (neues Snippet)"
+        - "Allgemeine Labor-Funktion"
     validations:
       required: true
 
   - type: textarea
     id: description
     attributes:
-      label: "Feature-Beschreibung"
-      placeholder: "Was soll der neue Feature können?"
+      label: "Feature-Konzept"
+      description: "Was soll das neue Feature bewirken?"
     validations:
       required: true
 
@@ -22,16 +27,13 @@ body:
     id: technical
     attributes:
       label: "Technischer Ansatz"
-      description: "Welche Dateien, Hooks oder Parameter sind betroffen?"
-      placeholder: "z.B. library_custom_hud.lua, screen_vehicle_control.lua"
+      placeholder: "Welche Lua-Hooks oder XML-Parameter sollen verwendet werden?"
 
   - type: dropdown
-    id: bereich
+    id: complexity
     attributes:
-      label: "Bereich"
+      label: "Geschätzter Aufwand"
       options:
-        - "Code"
-        - "UX/UI"
-        - "Audio"
-        - "Konzept"
-        - "Release"
+        - "Niedrig (Quick Fix / Kleine Änderung)"
+        - "Mittel (Neue Logik-Ebene)"
+        - "Hoch (Komplexe System-Änderung)"
