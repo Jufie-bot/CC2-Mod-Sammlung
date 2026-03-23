@@ -20,38 +20,48 @@
 - [[Modding-Tiefen|Modding-Tiefen-Uebersicht]]
 
 ### 📖 Game-Referenz
-- [[Waffen-XML|Waffen-XML-Referenz]]
-- [[XML-Parameter|XML-Parameter-Typen]]
-- [[Attachment-System]]
-- [[Spezial-Objekte]]
-- [[Lua-Kernfunktionen]]
-- [[Globaler Scope|Globaler-Scope]]
-- [[Lua-Script-Analyse|Lua-Script-Analysis]]
-- [[Einheiten|Einheiten-Uebersicht]]
-- [[Constants|Constants-Vollreferenz]]
+- [[Game-Referenz]]
+  - [[Waffen-XML|Waffen-XML-Referenz]]
+  - [[XML-Parameter|XML-Parameter-Typen]]
+  - [[Attachment-System]]
+  - [[Spezial-Objekte]]
+  - [[Lua-Kernfunktionen]]
+  - [[Globaler Scope|Globaler-Scope]]
+  - [[Einheiten|Einheiten-Uebersicht]]
+  - [[Constants|Constants-Vollreferenz]]
 
 ### 🧪 Labor-Experimente
-*(Inhalt folgt)*
+- [[Labor-Experimente]]
 
 ### 🛠️ Guides & Tutorials
-- [[Entwickler-Guide-Index]]
-- [[Lua-Debugging]]
+- [[Guides & Tutorials|Guides-und-Tutorials]]
+  - [[Entwickler-Guide-Index]]
+  - [[Lua-Debugging]]
 
 ### 📐 Code-Standards
-- [[Allgemeine Regeln|Allgemeine-Regeln]]
-- [[Technisches Handbuch|Technisches-Handbuch]]
-- [[YAML-Frontmatter]]
+- [[Code-Standards]]
+  - [[Allgemeine Regeln|Allgemeine-Regeln]]
+  - [[Technisches Handbuch|Technisches-Handbuch]]
+  - [[YAML-Frontmatter]]
 
 ### 🗂️ Mod-Galerie
-- [[Kategorien-Liste]]
-- [[Forschungs-Berichte]]
-- [[Statistiken]]
+- [[Mod-Galerie]]
+  - [[Kategorien-Liste]]
+  - [[Forschungs-Berichte]]
+  - [[Statistiken]]
 
 ### 🏗️ Sandkasten
-*(Inhalt folgt)*
+- [[Sandkasten]]
+
+### 🔧 Kategorienübergreifend
+- [[Kategorienübergreifende Mods|Kategorienuebergreifende-Mods]]
+
+### 👤 Eigene Mods
+- [[Eigene Mods|Eigene-Mods]]
 
 ### ⚙️ Automatisierung
-- [[Projekt-Entwicklung]]
+- [[Automatisierung]]
+  - [[Projekt-Entwicklung]]
 
 ### 📅 Spiel-Updates
 - [[CHANGELOG]]
