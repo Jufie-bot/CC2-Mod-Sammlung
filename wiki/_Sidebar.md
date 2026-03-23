@@ -1,63 +1,76 @@
 # 🧭 Navigation
 
-- [[Home]]
+[[Home]]
+
+---
 
 ### 🗺️ Einstieg
-- [[Home]]
-- [[System-Guide/Was-ist-was|System-Guide]]
+- [[Was ist was?|System-Guide/Was-ist-was]]
 
 ### 🏗️ Fundament
-- [[Fundament/CC2-Architektur|CC2-Architektur]]
-- [[Fundament/Modding-Grundlagen|Modding-Grundprinzip]]
-- [[Fundament/Bekannte-Grenzen|Bekannte Grenzen]]
-- [[Fundament/XML-Grundlagen|XML-Grundlagen]]
-- [[Fundament/Lua-Hook-System|Lua-Hook-System]]
-- [[Fundament/Save-Editing|Save-Editing]]
+- [[CC2-Architektur|Fundament/CC2-Architektur]]
+- [[Modding-Grundlagen|Fundament/Modding-Grundlagen]]
+- [[Bekannte Grenzen|Fundament/Bekannte-Grenzen]]
+- [[XML-Grundlagen|Fundament/XML-Grundlagen]]
+- [[Lua-Hook-System|Fundament/Lua-Hook-System]]
+- [[Save-Editing|Fundament/Save-Editing]]
+- [[Git-Quickstart|Fundament/Git-Quickstart]]
 
 ### 🔍 Was ist möglich?
-- [[Was-ist-moeglich/Modding-Tiefen-Uebersicht|Modding-Tiefen-Übersicht]]
+- [[Modding-Tiefen|Was-ist-moeglich/Modding-Tiefen-Uebersicht]]
 
 ### 📖 Game-Referenz
-- [[Game-Referenz/Uebersicht|Übersicht]]
-  - [[Game-Referenz/XML-Referenz/Waffen-XML-Referenz|Waffen-XML]]
-  - [[Game-Referenz/XML-Referenz/Attachment-System|Attachments]]
-  - [[Game-Referenz/Lua-Referenz/Lua-Kernfunktionen|Lua-Funktionen]]
-  - [[Game-Referenz/Lua-Referenz/Globaler-Scope|Globaler Scope]]
-  - [[Game-Referenz/Fahrzeug-Referenz/Einheiten-Uebersicht|Fahrzeuge]]
-  - [[Game-Referenz/Constants-Referenz/Constants-Vollreferenz|Constants]]
+- [[Übersicht|Game-Referenz/Uebersicht]]
+  - [[Waffen-XML|Game-Referenz/XML-Referenz/Waffen-XML-Referenz]]
+  - [[XML-Parameter|Game-Referenz/XML-Referenz/XML-Parameter-Typen]]
+  - [[Attachment-System|Game-Referenz/XML-Referenz/Attachment-System]]
+  - [[Spezial-Objekte|Game-Referenz/XML-Referenz/Spezial-Objekte]]
+  - [[Lua-Kernfunktionen|Game-Referenz/Lua-Referenz/Lua-Kernfunktionen]]
+  - [[Globaler Scope|Game-Referenz/Lua-Referenz/Globaler-Scope]]
+  - [[Lua-Script-Analyse|Game-Referenz/Lua-Referenz/Lua-Script-Analysis]]
+  - [[Einheiten|Game-Referenz/Fahrzeug-Referenz/Einheiten-Uebersicht]]
+  - [[Constants|Game-Referenz/Constants-Referenz/Constants-Vollreferenz]]
 
 ### 🧪 Labor-Experimente
-- [[Labor-Experimente/Uebersicht|Übersicht]]
+- [[Übersicht|Labor-Experimente/Uebersicht]]
 
 ### 🛠️ Guides & Tutorials
-- [[Guides-und-Tutorials/Uebersicht|Übersicht]]
-- [[Guides-und-Tutorials/Lua-Debugging|Lua-Debugging]]
+- [[Übersicht|Guides-und-Tutorials/Uebersicht]]
+- [[Entwickler-Guide-Index|Guides-und-Tutorials/Entwickler-Guide-Index]]
+- [[Lua-Debugging|Guides-und-Tutorials/Lua-Debugging]]
 
 ### 📐 Code-Standards
-- [[Code-Standards/Uebersicht|Übersicht]]
-- [[Code-Standards/YAML-Frontmatter|YAML-Frontmatter]]
-- [[Code-Standards/Allgemeine-Regeln|Allgemeine Regeln]]
+- [[Übersicht|Code-Standards/Uebersicht]]
+- [[Allgemeine Regeln|Code-Standards/Allgemeine-Regeln]]
+- [[Technisches Handbuch|Code-Standards/Technisches-Handbuch]]
+- [[YAML-Frontmatter|Code-Standards/YAML-Frontmatter]]
 
 ### 🗂️ Mod-Galerie
-- [[Mod-Galerie/Uebersicht|Alle Mods]]
-  - [[Mod-Galerie/Weapons|Weapons]]
-  - [[Mod-Galerie/Audio|Audio]]
+- [[Alle Mods|Mod-Galerie/Uebersicht]]
+- [[Kategorien-Liste|Mod-Galerie/Kategorien-Liste]]
+- [[Forschungs-Berichte|Mod-Galerie/Forschungs-Berichte]]
+- [[Statistiken|Mod-Galerie/Statistiken]]
 
 ### 🏗️ Sandkasten
-- [[Sandkasten/Uebersicht|Übersicht]]
+- [[Übersicht|Sandkasten/Uebersicht]]
 
 ### 🔧 Kategorienübergreifend
-- [[Kategorienuebergreifende-Mods/Uebersicht|Übersicht]]
+- [[Übersicht|Kategorienuebergreifende-Mods/Uebersicht]]
 
 ### 👤 Eigene Mods
-- [[Eigene-Mods/Uebersicht|Übersicht]]
+- [[Übersicht|Eigene-Mods/Uebersicht]]
 
-### ⚙️ System
-- [[Automatisierung/Uebersicht|Automatisierung]]
-- [[Spiel-Updates/Uebersicht|Spiel-Updates]]
+### ⚙️ Automatisierung
+- [[Übersicht|Automatisierung/Uebersicht]]
+- [[Projekt-Entwicklung|Automatisierung/Projekt-Entwicklung]]
+
+### 📅 Spiel-Updates
+- [[Übersicht|Spiel-Updates/Uebersicht]]
+- [[CHANGELOG|Spiel-Updates/CHANGELOG]]
 
 ### 🌍 Community
-- [[Community/Beitragen|Beitragen]]
+- [[Beitragen|Community/Beitragen]]
+- [[Analyse einreichen|Community/Analyse-einreichen]]
 
 ---
 [GitHub Repo](https://github.com/Jufie-bot/CC2-Mod-Sammlung)
