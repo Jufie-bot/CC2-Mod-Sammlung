@@ -1,0 +1,23 @@
+name: Frage stellen (Q&A)
+description: Stelle eine konkrete Frage zu Lua, XML oder CC2 Modding
+title: "[Frage] "
+labels: ["Hilfe gesucht"]
+category: "Q&A & Wissensaustausch"
+body:
+  - type: markdown
+    attributes:
+      value: "Beschreibe dein Modding-Problem so genau wie möglich, damit dir geholfen werden kann."
+  - type: textarea
+    id: question
+    attributes:
+      label: Deine Frage
+      placeholder: "Wie triggere ich einen spezifischen UI-Sound?"
+    validations:
+      required: true
+  - type: textarea
+    id: attempted_solution
+    attributes:
+      label: Bisherige Lösungsansätze
+      description: Was hast du bereits versucht? (Füge gerne deinen fehlerhaften LUA/XML Code ein)
+    validations:
+      required: false

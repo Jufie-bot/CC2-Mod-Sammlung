@@ -1,0 +1,24 @@
+name: Forschung & Analyse teilen
+description: Teile Teilergebnisse, Code-Snippets oder Reverse-Engineering Studien
+title: "[Forschung] "
+labels: ["Typ: Forschung & Analyse"]
+category: "Forschung & Analysen"
+body:
+  - type: markdown
+    attributes:
+      value: "Nutze dieses Formular, um deine Reverse-Engineering-Ergebnisse rund um CC2 mit dem Labor zu teilen."
+  - type: input
+    id: area
+    attributes:
+      label: Welcher Bereich?
+      description: z.B. Waffen-XML, Logik-Scripts, UI
+    validations:
+      required: true
+  - type: textarea
+    id: findings
+    attributes:
+      label: Deine Erkenntnisse
+      description: Was genau hast du herausgefunden? Teile gerne Code-Ausschnitte.
+      placeholder: "Der Parameter <parameter_name> beeinflusst..."
+    validations:
+      required: true

@@ -1,0 +1,19 @@
+name: Mod-Idee / Wunsch vorschlagen
+description: Schlage eine neue Mod-Idee vor oder äußere einen Wiki-Wunsch
+title: "[Idee] "
+labels: ["Idee / Wunsch"]
+category: "Mod-Ideen & Wünsche"
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: Beschreibung deiner Idee
+      description: Was stellst du dir vor? Warum wäre das eine Bereicherung für CC2?
+      placeholder: "Eine Rakete, die 5x schneller fliegt, aber weniger Schaden macht..."
+    validations:
+      required: true
+  - type: input
+    id: category
+    attributes:
+      label: Betroffener Bereich
+      description: z.B. Gameplay, UI, Audio
