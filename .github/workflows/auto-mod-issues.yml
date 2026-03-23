@@ -1,0 +1,30 @@
+name: Auto-Create Mod Analysis Issues
+
+on:
+  push:
+    paths:
+      - 'mods/**'
+    branches:
+      - 'auf-GitHub'
+  workflow_dispatch:
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  generate_issues:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run Auto-Mod Issues Script
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python .github/scripts/auto_mod_issues.py
