@@ -10,51 +10,33 @@ Egal, ob du verstehen willst, wie die interne Wegfindung funktioniert, eigene UI
 
 ---
 
-## 📚 Die Enzyklopädie (Alle Bereiche im Detail)
+## 📚 Was findest du hier? (Die Kategorien)
 
-Unser Wissen ist in logische Themenkomplexe unterteilt. Hier ist der komplette Überblick darüber, was dich in den jeweiligen Bereichen erwartet:
+Unser Fachwissen ist eng verknüpft in thematische Bereiche unterteilt. **Klicke auf eine der Oberkategorien**, um zur detaillierten Übersicht des jeweiligen Bereichs zu gelangen.
 
-### 1. 🧭 Einstieg & Philosophie
-*   **📘 [[System-Guide|Was-ist-was]]**: Die perfekte Einführung. Erklärt unsere Projektstruktur, die Hierarchie der Repositorys und wie du dich am besten im Labor zurechtfindest.
+### 🧭 Einstieg & Philosophie
+*   **[System-Guide](System-Guide)**: Unsere perfekte Einstiegsseite. Hier erklären wir die Philosophie hinter dem Projekt, unsere Vorgaben und wie unser gesamtes Ökosystem aufgebaut ist.
 
-### 2. 🏗️ Das theoretische Fundament
-Bevor der erste Code geschrieben wird, braucht es Verständnis für das Spiel:
-*   **[[CC2-Architektur]]**: Wie Carrier Command 2 unter der Haube tickt.
-*   **[[Modding-Grundlagen]]**: Struktur von Mods im Spielordner.
-*   **[[Bekannte Grenzen|Bekannte-Grenzen]]**: Was die Engine unmöglich macht (Hard-Coding) und wo wir Kompromisse schließen.
-*   **[[XML-Grundlagen]]** & **[[Lua-Hook-System]]**: Die grundlegenden Technologien, in denen CC2-Mods geschrieben sind.
-*   **[[Save-Editing]]** & **[[Git-Quickstart]]**.
+### 🏗️ Theorie & Basiswissen
+*   **[Fundament](Fundament)**: Das tiefe Kernwissen. Alles über die CC2-Architektur, absolute Engine-Grenzen, grundlegende XML- und Lua-Mechaniken sowie Git-Basiswissen für Modder.
+*   **[Was ist möglich?](Was-ist-moeglich)**: Eine fokussierte Übersicht, wie tief wir realistisch in einzelne Spielsysteme eingreifen können.
+*   **[Game-Referenz](Game-Referenz)**: Unsere umfangreiche, technische Datenbank. Das Nachschlagewerk für XML-Parameter, Konstanten, Lua-Funktionen und Einheiten-IDs.
 
-### 3. 🔍 Was ist möglich?
-*   **[[Modding-Tiefen|Modding-Tiefen-Uebersicht]]**: Eine Übersicht, wie tief wir in einzelne Spielsysteme (Waffen, Fahrphysik, Radar) eingreifen können.
+### 🛠️ Praxis & Arbeitsregeln
+*   **[Guides & Tutorials](Guides-und-Tutorials)**: Konkrete Schritt-für-Schritt Anleitungen für Entwickler – zum Beispiel unser bewährter Leitfaden zum Debugging von Lua-Skripten.
+*   **[Code-Standards](Code-Standards)**: Die goldenen Regeln für sauberes, kompatibles Arbeiten. Vorgaben zu Formatierungen (YAML-Frontmatter) und Analyse-Strukturen.
 
-### 4. 📖 Game-Referenz (Die Datenbank)
-Dein ständiger Begleiter beim Modden. Pures Datenwissen:
-*   **XML**: [[Waffen-XML|Waffen-XML-Referenz]], [[XML-Parameter|XML-Parameter-Typen]], [[Attachment-System]], [[Spezial-Objekte]].
-*   **Lua**: [[Lua-Kernfunktionen]] (Alle nativen CC2-Funktionen), [[Globaler Scope|Globaler-Scope]], [[Lua-Script-Analyse|Lua-Script-Analysis]].
-*   **Listen**: [[Einheiten|Einheiten-Uebersicht]] (Fahrzeug IDs, Waffen IDs) und die globale [[Constants|Constants-Vollreferenz]].
+### 🔬 Labor & Forschung
+*   **[Mod-Galerie](Mod-Galerie)**: Die kuratierte Sammlung. Enthält tiefgreifende Code-Analysen zu bestehenden Mechaniken (von Waffen bis UI) und automatisierte Statistiken.
+*   **[Labor-Experimente](Labor-Experimente)**: Dokumentierte Versuchsreihen, A/B-Tests von Parametern und deren Ergebnisse aus der Modding-Praxis.
+*   **[Sandkasten](Sandkasten)**: Eine Sammlung direkt nutzbarer Bausteine – Code-Snippets, ID-Listen und entpackte Vanilla-Originaldateien zum schnellen Kopieren.
+*   **[Kategorienübergreifende Mods](Kategorienuebergreifende-Mods)**: Analyse und Dokumentation gigantischer Mod-Frameworks, die simultan UI, Lua und XML berühren.
+*   **[Eigene Mods](Eigene-Mods)**: Entwicklungsberichte rund um unsere selbst gebauten und gepflegten Projekt-Mods.
+*   **[Automatisierung](Automatisierung)**: Die Technik im Hintergrund. Dokumentation unserer Workflows, Python-Skripte (wie `sync_docs.py`) und GitHub-Actions.
 
-### 5. 🛠️ Guides & Code-Standards
-Regeln für sauberes und kompatibles Arbeiten:
-*   **[[Guides & Tutorials|Guides-und-Tutorials]]**: Praktische Workflows wie das [[Lua-Debugging]] oder der [[Entwickler-Guide-Index]].
-*   **[[Code-Standards]]**: Unsere goldenen Regeln. Betrifft [[Allgemeine Regeln|Allgemeine-Regeln]], das [[Technisches Handbuch|Technisches-Handbuch]] für Repo-Strukturen und die [[YAML-Frontmatter]] Vorgaben für Analysen.
-
-### 6. 🔬 Die Forschungsstation
-Das Herz des Labors: Hier nehmen wir Mods, Code und Mechaniken auseinander.
-*   **[[Mod-Galerie]]**: Enthält unsere kuratierten Analysen von existierenden Mods (Tiefenblicke in Waffen-, Audio- und UI-Mods), die [[Kategorien-Liste]] aller bekannten Mods und automatische [[Statistiken]].
-*   **[[Labor-Experimente]]**: Dokumentierte Versuchsreihen (z.B. A/B Tests von Parametern) und Problemlösungen.
-*   **[[Kategorienübergreifende Mods|Kategorienuebergreifende-Mods]]**: Analysen von riesigen Frameworks wie "Revolution".
-*   **[[Eigene Mods|Eigene-Mods]]**: Entwicklungsberichte zu unseren eigenen Modding-Projekten.
-
-### 7. 🏗️ Praktische Ressourcen
-Wenn du selbst arbeiten willst:
-*   **[[Sandkasten]]**: Deine Sammlung an wiederverwendbaren Snippets, Boilerplate-Codes und entpackten Vanilla-Originaldateien zum schnellen Kopieren.
-*   **[[Automatisierung]]**: Dokumentation unserer GitHub-Bots und Skripte (u.a. [[Projekt-Entwicklung]]).
-
-### 8. 🌍 News, Updates & Community
-Werde Teil des Ganzen und bleib auf dem Laufenden:
-*   **[[Spiel-Updates|CHANGELOG]]**: Protokoll über neue CC2-Updates und deren Auswirkungen auf Mods.
-*   **[[Community|Beitragen]]**: Wie du per Pull Request mitmachen oder eine eigene [[Analyse einreichen|Analyse-einreichen]] kannst.
+### 🌍 Laufendes & Community
+*   **[Spiel-Updates](Spiel-Updates)**: Unser Changelog-Protokoll neuster CC2-Patches und Analysen zu deren Auswirkungen auf bestehende Mods.
+*   **[Community](Community)**: Alle Details dazu, wie du selbst Feedback geben, Bugs melden oder fertige Analysen bei uns einreichen kannst.
 
 ---
 
@@ -71,4 +53,4 @@ Unser Projekt hält sich selbst in Schuss! Hier siehst du die Live-Statistiken, 
 
 ### 🚀 Aktuelle Meilensteine (März 2026)
 *   **Waffen-Forschung abgeschlossen**: 12 Weapons-Mods und 1 Audio-Mod wurden erfolgreich detailanalysiert und in das strukturierte YAML-Frontmatter System überführt.
-*   **Struktureller Umbau beendet**: Die Infrastruktur steht! Das Wiki hat jetzt eine lückenlose Seitenarchitektur, die mit dem Haupt-Projektboard perfekt verzahnt ist. 
+*   **Single-Push Workflow**: Unser Wiki synchronisiert sich jetzt durch eine GitHub Action vollautomatisch mit dem Hauptrepository. 

@@ -1,3 +1,11 @@
+﻿---
+title: "Skynet V4"
+category: ki
+game-version: 2026-03
+status: wiki-ready
+level: deep-dive
+author: julian
+---
 # Skynet V4 - Technische Analyse
 
 Dieses Dokument schlüsselt die Funktionsweise deiner aktuellen **Skynet V4 Mod** auf.
