@@ -1,0 +1,42 @@
+name: "🌍 Community-Beitrag"
+description: "Analyse einreichen, Fehler melden oder Idee vorschlagen (für externe Beitragende)"
+labels: ["community"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Danke für deinen Beitrag! Bitte fülle das Formular so vollständig wie möglich aus.
+
+  - type: dropdown
+    id: contribution_type
+    attributes:
+      label: "Art des Beitrags"
+      options:
+        - "Neue Mod-Analyse"
+        - "Ergänzung zu bestehender Analyse"
+        - "Fehler in Wiki/Analyse gefunden"
+        - "Idee / Verbesserungsvorschlag"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Beschreibung"
+      placeholder: "Was ist dein Beitrag? Beschreibe ihn so konkret wie möglich."
+    validations:
+      required: true
+
+  - type: textarea
+    id: mod_info
+    attributes:
+      label: "Mod-Informationen (falls zutreffend)"
+      placeholder: "Mod-Name, Steam Workshop URL, Kategorie"
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: "Checkliste"
+      options:
+        - label: "Ich habe die bestehenden Analysen geprüft und kein Duplikat gefunden"
+        - label: "Meine Angaben sind so vollständig wie möglich"

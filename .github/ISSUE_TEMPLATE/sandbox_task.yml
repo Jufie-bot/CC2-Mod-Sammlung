@@ -1,0 +1,39 @@
+name: "🏗️ Sandkasten-Aufgabe"
+description: "Snippet, Template, ID-Datei oder Vanilla-Referenz anlegen"
+labels: ["documentation"]
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: "Art des Sandkasten-Inhalts"
+      options:
+        - "XML-Snippet"
+        - "Lua-Snippet"
+        - "Constants-Snippet"
+        - "Mod-Template"
+        - "ID-Datei"
+        - "Vanilla-Referenz"
+    validations:
+      required: true
+
+  - type: input
+    id: target_path
+    attributes:
+      label: "Ziel-Pfad"
+      placeholder: "z.B. sandbox/snippets/xml/projektil-physik.xml"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Beschreibung"
+      placeholder: "Was soll dieser Baustein enthalten? Woher stammen die Daten?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: source
+    attributes:
+      label: "Quelle"
+      placeholder: "z.B. aus Analysis-Datei analysis/mods/weapons/15mm-turrets.md"

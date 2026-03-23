@@ -1,0 +1,51 @@
+name: "📚 Wiki-Aufgabe"
+description: "Wiki-Seite erstellen, überarbeiten oder aktualisieren"
+labels: ["documentation", "wiki"]
+body:
+  - type: input
+    id: page_title
+    attributes:
+      label: "Wiki-Seite"
+      placeholder: "z.B. Fundament/Lua-Hook-System.md"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: sektion
+    attributes:
+      label: "Wiki-Sektion"
+      options:
+        - "System-Guide"
+        - "Fundament"
+        - "Was-ist-möglich"
+        - "Game-Referenz"
+        - "Labor-Experimente"
+        - "Guides"
+        - "Code-Standards"
+        - "Mod-Galerie"
+        - "Sandkasten"
+        - "Kategorienübergreifende"
+        - "Eigene-Mods"
+        - "Automatisierung"
+        - "Spiel-Updates"
+        - "Community"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: task_type
+    attributes:
+      label: "Art der Aufgabe"
+      options:
+        - "Neu erstellen"
+        - "Inhalt ergänzen"
+        - "Überarbeiten"
+        - "Update nach Spiel-Patch"
+    validations:
+      required: true
+
+  - type: textarea
+    id: content_source
+    attributes:
+      label: "Quellen / vorhandenes Material"
+      placeholder: "z.B. analysis/mods/weapons/15mm-turrets.md"

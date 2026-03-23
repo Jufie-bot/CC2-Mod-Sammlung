@@ -1,0 +1,48 @@
+name: "🔬 Forschungsaufgabe (Mod-Analyse)"
+description: "Analyse einer Mod aus der Galerie"
+labels: ["research"]
+body:
+  - type: input
+    id: mod_name
+    attributes:
+      label: "Mod-Name"
+      placeholder: "z.B. 15mm Turrets"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: "Mod-Kategorie"
+      options:
+        - "cat:audio"
+        - "cat:ui"
+        - "cat:gameplay"
+        - "cat:weapons"
+        - "cat:vehicles"
+        - "cat:kategorienuebergreifend"
+        - "cat:ki"
+    validations:
+      required: true
+
+  - type: input
+    id: steam_url
+    attributes:
+      label: "Steam Workshop URL"
+      placeholder: "https://steamcommunity.com/sharedfiles/filedetails/?id=..."
+
+  - type: textarea
+    id: goal
+    attributes:
+      label: "Forschungsziel"
+      description: "Was soll durch die Analyse herausgefunden werden?"
+      placeholder: "Was macht diese Mod? Welche Dateien verändert sie? Welche Hooks nutzt sie?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: analysis_path
+    attributes:
+      label: "Analyse-Datei"
+      description: "Wo liegt oder soll die Analyse-Datei liegen?"
+      placeholder: "analysis/mods/weapons/15mm-turrets.md"

@@ -1,0 +1,38 @@
+name: "🐞 Bug-Report (Eigene Mod)"
+description: "Fehler oder unerwartetes Verhalten in einer eigenen Mod"
+labels: ["bug"]
+body:
+  - type: input
+    id: mod_project
+    attributes:
+      label: "Mod-Projekt"
+      placeholder: "z.B. meine-mod"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Was passiert?"
+      placeholder: "Beschreibe den Fehler so konkret wie möglich."
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Was sollte passieren?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Schritte zum Reproduzieren"
+      placeholder: "1. Spiel starten\n2. Mission X laden\n3. ..."
+
+  - type: textarea
+    id: files
+    attributes:
+      label: "Betroffene Dateien"
+      placeholder: "eigene-mods/meine-mod/content/scripts/..."
