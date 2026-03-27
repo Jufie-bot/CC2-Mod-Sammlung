@@ -1,0 +1,39 @@
+name: Auto Board Assignment
+
+on:
+  issues:
+    types: [opened, labeled, reopened]
+  workflow_dispatch:
+    inputs:
+      sync_all:
+        description: 'Alle offenen Issues neu zuweisen'
+        type: boolean
+        default: false
+
+permissions:
+  issues: read
+  contents: read
+
+jobs:
+  assign_to_board:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Assign Issue to Board
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ "${{ github.event_name }}" = "issues" ]; then
+            echo "Weise Issue #${{ github.event.issue.number }} einem Board zu..."
+            python .github/scripts/add_to_board.py ${{ github.event.issue.number }}
+          elif [ "${{ inputs.sync_all }}" = "true" ]; then
+            echo "Sync aller offenen Issues..."
+            python .github/scripts/add_to_board.py
+          fi
