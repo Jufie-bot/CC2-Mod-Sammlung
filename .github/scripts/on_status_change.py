@@ -168,6 +168,15 @@ def process_changed_files(changed_files: list[str]):
                 close_issue(issue_number)
 
         if action.get("create_wiki"):
+            # Wiki-Seite direkt generieren
+            try:
+                import sys
+                sys.path.insert(0, os.path.dirname(__file__))
+                from auto_wiki_page import generate_from_analysis
+                generate_from_analysis(filepath)
+            except Exception as e:
+                print(f"  [WARN] Wiki-Generierung fehlgeschlagen: {e}")
+            # Zusätzlich Wiki-Issue erstellen damit Julian es prüfen kann
             create_wiki_issue(mod_category, mod_name, meta.get("wiki_page", ""))
 
 
