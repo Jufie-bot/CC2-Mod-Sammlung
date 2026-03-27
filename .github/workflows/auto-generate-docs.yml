@@ -1,0 +1,54 @@
+name: Auto-Generate All Docs
+
+on:
+  push:
+    paths:
+      - 'mods/**'
+      - 'analysis/**'
+      - 'wiki/Mod-Galerie/**'
+    branches:
+      - 'auf-GitHub'
+  workflow_dispatch:
+
+permissions:
+  issues: write
+  contents: write
+
+jobs:
+  generate_all:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Dependencies
+        run: pip install pyyaml
+
+      - name: Phase A — Issue + Analyse-Dateien fuer neue Mods
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python .github/scripts/auto_mod_issues.py
+
+      - name: Phase E — Mod-Galerie Uebersichten generieren
+        run: python .github/scripts/generate_gallery_overview.py
+
+      - name: Phase F — Analyse-Index generieren
+        run: python .github/scripts/generate_analysis_index.py
+
+      - name: Wiki-Sidebar aktualisieren
+        run: python .github/scripts/generate_sidebar.py
+
+      - name: Aenderungen committen und pushen
+        run: |
+          git config user.name  "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add wiki/ analysis/_index.md || true
+          git diff --cached --quiet || git commit -m "auto(docs): Galerie-Uebersichten, Analyse-Index und Sidebar aktualisiert"
+          git push

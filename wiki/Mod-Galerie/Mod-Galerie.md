@@ -1,27 +1,27 @@
-# Mod-Galerie — Die kuratierte Sammlung
+---
+title: "Mod-Galerie"
+section: Mod-Galerie
+auto_generated: true
+last_updated: 2026-03-27
+---
 
-Alle analysierten Mods nach Kategorien sortiert.
+# Mod-Galerie
+
+> Alle analysierten externen Mods, kategorisiert und dokumentiert.
+
+**Gesamt analysierte Mods:** 15
+
+## Kategorien
+
+| Kategorie | Anzahl Seiten |
+|---|---|
+| 🔊 [[Audio]] | 0 |
+| 🎮 [[Gameplay]] | 1 |
+| 🔧 [[Kategorienuebergreifende]] | 0 |
+| 🖥️ [[UI]] | 1 |
+| 🚢 [[Vehicles]] | 0 |
+| ⚔️ [[Weapons]] | 13 |
 
 ---
 
-## 🔫 Weapons (12 Analysen)
-- [[Analysis-15mm-Turrets]] — 15mm Türme freischalten
-- [[Analysis-2x-Cruise-Missile-Speed]] — Doppelte Raketengeschwindigkeit
-- [[Analysis-Cement-Bomb]] — Zementbomben-Mod
-- [[Analysis-Gentle-Missile-Speed-Buff]] — Sanfter Raketen-Speed-Buff
-- [[Analysis-Island-Turret-Placement-QoL]] — Turm-Platzierung QoL
-- [[Analysis-Mark84-Bomb]] — Mark 84 Bombe
-- [[Analysis-Missile-Reformat]] — Raketen-Reformat
-- [[Analysis-Naval-Gun-Stabilizer]] — Marine-Geschütz-Stabilisator
-- [[Analysis-Saltys-Missile-Damage-Edit]] — Salty's Missile Damage
-- [[Analysis-Supersonic-Cruise-Missile]] — Überschallrakete
-- [[Analysis-Torpedo-Reformat]] — Torpedo-Reformat
-- [[Analysis-Turret-Utility]] — Turret Utility
-
-## 🔊 Audio (1 Analyse)
-- [[Analysis-Torpedo-Missile-Wolfenstein-Alarm]] — Wolfenstein Alarm Sound
-
-## 📋 Übersichten
-- [[Kategorien-Liste]] — Alle 105+ Mods nach Kategorie
-- [[Forschungs-Berichte]] — Forschungsberichte und Vergleiche
-- [[Statistiken]] — Automatisch generierte Statistiken
+*Diese Seite wird automatisch generiert. Letzte Aktualisierung: 2026-03-27*
