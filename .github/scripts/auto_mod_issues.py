@@ -4,8 +4,8 @@ import json
 from datetime import date
 
 # ============================================================
-# KATEGORIE → LABEL MAPPING
-# Ordnername in mods/ → GitHub Label Name
+# KATEGORIE -> LABEL MAPPING
+# Ordnername in mods/ -> GitHub Label Name
 # ============================================================
 CATEGORY_LABEL_MAP = {
     "Audio":                    "Audio & Sounds",
@@ -52,12 +52,12 @@ def create_issue(mod_category: str, mod_name: str) -> str | None:
         f"- [ ] Dateien der Mod sichten\n"
         f"- [ ] Änderungen zu Vanilla dokumentieren\n"
         f"- [ ] Erkenntnisse in `analyse.md` eintragen\n"
-        f"- [ ] `status: wiki-ready` setzen → Wiki-Seite wird automatisch erstellt\n\n"
+        f"- [ ] `status: wiki-ready` setzen -> Wiki-Seite wird automatisch erstellt\n\n"
         f"---\n"
         f"_Dieses Issue wurde automatisch generiert. Analysiere und ändere dann den Status in `analyse.md`._"
     )
 
-    print(f"  → Erstelle Issue: {title}")
+    print(f"  -> Erstelle Issue: {title}")
     label_args = []
     for label in labels:
         label_args += ["--label", label]
@@ -70,7 +70,7 @@ def create_issue(mod_category: str, mod_name: str) -> str | None:
         print(f"  [FEHLER] {result.stderr.strip()}")
         return None
     url = result.stdout.strip()
-    print(f"  ✅ Erstellt: {url}")
+    print(f"  [OK] Erstellt: {url}")
     return url
 
 
@@ -80,7 +80,7 @@ def ensure_analysis_file(mod_category: str, mod_name: str):
     analysis_file = os.path.join(analysis_dir, "analyse.md")
 
     if os.path.exists(analysis_file):
-        print(f"  ℹ️ analyse.md bereits vorhanden: {analysis_file}")
+        print(f"  [INFO] analyse.md bereits vorhanden: {analysis_file}")
         return
 
     os.makedirs(analysis_dir, exist_ok=True)
@@ -107,7 +107,7 @@ def ensure_analysis_file(mod_category: str, mod_name: str):
     )
     with open(analysis_file, "w", encoding="utf-8") as f:
         f.write(content)
-    print(f"  📄 analyse.md erstellt: {analysis_file}")
+    print(f"  [FILE] analyse.md erstellt: {analysis_file}")
 
 
 def main():
@@ -126,7 +126,7 @@ def main():
         if not os.path.isdir(category_path):
             continue
 
-        print(f"\n📁 Kategorie: {category}")
+        print(f"\n[DIR] Kategorie: {category}")
         for mod_name in sorted(os.listdir(category_path)):
             mod_path = os.path.join(category_path, mod_name)
             if not os.path.isdir(mod_path):
@@ -138,7 +138,7 @@ def main():
             legacy_title2  = f"[ANALYSE] Gameplay-Mod untersuchen: {mod_name}"
 
             if any(t in existing_titles for t in [expected_title, legacy_title, legacy_title2]):
-                print(f"  ⏭️ Überspringe '{mod_name}': Issue existiert")
+                print(f"  [SKIP] Überspringe '{mod_name}': Issue existiert")
                 skipped += 1
             else:
                 create_issue(category, mod_name)
@@ -147,7 +147,7 @@ def main():
             # Analyse-Datei immer sichern (auch wenn Issue schon existiert)
             ensure_analysis_file(category, mod_name)
 
-    print(f"\n✅ Fertig. Erstellt: {created} Issues, Übersprungen: {skipped}")
+    print(f"\n[OK] Fertig. Erstellt: {created} Issues, Übersprungen: {skipped}")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,27 @@
+---
+mod: "Naval Gun Stabilizer"
+category: "Weapons"
+status: offen
+priority: normal
+wiki_page: ""
+related_mods: []
+last_updated: 2026-03-27
+---
+
+# Analyse: Naval Gun Stabilizer
+
+## Rohdaten / Sichtung
+
+> TODO: Dateien in `mods/Weapons/Naval Gun Stabilizer/` sichten und hier notieren.
+
+## Erkenntnisse
+
+> TODO: Was verändert diese Mod am Spiel?
+
+## Offene Fragen
+
+> TODO: Was ist noch unklar?
+
+## Notizen für eigene Mods
+
+> TODO: Was kann ich in `Skynet V4 + Extras` übernehmen?
