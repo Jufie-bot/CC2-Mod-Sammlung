@@ -1,15 +1,16 @@
 ---
 title: Mod-Galerie Statistiken
-generated: 2026-03-23
+generated: 2026-03-27
 ---
 
 # Mod-Galerie — Statistiken
-*Automatisch generiert am 2026-03-23 durch sync_docs.py*
+*Automatisch generiert am 2026-03-27 durch sync_docs.py*
 
 ## Übersicht
 
 | Kategorie | Anzahl |
 |:---|:---|
+| Gameplay | 1 |
 | audio | 1 |
 | weapons | 12 |
 
@@ -17,12 +18,13 @@ generated: 2026-03-23
 
 | Status | Anzahl |
 |:---|:---|
-| wiki-ready | 13 |
+| wiki-ready | 14 |
 
 ## Alle Analysen
 
 | Mod | Kategorie | Status | Level |
 |:---|:---|:---|:---|
+| analyse.md | Gameplay | wiki-ready | – |
 | Torpedo Missile Wolfenstein Alarm | audio | wiki-ready | basic |
 | 15mm Turrets | weapons | wiki-ready | deep-dive |
 | 2x Cruise Missile Speed | weapons | wiki-ready | basic |

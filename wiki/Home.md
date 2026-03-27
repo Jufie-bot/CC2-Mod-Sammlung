@@ -45,10 +45,10 @@ Unser Fachwissen ist eng verknüpft in thematische Bereiche unterteilt. **Klicke
 Unser Projekt hält sich selbst in Schuss! Hier siehst du die Live-Statistiken, die durch unsere GitHub-Actions dynamisch aus allen Analyse-Dokumenten generiert werden.
 
 <!-- BEGIN:stats -->
-| 📦 Mods analysiert | **13** |
-| ✅ Wiki-ready | **13** |
+| 📦 Mods analysiert | **14** |
+| ✅ Wiki-ready | **14** |
 | 🔄 In Bearbeitung | **0** |
-| 📅 Zuletzt aktualisiert | **2026-03-23** |
+| 📅 Zuletzt aktualisiert | **2026-03-27** |
 <!-- END:stats -->
 
 ### 🚀 Aktuelle Meilensteine (März 2026)
