@@ -59,10 +59,14 @@
 ### 🗂️ Mod-Galerie
 - [Mod Galerie](Mod-Galerie)
   - [Forschungs Berichte](Forschungs-Berichte)
+  - [Gameplay](Gameplay)
   - [Kategorien Liste](Kategorien-Liste)
   - [Statistiken](Statistiken)
+  - [UI](UI)
+  - [Weapons](Weapons)
   - **Audio**
   - **Gameplay**
+    - [logistics+](logistics+)
   - **Kategorienuebergreifende**
   - **UI**
     - [Analysis Island Turret Placement QoL](Analysis-Island-Turret-Placement-QoL)
